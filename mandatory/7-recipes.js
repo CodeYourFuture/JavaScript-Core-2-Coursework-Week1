@@ -24,5 +24,57 @@ You should write and log at least 5 recipes
 
 **/
 
-let recipes = {};
+let recipes = {
+  spaghettiBolognese: {
+    title: "Spaghetti Bolognese",
+    serves: 4,
+    ingredients: [
+      "mince",
+      "tomato puree",
+      "peppers",
+      "garlic",
+      "mushrooms",
+      "onions",
+    ],
+  },
+  omelette: {
+    title: "Omelette",
+    serves: 1,
+    ingredients: ["eggs", "ham", "cheese", "mushroom"],
+  },
+  beansOnToast: {
+    title: "Beans On Toast",
+    serves: 1,
+    ingredients: ["bread", "butter", "beans"],
+  },
+  shepherdsPie: {
+    title: "shepherdsPie",
+    serves: 4,
+    ingredients: [
+      "onion",
+      "carrot",
+      "celery",
+      "carrot",
+      "beef stock",
+      "onion",
+      "tomato puree",
+      "peas",
+    ],
+  },
+  cheeseOnToast: {
+    title: "Cheese on Toast",
+    serves: 1,
+    ingredients: ["bread", "cheese", "worcestershire sauce"],
+  },
+};
 
+for (const recipe in recipes) {
+  console.log(`${recipes[recipe].title}`);
+  console.log(`Serves: ${recipes[recipe].serves}`);
+  console.log("Ingredients:");
+  recipes[recipe].ingredients.forEach((item) => console.log(item));
+}
+
+// console.log(recipes.title);
+// console.log(`Serves: ${recipes.servings}`);
+// console.log(`ingredients:\n${recipes.ingredients.join("\n")}`);
