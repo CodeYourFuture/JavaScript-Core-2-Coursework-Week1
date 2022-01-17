@@ -17,7 +17,7 @@ let car = {
 
 delete car.colour;
 
-console.log(car.colour);
+console.log(car["colour"]);
 
 // Example 2
 function sayHelloToUser(user) {
