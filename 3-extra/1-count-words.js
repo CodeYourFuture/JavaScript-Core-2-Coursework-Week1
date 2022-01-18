@@ -28,6 +28,8 @@ function countWords(string) {
 
   // write code here
 
+
+// adding something
   return wordCount;
 }
 
