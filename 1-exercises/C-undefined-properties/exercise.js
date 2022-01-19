@@ -33,7 +33,9 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: () => { "My pet's name is Fluffy"; },
+  getName: function() {
+    "My pet's name is Fluffy";
+  },
 };
 
 console.log(myPet.getName());
