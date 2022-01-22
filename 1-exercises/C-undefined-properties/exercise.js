@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//Because colour is not defined in car
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,7 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+//Because firstName is not defined 
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +37,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//Because the function is not returning nothing 

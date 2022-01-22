@@ -23,3 +23,59 @@
 */
 
 // write code here
+let recipes = {
+  carbonara: {
+    title: "Carbonara",
+    serves: 2,
+    ingredients: ["Spaghetti", "Guanciale", "Egg", "Cheese"],
+  },
+  pizza: {
+    title: "Pizza",
+    serves: 1,
+    ingredients: [
+      "Flour",
+      "Salt",
+      "Olive oil",
+      "Mozzarella",
+      "Passata",
+      "Parmesan",
+    ],
+  },
+  tiramisu: {
+    title: "Tiramisu",
+    serves: 3,
+    ingredients: ["Mascarpone", "Egg", "Savoiardi", "Sugar", "Caffè"],
+  },
+  amatriciana: {
+    title: "Amatriciana",
+    serves: 2,
+    ingredients: [
+      "Spaghetti",
+      "passata",
+      "Guanciale",
+      "Cheese",
+      "Salt",
+      "Oil",
+      "White wine",
+    ],
+  },
+  steakBroccoli: {
+    title: "Steak and Broccoli",
+    serves: 2,
+    ingredients: [
+      "Wholegrain",
+      "Chopped sushi ginger",
+      "Spring onions",
+      "Broccoli",
+      "Fillet steak",
+    ],
+  },
+};
+for (let recipe in recipes){
+  console.log(recipes[recipe].title);
+  console.log("Serves: " + recipes[recipe].serves);
+  console.log("Ingredients:");
+  recipes[recipe].ingredients.forEach(element => {console.log(element)    
+  });
+  console.log("\n");
+}
