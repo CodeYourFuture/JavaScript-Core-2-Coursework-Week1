@@ -26,8 +26,9 @@
 
 function countWords(string) {
   const wordCount = {};
-  // split into array // remove empty strings // count words, word exists add 1 otherwise it's equal to 1
-  string.split(" ").filter((e) => e).forEach((e) => (wordCount[e] ? wordCount[e]++ : wordCount[e] = 1));
+  if (!string) return wordCount;
+  // split into array // count words, word exists add 1 otherwise it's equal to 1
+  string.split(" ").forEach((e) => (wordCount[e] ? wordCount[e]++ : wordCount[e] = 1));
 
   return wordCount;
 }
