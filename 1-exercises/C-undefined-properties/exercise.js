@@ -1,3 +1,6 @@
+/* eslint-disable func-names */
+/* eslint-disable object-shorthand */
+/* eslint-disable dot-notation */
 /*
     You have already seen "undefined", either in an error message or being output from your program.
 
@@ -9,11 +12,11 @@
 */
 
 // Example 1
-let car = {
+const car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// ANSWER - 'colour' property isn't set on car object, so it's undefined.
 console.log(car["colour"]);
 
 // Example 2
@@ -21,18 +24,24 @@ function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
-let user = {
-  name: "Mira"
+const user = {
+  name: "Mira",
 };
-
+// ANSWER - 'sayHelloToUser' function is set to user firstName property which isn't set on user object, so it's undefined.
 sayHelloToUser(user);
 
 // Example 3
-let myPet = {
+const myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: () => "My pet's name is Fluffy",
+  getName2: function () {
+    return "My pet's name is Fluffy";
+  },
+  getName3() {
+    return "My pet's name is Fluffy";
   },
 };
-
+// ANSWER - 'getname' function should be an arrow function without curly brackets or it should have a return statement inside curly brackets. Provided 3 examples of correct code
 console.log(myPet.getName());
+console.log(myPet.getName2());
+console.log(myPet.getName3());

@@ -2,7 +2,7 @@
   An object's properties can have values that are other objects or arrays.
 */
 
-let basketballTeam = {
+const basketballTeam = {
   name: "Chicago Bulls",
   numberOfPlayers: 15,
   topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
@@ -22,6 +22,7 @@ let basketballTeam = {
 
 // write code here
 
+basketballTeam.topPlayers.sort().forEach((e) => console.log(e));
 
 /* EXPECTED RESULT
 

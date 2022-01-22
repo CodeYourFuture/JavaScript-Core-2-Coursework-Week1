@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /*
   Objects can be thought of as key/value storage, like a dictionary or a 'lookup'.
 
@@ -17,18 +18,33 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
-  // write code here
-}
+const createLookup = (countryCurrencyCodes) => {
+  const answer = {};
+  for (const el of countryCurrencyCodes) {
+    const [country, currency] = el;
+    answer[country] = currency;
+  }
+  return answer;
+};
+
+const createLookup2 = (countryCurrencyCodes) => Object.fromEntries(countryCurrencyCodes);
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
+test("creates country currency code lookup 2", () => {
+  expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
+    GB: "GBP",
+    DE: "EUR",
+    NG: "NGN",
+    MX: "MXN",
+  });
+});
 
 test("creates country currency code lookup", () => {
-  expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
+  expect(createLookup2(COUNTRY_CURRENCY_CODES)).toEqual({
     GB: "GBP",
     DE: "EUR",
     NG: "NGN",

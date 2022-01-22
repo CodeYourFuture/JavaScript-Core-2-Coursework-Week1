@@ -4,10 +4,10 @@
   This can be very useful for iterating through an object's properties or when accessing a lookup table.
 */
 
-let capitalCities = {
+const capitalCities = {
   UnitedKingdom: "London",
   China: "Beijing",
-  Peru: "Lima"
+  Peru: "Lima",
 };
 
 /*
@@ -16,8 +16,8 @@ let capitalCities = {
   Do not use dot notation for this exercise!
 */
 
-let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+const myCountry = "UnitedKingdom";
+const myCapitalCity = capitalCities[myCountry]; // complete the code
 
 console.log(myCapitalCity);
 

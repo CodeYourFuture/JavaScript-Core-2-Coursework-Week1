@@ -1,12 +1,13 @@
+/* eslint-disable dot-notation */
 /*
   You can add properties to objects and assign values to them using bracket notation.
   You can also change the value assigned to a property using bracket notation.
 */
 
-let student = {
+const student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*
@@ -15,7 +16,7 @@ let student = {
     - Set the value of attendance to 90
 */
 
-// write code here
+student["attendance"] = 90;
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -25,7 +26,7 @@ let student = {
   - Use bracket notation to change the value of hasPassed
 */
 
-// write code here
+student["hasPassed"] = student.attendance >= 90 && student.examScore > 60;
 
 console.log(student);
 

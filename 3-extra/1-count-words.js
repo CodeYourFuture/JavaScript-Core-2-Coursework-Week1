@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 /*
   This exercise is to write function that counts the number of times each word appears in a string.
 
@@ -25,8 +26,8 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
+  // split into array // remove empty strings // count words, word exists add 1 otherwise it's equal to 1
+  string.split(" ").filter((e) => e).forEach((e) => (wordCount[e] ? wordCount[e]++ : wordCount[e] = 1));
 
   return wordCount;
 }
@@ -47,7 +48,9 @@ test("Code works for a small string", () => {
 
 test("A string with, some punctuation", () => {
   expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
+    {
+      A: 1, string: 1, "with,": 1, some: 1, punctuation: 1,
+    },
   );
 });
 
