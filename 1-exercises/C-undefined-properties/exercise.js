@@ -12,10 +12,7 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
-  colour: "red",
 };
-
-delete car.colour;
 
 console.log(car["colour"]);
 
