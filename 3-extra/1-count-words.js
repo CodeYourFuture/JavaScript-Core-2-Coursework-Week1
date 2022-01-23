@@ -25,8 +25,30 @@
 
 function countWords(string) {
   const wordCount = {};
+  let numOfWords,wordPos,theWord;
 
-  // write code here
+  let listOfWords = string.split(' ');
+  /*
+     When a string is empty, split returns [ '' ]
+     Cater for it
+  */
+
+  if (!listOfWords[0].length) // just in case there are no words?
+        return wordCount;
+
+  while (listOfWords.length) { // Whilst there are words present
+          numOfWords=0; 
+          wordPos = 0;         // there is always at least one occurrence of the word at the beginning of the list
+          theWord = listOfWords[wordPos];
+          do {
+                 ++numOfWords; // therefore this count will always have a value of at least one
+                 listOfWords.splice(wordPos,1) // remove this occurrence of the word before looking for another 
+            // does the word occur again?
+          } while ((wordPos = listOfWords.findIndex(anotherMatch => anotherMatch === theWord)) >= 0);
+
+          // add result to the 'wordCount' object
+          wordCount[theWord] = numOfWords;
+  }
 
   return wordCount;
 }

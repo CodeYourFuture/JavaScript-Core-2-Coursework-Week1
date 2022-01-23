@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -19,7 +19,12 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+          // if the ingredient is neither in pantry.fridgeContents NOR in pantry.cupboardContents then it is a missing ingredient
+          // filter ALL the ingredients that match that criteria:
+          
+          return {name: recipe["name"],
+                  items: recipe["ingredients"]
+                         .filter(anIngredient => !(pantry.fridgeContents.includes(anIngredient) || pantry.cupboardContents.includes(anIngredient)))}
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

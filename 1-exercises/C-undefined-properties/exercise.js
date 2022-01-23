@@ -14,24 +14,25 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // The variable 'car' has no "colour" key defined
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // There is no "firstName" key defined
 }
 
 let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+
+sayHelloToUser(user); // This function refers to the key "firstName" which has not been defined for 'user'
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function() {         // This function does NOT 'return' any value. By default, when there is no defined return, JS returns 'undefined' 
+    "My pet's name is Fluffy"; //  This is just a function with a string in its definition! It does nothing! It returns nothing! Hence undefined
   },
 };
 

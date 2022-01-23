@@ -7,7 +7,8 @@
   Add a method to the cashRegister object
     - the method name should be orderBurger
     - the method should take one argument called balance, which is a number
-    - the method should check if there is enough money in the balance to order a burger (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
+    - the method should check if there is enough money in the balance to order a burger 
+     (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
     - if there is enough money in the balance to order the burger, then the price of the burger should be subtracted from the balance
     - the method should return the new balance
 
@@ -20,7 +21,8 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+  orderBurger: balance => balance >= MENU.burger ? balance - MENU.burger : balance,
+  orderFalafel: balance => balance >= MENU.falafel ? balance - MENU.falafel : balance                  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
