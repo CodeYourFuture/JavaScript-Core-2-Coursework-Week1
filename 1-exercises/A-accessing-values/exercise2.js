@@ -5,9 +5,9 @@
 */
 
 let capitalCities = {
-  UnitedKingdom: "London",
-  China: "Beijing",
-  Peru: "Lima"
+  UnitedKingdom: 'London',
+  China: 'Beijing',
+  Peru: 'Lima',
 };
 
 /*
@@ -16,8 +16,8 @@ let capitalCities = {
   Do not use dot notation for this exercise!
 */
 
-let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+let myCountry = 'UnitedKingdom';
+let myCapitalCity = capitalCities[myCountry]; // complete the code
 
 console.log(myCapitalCity);
 

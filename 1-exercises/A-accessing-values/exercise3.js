@@ -3,13 +3,13 @@
 */
 
 let basketballTeam = {
-  name: "Chicago Bulls",
+  name: 'Chicago Bulls',
   numberOfPlayers: 15,
-  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
+  topPlayers: ['Michael Jordan', 'Scottie Pippen', 'Dennis Rodman'],
   homeStadium: {
-    name: "United Center",
+    name: 'United Center',
     capacity: 21000,
-    address: "1901 W Madison St",
+    address: '1901 W Madison St',
   },
 };
 
@@ -20,8 +20,7 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
-
+console.log(basketballTeam.topPlayers.sort());
 
 /* EXPECTED RESULT
 
