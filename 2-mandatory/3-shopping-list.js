@@ -19,7 +19,11 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let listToBuy = {};
+  listToBuy["name"] = recipe["name"];     //it will find key "name" in recipe dictionary; then in dictionary listToBuy it will make new key "name" with value recipe["name"]
+  listToBuy["items"] = recipe["ingredients"].filter(value => !(pantry.fridgeContents.includes(value) || pantry.cupboardContents.includes(value)));
+
+  return listToBuy;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

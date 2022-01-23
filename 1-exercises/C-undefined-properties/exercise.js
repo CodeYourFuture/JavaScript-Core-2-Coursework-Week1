@@ -14,18 +14,18 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //because there is no "colour" key in object car
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`);  
 }
 
 let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);    // there is no "firstName" in "user"
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName());  // function "getName" doesn't return anything
