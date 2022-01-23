@@ -13,14 +13,24 @@
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
 
+
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let missingObject={}
+  let pantryContent=pantry.fridgeContents.concat(pantry.cupboardContents)
+ 
+  let checkMissing=recipe.ingredients.filter(item => !pantryContent.includes(item))
+
+  missingObject.name = recipe.name
+  missingObject.items =checkMissing
+
+  return missingObject
 }
+console.log(createShoppingList(recipe1))
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
@@ -38,6 +48,7 @@ test("createShoppingList works for pancakes recipe", () => {
     name: "pancakes",
     items: ["flour", "eggs", "vegetable oil"],
   });
+
 });
 
 test("createShoppingList works for margherita pizza recipe", () => {
