@@ -25,12 +25,16 @@
 
 function countWords(string) {
   const wordCount = {};
+  const arr = string.split(" ");
 
-  // write code here
+  if (string.length != 0)
+    arr.forEach((element) => {
+      if (element in wordCount) wordCount[element] = wordCount[element] + 1;
+      else wordCount[element] = 1;
+    });
 
   return wordCount;
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
@@ -46,9 +50,13 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Empty string", () => {
@@ -56,7 +64,11 @@ test("Empty string", () => {
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,
