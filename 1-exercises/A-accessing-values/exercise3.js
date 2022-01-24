@@ -22,6 +22,10 @@ let basketballTeam = {
 
 // write code here
 
+let teamTopPlayer = basketballTeam.topPlayers;                              //will give us an array with names 
+// console.log(teamTopPlayer.sort().join("<br />"));
+let sortedTeamPlayer = teamTopPlayer.sort();                                  //sorting in alphabetical order
+let eachLinePlayer = sortedTeamPlayer.map(value => console.log(value));      // console.logs the name of each player on a new line
 
 /* EXPECTED RESULT
 
