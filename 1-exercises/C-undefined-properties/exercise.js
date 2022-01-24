@@ -13,19 +13,22 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
 console.log(car["colour"]);
+
+// Answer 1: We haven't defined the value of the 'colour' property on the 'car' object.
+
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
 let user = {
   name: "Mira"
 };
-
 sayHelloToUser(user);
+
+// Answer 2: We haven't defined 'firstName' on the object 'user'.
+
 
 // Example 3
 let myPet = {
@@ -34,5 +37,6 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
 console.log(myPet.getName());
+
+// Answer 3: We aren't explicitly returning anything from inside the method and thus the implicit return of value 'undefined' applies.

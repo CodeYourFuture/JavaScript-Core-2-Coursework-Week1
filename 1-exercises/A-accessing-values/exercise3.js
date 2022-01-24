@@ -21,7 +21,12 @@ let basketballTeam = {
 */
 
 // write code here
+function showTopPlayers (arrayOfPlayers) {
+  arrayOfPlayers.sort().forEach(player => {console.log(player)});
+  return `Done! :)`;
+}
 
+showTopPlayers(basketballTeam['topPlayers']);
 
 /* EXPECTED RESULT
 
