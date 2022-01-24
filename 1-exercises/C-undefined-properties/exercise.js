@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//COMMENT cause the object of car doesn't has key colour
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,20 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+//COMMENT it should be user.name; you can have different name of parameter and argument but in this situation the user is parameter not key inside it
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// missed return  in unanimous function which is the value of getName
