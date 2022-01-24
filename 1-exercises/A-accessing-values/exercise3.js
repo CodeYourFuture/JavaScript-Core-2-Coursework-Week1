@@ -22,6 +22,13 @@ let basketballTeam = {
 
 // write code here
 
+let players = basketballTeam.topPlayers;
+
+players.sort();
+
+console.log(players[0]);
+console.log(players[1]);
+console.log(players[2]);
 
 /* EXPECTED RESULT
 
