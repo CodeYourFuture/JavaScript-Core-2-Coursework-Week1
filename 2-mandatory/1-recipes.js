@@ -23,3 +23,47 @@
 */
 
 // write code here
+let recipe1 = {
+  title: "honeyCake",
+  servings: 10,
+  ingredients:["flour", "honey", "eggs", "sugar","baking soda","cream"],
+}
+// console.log(recipe1);
+
+let recipe2 = {
+  title: "applePie",
+  servings: 6,
+  ingredients:["flour", "apples", "eggs", "milk","baking soda", "butter"],
+}
+// console.log(recipe2);
+
+let recipe3 = {
+  title: "mushroomSoup",
+  servings: 6,
+  ingredients:["mushroom", "onion", "potato", "carrot","broth"],
+}
+// console.log(recipe3);
+
+let recipe4 = {
+  title: "borek",
+  servings: 5,
+  ingredients:["filo pastry", "cheese", "spinach", "egg"],
+}
+// console.log(recipe4);
+
+let recipe5 = {
+  title: "almondMuffin",
+  servings: 2,
+  ingredients:["flour", "eggs", "butter", "milk","baking","almonds"],
+}
+// console.log(recipe5);
+
+function showRecipe (recipe) {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.servings}`);
+  console.log(recipe["ingredients"].join("\r\n"));
+}
+
+console.log(showRecipe(recipe1));
+
+// https://stackoverflow.com/questions/10982913/javascript-how-to-show-each-element-of-array-on-a-new-line

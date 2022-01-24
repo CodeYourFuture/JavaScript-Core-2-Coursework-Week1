@@ -9,6 +9,8 @@
 
 let student = {
   // write code here
+  getName: (firstName) => console.log(`Student name ${firstName}`)
+  
 }
 
 student.getName("Daniel");
