@@ -11,14 +11,19 @@
 */
 
 const COUNTRY_CURRENCY_CODES = [
-  ["GB", "GBP"],
-  ["DE", "EUR"],
-  ["NG", "NGN"],
-  ["MX", "MXN"],
+  ['GB', 'GBP'],
+  ['DE', 'EUR'],
+  ['NG', 'NGN'],
+  ['MX', 'MXN'],
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let obj = {};
+  for (let i = 0; i < countryCurrencyCodes.length; i++) {
+    let keyName = countryCurrencyCodes[i][0];
+    obj[keyName] = countryCurrencyCodes[i][1];
+  }
+  return obj;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -27,11 +32,11 @@ function createLookup(countryCurrencyCodes) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-test("creates country currency code lookup", () => {
+test('creates country currency code lookup', () => {
   expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
-    GB: "GBP",
-    DE: "EUR",
-    NG: "NGN",
-    MX: "MXN",
+    GB: 'GBP',
+    DE: 'EUR',
+    NG: 'NGN',
+    MX: 'MXN',
   });
 });

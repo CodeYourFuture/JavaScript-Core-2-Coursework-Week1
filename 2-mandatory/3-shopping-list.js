@@ -14,12 +14,19 @@
 */
 
 let pantry = {
-  fridgeContents: ["butter", "milk"],
-  cupboardContents: ["salt", "tinned tomatoes", "oregano"],
+  fridgeContents: ['butter', 'milk'],
+  cupboardContents: ['salt', 'tinned tomatoes', 'oregano'],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let arr = [...recipe.ingredients];
+  let items = arr.filter(
+    (element) =>
+      !pantry.fridgeContents.includes(element) &&
+      !pantry.cupboardContents.includes(element)
+  );
+  let name = recipe.name;
+  return (obj = { items, name });
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -28,26 +35,33 @@ function createShoppingList(recipe) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-test("createShoppingList works for pancakes recipe", () => {
+test('createShoppingList works for pancakes recipe', () => {
   let recipe1 = {
-    name: "pancakes",
-    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+    name: 'pancakes',
+    ingredients: ['flour', 'salt', 'milk', 'eggs', 'vegetable oil'],
   };
 
   expect(createShoppingList(recipe1)).toEqual({
-    name: "pancakes",
-    items: ["flour", "eggs", "vegetable oil"],
+    name: 'pancakes',
+    items: ['flour', 'eggs', 'vegetable oil'],
   });
 });
 
-test("createShoppingList works for margherita pizza recipe", () => {
+test('createShoppingList works for margherita pizza recipe', () => {
   let recipe2 = {
-    name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    name: 'margherita pizza',
+    ingredients: [
+      'flour',
+      'salt',
+      'yeast',
+      'tinned tomatoes',
+      'oregano',
+      'mozarella',
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
-    name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    name: 'margherita pizza',
+    items: ['flour', 'yeast', 'mozarella'],
   });
 });

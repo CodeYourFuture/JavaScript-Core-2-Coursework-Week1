@@ -22,4 +22,18 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipe = {
+  title: 'Mole',
+  serves: 2,
+  ingredients: ['cinnamon', 'cumin', 'cocoa'],
+};
+
+console.log(recipe.title);
+console.log(`Serves: ${recipe.serves}`);
+console.log(`Ingredients:`);
+const ingredientLogger = (ingredientIndex) => {
+  return recipe.ingredients[ingredientIndex];
+};
+console.log(ingredientLogger(0));
+console.log(ingredientLogger(1));
+console.log(ingredientLogger(2));
