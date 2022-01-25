@@ -15,12 +15,13 @@ let car = {
 };
 
 console.log(car["colour"]);
+//The colour property has not been defined in the car section.
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+// The firstName ha snot been defined anywhere.
 let user = {
   name: "Mira"
 };
@@ -34,5 +35,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+//The function()is empty and therefore will return nothing.
 console.log(myPet.getName());

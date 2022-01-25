@@ -23,3 +23,45 @@
 */
 
 // write code here
+let favRecipe = {
+  recipeOne: {
+    title: "Mole",
+    serves: 2,
+    ingredients: ["cinnamon", "Cumin", "Cocoa"],
+  },
+
+  recipeTwo: {
+    title: "Pasta",
+    serves: 1,
+    ingredients: ["Pasta", "Cheese", "Veggies"],
+  },
+  recipeThree: {
+    title: "Rice",
+    serves: 3,
+    ingredients: ["Brown Rice", "seasonings", "Oil"],
+  },
+  recipeFour: {
+    title: "Chunky Cookie",
+    serves: 4,
+    ingredients: ["flour", "Sugar", "Egg", "Butter", "Choclate"],
+  },
+  recipeFive: {
+    title: "Smoothie",
+    serves: 2,
+    ingredients: ["Fruits", "ice", "honey"],
+  },
+
+  getRecipe: function (recipe) {
+    console.log(this[recipe]["title"]);
+    console.log("serves: " + this[recipe]["servings"]);
+    console.log("ingredients:");
+    this[recipe]["ingredients"].map((a) => console.log(a) + "\n");
+    console.log("-".repeat(5));
+  },
+};
+
+favRecipe.getRecipe("RecipeOne");
+favRecipe.getRecipe("RecipeTwo");
+favRecipe.getRecipe("RecipeThree");
+favRecipe.getRecipe("RecipeFour");
+favRecipe.getRecipe("RecipeFive");

@@ -8,13 +8,16 @@
 */
 
 let student = {
+  getName: function(name) {
+    console.log("Student name: " + name);
+  }
   // write code here
 }
 
-student.getName("Daniel");
+student.getName("Sima");
 
 /* EXPECTED RESULT
 
-  Student name: Daniel
+  Student name: Sima
 
 */
