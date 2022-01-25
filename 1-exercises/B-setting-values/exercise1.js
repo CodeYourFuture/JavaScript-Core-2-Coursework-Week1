@@ -24,6 +24,21 @@ let capitalCities = {
 
 // write code here
 
+//change UK population
+capitalCities.UnitedKingdom.population = 8980000;
+
+//add population to China's capital city with value
+capitalCities.China.population = 21500000;
+
+//add Peru to object 
+capitalCities.Peru = {};
+
+//add Lima to Peru's capital city
+capitalCities.Peru.name = 'Lima';
+
+//add population to Lima
+capitalCities.Peru.population = 9750000;
+
 console.log(capitalCities);
 
 /* EXPECTED RESULT

@@ -11,13 +11,18 @@ let dog = {
   happiness: 6
 };
 
+//string
+//string
+//boolean
+//number
+
 /*
   You can access the values of each property using dot notation.
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = dog.name; 
+let dogBreed = dog.breed; 
 
 console.log(`${dogName} is a ${dogBreed}`);
 

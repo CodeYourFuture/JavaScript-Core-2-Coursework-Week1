@@ -9,6 +9,7 @@
 */
 
 // Example 1
+//We are seeing undefined here because the color property has not been defined
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -17,6 +18,10 @@ let car = {
 console.log(car["colour"]);
 
 // Example 2
+/* The 'name' property is not being used in the interpolation
+ inside the function, instead 'firstName' is being used and this 
+ is not the property name in the user object */
+
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +32,8 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// // Example 3
+// 'return' is not being used inside the 'getName' function
 let myPet = {
   animal: "Cat",
   getName: function() {
