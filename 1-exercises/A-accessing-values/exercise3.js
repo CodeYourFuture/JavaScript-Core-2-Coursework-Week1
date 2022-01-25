@@ -21,7 +21,17 @@ let basketballTeam = {
 */
 
 // write code here
+function basketballTeamTopPlayers(teamObject) {
+  let players = teamObject.topPlayers;
+  let sortedPlayers = players.sort((a, b) => {
+    return a === b ? 0 : a < b ? -1 : 1;
+  });
+  sortedPlayers.forEach(player => {
+    console.log(player)
+  })
+}
 
+basketballTeamTopPlayers(basketballTeam);
 
 /* EXPECTED RESULT
 
