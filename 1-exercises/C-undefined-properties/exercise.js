@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // We haven't defined "colour" property for our object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +22,17 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // We don't have a key name as firstName in "user" object
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // Our function has no return
