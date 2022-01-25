@@ -23,3 +23,24 @@
 */
 
 // write code here
+
+let myFavoriteRecipe = {
+  title:"Cheesecake",
+  servings: 6,
+  ingredients: [
+    "egg", 
+    "icing sugar",
+    "cream cheese",
+    "biscuits",
+    "strawberry sauce"
+  ]
+}
+
+console.log(myFavoriteRecipe.title);
+console.log("Serves: " + myFavoriteRecipe.servings);
+console.log("Ingredients: ");
+console.log(myFavoriteRecipe.ingredients[0]);
+console.log(myFavoriteRecipe.ingredients[1]);
+console.log(myFavoriteRecipe.ingredients[2]);
+console.log(myFavoriteRecipe.ingredients[3]);
+console.log(myFavoriteRecipe.ingredients[4]);

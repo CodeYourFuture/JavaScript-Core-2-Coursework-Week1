@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// Answer: Car object doesn't have colour property.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,6 +29,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// Answer: User object doesn't have firstName property.It should be "name".
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// Answer:myPet object has getName property which is a function but it is not returning anything.We should add return before the string("My pet's name is Fluffy")
