@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["color"]); // The object car doesn't have a property color.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // The property firstName doesn't exist
 }
 
 let user = {
@@ -31,8 +31,8 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
-  },
+    "My pet's name is Fluffy"; // The function doesn't return nothing; 
+  }
 };
 
 console.log(myPet.getName());

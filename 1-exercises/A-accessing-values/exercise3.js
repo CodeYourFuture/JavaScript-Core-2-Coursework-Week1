@@ -20,7 +20,7 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
+ console.log(basketballTeam.topPlayers.sort().join("\n"))
 
 
 /* EXPECTED RESULT
