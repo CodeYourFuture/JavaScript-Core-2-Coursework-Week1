@@ -17,10 +17,37 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
-  // write code here
-}
 
+function createLookup(countryCurrencyCodes){
+  let newObject = {};
+  for (let pair of countryCurrencyCodes){
+    newObject[pair[0]] = pair[1];
+  }
+  return newObject;
+}
+// console.log(createLookup(COUNTRY_CURRENCY_CODES));
+
+// https://www.tutorialspoint.com/converting-array-of-arrays-into-an-object-in-javascript
+// let createLookup = (countryCurrencyCodes = []) => {
+//   let newObject = {};
+//   for (let pair of countryCurrencyCodes){
+//     let [key, value] = pair;
+//     newObject[pair] = value
+//   }
+//   return newObject;
+// }
+// console.log(createLookup(countryCurrencyCodes));
+
+// function createLookup(countryCurrencyCodes) {
+//   // write code here
+//   let newObject = {};
+//   for (let pair of countryCurrencyCodes){
+//         let [key, value] = pair;
+//         newObject[pair] = value;
+//       }
+//       return newObject;
+// }
+// console.log(createLookup(countryCurrencyCodes));
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
