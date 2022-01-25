@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//because we didn't define colour property in our object.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,18 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
-
+//because we dont have firstName property in our object(user)
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//because we dont return any thing in our function or use console.log
