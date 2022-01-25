@@ -14,7 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); 
+
+//there is no colour key in car oject
+
+
 
 // Example 2
 function sayHelloToUser(user) {
@@ -27,12 +31,18 @@ let user = {
 
 sayHelloToUser(user);
 
+//to access firstName we need to have firstName kay in the user object
+
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+//we need to return "My pet's name is Fluffy" string 
+
+
