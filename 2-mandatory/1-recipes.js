@@ -22,4 +22,43 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+ let recipes = {
+   ChickenSoup: {
+   title: "Chicken Soup",
+   serves: 4,
+   ingredients: ["chicken", "double cream", "eggs"] 
+   },
+    Pasta:{
+     title: "Pasta",
+     serves: 3,
+     ingredients: ["pasta", "mince meat", "sauce"]
+   },
+    Rice: {
+     title: "Rice",
+     serves: 5,
+     ingredients: ["rice", "butter", "chicken"]
+   },
+    Lasagna: {
+    title: "Lasagna",
+    serves: 3,
+    ingredients: ["pasta","bechamel sauce", "mince meat"]
+   },
+    AvocadoToast: {
+     title: "Avocado Toast",
+     serves: 1,
+     ingredients: ["egg", "avocado", "feta cheese"]
+   }
+ }
+
+ function getRecipe(recipe) {
+   console.log(recipe.title);
+   console.log(`Serves: ${recipe.serves}`);
+   console.log("Ingredients:")
+   recipe.ingredients.forEach((element) => console.log(element));
+   console.log();
+ }
+ getRecipe(recipes.ChickenSoup);
+ getRecipe(recipes.Pasta);
+ getRecipe(recipes.Rice);
+ getRecipe(recipes.Lasagna);
+ getRecipe(recipes.AvocadoToast);
