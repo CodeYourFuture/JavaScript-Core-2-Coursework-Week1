@@ -23,3 +23,16 @@
 */
 
 // write code here
+
+let recipeCard = {
+  title:  "Mole",
+  servings: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"]
+}
+
+console.log(recipeCard.title);
+console.log("Serves: " + recipeCard.servings);
+console.log("Ingredients:");
+console.log(recipeCard.ingredients[0]);
+console.log(recipeCard.ingredients[1]);
+console.log(recipeCard.ingredients[2]);
