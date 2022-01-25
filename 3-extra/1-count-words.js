@@ -25,9 +25,15 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
-
+  if (string.length === 0) {
+    return wordCount;
+  }
+  let words = string.split(" ")
+  words.forEach(word => {
+    if (wordCount.hasOwnProperty(word)) {
+      return wordCount[word]++;
+    } else wordCount[word] = 1;
+})
   return wordCount;
 }
 
