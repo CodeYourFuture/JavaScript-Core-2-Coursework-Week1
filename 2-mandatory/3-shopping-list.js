@@ -18,8 +18,16 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
+function createShoppingList(recipe){
+  let missingIngredients = {};
+  missingIngredients.name = recipe.name;
+  missingIngredients.items = [];
+  for(i in recipe.ingredients){
+    if(!pantry.fridgeContents.includes(recipe.ingredients[i]) && !pantry.cupboardContents.includes(recipe.ingredients[i])){
+      missingIngredients.items.push(recipe.ingredients[i])
+      }
+  }
+  return missingIngredients;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
