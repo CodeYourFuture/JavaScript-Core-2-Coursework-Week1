@@ -20,8 +20,23 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+  orderBurger: function (balance) {
+    let balanceAfterBurger = 0;
+    if (balance >= MENU.burger) {
+      return (balanceAfterBurger = balance - MENU.burger);
+    } else {
+      return balance + " Transaction denied, insufficient balance";
+    }
+  },
+  orderFalafel: function (balance) {
+    let balanceAfterFalafel = 0;
+    if (balance >= MENU.falafel) {
+      return (balanceAfterFalafel = balance - MENU.falafel);
+    } else {
+      return balance + " Transaction denied, insufficient balance";
+    }
+  },
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
