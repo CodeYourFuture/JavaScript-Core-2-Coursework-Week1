@@ -22,4 +22,16 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+
+favRecipe = {
+title: "Tomato Soup",
+servings: 2,
+Ingredients: ["Tomatoes", "Black Pepper"],
+
+}
+
+console.log(favRecipe.title);
+console.log(`Serves: ${favRecipe.servings}`);
+console.log(`${Object.keys(favRecipe)[2]}:`);
+console.log(favRecipe.Ingredients[0]);
+console.log(favRecipe.Ingredients[1]);

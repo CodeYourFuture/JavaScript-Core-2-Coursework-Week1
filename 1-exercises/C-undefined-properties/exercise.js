@@ -14,18 +14,22 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // colour is not a defined key
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
+// firstName is not a defined key
+
 let user = {
   name: "Mira"
 };
 
 sayHelloToUser(user);
+
+// firstName is not the same as name 
 
 // Example 3
 let myPet = {
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// no instruction to return anything inside function

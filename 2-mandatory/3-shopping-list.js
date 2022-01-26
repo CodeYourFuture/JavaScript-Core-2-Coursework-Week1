@@ -19,8 +19,16 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let obj = {};
+  obj.name = recipe.name; 
+  let arr = pantry.fridgeContents.concat(pantry.cupboardContents);
+  obj.items = recipe.ingredients.filter(el => !arr.includes(el));
+  return obj;
 }
+
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

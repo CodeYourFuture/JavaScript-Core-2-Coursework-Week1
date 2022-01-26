@@ -17,8 +17,8 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
-  // write code here
+function createLookup(COUNTRY_CURRENCY_CODES) {
+  return Object.fromEntries(COUNTRY_CURRENCY_CODES);
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
