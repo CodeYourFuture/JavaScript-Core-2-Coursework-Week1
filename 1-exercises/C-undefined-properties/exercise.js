@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//there is no property colour so it cannot be returned
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+//the property key word is not identical with the key word used inside the function
 
 // Example 3
 let myPet = {
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//there is no argument passed to the method in the object so this method does not return anything
