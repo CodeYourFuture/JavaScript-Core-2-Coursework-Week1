@@ -21,7 +21,7 @@ let basketballTeam = {
 */
 
 // write code here
-
+basketballTeam.topPlayers.sort().map((player) => console.log(player));
 
 /* EXPECTED RESULT
 
