@@ -19,7 +19,13 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let name = recipe.name;
+  let recipeIngredients = recipe.ingredients;
+  let items = recipeIngredients.filter(
+    (e) =>
+      !pantry.cupboardContents.includes(e) && !pantry.fridgeContents.includes(e)
+  );
+  return (shoppingList = { name, items });
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
