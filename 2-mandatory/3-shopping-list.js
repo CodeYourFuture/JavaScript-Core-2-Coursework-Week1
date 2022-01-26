@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -18,8 +18,23 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
 function createShoppingList(recipe) {
-  // write code here
+  const missingIngredients = {
+    name: "",
+    items: [],
+  };
+
+  //set name property of missingIngredients obj
+  missingIngredients.name = recipe.name;
+
+  recipe.ingredients.forEach(ingredient => {
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)) {
+      missingIngredients.items.push(ingredient);
+    }
+  });
+
+  return missingIngredients;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

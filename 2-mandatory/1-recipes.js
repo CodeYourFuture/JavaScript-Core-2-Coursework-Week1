@@ -22,4 +22,12 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+const myFavoriteRecipe = {
+  title: 'Fajita wraps',
+  servings: 8,
+  ingredients: ['tortillas', 'chicken', 'mixed peppers', 'lettuce', 'cheese', 'potatoes']
+};
+
+console.log(myFavoriteRecipe.title);
+console.log(myFavoriteRecipe.servings);
+console.log(myFavoriteRecipe.ingredients);
