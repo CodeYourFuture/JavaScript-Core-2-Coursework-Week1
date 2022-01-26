@@ -14,7 +14,8 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); 
+//key is not present in the object, a programmer would write this code to find out if color has been added 
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,13 +27,16 @@ let user = {
 };
 
 sayHelloToUser(user);
+// object user only has a property <name>, therefore property <firstName> is not found 
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+//function <getName()> does not return anything or console.log
