@@ -22,4 +22,37 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let myRecipes = {
+  cheesecake: {
+    title: "Strawberry cheesecake",
+    servings: 4,
+    ingredients: ["flour", "eggs", "cheese", "sugar", "strawberries"],
+  },
+  spaghetti: {
+    title: "Spaghetti",
+    servings: 2,
+    ingredients: ["pasta", "minced meat", "tomatoes", "basil"],
+  },
+  sushi: {
+    title: "Sushi",
+    servings: 3,
+    ingredients: ["rice", "avocado", "salmon", "seaweed"],
+  },
+  toasts: {
+    title: "Toasties with mozzarella and basil",
+    servings: 2,
+    ingredients: ["toast bread", "basil", "tomatoes", "mozzarella"],
+  },
+  porridge: {
+    title: "Breakfast porridge",
+    servings: 1,
+    ingredients: ["milk", "porridge", "fresh fruits or nuts"],
+  },
+};
+
+for (let recipe in myRecipes) {
+  console.log(myRecipes[recipe].title);
+  console.log("Serves: " + myRecipes[recipe].servings);
+  console.log("Ingredients: ");
+  console.log(myRecipes[recipe].ingredients.join("\b\n"));
+}
