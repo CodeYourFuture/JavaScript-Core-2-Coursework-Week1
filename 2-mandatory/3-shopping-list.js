@@ -20,6 +20,20 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let shoppingList = {};
+
+  shoppingList["name"] = recipe["name"];
+  shoppingList["items"] = [];
+
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    if (
+      !pantry.fridgeContents.includes(recipe.ingredients[i]) &&
+      !pantry.cupboardContents.includes(recipe.ingredients[i])
+    ) {
+      shoppingList.items.push(recipe.ingredients[i]);
+    }
+  }
+  return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -43,11 +57,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
