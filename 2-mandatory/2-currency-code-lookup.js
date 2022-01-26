@@ -18,7 +18,8 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let currency = {};
+  return (currency = Object.fromEntries(countryCurrencyCodes));
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
