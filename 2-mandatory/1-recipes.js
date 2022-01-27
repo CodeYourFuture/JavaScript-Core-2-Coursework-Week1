@@ -23,3 +23,49 @@
 */
 
 // write code here
+let myRecipes = {
+  vegtableSoup: {
+    title: "vegetable Soup",
+    serving: 4,
+    ingredients: ["lentil", "tomato", "carrot", "celery"],
+  },
+  chickenBallotin: {
+    title: "Chicken Ballotine",
+    serving: 2,
+    ingredients: ["chicken breast", "garlic", "parsley", "mushroom", "double creem"],
+  },
+  chocBrownie: {
+    title: "Choc Brownie",
+    serving: 2,
+    ingredients: ["plain flour", "sugar", "dark choclate", "butter", "double creem", "bicarbonate of soda"],
+  },
+  carrotCake: {
+    title: "Carrot Cake",
+    serving: 2,
+    ingredients: ["grated carrot", "brown sugar", "wholemeal flour", "oil", "cinnamon", "baking powder"],
+  },
+  cheeseSouffle: {
+    title: "Cheese Souffle",
+    serving: 4,
+    ingredients: ["grated cheese", "egg yolk", "egg white", "milk", "butter", "flour"],
+  }
+}
+
+function getRecipe(nameOfTheRecipe) {
+  for (let recipe in myRecipes) {
+    console.log(myRecipes[recipe].title);
+    console.log(`Serves : ${myRecipes[recipe].serving}`);
+    console.log("Ingredients : ");
+    myRecipes[recipe].ingredients.forEach(ingredient => {
+      console.log(ingredient)
+    });
+    console.log('\n');
+  }
+
+}
+
+getRecipe(myRecipes.vegtableSoup);
+getRecipe();
+getRecipe();
+getRecipe();
+getRecipe();

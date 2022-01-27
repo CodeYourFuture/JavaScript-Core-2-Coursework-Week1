@@ -8,7 +8,9 @@
 */
 
 let student = {
+  getName: (name) => console.log("Student name: " + name),
   // write code here
+
 }
 
 student.getName("Daniel");

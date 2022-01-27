@@ -20,6 +20,15 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
+console.log(basketballTeam.topPlayers);
+
+let sortedTopPlayer = basketballTeam.topPlayers.sort();
+console.log(sortedTopPlayer);
+
+let topPlayerNames = sortedTopPlayer.map(item => console.log(item));
+
+
+
 // write code here
 
 

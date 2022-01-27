@@ -19,15 +19,22 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+
+  let itemsToBuy = {};
+  itemsToBuy.name = recipe.name;
+  itemsToBuy.items = recipe.ingredients.filter(item => !(pantry.fridgeContents.includes(item) || pantry.cupboardContents.includes(item)))
+
+  return itemsToBuy;
 }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
-*/
 
+
+*/
 test("createShoppingList works for pancakes recipe", () => {
   let recipe1 = {
     name: "pancakes",

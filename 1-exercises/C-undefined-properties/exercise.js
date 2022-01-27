@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //Because we the property colour isn`t defined above.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //We do haven`t defined the property as firtsName. It should be amended to .name.
 }
 
 let user = {
@@ -30,8 +30,8 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function () {
+    "My pet's name is Fluffy"; // This function does not return anything
   },
 };
 
