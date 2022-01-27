@@ -18,9 +18,40 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
+
 function createShoppingList(recipe) {
-  // write code here
+  // write code here, go through pantry object and return what is not in recipe object
+
+  // allIngredients using the ... (spread) operator, valid only for objects
+  //const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  //["butter", "milk", "salt", "tinned tomatoes", "oregano"]
+
+  // allIngredients using the  .concat , for arrays
+  const allIngredients = pantry.fridgeContents.concat(pantry.cupboardContents);
+
+  const missingItems = recipe.ingredients.filter((ingredient) => {
+    if (allIngredients.includes(ingredient)) {
+      return false;
+    }
+    return true;
+  });
+  const objectToReturn = {
+    name: recipe.name,
+    items: missingItems,
+  };
+  return objectToReturn;
 }
+
+let recipe1 = {
+  name: "pancakes",
+  ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+};
+
+console.log(createShoppingList(recipe1));
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
@@ -51,3 +82,4 @@ test("createShoppingList works for margherita pizza recipe", () => {
     items: ["flour", "yeast", "mozarella"]
   });
 });
+
