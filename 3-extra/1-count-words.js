@@ -25,8 +25,11 @@
 
 function countWords(string) {
   const wordCount = {};
+  string.length === 0 ? wordCount:
 
-  // write code here
+  string.split(' ').forEach(function(el) {
+    wordCount[el] ? wordCount[el]++ : wordCount[el] = 1;
+ });
 
   return wordCount;
 }
