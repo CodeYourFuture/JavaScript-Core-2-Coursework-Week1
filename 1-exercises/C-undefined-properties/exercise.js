@@ -15,6 +15,8 @@ let car = {
 };
 
 console.log(car["colour"]);
+// Answer 1
+// We are trying to access a non-existing property on the car object using the bracket notation. We get back undefined.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +24,21 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// Answer 2
+// We are calling the sayHello function, however, the function isn't returning an actual value. The firstName property doesnt exist either, which also get printed to the console as undefined.
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// Answer 3
+// We are calling the getName method on myPet object, however, the function value of the getName property isn't returning a value back.  It's missing the return keyword.
