@@ -21,7 +21,10 @@ let basketballTeam = {
 */
 
 // write code here
-
+let topPlayerNames = basketballTeam.topPlayers;
+let sortedNames = topPlayerNames.sort();
+let playerNamesOnNewLine = sortedNames.join('\r\n')
+console.log(playerNamesOnNewLine);
 
 /* EXPECTED RESULT
 

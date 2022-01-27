@@ -14,18 +14,20 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);// colour does not belong to the car property
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); 
 }
 
 let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); 
+// Hello is undefined (this should probably be in a string) 
+//user.firstName should be changed to user.name
 
 // Example 3
 let myPet = {
@@ -35,4 +37,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // getName should be returned within the function

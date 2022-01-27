@@ -16,9 +16,15 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
-
+newObject = {};
 function createLookup(countryCurrencyCodes) {
   // write code here
+  for (const arr of countryCurrencyCodes){
+    const newKey = arr[0];
+    const newValue = arr[1];
+    newObject[newKey] = newValue; // why doesn't .notation work?
+  }
+  return newObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
