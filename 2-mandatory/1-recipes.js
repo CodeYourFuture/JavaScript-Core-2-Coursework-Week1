@@ -23,3 +23,44 @@
 */
 
 // write code here
+
+let recipeCard1 = {
+  title: "Mole",
+  serves: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"]
+}
+
+console.log(recipeCard1);
+
+let recipeCard2 = {
+  title: "Soup",
+  serves: 2,
+  ingredients: ["onion", "tomato", "cilantro", "carrot"]
+}
+
+console.log(recipeCard2);
+
+let recipeCard3 = {
+  title: "Omelette",
+  serves: 2,
+  ingredients: ["eggs", "butter", "pepper", "salt", "cheese"]
+}
+
+console.log(recipeCard3);
+
+let recipeCard4 = {
+  title: "Pizza",
+  serves: 2,
+  ingredients: ["flour", "tomato", "cheese", "chicken", "mushroom"]
+}
+
+console.log(recipeCard4);
+
+let recipeCard5 = {
+  title: "Cake",
+  serves: 2,
+  ingredients: ["flour", "chocolate", "milk", "butter", "sugar"]
+}
+
+console.log(recipeCard5);
+
