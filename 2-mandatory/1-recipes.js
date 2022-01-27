@@ -23,3 +23,49 @@
 */
 
 // write code here
+let TeaRecipe = {
+  title: "Tea",
+  Service: 3,
+  ingredients: ["hot water", "tea", "sugar"],
+};
+const CookieRecipe = {
+  title: "Cookie",
+  Service: 3,
+  ingredients: ["sugar", "butter", "eggs", "sugar"],
+  
+};
+const CakeRecipe = {
+  title: "Cake",
+  Service: 3,
+  ingredients: ["eggs", "oil", "milk", "sugar","flour"],
+  
+};
+const RiceRecipe = {
+  title: "Rice",
+  Service: 2,
+  ingredients: ["rice", "salt", "hotwater", "butter"],
+  
+};
+const SpagettieRecipe = {
+  title: "Spagettie",
+  Service: 2,
+  ingredients: ["spagettie", "tomatopaste", "water", "salt"],
+  
+};
+
+const Menus = [
+  TeaRecipe,
+  CookieRecipe,
+  CakeRecipe,
+  RiceRecipe,
+  SpagettieRecipe,
+];
+Menus.map((menu) => {
+  console.log(menu.title);
+  console.log("Service: ", menu.Service);
+  console.log("ingredients: ");
+  for (const ingredient of menu.ingredients) {
+    console.log(ingredient);
+  }
+});
+

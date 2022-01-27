@@ -13,10 +13,11 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// Because car object doesnt have colour property.
 console.log(car["colour"]);
 
 // Example 2
+// Because user object doesnt have firstName property it has name property
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -28,6 +29,7 @@ let user = {
 sayHelloToUser(user);
 
 // Example 3
+// Because we didnt call the function and this function doesnt return anything
 let myPet = {
   animal: "Cat",
   getName: function() {
@@ -35,4 +37,5 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+
+ console.log(myPet.getName());

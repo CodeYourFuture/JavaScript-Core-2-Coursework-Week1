@@ -20,7 +20,32 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
-}
+ 
+    // allIngredients using .flat()
+    // const allIngredients = Object.values(pantry).flat();
+  
+    // allIngredients using loops
+    // const allIngredients = [];
+    // Object.values(pantry).forEach((arrayOfValues) => {
+    //   arrayOfValues.forEach((value) => allIngredients.push(value));
+    // });
+  
+    // allIngredients using the ... (spread) operator (my preferred way)
+    const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  
+    const missingItems = recipe.ingredients.filter((ingredient) => {
+      if (allIngredients.includes(ingredient)) {
+        return false;
+      }
+      return true;
+    });
+    const objectToReturn = {
+      name: recipe.name,
+      items: missingItems,
+    };
+    return objectToReturn;
+  }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

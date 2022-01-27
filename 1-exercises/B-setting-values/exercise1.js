@@ -22,8 +22,13 @@ let capitalCities = {
     - Add a population of 9750000 to Peru's capital city.
 */
 
-// write code here
-
+// write code 
+capitalCities.UnitedKingdom.population=8980000;
+capitalCities.China.population=21500000;
+capitalCities.Peru  = new Object();
+capitalCities.Peru.name = 'Lima';
+capitalCities.Peru.population =9750000 ;
+ 
 console.log(capitalCities);
 
 /* EXPECTED RESULT
