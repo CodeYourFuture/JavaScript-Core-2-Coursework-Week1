@@ -16,7 +16,7 @@ let student = {
 */
 
 // write code here
-
+student['attendence'] = 90;
 /*
   - Write an "if" statement that changes the value of hasPassed to true
       if the student has attendance that is equal or greater than 90
@@ -26,8 +26,8 @@ let student = {
 */
 
 // write code here
-
-console.log(student);
+student.attendence >= 90 ? student.hasPassed = true : student.hasPassed = false
+console.log(student.hasPassed);
 
 /* EXPECTED RESULT
 

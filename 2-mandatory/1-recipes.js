@@ -23,3 +23,33 @@
 */
 
 // write code here
+let myRecipe1 = {
+  title: "Latte",
+  serves: 1,
+  ingredients: ["coffee", "milk", "sugar"]
+}
+console.log(myRecipe1);
+let myRecipe2 = {
+  title: "Pizza",
+  serves: 1,
+  ingredients: ["cheese", "greenPeper", "souce"]
+}
+console.log(myRecipe2);
+let myRecipe3 = {
+  title: "Trad Food",
+  serves: 1,
+  ingredients: ["rice", "oil", "salt", "water"]
+}
+console.log(myRecipe3);
+let myRecipe4 = {
+  title: "Omelet",
+  serves: 1,
+  ingredients: ["egg", "oil", "tomato", "onion"]
+}
+console.log(myRecipe4);
+let myRecipe5 = {
+  title: "pasta",
+  serves: 1,
+  ingredients: ["pasta", "souce", "greenPeper", "onion"]
+}
+console.log(myRecipe5);
