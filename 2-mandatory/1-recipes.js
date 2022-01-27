@@ -23,3 +23,73 @@
 */
 
 // write code here
+
+let bolognese = {
+  title: "bolognese",
+  serves: 4,
+  ingredients: 
+  [ "oliveOil",
+    "onion",
+    "carrots",
+    "beefMince",
+    "cherryTomatoes",
+    "tomatoPuree",
+    "beefStockCube",
+    "redChilli",
+    "parmesan",
+    "spaghettiPasta"  
+  ]
+}
+
+console.log(bolognese);
+
+let appleCake = {
+  title: "apple cake",
+  serves: 6,
+  ingredients: [
+    "flour",
+    "sugar",
+    "egg",
+    "bakingPowder",
+    "cinnamon",
+    "apples"
+  ]
+}
+
+console.log({appleCake});
+
+
+redBeetrootSoup = {
+  title: "red beetroot soup",
+  serves: 4,
+  ingredients: [
+    "beetroot",
+    "vegetable cube",
+    "potatoes",
+    "freshParley"
+  ] 
+}
+
+console.log(redBeetrootSoup)
+
+croquettes = {
+    title: "croquettes",
+    serves: 4,
+    ingredients: [
+      mushrooms,
+      onion,
+      sauerkraut,
+      carrot
+    ]  
+}
+
+console.log(croquettes)
+
+lemonTea = {
+  teaBag: 1,
+  lemonSlice: 1,
+  spHoney: 1,
+  mlBoiledWater: 220
+}
+
+console.log(lemonTea);
