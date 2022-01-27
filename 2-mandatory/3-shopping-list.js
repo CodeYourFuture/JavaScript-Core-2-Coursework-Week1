@@ -18,14 +18,6 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-// function createShoppingList(recipe) {
-//   for (i in recipe.ingredients) {
-//     if (!pantry.includes(i)) recipe.items = i;
-//     // write code here
-//   }
-//   return recipe;
-// }
-
 function createShoppingList(recipe) {
   const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
 
