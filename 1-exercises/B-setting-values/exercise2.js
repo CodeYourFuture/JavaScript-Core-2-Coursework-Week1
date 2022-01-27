@@ -15,7 +15,8 @@ let student = {
     - Set the value of attendance to 90
 */
 
-// write code here
+let nameKey = 'attendance'
+student[nameKey] = '90'
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -26,6 +27,9 @@ let student = {
 */
 
 // write code here
+if(student >= 90 && student > 60) {
+  return student['hasPassed']
+}
 
 console.log(student);
 

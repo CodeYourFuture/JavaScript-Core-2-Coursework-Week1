@@ -16,14 +16,19 @@ let car = {
 
 console.log(car["colour"]);
 
+
+
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+//Undefined because user.firstName has not been difined.
 let user = {
   name: "Mira"
 };
+
+
 
 sayHelloToUser(user);
 

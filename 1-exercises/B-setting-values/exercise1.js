@@ -10,6 +10,12 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
+    population: 21500000
+  },
+
+  Peru: {
+    name: 'Lima',
+    population:  975000
   }
 };
 
@@ -22,7 +28,9 @@ let capitalCities = {
     - Add a population of 9750000 to Peru's capital city.
 */
 
-// write code here
+
+capitalCities.UnitedKingdom['population'] =  898000;
+
 
 console.log(capitalCities);
 
