@@ -52,7 +52,7 @@ let recipe5 = {
 };
 console.log(recipe1.title);
 console.log("Serving :", recipe1.servings);
-console.log("Ingredients :", recipe1.ingredients);
+console.log("Ingredients:", recipe1.ingredients);
 // write code here
 // let b = basketballTeam.topPlayers;
 // b.sort();
