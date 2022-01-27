@@ -7,8 +7,18 @@
 let capitalCities = {
   UnitedKingdom: "London",
   China: "Beijing",
-  Peru: "Lima"
+  Peru: "Lima",
 };
+
+// for (let capital in capitalCities) {
+//   console.log(capitalCities[capital]);
+// }
+/*
+output:
+London
+Beijing
+Lima
+*/
 
 /*
   You have an object, capitalCities, that contains key/value pairs of countries and their capital cities.
@@ -17,7 +27,7 @@ let capitalCities = {
 */
 
 let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+let myCapitalCity = capitalCities[myCountry]; // complete the code
 
 console.log(myCapitalCity);
 

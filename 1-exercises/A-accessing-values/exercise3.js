@@ -20,8 +20,8 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
-
+const topPlayersArray = basketballTeam.topPlayers;
+topPlayersArray.sort().forEach((element) => console.log(element));
 
 /* EXPECTED RESULT
 

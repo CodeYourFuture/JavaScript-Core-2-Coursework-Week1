@@ -15,24 +15,27 @@ let car = {
 };
 
 console.log(car["colour"]);
+// this is undefined because the key doesn't exist in object car
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // the firstName here means nothing to js and it doesn't exist
 }
+// this is undefined because the user is a parameter of the function and when the function calls on line 30 it is calling nothing
 
 let user = {
-  name: "Mira"
+  // the user here is an object
+  name: "Mira",
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // it is calling just the Hello the other part has nothing
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // this function does't return nothing
