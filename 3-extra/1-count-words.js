@@ -23,7 +23,13 @@
     - Setting values on an object
 */
 
-function countWords(string) {}
+function countWords(string) {
+  const wordCount = {};
+
+  // write code here
+
+  return wordCount;
+}
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
