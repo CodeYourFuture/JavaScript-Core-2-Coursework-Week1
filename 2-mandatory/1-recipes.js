@@ -28,12 +28,13 @@ let recipe = {
   ingredients: ['cinnamon', 'cumin', 'cocoa'],
 };
 
-console.log(recipe.title);
-console.log(`Serves: ${recipe.serves}`);
-console.log(`Ingredients:`);
 const ingredientLogger = (ingredientIndex) => {
   return recipe.ingredients[ingredientIndex];
 };
+
+console.log(recipe.title);
+console.log(`Serves: ${recipe.serves}`);
+console.log(`Ingredients:`);
 console.log(ingredientLogger(0));
 console.log(ingredientLogger(1));
 console.log(ingredientLogger(2));
