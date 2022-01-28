@@ -20,6 +20,30 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  // let newObject = {};
+  // newObject.name = recipe.name
+  // let allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];//creating one combined array
+
+  // let isMissing = recipe.ingredients.filter(ingredient => !allIngredients.includes(ingredient)) 
+  
+  // newObject.name = recipe.name;
+  // newObject.item = isMissing;
+
+  // return newObject;
+
+  const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  const missingItems = recipe.ingredients.filter((ingredient) => {
+    if (allIngredients.includes(ingredient)){
+    return false;
+  }
+    return true;
+  });
+  let newObject = {
+  name: recipe.name,
+  items: missingItems,
+};
+return newObject;
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
