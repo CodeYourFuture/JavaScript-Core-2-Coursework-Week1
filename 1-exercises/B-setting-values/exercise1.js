@@ -3,15 +3,8 @@
   You can also change the value assigned to a property using dot notation.
 */
 
-let capitalCities = {
-  UnitedKingdom: {
-    name: "London",
-    population: 20,
-  },
-  China: {
-    name: "Beijing",
-  }
-};
+let capitalCities = {  UnitedKingdom: {    name: "London",    population: 20,  }, 
+                       China: {    name: "Beijing", }  };
 
 /*
   Using dot notation:
@@ -23,8 +16,13 @@ let capitalCities = {
 */
 
 // write code here
+  capitalCities.UnitedKingdom.population = 8980000;     //Change the value of UnitedKingdom's capital city population to 8980000.
+  capitalCities.China.population = 21500000;   //  - Add the property for population to China's capital city and set the value to 21500000.
+  capitalCities.Peru = {};       // - Add the country "Peru" to capitalCities object.
+  capitalCities.Peru.name = "Lima";      // - Add a name of "Lima" to Peru's capital city.
+  capitalCities.Peru.population = 9750000;      // - Add a population of 9750000 to Peru's capital city.
 
-console.log(capitalCities);
+  console.log(capitalCities);
 
 /* EXPECTED RESULT
 

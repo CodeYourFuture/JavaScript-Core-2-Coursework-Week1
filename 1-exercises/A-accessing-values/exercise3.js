@@ -2,15 +2,9 @@
   An object's properties can have values that are other objects or arrays.
 */
 
-let basketballTeam = {
-  name: "Chicago Bulls",
-  numberOfPlayers: 15,
-  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
-  homeStadium: {
-    name: "United Center",
-    capacity: 21000,
-    address: "1901 W Madison St",
-  },
+let basketballTeam = {  name: "Chicago Bulls",  numberOfPlayers: 15,
+  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],  
+  homeStadium: { name: "United Center",  capacity: 21000, address: "1901 W Madison St",},
 };
 
 /*
@@ -21,8 +15,8 @@ let basketballTeam = {
 */
 
 // write code here
-
-
+const newArray = basketballTeam.topPlayers.sort();
+console.log(newArray);
 /* EXPECTED RESULT
 
   Dennis Rodman

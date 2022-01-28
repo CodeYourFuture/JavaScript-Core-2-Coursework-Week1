@@ -3,11 +3,7 @@
   You can also change the value assigned to a property using bracket notation.
 */
 
-let student = {
-  name: "Reshma Saujani",
-  examScore: 65,
-  hasPassed: false
-};
+let student = {  name: "Reshma Saujani",  examScore: 65,  hasPassed: false, };
 
 /*
   Using bracket notation
@@ -16,16 +12,23 @@ let student = {
 */
 
 // write code here
+student["attendance"] = 90;    //- Add a property to the student object for attendance - Set the value of attendance to 90
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
       if the student has attendance that is equal or greater than 90
-      AND
-      exam score is above 60.
-  - Use bracket notation to change the value of hasPassed
+      AND   exam score is above 60. - Use bracket notation to change the value of hasPassed
 */
 
 // write code here
+if(student["attendance"] >= 90 && student["examScore"] > 60){
+  student["hasPassed"] = true;
+} else {
+  student["hasPassed"] = false;
+}
+// a shorter way to do the above is this. the condition either returns true or
+// false so we can just assign that to our value `hasPassed`
+// student["hasPassed"] = student["attendance"] >= 90 && student["examScore"] > 60;
 
 console.log(student);
 
