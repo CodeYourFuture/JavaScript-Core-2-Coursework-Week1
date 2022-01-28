@@ -17,10 +17,22 @@ let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
-
-function createShoppingList(recipe) {
-  // write code here
+  // let recipe2 = {
+  //   name: "margherita pizza",
+  //   ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+  // };
+function createShoppingList(recipe) { 
+  let inFlat = pantry.fridgeContents.concat(pantry.cupboardContents) 
+ newObject = {
+      name : recipe.name,
+      items : recipe.ingredients.filter(function(e){
+        return !inFlat.includes(e)
+      })
+  }
+  return newObject
 }
+
+// console.log(createShoppingList(recipe2))
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

@@ -18,8 +18,17 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let newObject= {}
+    for(let i =0; i <countryCurrencyCodes.length; i++) {
+      let arr0 = countryCurrencyCodes[i][0]
+      let arr1 = countryCurrencyCodes[i][1]
+      newObject[arr0] = arr1
+    }
+    return newObject
+    // can also be done by following method with one line code
+    //return Object.fromEntries(COUNTRY_CURRENCY_CODES) //fromEntries object method worked for this assignment
 }
+console.log(createLookup(COUNTRY_CURRENCY_CODES))
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
