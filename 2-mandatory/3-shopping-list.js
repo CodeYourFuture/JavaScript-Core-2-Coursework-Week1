@@ -19,7 +19,23 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+        //create an array of all the ingredients from the pantry
+        let availableIngredients = Object.values(pantry).flat()//["butter", "milk", "salt", "tinned tomatoes", "oregano"]
+        
+
+  let missingItems = []
+  let shoppingListObject = {}
+  for (let item of recipe["ingredients"]) {
+
+    if (!availableIngredients.includes(item)) {
+      missingItems.push(item)
+    }
+  
+    shoppingListObject["name"] = recipe.name;
+    shoppingListObject["items"] = missingItems;
+  }
+
+  return shoppingListObject
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

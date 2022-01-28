@@ -20,7 +20,28 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+  orderBurger: function(balance) {
+    //check if enough money
+    let change = balance-MENU.burger
+    //if has enough money, buy burger and change the balance amount.
+    if (change >= 0) {
+      balance = change
+      
+    }
+    return balance
+    
+    
+  },
+  orderFalafel: function(balance) { 
+    let change = balance-MENU.falafel
+    if (change >= 0) {
+      balance = change;
+      
+      
+    }
+    return balance
+  },
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
