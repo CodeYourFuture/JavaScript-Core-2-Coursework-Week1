@@ -15,18 +15,18 @@ let car = {
 };
 
 console.log(car["colour"]);
-
+//colour key does not exist in car object.
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
-
+//firstName is not a key in the user object.
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +36,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//The method getName does not console.log anything.

@@ -19,29 +19,21 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // allIngredients using .flat()
-  // const allIngredients = Object.values(pantry).flat();
+  // write code here
+  let shoppingList = {};
 
-  // allIngredients using loops
-  // const allIngredients = [];
-  // Object.values(pantry).forEach((arrayOfValues) => {
-  //   arrayOfValues.forEach((value) => allIngredients.push(value));
-  // });
+  shoppingList["name"] = recipe["name"];
+  shoppingList["items"] = [];
 
-  // allIngredients using the ... (spread) operator (my preferred way)
-  const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
-
-  const missingItems = recipe.ingredients.filter((ingredient) => {
-    if (allIngredients.includes(ingredient)) {
-      return false;
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    if (
+      !pantry.fridgeContents.includes(recipe.ingredients[i]) &&
+      !pantry.cupboardContents.includes(recipe.ingredients[i])
+    ) {
+      shoppingList.items.push(recipe.ingredients[i]);
     }
-    return true;
-  });
-  const objectToReturn = {
-    name: recipe.name,
-    items: missingItems,
-  };
-  return objectToReturn;
+  }
+  return shoppingList;
 }
 
 

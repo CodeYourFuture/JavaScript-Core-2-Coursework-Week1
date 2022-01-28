@@ -23,37 +23,67 @@
 */
 
 // write code here
-const call = {
-  host: {
-    name: {
-      first: "Alun",
-      middle: "Rhys",
-      last: "Turner",
-      nicknames: ["KOTK", "Dog"],
-    },
-    age: 36,
-    currentlyIn: "Basingstoke",
-  },
-  date: "Wed 26 Jan",
-  subject: "JavaScript",
-  attendees: ["Marina", "Ali", "Busra", "Deago", "Delroy"],
-  "bad-key": "something from the bad key",
+let favouriteRecipe = {
+  title: "Bread",
+  servings: 4,
+  ingredients: ["flour", "water", "salt"],
 };
 
-call.address = {
-  firstLine: "123",
-  town: "London",
+console.log(favouriteRecipe.title);
+console.log(`Serves: ${favouriteRecipe.servings}`);
+console.log(`Ingredients:`);
+favouriteRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
+let secondRecipe = {
+  title: "tea",
+  servings: 2,
+  ingredients: ["tea bag", "hot water", "sugar"],
 };
 
-const arrayOfCalls = [call, call, call];
-//using for...of loops
-for (const callObject of arrayOfCalls) {
-  const thingIWant = callObject.host.name.nicknames[1];
-  // console.log();
-}
+console.log(secondRecipe.title);
+console.log(`Serves: ${secondRecipe.servings}`);
+console.log(`Ingredients:`);
+secondRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
 
-const recipe = {
-  ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+let thirdRecipe = {
+  title: "capuchinno",
+  servings: 1,
+  ingredients: ["milk", "coffee", "sugar"],
 };
-const thisIsARegex = /asdf/;
-console.log(recipe.ingredients.join("\n")); // the \ is an "escape character"
+
+console.log(thirdRecipe.title);
+console.log(`Serves: ${thirdRecipe.servings}`);
+console.log(`Ingredients:`);
+thirdRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
+let fourthRecipe = {
+  title: "fried egg",
+  servings: 2,
+  ingredients: ["egg", "oil", "onion", "salt"],
+};
+
+console.log(fourthRecipe.title);
+console.log(`Serves: ${fourthRecipe.servings}`);
+console.log(`Ingredients:`);
+fourthRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
+let fifthRecipe = {
+  title: "chicken meckhni",
+  servings: 1,
+  ingredients: ["chicken", "single cream", "garlic", "garam masala", "ginger", "butter"],
+};
+
+console.log(fifthRecipe.title);
+console.log(`Serves: ${fifthRecipe.servings}`);
+console.log(`Ingredients:`);
+fifthRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
