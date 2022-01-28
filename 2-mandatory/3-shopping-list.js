@@ -20,8 +20,13 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
-}
-
+   let shoppingList = {};
+   shoppingList.name = recipe.name;
+   shoppingList.items = recipe.ingredients.filter(
+     (el) => !pantry.fridgeContents.includes(el) && !pantry.cupboardContents.includes(el)
+   );
+   return shoppingList;
+   }
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
