@@ -21,12 +21,12 @@ let basketballTeam = {
 */
 
 // write code here
-
-
+ let topPlayersBasketball = basketballTeam["topPlayers"];
+console.log(topPlayersBasketball);
 /* EXPECTED RESULT
 
   Dennis Rodman
-  Michael Jordan
+  Michael Jordan 
   Scottie Pippen
 
 */
