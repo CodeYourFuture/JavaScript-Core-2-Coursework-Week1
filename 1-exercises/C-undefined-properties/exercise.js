@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// We have not define colour yet!
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,7 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+// we didn't define variable as firstName or we used wrongly firstName instead of name.
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +37,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// The function is not returning anything, we can use console.log inside of function or write return before the statement.
