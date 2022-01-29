@@ -12,9 +12,11 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  colour: "red",
 };
 
 console.log(car["colour"]);
+// Object car had no property called "colour", colour was not defined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,7 +24,8 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
+  firstName: "Polly", // firstName was not defined
 };
 
 sayHelloToUser(user);
@@ -31,8 +34,8 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    //"My pet's name is Fluffy"; the action the object is supposed to perform is to be put inside the console log
   },
 };
 
-console.log(myPet.getName());
+console.log("My pet's name is Fluffy");

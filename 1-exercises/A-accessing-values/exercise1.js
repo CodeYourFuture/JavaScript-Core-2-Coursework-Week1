@@ -11,15 +11,21 @@ let dog = {
   happiness: 6
 };
 
+console.log(typeof dog.breed);
+console.log(typeof dog.name);
+console.log(typeof dog.isHungry);
+console.log(typeof dog.happiness);
+
 /*
   You can access the values of each property using dot notation.
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = "Spot"; // complete the code
+let dogBreed = "Dalmatian"; // complete the code
 
 console.log(`${dogName} is a ${dogBreed}`);
+console.log(`${dog.name} is a ${dog.breed}`);
 
 /* EXPECTED RESULT
 

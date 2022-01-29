@@ -9,7 +9,7 @@ let capitalCities = {
   China: "Beijing",
   Peru: "Lima"
 };
-
+console.log(capitalCities["UnitedKingdom"]);
 /*
   You have an object, capitalCities, that contains key/value pairs of countries and their capital cities.
   Log the value for the property assigned to the variable myCountry using bracket notation.
@@ -17,7 +17,7 @@ let capitalCities = {
 */
 
 let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+let myCapitalCity = "London"; // complete the code
 
 console.log(myCapitalCity);
 
