@@ -22,7 +22,7 @@ function createShoppingList(recipe) {
 
   let itemsToBuy = {};
   itemsToBuy.name = recipe.name;
-  itemsToBuy.items = recipe.ingredients.filter(item => !(pantry.fridgeContents.includes(item) || pantry.cupboardContents.includes(item)))
+  itemsToBuy.items = recipe.ingredients.filter(item => !pantry.fridgeContents.includes(item) && !pantry.cupboardContents.includes(item))
 
   return itemsToBuy;
 }
