@@ -15,11 +15,13 @@ let car = {
 };
 
 console.log(car["colour"]);
+// "colour" is being logged as a key, but it hasn't been added to the object, hence - it is undefined.
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+//Object key is "name", not "firstName".
 
 let user = {
   name: "Mira"
@@ -34,5 +36,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+// function does not return anything.
 console.log(myPet.getName());

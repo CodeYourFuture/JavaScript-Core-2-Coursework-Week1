@@ -23,6 +23,11 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000;
+capitalCities.Peru = new Object();
+capitalCities.Peru.name = "Lima";
+capitalCities.Peru.population = 975000;
 
 console.log(capitalCities);
 
