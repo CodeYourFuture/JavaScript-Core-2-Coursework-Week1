@@ -20,6 +20,20 @@ const COUNTRY_CURRENCY_CODES = [
 const createLookup = (countryCurrencyCodes) =>
   Object.fromEntries(countryCurrencyCodes);
 
+// SOLUTION
+
+// function createLookup(countryCurrencyCodes) {
+//   let currencyCodeLookup = {};
+
+//   for (let countryCurrencyCode of countryCurrencyCodes) {
+//     let countryCode = countryCurrencyCode[0];
+//     let currencyCode = countryCurrencyCode[1];
+//     currencyCodeLookup[countryCode] = currencyCode;
+//   }
+
+//   return currencyCodeLookup;
+// }
+
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

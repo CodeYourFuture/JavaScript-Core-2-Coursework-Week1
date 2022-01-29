@@ -21,112 +21,81 @@
 
   You should write and log at least 5 recipes
 */
-
-let favoriteRecipe = {
-  Title: "Jelly",
-  Serves: 3,
-  Ingredients: ["hot water", "cold water", "jelly", "sugar"],
+const recipe = {
+  favoriteRecipe: {
+    Title: "Jelly",
+    Serves: 3,
+    Ingredients: ["hot water", "cold water", "jelly", "sugar"],
+  },
+  favoriteRecipe2: {
+    Title: "Rice",
+    Serves: 5,
+    Ingredients: ["hot water", "rice", "salt", "pan"],
+  },
+  favoriteRecipe3: {
+    Title: "Tea",
+    Serves: 1,
+    Ingredients: ["hot water", "tea", "sugar", "mug"],
+  },
+  favoriteRecipe4: {
+    Title: "Pasta",
+    Serves: 6,
+    Ingredients: ["hot water", "pasta", "salt", "pan", "tomato pure"],
+  },
+  favoriteRecipe5: {
+    Title: "Fruit Salad",
+    Serves: 6,
+    Ingredients: ["water", "fruits", "sugar", "bowl"],
+  },
 };
 
-console.log(favoriteRecipe.Title);
-console.log(`Serves: ${favoriteRecipe.Serves}`);
-console.log("Ingredients:");
-let ingred = favoriteRecipe.Ingredients;
-ingred.forEach((e) => console.log(e));
-
+for (let item of Object.entries(recipe)) {
+  console.log(item[1]["Title"]);
+}
 /*
 Jelly
+Rice
+Tea
+Pasta
+Fruit Salad
+*/
+
+for (let item of Object.entries(recipe)) {
+  console.log("Serves: " + item[1]["Serves"]);
+}
+/*
 Serves: 3
-Ingredients:
+Serves: 5
+Serves: 1
+Serves: 6
+Serves: 6
+*/
+
+console.log("Ingredients:"); // Ingredients:
+
+for (let item of Object.entries(recipe)) {
+  let ing = item[1]["Ingredients"]; // first I found the key from the object, but it come inside an array
+  ing.forEach((e) => console.log(e)); // to return out of an array, each one in one line need to put it in forEach
+}
+/*
+
 hot water
 cold water
 jelly
 sugar
-*/
-
-let favoriteRecipe2 = {
-  Title: "Rice",
-  Serves: 5,
-  Ingredients: ["hot water", "rice", "salt", "pan"],
-};
-
-console.log(favoriteRecipe2.Title);
-console.log(`Serves: ${favoriteRecipe2.Serves}`);
-console.log("Ingredients:");
-let ingred2 = favoriteRecipe2.Ingredients;
-ingred2.forEach((e) => console.log(e));
-
-/*
-Rice
-Serves: 5
-Ingredients:
 hot water
 rice
 salt
 pan
-*/
-
-let favoriteRecipe3 = {
-  Title: "Tea",
-  Serves: 1,
-  Ingredients: ["hot water", "tea", "sugar", "mug"],
-};
-
-console.log(favoriteRecipe3.Title);
-console.log(`Serves: ${favoriteRecipe3.Serves}`);
-console.log("Ingredients:");
-let ingred3 = favoriteRecipe3.Ingredients;
-ingred3.forEach((e) => console.log(e));
-
-/*
-Tea
-Serves: 1
-Ingredients:
 hot water
 tea
 sugar
 mug
-*/
-
-let favoriteRecipe4 = {
-  Title: "Pasta",
-  Serves: 6,
-  Ingredients: ["hot water", "pasta", "salt", "pan", "tomato pure"],
-};
-
-console.log(favoriteRecipe4.Title);
-console.log(`Serves: ${favoriteRecipe4.Serves}`);
-console.log("Ingredients:");
-let ingred4 = favoriteRecipe4.Ingredients;
-ingred4.forEach((e) => console.log(e));
-
-/*
-Pasta
-Serves: 6
-Ingredients:
 hot water
 pasta
 salt
 pan
 tomato pure
-*/
-
-let favoriteRecipe5 = {
-  Title: "Fruit Salad",
-  Serves: 6,
-  Ingredients: ["water", "fruits", "sugar", "bowl"],
-};
-
-console.log(favoriteRecipe5.Title);
-console.log(`Serves: ${favoriteRecipe5.Serves}`);
-console.log("Ingredients:");
-let ingred5 = favoriteRecipe5.Ingredients;
-ingred5.forEach((e) => console.log(e));
-
-/*
-Fruit Salad
-Serves: 6
-Ingredients:
 water
 fruits
 sugar

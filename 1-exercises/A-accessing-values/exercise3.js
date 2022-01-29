@@ -30,3 +30,11 @@ topPlayersArray.sort().forEach((element) => console.log(element));
   Scottie Pippen
 
 */
+
+// ### SOLUTION ###
+
+// let sortedPlayers = basketballTeam.topPlayers.sort();
+
+// sortedPlayers.forEach((player) => {
+//   console.log(player);
+// });
