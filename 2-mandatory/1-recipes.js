@@ -23,3 +23,37 @@
 */
 
 // write code here
+
+let recipes = {
+  recipe1 = {
+  title: "Mutton Stew",
+  servings: 5,
+  ingredients: ["Diced Mutton", "Onions", "Carrots", "Leeks", "Beef Stock", "Tomato Puree", "Red Wine"],
+  },
+
+  recipe2 = {
+    title: "Carbonara",
+    servings: 4,
+    ingredients: ["Tangliatelle", "Eggs", "Parmiggianno", "Bacon Lardons", "Salt", "Pepper"],
+  },
+
+  recipe3 = {
+    title: "Cheese & Crackers",
+    servings: 1,
+    ingredients: ["Cheese", "Butter", "Crackers"],
+  },
+
+  recipe4 = {
+    title: "Steak & Mash",
+    servings: 1,
+    ingredients: ["Flat-Iron Steak", "Potatoes", "Seasoning", "Cheese"],
+  },
+
+  recipe5 = {
+    title: "The Cleaner",
+    servings: 1,
+    ingredients: ["Lemon Juice", "Diced Ginger", "Honey", "Chilli Flakes", "Boiled Water", "Rum, or Whiskey"],
+  }
+};
+
+console.log(recipes)
