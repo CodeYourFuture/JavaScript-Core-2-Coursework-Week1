@@ -16,8 +16,8 @@ let capitalCities = {
   Do not use dot notation for this exercise!
 */
 
-let myCountry = capitalCities["UnitedKingdom"];
-let myCapitalCity = myCountry; // complete the code
+let myCountry = "UnitedKingdom";
+let myCapitalCity = capitalCities[myCountry]; // complete the code
 
 console.log(myCapitalCity);
 
