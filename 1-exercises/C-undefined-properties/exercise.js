@@ -14,15 +14,15 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //there is no colour key defined.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //firstName is not in the properties. 
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira" // "name" key needs to be replaced with "firstName".
 };
 
 sayHelloToUser(user);
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; // Function doesn't return anything.
   },
 };
 
