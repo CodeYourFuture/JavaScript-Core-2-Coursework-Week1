@@ -27,6 +27,10 @@ capitalCities.China.population = 21500000;
 capitalCities.Peru = {};
 capitalCities.Peru.name = "Lima";
 capitalCities.Peru.population = 9750000;
+//capitalCities.Peru = {
+//  name: "Lima"
+//  population: 9750000}
+//I can assign new key to the object all together
 
 console.log(capitalCities);
 

@@ -15,7 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]); 
-//key is not present in the object, a programmer would write this code to find out if color has been added 
+//key is not present in the object, a programmer would write this code wants to find out if color has been added 
 
 // Example 2
 function sayHelloToUser(user) {

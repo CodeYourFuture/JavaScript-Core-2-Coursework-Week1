@@ -23,7 +23,8 @@ student["attendance"] = 90;
   - Use bracket notation to change the value of hasPassed
 */
 
-student.attendance > 60 ? student.hasPassed = true : false;
+student.attendance >=90 && student.examScore > 60 ? student.hasPassed = true : false;
+//corrected code
 
 console.log(student);
 

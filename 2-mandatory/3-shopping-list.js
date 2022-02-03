@@ -18,20 +18,32 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  let shoppingList = {};
-  shoppingList.items = [];
-  shoppingList.name = recipe.name;
-  for (let ingredient of recipe.ingredients) {
-    if (
-      !pantry.cupboardContents.includes(ingredient) &&
-      !pantry.fridgeContents.includes(ingredient)
-    ) {
-      shoppingList.items.push(ingredient);
-    }
-  }
-  return shoppingList;
+ function createShoppingList(recipe) {
+   let shoppingList = {};
+   shoppingList.items = [];
+   shoppingList.name = recipe.name;
+   for (let ingredient of recipe.ingredients) {
+     if (
+       !pantry.cupboardContents.includes(ingredient) &&
+       !pantry.fridgeContents.includes(ingredient)
+     ) {
+       shoppingList.items.push(ingredient);
+     }
+   }
+   return shoppingList;
 }
+//  function createShoppingList(recipe) {
+//     let shoppingList = recipe.ingredients.filter(ingredient => {
+//       return !pantry.cupboardContents.includes(ingredient) && !pantry.fridgeContents.includes(ingredient)
+//     }
+//     );
+//   return {
+//     name: recipe.name,
+//     items: shoppingList
+//   }
+//  }
+// REPLACING FOR IF WITH .filter & returning object assigning keys directly in return
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

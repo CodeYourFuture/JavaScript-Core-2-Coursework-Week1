@@ -52,6 +52,8 @@ let recipeCard = [
 
 recipeCard.forEach((recipe) => {
   console.log(recipe.title);
-  console.log(recipe.servings);
+  console.log(`Serves: ${recipe.servings}`);
   recipe.ingredients.forEach((ingredient) => console.log(ingredient));
+  console.log("\n")
 });
+//added next line for better readability
