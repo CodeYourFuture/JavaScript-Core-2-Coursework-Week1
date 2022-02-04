@@ -28,8 +28,11 @@ let myFavoriteRecipe = {
   Serves: 1,
   Ingredients: ['rice', 'tomatoes', 'chicken', 'olive oil', 'herbs']
 }
-Object.entries(myFavoriteRecipe).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`.replace(/,/g, " "));
+console.log(myFavoriteRecipe.Title);
+console.log(`Serves: ${myFavoriteRecipe.Serves}`);
+console.log("Ingredients:");
+myFavoriteRecipe.Ingredients.forEach((ingredient) => {
+  console.log(ingredient);
 });
 
 let FavoriteRecipe = {
@@ -37,8 +40,11 @@ let FavoriteRecipe = {
   Serves: 2,
   Ingredients: ["plantain", "egg", "olive oil"],
 };
-Object.entries(FavoriteRecipe).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`.replace(/,/g, " "));
+console.log(FavoriteRecipe.Title);
+console.log(`Serves: ${FavoriteRecipe.Serves}`);
+console.log("Ingredients:");
+FavoriteRecipe.Ingredients.forEach((ingredient) => {
+  console.log(ingredient);
 });
 
 let anotherFavoriteRecipe = {
@@ -46,8 +52,11 @@ let anotherFavoriteRecipe = {
   Serves: 3,
   Ingredients: ["pepper", "beef", "seasoning"],
 };
-Object.entries(anotherFavoriteRecipe).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`.replace(/,/g, " "));
+console.log(anotherFavoriteRecipe.Title);
+console.log(`Serves: ${anotherFavoriteRecipe.Serves}`);
+console.log("Ingredients:");
+anotherFavoriteRecipe.Ingredients.forEach((ingredient) => {
+  console.log(ingredient);
 });
 
 let moreFavoriteRecipe = {
@@ -55,8 +64,11 @@ let moreFavoriteRecipe = {
   Serves: 4,
   Ingredients: ["cabbage", "egg", "carrot", "sweet corn", "cucumber", "mayonnaise"],
 };
-Object.entries(moreFavoriteRecipe).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`.replace(/,/g, " "));
+console.log(moreFavoriteRecipe.Title);
+console.log(`Serves: ${moreFavoriteRecipe.Serves}`);
+console.log("Ingredients:");
+moreFavoriteRecipe.Ingredients.forEach((ingredient) => {
+  console.log(ingredient);
 });
 
 let lastFavoriteRecipe = {
@@ -64,6 +76,9 @@ let lastFavoriteRecipe = {
   Serves: 5,
   Ingredients: ["beans", "egg", "olive oil", "bell pepper", "crayfish"],
 };
-Object.entries(lastFavoriteRecipe).forEach(([key, value]) => {
-  console.log(`${key}: ${value}`.replace(/,/g, " "));
+console.log(lastFavoriteRecipe.Title);
+console.log(`Serves: ${lastFavoriteRecipe.Serves}`);
+console.log("Ingredients:");
+lastFavoriteRecipe.Ingredients.forEach((ingredient) => {
+  console.log(ingredient);
 });
