@@ -41,6 +41,24 @@ function countWords(string) {
   return wordCount;
 }
 
+function countWordsVariant2(string) {
+  const wordCount = {};
+
+  let arrayOfWords = string.split(" ");
+
+  arrayOfWords.forEach((word) => {
+    if (word !== "") {
+      if (wordCount.hasOwnProperty(word)) {
+        wordCount[word] += 1;
+      } else {
+        wordCount[word] = 1;
+      }
+    }
+  });
+
+  return wordCount;
+}
+
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
