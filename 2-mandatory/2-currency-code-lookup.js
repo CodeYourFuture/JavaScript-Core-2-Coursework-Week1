@@ -7,9 +7,14 @@
   Write a function called createLookup that
     - takes COUNTRY_CURRENCY_CODES as an argument (remember, it's an array of arrays)
     - returns a new object where the keys are the country codes and the values are the currency codes
-    Hint: you'll need to use bracket notation to add new key/value pairs to the object
-*/
+      Hint: you'll need to use bracket notation to add new key/value pairs to the object
 
+ LOGIC: parametre array of arrays
+        returns a new object 
+
+
+*/
+//Key : values = which might be a string booleans, numbers
 const COUNTRY_CURRENCY_CODES = [
   ["GB", "GBP"],
   ["DE", "EUR"],
@@ -18,9 +23,18 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  //define a new object
+  countryObject = {};
+  //loops through the array (do not need .length in a for  of loop )
+  //country is small array in a the big array
+  for (country of countryCurrencyCodes) {
+    //in the new object we are setting adding a key for the first element = setting the value to the second element
+    countryObject[country[0]] = country[1];
+  }
+  return countryObject;
 }
 
+console.log(createLookup(COUNTRY_CURRENCY_CODES));
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

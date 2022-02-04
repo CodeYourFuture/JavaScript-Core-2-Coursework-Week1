@@ -14,13 +14,35 @@
 */
 
 let pantry = {
+  //Key : values = which might be a string booleans, numbers
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  return (
+    !pantry.fridgeContents.includes(ingredients) &&
+    !pantry.fridgeContents.includes(ingredients)
+  );
 }
+// object with two properties
+console.log(pantry.fridgeContents);
+console.log(pantry.cupboardContents);
+
+//_-------------------------------
+// let myRecipie = {
+//   //properties : values = stringe booleans, numbers
+//   title: `cake`,
+//   servings: 2,
+//   ingredients: [`cinnamon`, `cumin `, `cocoa`],
+// };
+
+// // data object. property
+// console.log(myRecipie.title);
+// console.log(`serves:` + myRecipie.servings);
+// console.log(`Ingredients:`);
+
+// for (ingredient of myRecipie.ingredients) console.log(ingredient);
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
@@ -43,11 +65,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });

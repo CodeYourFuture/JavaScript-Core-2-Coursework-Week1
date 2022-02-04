@@ -14,12 +14,27 @@
 
   Mole
   Serves: 2
-  Ingredients:
+  Ingredients: 
   cinnamon
   cumin
   cocoa
 
   You should write and log at least 5 recipes
+
+  LOGIC
+
 */
 
-// write code here
+let myRecipie = {
+  //Key : values = which might be a string booleans, numbers
+  title: `cake`,
+  servings: 2,
+  ingredients: [`cinnamon`, `cumin `, `cocoa`],
+};
+
+// data object. property
+console.log(myRecipie.title);
+console.log(`serves:` + myRecipie.servings);
+console.log(`Ingredients:`);
+
+for (ingredient of myRecipie.ingredients) console.log(ingredient);
