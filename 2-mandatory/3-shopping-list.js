@@ -25,7 +25,7 @@ function createShoppingList(recipe) {
     (e) =>
       !pantry.cupboardContents.includes(e) && !pantry.fridgeContents.includes(e)
   );
-  return (shoppingList = { name, items });
+  return { name, items };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
