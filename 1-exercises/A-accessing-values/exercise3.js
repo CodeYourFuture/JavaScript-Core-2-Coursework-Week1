@@ -20,10 +20,10 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-let playersArray = basketballTeam.topPlayers;
+let arr = basketballTeam.topPlayers;
 
 function getAlphabeticalOrder(arr) {
-  return playersArray.sort().join("\r\n");
+   console.log(arr.sort().join("\r\n"));
 }
 
 
