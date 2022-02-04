@@ -25,7 +25,7 @@ let cashRegister = {
     if (balance >= MENU.burger) {
       return balance - MENU.burger;
     } else {
-      return balance + " Transaction denied, insufficient balance";
+      return balance;
     }
   },
   orderFalafel: function (balance) {
@@ -33,7 +33,7 @@ let cashRegister = {
     if (balance >= MENU.falafel) {
       return  balance - MENU.falafel;
     } else {
-      return balance + " Transaction denied, insufficient balance";
+      return balance;
     }
   },
 };
