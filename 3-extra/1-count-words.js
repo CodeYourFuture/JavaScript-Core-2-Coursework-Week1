@@ -28,11 +28,14 @@ function countWords(string) {
 
   // write code here
 
-  stringArray = string.split(" ");
+  let stringArray = string.split(" ");
   if (string.length != 0) {
     for (let strng of stringArray) {
-      if (strng in wordCount) wordCount[strng] = wordCount[strng] + 1;
-      else wordCount[strng] = 1;
+      if (strng in wordCount) {
+        wordCount[strng] = wordCount[strng] + 1;
+      } else {
+        wordCount[strng] = 1;
+      }
     }
   }
 
