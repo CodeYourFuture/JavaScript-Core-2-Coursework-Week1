@@ -10,7 +10,7 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+  },
 };
 
 /*
@@ -23,6 +23,18 @@ let capitalCities = {
 */
 
 // write code here
+//UK
+capitalCities.UnitedKingdom.population = 8980000;
+
+//China
+capitalCities.China.population = 21500000;
+
+//Peru
+// - Add the country "Peru" to capitalCities object.
+// - Add a name of "Lima" to Peru's capital city.
+// - Add a population of 9750000 to Peru's capital city
+
+capitalCities[`Peru`] = { name: `Lima`, population: 9750000 };
 
 console.log(capitalCities);
 

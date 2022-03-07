@@ -5,7 +5,9 @@
     But usually, when you see undefined - it means something has gone wrong!
 
     Below are some examples of when you would see undefined when using objects.
-    For each example, can you explain why we are seeing undefined?
+    For each example, can you 
+    
+    explain why we are seeing undefined?
 */
 
 // Example 1
@@ -15,6 +17,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// colour is not declared as a property
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +25,19 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// firstName is not assigned ??
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// the method is not returning a value, so undefined returned

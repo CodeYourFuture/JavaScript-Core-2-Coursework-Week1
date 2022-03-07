@@ -6,7 +6,7 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*
@@ -16,6 +16,9 @@ let student = {
 */
 
 // write code here
+//attendance >= one statement and >= another statement
+student.hasPassed = student.attendance >= 90 && student.examScore >= 60;
+console.log(student);
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -27,6 +30,11 @@ let student = {
 
 // write code here
 
+//Is this inline???
+student[`attendance`] = 90;
+if (student["attendance"] >= 90 && student["examScore"] >= 60) {
+  student["hasPassed"] = true;
+}
 console.log(student);
 
 /* EXPECTED RESULT

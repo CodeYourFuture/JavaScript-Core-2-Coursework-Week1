@@ -30,19 +30,19 @@ console.log(pantry.fridgeContents);
 console.log(pantry.cupboardContents);
 
 //_-------------------------------
-// let myRecipie = {
-//   //properties : values = stringe booleans, numbers
-//   title: `cake`,
-//   servings: 2,
-//   ingredients: [`cinnamon`, `cumin `, `cocoa`],
-// };
+let myRecipie = {
+  //properties : values = stringe booleans, numbers
+  title: `cake`,
+  servings: 2,
+  ingredients: [`cinnamon`, `cumin `, `cocoa`],
+};
 
-// // data object. property
-// console.log(myRecipie.title);
-// console.log(`serves:` + myRecipie.servings);
-// console.log(`Ingredients:`);
+// data object. property
+console.log(myRecipie.title);
+console.log(`serves:` + myRecipie.servings);
+console.log(`Ingredients:`);
 
-// for (ingredient of myRecipie.ingredients) console.log(ingredient);
+for (ingredient of myRecipie.ingredients) console.log(ingredient);
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

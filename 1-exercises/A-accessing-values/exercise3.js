@@ -21,7 +21,13 @@ let basketballTeam = {
 */
 
 // write code here
-
+//sorting through a array inside the object
+basketballTeam.topPlayers.sort();
+// looping through the length of the array
+for (let i = 0; i < basketballTeam.topPlayers.length; i++) {
+  //printing out each name
+  console.log(basketballTeam.topPlayers[i]);
+}
 
 /* EXPECTED RESULT
 
