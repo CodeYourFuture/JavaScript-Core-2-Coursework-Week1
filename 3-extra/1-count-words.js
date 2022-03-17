@@ -24,12 +24,20 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
-  // write code here
-
-  return wordCount;
-}
+  const wordCounter = {};
+  const arrayOfWords = string.split(" ");
+  arrayOfWords.forEach((word) => {
+    if (word !== "") {
+      if (wordCounter.hasOwnProperty(word)) {
+        wordCounter[word] += 1;
+      } else {
+        wordCounter[word] = 1;
+      }
+    }
+  });
+  return wordCounter;
+}   /*The hasOwnProperty() method returns a boolean indicating whether the object has the specified 
+property as its own property (as opposed to inheriting it. */
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
@@ -46,9 +54,13 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Empty string", () => {
@@ -56,7 +68,11 @@ test("Empty string", () => {
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,

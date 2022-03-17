@@ -1,16 +1,16 @@
 /*
   You are at a restaurant that has two items on the menu, burger and falafel.
   The menu object includes these two items and their price.
-
-  You have an object cashRegister which handles charging for ordered items but it is missing some methods to do this.
-
+  You have an object cashRegister which handles charging for ordered items but 
+  it is missing some methods to do this.
   Add a method to the cashRegister object
     - the method name should be orderBurger
     - the method should take one argument called balance, which is a number
-    - the method should check if there is enough money in the balance to order a burger (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
-    - if there is enough money in the balance to order the burger, then the price of the burger should be subtracted from the balance
+    - the method should check if there is enough money in the balance to order a burger
+     (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
+    - if there is enough money in the balance to order the burger, then the price of 
+    the burger should be subtracted from the balance
     - the method should return the new balance
-
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
 
@@ -18,10 +18,43 @@ const MENU = {
   burger: 6.5,
   falafel: 7.25,
 };
+const cashRegister = {
+  orderBurger: function (balance) {
+    if (balance - MENU.burger >= 0) {
+      return balance - MENU.burger;
+    } else {
+      return balance;
+    }
+  },
+  orderFalafel: function (balance) {
+    if (balance - MENU.falafel >= 0) {
+      return balance - MENU.falafel;
+    } else {
+      return balance;
+    }
+  },
+};
 
+/*
 let cashRegister = {
-  // write code here
-}
+  orderBurger: function(balance) {
+    let finalBalance = balance;
+    let isBalanceBigEnough = balance - MENU.burger >= 0;
+    if (isBalanceBigEnough) {
+      finalBalance = balance - MENU.burger;
+    }
+    return finalBalance;
+  },
+  orderFalafel: function(balance) {
+    let finalBalance = balance;
+    let isBalanceBigEnough = balance - MENU.falafel >= 0;
+    if (isBalanceBigEnough) {
+      finalBalance = balance - MENU.falafel;
+    }
+    return finalBalance;
+  },
+};
+*/
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

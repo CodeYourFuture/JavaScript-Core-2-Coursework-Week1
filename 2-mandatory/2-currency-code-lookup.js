@@ -18,6 +18,26 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
+const currencyCodeChange = {};
+
+  for (let countryCurrencyCode of countryCurrencyCodes) {
+    let countryCode = countryCurrencyCode[0];
+    let currencyCode = countryCurrencyCode[1];
+    currencyCodeChange[countryCode] = currencyCode;
+  };
+
+  return currencyCodeChange;
+}
+
+/*
+const COUNTRY_CURRENCY_CODES = [
+  ["GB", "GBP"],
+  ["DE", "EUR"],
+  ["NG", "NGN"],
+  ["MX", "MXN"],
+];
+
+function createLookup(countryCurrencyCodes) {
     const newObject = {};
     for (const countryCurrency of countryCurrencyCodes) {
       const newKey = countryCurrency[0];
@@ -28,7 +48,7 @@ function createLookup(countryCurrencyCodes) {
     
   }
 
-
+*/
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

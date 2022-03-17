@@ -12,7 +12,24 @@
     - "name" of the recipe, which is a string,
     - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
+const pantry = {
+  fridgeContents: ["butter", "milk"],
+  cupboardContents: ["salt", "tinned tomatoes", "oregano"],
+};
 
+function createShoppingList(recipe) {
+  const missingIngredients = recipe.ingredients.filter(
+    (ingredient) => {
+      return !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)
+    }
+  );
+  return {
+    name: recipe.name,
+    items: missingIngredients,
+  }
+}
+
+/*
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
@@ -33,7 +50,7 @@ function createShoppingList(recipe) {
   };
   return objectToReturn;
 }
-
+*/
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
