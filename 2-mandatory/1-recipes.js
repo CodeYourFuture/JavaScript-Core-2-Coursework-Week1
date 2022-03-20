@@ -49,53 +49,47 @@
 
 // write code here
 let recipeOne = {
-  title: "My Pasta Recipe",
+  Title: "My Pasta Recipe",
   Serves: 5,
   Ingredients: ["Tomatoes", "Oil", "Salt", "Spaghetti"],
 };
 
-console.log(recipeOne.title);
-console.log("Serves:" + " " + "\n" + recipeOne.Serves);
-console.log("Ingredients:" + " " + "\n" + recipeOne.Ingredients.join("\n"));
-
 
 let recipeTwo = {
-  title: "Chocolate Cake",
+  Title: "My Chocolate Cake Recipe",
   Serves: 10,
   Ingredients: ["Flour", "Eggs", "Sugar", "Milk" , "Dark Chocolate"],
 };
 
-console.log(recipeTwo["title"]);
-console.log("Serves:" + " " + "\n" + recipeTwo["Serves"]);
-console.log("Ingredients:" + " " + "\n" + recipeTwo["Ingredients"].join("\n"));
 
 let recipeThree = {
-  title: "Summer Punch",
+  Title: "My Summer Punch Recipe",
   Serves: 6,
   Ingredients: ["Rum", "Lime", "Orange Juice", "Ice", "Liquor"],
 };
 
-console.log(recipeThree["title"]);
-console.log("Serves:" + " " + "\n" + recipeThree["Serves"]);
-console.log("Ingredients:" + " " + "\n" + recipeThree["Ingredients"].join("\n"));
-
 
 let recipeFour = {
-  title: "Grilled Chicken",
+  Title: "My Grilled Chicken Recipe",
   Serves: 10,
   Ingredients: ["Chicken Breast", "Carrots", "Onions", "Black Pepper", "Salt"],
 };
 
-console.log(recipeFour.title);
-console.log("Serves:" + " " + "\n" + recipeFour.Serves);
-console.log("Ingredients:" + " " + "\n" + recipeFour.Ingredients.join("\n"));
 
 let recipeFive = {
-  title: "Salad",
+  Title: "My Salad Recipe",
   Serves: 3,
   Ingredients: ["Lettuce", "Eggs", "Cream Salad", "Sweetcorn", "Mustard"],
 };
 
-console.log(recipeFive.title);
-console.log("Serves:" + " " + "\n" + recipeFive.Serves);
-console.log("Ingredients:" + " " + "\n" + recipeFive.Ingredients.join("\n"));
+const recipes = [recipeOne, recipeTwo, recipeThree, recipeFour, recipeFive];
+
+function myRecipeBook(recipes) {
+  recipes.forEach((recipe) => {
+    console.log(recipe.Title);
+    console.log("Serves:" + " " + "\n" + recipe.Serves);
+    console.log("Ingredients:" + " " + "\n" + recipe.Ingredients.join("\n"));
+  });
+}
+
+myRecipeBook(recipes);

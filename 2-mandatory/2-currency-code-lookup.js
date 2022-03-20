@@ -19,13 +19,9 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
 
-   for (const [key, value] of Object.entries(createLookup))
-     console.log(COUNTRY_CURRENCY_CODES[`${GB}: ${"GBP"}`]);
-     console.log(COUNTRY_CURRENCY_CODES[`${DE}: ${"EUR"}`]);
-     console.log(COUNTRY_CURRENCY_CODES[`${NG}: ${"NGN"}`]);
-     console.log(COUNTRY_CURRENCY_CODES[`${MX}: ${"MXN"}`]);
-
-  // write code here
+   for (let [key, value] of Object.entries(COUNTRY_CURRENCY_CODES)) {
+     console.log(`${key}: ${value}`);
+   }
 }
 createLookup();
 /* ======= TESTS - DO NOT MODIFY =====
