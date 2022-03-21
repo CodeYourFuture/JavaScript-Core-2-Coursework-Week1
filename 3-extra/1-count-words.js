@@ -31,7 +31,7 @@ function countWords(string) {
       if (wordCounter.hasOwnProperty(word)) {
         wordCounter[word] += 1;
       } else {
-        wordCounter[word] = 1;
+        wordCounter[word] = 1; 
       }
     }
   });
