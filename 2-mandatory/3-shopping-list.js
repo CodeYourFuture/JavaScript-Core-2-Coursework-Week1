@@ -20,6 +20,18 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
+  const missingItems = recipe.ingredients.filter((ingredient) => {
+    if (allIngredients.includes(ingredient)){
+    return false;
+  }
+    return true;
+  });
+  let newObject = {
+  name: recipe.name,
+  items: missingItems,
+};
+return newObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
