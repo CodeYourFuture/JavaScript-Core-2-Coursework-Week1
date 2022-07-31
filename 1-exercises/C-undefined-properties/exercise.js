@@ -14,12 +14,12 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //There is no value for the property colour.
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
-}
+} // there is no firstName property in the object user, only a name property.
 
 let user = {
   name: "Mira"
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+     "My pet's name is Fluffy";  // we have not set getName to return this string or used console.log so it returns undefined.
   },
 };
 
