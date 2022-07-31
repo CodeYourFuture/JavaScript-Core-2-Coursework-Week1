@@ -24,9 +24,21 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
+  
   // write code here
+  if (!string) {
+    return {};
+  }
+  const wordCount = {};
+  let words = string.split(' ');
+
+  for (let i = 0; i < words.length; i++){
+    if (!(words[i] in wordCount)) {
+      wordCount[words[i]] = 1;
+    } else {
+      wordCount[words[i]]++;
+    }
+  }
 
   return wordCount;
 }
