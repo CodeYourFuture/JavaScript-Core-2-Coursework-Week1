@@ -23,3 +23,12 @@
 */
 
 // write code here
+let favRecipe = {
+  title: "Mole",
+  servings: 2,
+  ingredient: ["cinnamon", "cumin", "cocoa"]
+}
+
+console.log(favRecipe.title);
+console.log(`Serves: ${favRecipe.servings}`);
+for(let item of favRecipe.ingredient) console.log(item);
