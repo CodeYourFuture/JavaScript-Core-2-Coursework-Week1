@@ -8,13 +8,10 @@
 */
 
 let student = {
-  name: "Anthony",
-  getName: function(name) {
-    console.log(`Student name: ${this.name}`);
-  }
+  getName: name => console.log(`Student name: ${name}`)
 }
 
-student.getName("Daniel");
+student.getName("Anthony");
 
 /* EXPECTED RESULT
 
