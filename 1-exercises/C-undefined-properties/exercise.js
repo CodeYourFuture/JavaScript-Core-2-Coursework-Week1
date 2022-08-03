@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);//this key isn't in object car;
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,14 +25,14 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);//the key in user object is name, not firstName;
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName());//it's missing return;

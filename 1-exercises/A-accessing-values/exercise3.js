@@ -12,7 +12,10 @@ let basketballTeam = {
     address: "1901 W Madison St",
   },
 };
-
+let players = basketballTeam.topPlayers.sort();
+for (let str of players) {
+  console.log(str);
+}
 /*
   Write code that
     - accesses the basketball team's top players array
