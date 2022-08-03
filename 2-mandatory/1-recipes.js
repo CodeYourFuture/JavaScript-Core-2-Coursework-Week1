@@ -23,3 +23,36 @@
 */
 
 // write code here
+const recipe = {
+  recipe1: {
+    Title: "Lasagna",
+    Serves: 3,
+    Ingredients: ['Penne', 'Ground Mince', 'cheese', 'milk'],
+  },
+  recipe2: {
+    Title: "Jamaican Jerk Chicken",
+    Serves: 5,
+    Ingredients: ['Chicken', 'chillies', 'onions', 'five-spice powder'],
+  },
+  recipe3: {
+    Title: "Flat white",
+    Serves: 1,
+    Ingredients: ['espresso','foam-milk','sugar'],
+  },
+  recipe4: {
+    Title: "Berry Blast Smoothie",
+    Serves: 1,
+    Ingredients: ['Bananas', 'mixed berries','yoghurt','milk','ice','honey'],
+  },
+  recipe5: {
+    Title: "BLAT Sandwich",
+    Serves: 2,
+    Ingredients:['French baguette', 'bacon', 'lettuce','tomato','mayo'],
+  }
+
+};
+console.log(recipe.recipe1);
+console.log(recipe.recipe2);
+console.log(recipe.recipe3);
+console.log(recipe.recipe4);
+console.log(recipe.recipe5);
