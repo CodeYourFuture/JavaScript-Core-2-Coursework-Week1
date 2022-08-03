@@ -21,7 +21,13 @@ let basketballTeam = {
 */
 
 // write code here
+let chicagoBestPlayer3 = basketballTeam.topPlayers[2];
+let chicagoBestPlayer2 = basketballTeam.topPlayers[0];
+let chicagoBestPlayer1 = basketballTeam.topPlayers[1];
 
+console.log(chicagoBestPlayer3);
+console.log(chicagoBestPlayer2);
+console.log(chicagoBestPlayer1);
 
 /* EXPECTED RESULT
 
