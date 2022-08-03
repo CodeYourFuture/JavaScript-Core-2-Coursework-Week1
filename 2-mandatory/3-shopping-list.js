@@ -19,7 +19,14 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let newObj = {};
+  let arr1 = pantry.fridgeContents.filter(i => recipe.ingredients.includes(i))//I filtred through fridge
+  let arr2 = pantry.cupboardContents.filter(j => recipe.ingredients.includes(j))//I filtred through cupboard
+  let arr3 = arr1.concat(arr2);//I put together what I found
+  let arr4 = recipe.ingredients.filter(k => !arr3.includes(k))//I removed what I already had (in fridge and cupboard) from 
+  newObj.name = recipe.name;
+  newObj.items = arr4;
+  return newObj;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
