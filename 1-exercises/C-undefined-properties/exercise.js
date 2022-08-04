@@ -36,3 +36,7 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// 1. Value does not have property assigned to it
+// 2. No object defined
+// 3. Function can't be inside object
