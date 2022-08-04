@@ -13,7 +13,7 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// example one is undefined because the object car does not have a colour.
 console.log(car["colour"]);
 
 // Example 2
@@ -24,7 +24,7 @@ function sayHelloToUser(user) {
 let user = {
   name: "Mira"
 };
-
+// example 2 is undefined because it is targeting the object and not the property within the object which has the users name.
 sayHelloToUser(user);
 
 // Example 3
@@ -34,5 +34,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+// in example 3 the function is not returning anything.
 console.log(myPet.getName());
