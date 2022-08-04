@@ -13,7 +13,7 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// colour is not a property of car
 console.log(car["colour"]);
 
 // Example 2
@@ -22,17 +22,17 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
-
+//targeting the object and not the property within the object which has the users name.
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
-
+//the function miss "return"
 console.log(myPet.getName());
