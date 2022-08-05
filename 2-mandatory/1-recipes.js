@@ -23,3 +23,12 @@
 */
 
 // write code here
+
+let recipe = {
+  Title: "Mac & Cheese",
+  Serves: 2,
+  Ingredients: ["Cheese", "Salt", "Pepper", "Flour"],
+};
+console.log(recipe.Title);
+console.log(recipe.Serves);
+console.log(recipe.Ingredients);
