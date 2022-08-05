@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // property does not exist
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +26,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+// wrong key passed in the console so the out put wil be hello undefined it should be console.log(`Hell ${user.name}`);
 
 // Example 3
 let myPet = {
@@ -35,4 +36,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // there is no return in the function
