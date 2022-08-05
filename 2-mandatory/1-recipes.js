@@ -23,3 +23,11 @@
 */
 
 // write code here
+
+let recipe = {
+  title: 'How to bake Cake',
+  servings: 6,
+  ingredients: ['Eggs', 'Flour', 'Yeast', 'Milk', 'Cocoa'],
+};
+
+console.log(recipe);

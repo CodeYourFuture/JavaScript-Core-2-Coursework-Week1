@@ -9,9 +9,11 @@
 
 let student = {
   // write code here
-}
+  getName: 'name',
+};
 
 student.getName("Daniel");
+console.log((student)('student name:'));
 
 /* EXPECTED RESULT
 
