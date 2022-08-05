@@ -8,10 +8,13 @@
 */
 
 let student = {
-  // write code here
+  name : "Daniel",
+ getName: function () {
+    return "Student name: " + this.name;
+ // write code here
 }
-
-student.getName("Daniel");
+}
+ console.log(student.getName("Daniel"));
 
 /* EXPECTED RESULT
 
