@@ -9,6 +9,7 @@
 */
 
 // Example 1
+//The property name 'color' is assigned in console.log but it doesn't exist in our object literal
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -17,6 +18,7 @@ let car = {
 console.log(car["colour"]);
 
 // Example 2
+// The console.log should be outside the function and also the comma should be added after the value Mira of the property name.
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }

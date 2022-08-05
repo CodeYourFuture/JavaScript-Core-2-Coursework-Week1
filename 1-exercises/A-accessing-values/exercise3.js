@@ -21,8 +21,11 @@ let basketballTeam = {
 */
 
 // write code here
+let basketballTopPlayers = ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"];
 
-
+console.log(basketballTopPlayers[2]);
+console.log(basketballTopPlayers[0]);
+console.log(basketballTopPlayers[1]);
 /* EXPECTED RESULT
 
   Dennis Rodman
