@@ -13,7 +13,7 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// the object car doesn't have property called caller
 console.log(car["colour"]);
 
 // Example 2
@@ -24,7 +24,7 @@ function sayHelloToUser(user) {
 let user = {
   name: "Mira"
 };
-
+// The object user does't have property called firstName
 sayHelloToUser(user);
 
 // Example 3
@@ -34,5 +34,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+// The string inside the function is return or printed on the screen 
 console.log(myPet.getName());
