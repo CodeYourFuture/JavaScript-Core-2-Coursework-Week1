@@ -13,19 +13,18 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
 console.log(car["colour"]);
+// there is no colour property being declare
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
 let user = {
   name: "Mira"
 };
-
 sayHelloToUser(user);
+// there is no property with firstName, only name
 
 // Example 3
 let myPet = {
@@ -34,5 +33,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
 console.log(myPet.getName());
+// function is not complete, getName is not declared
