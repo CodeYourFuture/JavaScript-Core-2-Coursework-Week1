@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["color"]);
 
 // Example 2
 function sayHelloToUser(user) {
