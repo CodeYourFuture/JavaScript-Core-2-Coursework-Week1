@@ -23,3 +23,16 @@
 */
 
 // write code here
+let recipe = {
+  title: "Mole",
+  servings: "Serves:" + 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+console.log(recipe.title);
+console.log(recipe.servings);
+
+// array
+console.log("Ingredients:");
+console.log(`${recipe.ingredients[0]}`);
+console.log(`${recipe.ingredients[1]}`);
+console.log(`${recipe.ingredients[2]}`);
