@@ -21,8 +21,28 @@ let basketballTeam = {
 */
 
 // write code here
+top1 = [
+  basketballTeam.topPlayers[2],
+  basketballTeam.topPlayers[0],
+  basketballTeam.topPlayers[1],
+];
 
+// let text = "";
+// for (let i = 0; i < top1.length; i++) {
+//   text += basketballTeam.topPlayers[i];
+// }
 
+// let text2 = "";
+// for (let i = 0; i < basketballTeam.topPlayers.length; i++) {
+//   text2 += basketballTeam.topPlayers[i];
+// }
+// // ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
+// // console.log(basketballTeam.topPlayers[i]);
+// console.log(text2);
+
+console.log(top1[0]);
+console.log(top1[1]);
+console.log(top1[2]);
 /* EXPECTED RESULT
 
   Dennis Rodman

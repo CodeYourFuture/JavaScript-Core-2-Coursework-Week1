@@ -23,7 +23,12 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000; //step 1
+capitalCities.China.population = 21500000; //ste2
 
+capitalCities.Peru = {}; //step3
+capitalCities.Peru.name = "Lima"; //step4
+capitalCities.Peru.population = 9750000;
 console.log(capitalCities);
 
 /* EXPECTED RESULT
