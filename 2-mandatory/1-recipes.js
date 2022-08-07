@@ -23,3 +23,36 @@
 */
 
 // write code here
+
+let  recipes = {
+  roastBeef :{
+    title : `Roast beef`,
+    servings: 6,
+    ingredients:["peppercorn" ,"dried thyme", " English mustard powder" , " 8oz topside joint of beef","celery seeds", " olive oil"]
+    },
+  CherryAlmond :{
+    title : `Cherry & almond tarts`,
+    servings: 12,
+    ingredients:["eggs" ," self-raising flour", "cherry jam" , "softened","ground almond"]
+    },
+  RoastLamb :{
+    title : `Roast lamb`,
+    servings: 8,
+    ingredients:["carrots" ,"onion", "small bunch parsley" ,"thyme leaf", "lemon"]
+    },
+    Scampi :{
+    title : `Scampi with tartare sauce`,
+    servings: 2,
+    ingredients:["cornflour" ,"sparkling water", "beer" ,"Dublin Bay prawn tails", " olive oil"]
+    }
+}
+function printOut(meals) {
+console.log( recipes[meals]["title"]);
+console.log("Serves: " +  recipes[meals]["servings"]);
+console.log(" Ingredients:" + recipes[meals]["ingredients"].map(x=> x + " \n "));  
+}
+
+printOut("roastBeef");
+printOut("CherryAlmond");
+printOut("RoastLamb");
+printOut("Scampi"); 
