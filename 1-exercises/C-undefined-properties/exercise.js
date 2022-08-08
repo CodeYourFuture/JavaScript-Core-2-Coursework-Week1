@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//this is undefined, besides that the property is not yet there, it also has no value assigned to it.there is no property colour of car
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,21 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+//property of user is defined as name not firstName hence it is logging undefined
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+//the function does not return anything and there is no purpose in leaving the string just so. so it runs the getName() method and then nothing occurs, and hence the undefined. A simple way to fix this would be returning the string.
