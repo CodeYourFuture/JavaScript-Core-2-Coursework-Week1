@@ -5,10 +5,10 @@
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian", // string
+  name: "Spot", // String
+  isHungry: true, // Boleean
+  happiness: 6 // number
 };
 
 /*
@@ -16,8 +16,8 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = "Spot"; // complete the code
+let dogBreed = "Dalmatian"; // complete the code
 
 console.log(`${dogName} is a ${dogBreed}`);
 
