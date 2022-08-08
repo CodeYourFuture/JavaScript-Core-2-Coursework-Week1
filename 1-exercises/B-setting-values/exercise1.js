@@ -10,7 +10,7 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+  },
 };
 
 /*
@@ -23,6 +23,20 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000;
+
+//This solution commented out is my first iteration and actually works like a bomb.
+// capitalCities.Peru = {};
+// capitalCities.Peru.name = "Lima";
+// capitalCities.Peru.population = 9750000;
+
+//This code below is another amazing solution on my second iteration and worked.
+//Give it a try by testing it in the Terminal.
+capitalCities.Peru = {
+  name: "Lima",
+  population: 9750000,
+};
 
 console.log(capitalCities);
 
