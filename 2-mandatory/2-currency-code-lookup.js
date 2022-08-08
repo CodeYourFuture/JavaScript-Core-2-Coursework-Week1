@@ -19,6 +19,13 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  let COUNTRY_CURRENCY_CODES_OBJECT = {};
+
+  for (outerIndex in countryCurrencyCodes){
+    COUNTRY_CURRENCY_CODES_OBJECT[countryCurrencyCodes[outerIndex][0]] = countryCurrencyCodes[outerIndex][1];
+  }
+
+  return COUNTRY_CURRENCY_CODES_OBJECT;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
