@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//This code logs undefined because firstly the property ["colour"] in the console.log was not set and no property can be added to an object without assigning any value to the property.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,20 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// In the code above, in the console.log, the property: user is not called properly. This log refers to a property name that does not exist. Being "user.firstName", instead of "user", it's proper variable.
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//This code above has a method called getName and the function assigned to method, does not return it's
+//message or result. Therefore when this method is called in the log, it logs "undefined".
