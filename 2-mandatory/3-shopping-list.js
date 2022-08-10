@@ -19,7 +19,7 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
-  let missingItems = recipe.ingredients.filter(item => !pantry.fridgeContents.includes(item) && !pantry.cupboardContents.includes(item));
+  let missingItems = recipe.ingredients.filter(item => pantry.fridgeContents.indexOf(item) === -1 && pantry.cupboardContents.indexOf(item) === -1);
   let newObj = {};
   newObj.name = recipe.name;
   newObj.items = missingItems;
