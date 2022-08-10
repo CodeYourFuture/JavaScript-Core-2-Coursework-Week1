@@ -12,7 +12,6 @@
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
-
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
@@ -20,6 +19,11 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let missingItems = recipe.ingredients.filter(item => pantry.fridgeContents.indexOf(item) === -1 && pantry.cupboardContents.indexOf(item) === -1);
+  let newObj = {};
+  newObj.name = recipe.name;
+  newObj.items = missingItems;
+  return newObj;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
