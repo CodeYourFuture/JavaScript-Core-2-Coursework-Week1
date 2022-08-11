@@ -20,6 +20,11 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  return recipe = {
+    name: pancakes,
+    ingredients: []
+
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

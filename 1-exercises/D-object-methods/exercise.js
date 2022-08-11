@@ -9,7 +9,9 @@
 
 let student = {
   // write code here
-  function getName([a])
+  function getName([a]){
+    return [a]
+  }
 }
 
 student.getName("Daniel");
