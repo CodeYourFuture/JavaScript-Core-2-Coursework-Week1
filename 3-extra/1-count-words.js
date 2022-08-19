@@ -27,16 +27,18 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
+  if (!string) {
+    return wordCount;
+  }
   let x = string.split(" ");
   let value = 0;
-  let key = 0;
-
+  let key = [];
   for (let i = 0; i <= x.length - 1; i++) {
     value = x.filter(function (value) {
       return value == x[i];
     }).length;
 
-    key = x[i];
+    let key = x[i];
     wordCount[key] = value;
   }
 
