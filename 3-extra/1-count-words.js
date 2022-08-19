@@ -27,7 +27,7 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
-  let x = str.split(" ");
+  let x = string.split(" ");
   let value = 0;
   let key = 0;
 
