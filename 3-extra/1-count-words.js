@@ -31,7 +31,7 @@ function countWords(string) {
   let value = 0;
   let key = 0;
 
-  for (let i = 0; i < x.length - 1; i++) {
+  for (let i = 0; i <= x.length - 1; i++) {
     value = x.filter(function (value) {
       return value == x[i];
     }).length;
