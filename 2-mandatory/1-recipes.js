@@ -23,3 +23,42 @@
 */
 
 // write code here
+let recipes = {
+  fish: {
+    title: "Fish & Chips",
+    servings: 4,
+    ingredients: ["Fish", "Potatoes", "Oil", "Salt", "Vinegar"],
+  },
+  chicken: {
+    title: "Chicken Stew",
+    servings: 5,
+    ingredients: [
+      "6 to 8 pieces of chicken",
+      "Salt and pepper",
+      "2 onions",
+      "2 garlic cloves",
+      "3 large carrots",
+      "1/2 cup (125 ml) white wine (or water)",
+      "3 tbsp (35g) flour",
+      "4 large potatoes ones",
+    ],
+  },
+  Beef: {
+    title: "Beef Pot Roast",
+    serving: 6,
+    ingredients: [
+      "2 kg / 4 lb beef chuck roast ",
+      "2 tbsp olive oil",
+      "1 onion (large)",
+      "5 garlic cloves",
+      "5 carrots",
+      "1 cup (250ml) dry red wine",
+    ],
+  },
+};
+
+const keys = Object.keys(recipes);
+
+for (let key of keys) {
+  console.log(recipes[key]);
+}
