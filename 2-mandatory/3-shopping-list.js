@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -19,7 +19,16 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let result = recipe.ingredients.filter(
+    (element) =>
+      !pantry.fridgeContents.includes(element) &&
+      !pantry.cupboardContents.includes(element)
+  );
+  let finalList = {
+    name: recipe.name,
+    items: result,
+  };
+  return finalList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -43,11 +52,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
