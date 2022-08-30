@@ -19,6 +19,8 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  const newCode = Object.fromEntries(countryCurrencyCodes);
+  return newCode;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
