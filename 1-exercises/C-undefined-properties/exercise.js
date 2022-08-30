@@ -36,3 +36,7 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// 1. color is not defined
+// 2. firstName is not defined
+// 3. console.log is missing

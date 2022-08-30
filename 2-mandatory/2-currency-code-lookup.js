@@ -17,9 +17,10 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
+// function createLookup(countryCurrencyCodes) {}
   // write code here
-}
+  object = Object.assign(...COUNTRY_CURRENCY_CODES.map(([k, v]) => ({ [k]: v })));
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`

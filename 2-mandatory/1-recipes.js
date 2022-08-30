@@ -23,3 +23,14 @@
 */
 
 // write code here
+let myRecipe = {
+  title: 'Mole',
+  servings: 2,
+  ingredients: ['Ingredients:', 'cinnamon', 'cumin', 'cocoa'],
+};
+ console.log(myRecipe.title)
+ console.log('serves:' + " " + myRecipe.servings)
+ myRecipe.ingredients.forEach(element => console.log(element));
+// for(let key in myRecipe){
+//   console.log(myRecipe[key]);
+// }

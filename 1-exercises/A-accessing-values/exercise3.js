@@ -21,7 +21,9 @@ let basketballTeam = {
 */
 
 // write code here
-
+console.log(basketballTeam.topPlayers[2])
+console.log(basketballTeam.topPlayers[0])
+console.log(basketballTeam.topPlayers[1])
 
 /* EXPECTED RESULT
 
