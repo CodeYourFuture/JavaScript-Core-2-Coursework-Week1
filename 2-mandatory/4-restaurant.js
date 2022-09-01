@@ -21,6 +21,18 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  orderBurger: function(balance){
+    if(balance > 0){
+      console.log('order a burger');
+      return balance - MENU['burger'];
+    }
+    return balance;
+  },
+  orderFalafel: function(){
+    for(let key in cashRegister){
+      console.log('order ' + cashRegister[key]);
+    }
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

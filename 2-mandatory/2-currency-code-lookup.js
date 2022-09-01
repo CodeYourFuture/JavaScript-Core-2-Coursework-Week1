@@ -19,7 +19,16 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
-}
+ let code = countryCurrencyCodes.reduce((acc, curr) =>{
+    let key = curr[0];
+    let value = curr[1];
+     acc[key] = value;
+    return acc;
+  },{})
+return code;
+};
+
+console.log(createLookup(COUNTRY_CURRENCY_CODES));
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
