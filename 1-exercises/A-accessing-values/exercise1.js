@@ -16,13 +16,20 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = dog.name; // complete the code
+let dogBreed = dog.breed; // complete the code
 
-console.log(`${dogName} is a ${dogBreed}`);
+
 
 /* EXPECTED RESULT
 
   Spot is a Dalmatian
 
 */
+/*
+ breed and name are string, 
+  isHungry is a boolean,
+  happiness is a number,  
+*/
+
+console.log(`${dogName} is a ${dogBreed}`);

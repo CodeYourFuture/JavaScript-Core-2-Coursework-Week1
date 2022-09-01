@@ -15,11 +15,13 @@ let car = {
 };
 
 console.log(car["colour"]);
+//This returns undefined because the object car doesn't have the property colour;
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+//This returns undefined because the parameter in the function refers to an object that doesn't have the property assigned in the function body;
 
 let user = {
   name: "Mira"
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// Undefined because the function doesn't have a return statement;
