@@ -15,7 +15,8 @@ let capitalCities = {
 
 /*
   Using dot notation:
-    - Change the value of UnitedKingdom's capital city population to 8980000.
+    - Change the value of 
+    UnitedKingdom's capital city population to 8980000.
     - Add the property for population to China's capital city and set the value to 21500000.
     - Add the country "Peru" to capitalCities object.
     - Add a name of "Lima" to Peru's capital city.
@@ -23,6 +24,10 @@ let capitalCities = {
 */
 
 // write code here
+
+capitalCities.population = 8980000;
+console.log(capitalCities.population);
+
 
 console.log(capitalCities);
 

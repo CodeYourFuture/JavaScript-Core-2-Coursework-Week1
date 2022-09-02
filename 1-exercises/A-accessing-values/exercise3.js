@@ -22,6 +22,9 @@ let basketballTeam = {
 
 // write code here
 
+const basketballTeamtopPlayers = ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"];
+
+console.log(basketballTeam.topPlayers);
 
 /* EXPECTED RESULT
 
