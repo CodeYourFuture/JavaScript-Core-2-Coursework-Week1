@@ -15,7 +15,10 @@ let student = {
     - Set the value of attendance to 90
 */
 
-// write code here
+student['attendance'] = 90; 
+if (student.attendance >= 90) {
+  student.hasPassed = true;
+} // write code here
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
