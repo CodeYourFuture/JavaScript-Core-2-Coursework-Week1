@@ -54,9 +54,38 @@ let recipeFavs = {
  },
  }
  
- console.log(recipeFavs.pizza);
- console.log(recipeFavs.kentucky);
- console.log(recipeFavs.steers);
- console.log(recipeFavs.gatspy);
- console.log(recipeFavs.wimpyBreakfeast);
+ console.log(recipeFavs.pizza.title);
+ console.log(`servings: ${recipeFavs.pizza.servings}`);
+ console.log('ingredients: ')
+ recipeFavs.pizza.ingredients.forEach((ingredient) => {
+     console.log(ingredient)
+ });
+
+ console.log(recipeFavs.kentucky.title);
+ console.log(`servings: ${recipeFavs.kentucky.servings}`);
+ console.log('ingredients: ')
+ recipeFavs.kentucky.ingredients.forEach((ingredient) => {
+     console.log(ingredient)
+ });
+
+ console.log(recipeFavs.steers.title);
+ console.log(`servings: ${recipeFavs.steers.servings}`);
+ console.log('ingredients: ')
+ recipeFavs.steers.ingredients.forEach((ingredient) => {
+     console.log(ingredient)
+ });
+
+ console.log(recipeFavs.gatspy.title);
+ console.log(`servings: ${recipeFavs.gatspy.servings}`);
+ console.log('ingredients: ')
+ recipeFavs.gatspy.ingredients.forEach((ingredient) => {
+     console.log(ingredient)
+ });
+
+ console.log(recipeFavs.wimpyBreakfeast.title);
+ console.log(`servings: ${recipeFavs.wimpyBreakfeast.servings}`);
+ console.log('ingredients: ')
+ recipeFavs.wimpyBreakfeast.ingredients.forEach((ingredient) => {
+     console.log(ingredient)
+ });
 // write code here

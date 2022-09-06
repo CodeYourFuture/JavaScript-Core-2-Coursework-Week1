@@ -17,11 +17,13 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(COUNTRY_CURRENCY_CODES) {
-  let countryCurrencyCodes = COUNTRY_CURRENCY_CODES
-  return countryCurrencyCodes.slice((0, 2));
-  
-
+function createLookup(countryCurrencyCodes) {
+  let newObject = {};
+  for (let index of countryCurrencyCodes) {
+    newObject[index[0]] = index[1];
+  }
+  return newObject;
+  // return countryCurrencyCodes.slice((0, 2));
     // function createLookup(countryCurrencyCodes) {
     //   let  COUNTRY_CURRENCY_CODES = countryCurrencyCodes;
     //   let result  = [];
