@@ -14,6 +14,8 @@ let car = {
   yearsOld: 8,
 };
 
+// Answer: We get undefined here because there is no property called "colour". console.log(car["brand"]) would return Ford.
+
 console.log(car["colour"]);
 
 // Example 2
@@ -22,17 +24,21 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+// Answer: There is no property called firstName in the object user therefore it is undefined because the dot notation is used to access a property that is not there
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+//Answer: The function getName is not returning anything. If you add return before the string then you get the text displayed when accessing the method
