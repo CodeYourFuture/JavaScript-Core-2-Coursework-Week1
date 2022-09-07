@@ -23,3 +23,28 @@
 */
 
 // write code here
+let recipes = {
+  recipe1: {
+    title: "Creamed Spinach",
+    servings: 4,
+    ingredients: ["Butter", "Spinach", "Mushrooms"],
+  },
+
+  recipe2: {
+    title: "Mole",
+    servings: 2,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+
+  recipe3: {
+    title: "Chakalaka",
+    servings: 2,
+    ingredients: ["Beans", "Carrots", "Oil", "Onion"],
+  },
+};
+
+const allRecipes = Object.keys(recipes);
+
+for (let key of allRecipes) {
+  console.log(recipes[key]);
+}
