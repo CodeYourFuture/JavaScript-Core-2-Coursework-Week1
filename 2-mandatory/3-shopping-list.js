@@ -12,15 +12,38 @@
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
-
+   
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  return {
+    name: recipe.name,
+    items: recipe.ingredients.filter(element => pantry.fridgeContents.indexOf(element) === -1 && pantry.cupboardContents.indexOf(element) === -1),
+  };
 }
+
+// let recipe1 = {
+//   name: "pancakes",
+//   ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+// };
+// console.log(createShoppingList(recipe1));
+// {
+//   name: "pancakes",
+//   items: ["flour", "eggs", "vegetable oil"],
+// }
+// let recipe2 = {
+//   name: "margherita pizza",
+//   ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+// };
+// console.log(createShoppingList(recipe2));
+// {
+//   name: "margherita pizza",
+//   items: ["flour", "yeast", "mozarella"],
+// }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
