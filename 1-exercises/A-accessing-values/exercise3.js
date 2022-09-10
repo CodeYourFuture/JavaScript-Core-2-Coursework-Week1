@@ -12,6 +12,7 @@ let basketballTeam = {
     address: "1901 W Madison St",
   },
 };
+basketballTeam.topPlayers.sort().forEach(x =>{console.log(x)});
 
 /*
   Write code that
@@ -21,7 +22,6 @@ let basketballTeam = {
 */
 
 // write code here
-
 
 /* EXPECTED RESULT
 

@@ -10,9 +10,8 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+  },
 };
-
 /*
   Using dot notation:
     - Change the value of UnitedKingdom's capital city population to 8980000.
@@ -23,6 +22,9 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000;
+capitalCities.Peru = { name: "lima", population: 9750000 };
 
 console.log(capitalCities);
 
