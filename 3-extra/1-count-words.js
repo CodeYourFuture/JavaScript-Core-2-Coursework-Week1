@@ -22,12 +22,24 @@
     - Comparison inside if statements
     - Setting values on an object
 */
+function getWordTotal(word, arrayOfWords) {
+  let wordTotal = 0;
+  for (let i = 0; i < arrayOfWords.length; i++) {
+    if (arrayOfWords[i] == word) {
+      wordTotal++;
+    }
+  }
+  return wordTotal;
+}
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
-
+  if (string) {
+    let arrayOfWords = string.split(" ");
+    arrayOfWords.map(
+      (word) => (wordCount[word] = getWordTotal(word, arrayOfWords))
+    );
+  }
   return wordCount;
 }
 
@@ -46,9 +58,13 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Empty string", () => {
@@ -56,7 +72,11 @@ test("Empty string", () => {
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,
