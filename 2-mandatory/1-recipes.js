@@ -23,3 +23,41 @@
 */
 
 // write code here
+
+let recipes = [
+  {
+    name: "Latte",
+    serving: 1,
+    ingredients: ["milk", "coffee", "sugar"],
+  },
+  {
+    name: "Moroccan Tea",
+    serving: 4,
+    ingredients: ["tea", "mint", "hot water", "sugar"],
+  },
+  {
+    name: "Sandwich",
+    serving: 2,
+    ingredients: ["bread", "tuna", "mayo", "salad", "tomato"],
+  },
+  {
+    name: "Mole",
+    serving: 2,
+    ingredients: ["cinnamon", "cumin", "cacao"],
+  },
+  {
+    name: "Apple juice",
+    serving: 1,
+    ingredients: ["apple", "water", "lemon", "honey"],
+  },
+];
+
+recipes.map((recipe) => {
+  console.log(`${recipe.name}
+Serves: ${recipe.serving}
+Ingredients:`);
+  for (const ingredient of recipe.ingredients) {
+    console.log(ingredient);
+  }
+  console.log("*****")
+});
