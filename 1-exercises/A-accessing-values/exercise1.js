@@ -6,7 +6,7 @@
 
 let dog = {
   breed: "Dalmatian",
-  name: "Spot",
+  name: "Spot", 
   isHungry: true,
   happiness: 6
 };
