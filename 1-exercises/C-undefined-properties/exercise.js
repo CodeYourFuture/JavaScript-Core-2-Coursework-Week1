@@ -9,12 +9,13 @@
 */
 
 // Example 1
+
 let car = {
   brand: "Ford",
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // colour property does not exist within the car object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,14 +26,15 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // the function was defined with a property (firstName) that doesn't exist in the "user" object
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; // function declaration needs a return statement
   },
 };
 
 console.log(myPet.getName());
+
