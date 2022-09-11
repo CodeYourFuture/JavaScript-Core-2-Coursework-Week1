@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// this is undefined because there is no key for colour
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,6 +29,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// this is undefined because there is no key for firstName just name
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +40,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//There is no name set in the myPet object
