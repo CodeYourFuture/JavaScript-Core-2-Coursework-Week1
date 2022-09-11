@@ -16,25 +16,13 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
-/*
-function createLookup(countryCurrencyCodes) {
- let object = countryCurrencyCodes.reduce((result, [key, value]) => {
-  result[key] = value;
-  return result;
- })
- console.log(object)
-}*/
 
 function createLookup(countryCurrencyCodes){
-const convertArrayToObject = (array, key) => {
-  const initialValue = {};
-  return array.reduce((obj, item) => {
-    return {
-      countryCurrencyCodes,
-      [item[key]]: item,
-    };
-  }, initialValue);
-};
+  let object ={}
+  for(let element of countryCurrencyCodes){
+    object[element[0]] = element[1];
+  }
+  return object
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
