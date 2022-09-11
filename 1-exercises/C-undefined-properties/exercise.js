@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// car object doesn't have any colour key , so its undefined.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -24,15 +25,15 @@ function sayHelloToUser(user) {
 let user = {
   name: "Mira"
 };
-
+// user object only has one property which is name, so firstName is undefined.
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   "My pet's name is Fluffy";
   },
 };
-
+// there is no return in the function .
 console.log(myPet.getName());

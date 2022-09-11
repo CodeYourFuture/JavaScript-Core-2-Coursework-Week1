@@ -23,3 +23,65 @@
 */
 
 // write code here
+const recipes={
+  first:{
+    title: "Spaghetti",
+    serves: 6,
+    ingredients: ["pasta", "mince", "tomato"]
+   },
+  second:{
+    title: "Hummus",
+    serves: 2,
+    ingredients: ["Tahini", "chickpea"]
+  },
+  third:{
+    title: "fish & chips",
+    serves: 4,
+    ingredients: ["fish", "potato" , "bread crumbs"]
+  },
+  forth:{
+    title: "porridge",
+    serves: 1,
+    ingredients: ["oat", "milk"]
+  },
+  fifth:{
+    title: "guacamole",
+    serves: 3,
+    ingredients: ["avocado", "tomato","onion", "parsley"]
+  }
+}
+
+console.log(recipes.first.title)
+console.log(`serves:${recipes.first.serves}`)
+console.log(`ingredients:`)
+console.log(recipes.first.ingredients[0])
+console.log(recipes.first.ingredients[1])
+console.log(recipes.first.ingredients[2])
+
+console.log(recipes.second.title)
+console.log(`serves:${recipes.second.serves}`)
+console.log(`ingredients:`)
+console.log(recipes.second.ingredients[0])
+console.log(recipes.second.ingredients[1])
+
+console.log(recipes.third.title)
+console.log(`serves:${recipes.third.serves}`)
+console.log(`ingredients:`)
+console.log(recipes.third.ingredients[0])
+console.log(recipes.third.ingredients[1])
+console.log(recipes.third.ingredients[2])
+
+console.log(recipes.forth.title)
+console.log(`serves:${recipes.forth.serves}`)
+console.log(`ingredients:`)
+console.log(recipes.forth.ingredients[0])
+console.log(recipes.forth.ingredients[1])
+
+console.log(recipes.fifth.title)
+console.log(`serves:${recipes.fifth.serves}`)
+console.log(`ingredients:`)
+console.log(recipes.fifth.ingredients[0])
+console.log(recipes.fifth.ingredients[1])
+console.log(recipes.fifth.ingredients[2])
+console.log(recipes.fifth.ingredients[3])
+

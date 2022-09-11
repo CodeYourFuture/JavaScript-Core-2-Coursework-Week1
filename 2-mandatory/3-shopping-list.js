@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -18,8 +18,24 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
+
 function createShoppingList(recipe) {
   // write code here
+  let shoppingFor={}
+  let shoppingList=[]
+  // shoppingList= pantryItems.filter(item => !recipe["ingredients"].includes(item))
+  // let pantryItems=pantry["fridgeContents"].concat(pantry["cupboardContents"])
+   
+  for(let item of recipe.ingredients ){
+    if (!(pantry["fridgeContents"].includes(item) || pantry["cupboardContents"].includes(item))){
+      shoppingList.push(item)
+    }
+   }
+
+   shoppingFor.name =recipe.name
+   shoppingFor.items=shoppingList
+   return shoppingFor
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

@@ -21,6 +21,20 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  orderBurger(balance){
+    if (balance >= 6.5){
+      return (balance-6.5)
+    }else{
+      return balance
+    }
+  },
+  orderFalafel(balance){
+  if (balance >= 7.25){
+      return (balance - 7.25)
+    }else{
+      return balance
+    }
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
