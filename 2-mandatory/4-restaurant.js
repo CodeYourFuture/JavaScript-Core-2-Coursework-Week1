@@ -30,7 +30,7 @@ const MENU = {
 //   },
 // };
 
-// or dryer code:
+// or cleaner code:
 
 const checkAndCountBalance = (bal, itemOfMenu) => {
   const balanceAfterOrder = bal - itemOfMenu;

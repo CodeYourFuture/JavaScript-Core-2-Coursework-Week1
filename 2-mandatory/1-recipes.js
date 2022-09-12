@@ -24,10 +24,17 @@
 
 // write code here
 
+const logRecipe = (recipe) => {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.servings}`);
+  console.log("Ingredients:");
+  recipe.ingredients.forEach((ingredient) => console.log(ingredient));
+}
+
 let recipe1 = {
-  title: "burger",
+  title: "sandwich",
   servings: 1,
-  ingredients: ["bun", "ham", "cheese", "ketchup"]
+  ingredients: ["bread", "ham", "cheese"]
 };
 
 let recipe2 = {
@@ -39,27 +46,9 @@ let recipe2 = {
 let recipe3 = {
   title: "salad",
   servings: 2,
-  ingredients: ["cabbage", "potato", "cucumber", "mayo"],
+  ingredients: ["cabbage", "tomato", "cucumber", "mayo"],
 };
 
-let recipe4 = {
-  title: "pizza",
-  servings: 4,
-  ingredients: ["pizza dough", "salami", "cheese", "ketchup"],
-};
-
-let recipe5 = {
-  title: "tea",
-  servings: 1,
-  ingredients: ["water", "tea", "sugar", "milk"],
-};
-
-for (let prop in recipe1) {
-  if (Array.isArray(recipe1.prop)) {
-    for (let el of prop) {
-      console.log(el);
-    }
-   } else {
-      console.log(prop);
-    }
-}
+logRecipe(recipe1);
+logRecipe(recipe2);
+logRecipe(recipe3);

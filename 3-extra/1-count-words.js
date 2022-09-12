@@ -23,29 +23,47 @@
     - Setting values on an object
 */
 
+// function countWords(string) {
+//   let wordCount = {};
+
+//   if (string.length === 0)
+//     return wordCount;
+
+//   let strArr = string.split(" ");
+//   let counter;
+
+//   for (let i = 0; i < strArr.length; i++) {
+//     counter = 0;
+//     for (let j = 0; j < strArr.length; j++) {
+//       if (strArr[i] === strArr[j])
+//         counter++;
+//     }
+//     wordCount[strArr[i]] = counter;
+//   }
+//   return wordCount;
+// }
+
+// --------- or: ----------
+
 function countWords(string) {
   let wordCount = {};
-  let counter = 0;
-
-  if (string.length === 0) {
-    return wordCount;
-  }
+  if (string.length === 0) return wordCount;
 
   let strArr = string.split(" ");
+  let counter;
 
-  for (let i = 0; i < strArr.length; i++) {
+  strArr.forEach(compWord => {
     counter = 0;
-      for (let j = 0; j < strArr.length; j++) {
-        if (strArr[i] === strArr[j]) {
-          counter++;
-        }
-      }
-    wordCount[strArr[i]] = counter;
-  }
+    strArr.forEach (word => {
+      if (compWord === word) counter++;
+    });
+    wordCount[compWord] = counter;
+  });
   return wordCount;
-}
+};
 
-// console.log(countWords("you're braver than you believe, stronger than you seem, and smarter than you think"));
+
+// console.log(countWords("you and me and you"));
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
