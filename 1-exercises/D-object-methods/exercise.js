@@ -8,10 +8,15 @@
 */
 
 let student = {
-  // write code here
+   getName: (name) => {
+     console.log("Student name: " + name);
+     
+   }         // write code here
 }
 
 student.getName("Daniel");
+student.getName("Ozzy");
+
 
 /* EXPECTED RESULT
 
