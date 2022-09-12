@@ -18,8 +18,17 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
+function createShoppingList(recipe)
+{
+    shopList = {};
+    shopList.name = recipe.name;
+
+    shopList.items = recipe.ingredients.filter((ingredients) =>
+    {
+        return (!pantry.fridgeContents.includes(ingredients) && !pantry.cupboardContents.includes(ingredients));
+    });
+
+    return shopList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

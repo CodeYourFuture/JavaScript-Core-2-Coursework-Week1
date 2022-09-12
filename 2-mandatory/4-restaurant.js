@@ -14,13 +14,31 @@
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
 
-const MENU = {
-  burger: 6.5,
-  falafel: 7.25,
+const MENU =
+{
+    burger: 6.5,
+    falafel: 7.25,
 };
 
-let cashRegister = {
-  // write code here
+let cashRegister =
+{
+    orderBurger: function(balance)
+    {
+        if(balance >= MENU.burger)
+        {
+            return balance -= MENU.burger;
+        }
+        return balance;
+    },
+
+    orderFalafel: function(balance)
+    {
+        if(balance >= MENU.falafel)
+        {
+            return balance -= MENU.falafel;
+        }
+        return balance;
+    }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
