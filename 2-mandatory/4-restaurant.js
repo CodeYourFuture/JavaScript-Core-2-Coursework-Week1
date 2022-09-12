@@ -22,7 +22,7 @@ const MENU =
 
 let cashRegister =
 {
-    orderBuger: function(balance)
+    orderBurger: function(balance)
     {
         if(balance >= MENU.burger)
         {
