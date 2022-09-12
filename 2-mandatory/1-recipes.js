@@ -23,3 +23,43 @@
 */
 
 // write code here
+
+let recipe1 = {
+  title: "burger",
+  servings: 1,
+  ingredients: ["bun", "ham", "cheese", "ketchup"]
+};
+
+let recipe2 = {
+  title: "hot dog",
+  servings: 1,
+  ingredients: ["baguette", "sausage", "ketchup", "mustard"],
+};
+
+let recipe3 = {
+  title: "salad",
+  servings: 2,
+  ingredients: ["cabbage", "potato", "cucumber", "mayo"],
+};
+
+let recipe4 = {
+  title: "pizza",
+  servings: 4,
+  ingredients: ["pizza dough", "salami", "cheese", "ketchup"],
+};
+
+let recipe5 = {
+  title: "tea",
+  servings: 1,
+  ingredients: ["water", "tea", "sugar", "milk"],
+};
+
+for (let prop in recipe1) {
+  if (Array.isArray(recipe1.prop)) {
+    for (let el of prop) {
+      console.log(el);
+    }
+   } else {
+      console.log(prop);
+    }
+}

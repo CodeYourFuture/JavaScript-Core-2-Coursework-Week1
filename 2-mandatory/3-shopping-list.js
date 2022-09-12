@@ -19,7 +19,7 @@ let pantry = {
 };
 
 // write code here
-function createShoppingList(recipe) {   // recipe {name:, ingredients: [ingredient, ingredient, ...]]
+function createShoppingList(recipe) {
   let shoppingList = {};
   shoppingList.name = recipe.name;
   shoppingList.items = [];
@@ -34,8 +34,6 @@ function createShoppingList(recipe) {   // recipe {name:, ingredients: [ingredie
     name: "pancakes",
     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
   };
-
-console.log(createShoppingList(recipe1));
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
