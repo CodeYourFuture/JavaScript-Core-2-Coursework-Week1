@@ -27,8 +27,9 @@ student['attendance'] = 90;
 
 // write code here
 
-// let studentAttExam = ((student) => student.attendance >= 90 && student.examScore >= 60 ? true : false)
- let properties = Object.keys(student)
+if (student.attendance >= 90 && student.examScore > 60) {
+  student.hasPassed = true
+}
 console.log(student);
 
 /* EXPECTED RESULT
