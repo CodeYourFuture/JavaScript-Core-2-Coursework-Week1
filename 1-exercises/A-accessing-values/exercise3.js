@@ -13,6 +13,10 @@ let basketballTeam = {
   },
 };
 
+let sortTopPlayers = basketballTeam.topPlayers.sort();
+
+console.log(sortTopPlayers);
+
 /*
   Write code that
     - accesses the basketball team's top players array
