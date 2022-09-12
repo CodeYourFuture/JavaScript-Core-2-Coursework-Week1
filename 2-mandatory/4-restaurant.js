@@ -19,14 +19,30 @@ const MENU = {
   falafel: 7.25,
 };
 
+// let cashRegister = {
+//   orderBurger: function (balance) {
+//     const balanceAfterOrder = balance - MENU.burger;
+//     return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+//   },
+//   orderFalafel: function (balance) {
+//     const balanceAfterOrder = balance - MENU.falafel;
+//     return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+//   },
+// };
+
+// or dryer code:
+
+const checkAndCountBalance = (bal, itemOfMenu) => {
+  const balanceAfterOrder = bal - itemOfMenu;
+  return balanceAfterOrder >= 0 ? balanceAfterOrder : bal;
+}
+
 let cashRegister = {
   orderBurger: function (balance) {
-    const balanceAfterOrder = balance - MENU.burger;
-    return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+    return checkAndCountBalance(balance, MENU.burger);
   },
   orderFalafel: function (balance) {
-    const balanceAfterOrder = balance - MENU.falafel;
-    return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+    return checkAndCountBalance(balance, MENU.falafel);
   },
 };
 
