@@ -18,9 +18,24 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
+// write code here
+function createShoppingList(recipe) {   // recipe {name:, ingredients: [ingredient, ingredient, ...]]
+  let shoppingList = {};
+  shoppingList.name = recipe.name;
+  shoppingList.items = [];
+  recipe.ingredients.map(item => {
+    if (!pantry.fridgeContents.includes(item) && !pantry.cupboardContents.includes(item))
+      shoppingList.items.push(item);
+  });
+  return shoppingList;
 }
+
+  let recipe1 = {
+    name: "pancakes",
+    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+  };
+
+console.log(createShoppingList(recipe1));
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
