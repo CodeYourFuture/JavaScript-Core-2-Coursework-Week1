@@ -22,4 +22,35 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let favoriteRecipes={
+  recipe1:{
+    title:"briyani",
+    serves:3,
+    ingredients:["rice","onion","tomato","mint","masala"]
+  },
+  recipe2:{
+    title:"idly",
+    serves:1,
+    ingredients:["rice","urud dhal"]
+  },
+  recipe3:{
+    title:"fishCurry",
+    serves:3,
+    ingredients:["fish","onion","tomato","chilly powder"]
+  },
+  recipe4:{
+    title:"vada",
+    serves:3,
+    ingredients:["urud dhal","onion","chilly"]
+  },
+  recipe5:{
+    title:"kova",
+    serves:2,
+    ingredients:["milk","sugar"]
+  }
+};
+console.log(favoriteRecipes.recipe1);
+console.log(favoriteRecipes.recipe2);
+console.log(favoriteRecipes.recipe3);
+console.log(favoriteRecipes.recipe4);
+console.log(favoriteRecipes.recipe5);
