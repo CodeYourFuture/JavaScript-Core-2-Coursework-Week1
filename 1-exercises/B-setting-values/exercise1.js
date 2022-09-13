@@ -8,7 +8,7 @@ let capitalCities = {
     name: "London",
     population: 20,
   },
-  China: {
+  China: { 
     name: "Beijing",
   }
 };
