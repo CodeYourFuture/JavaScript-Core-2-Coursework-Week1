@@ -21,6 +21,9 @@ let basketballTeam = {
 */
 
 // write code here
+names = basketballTeam.topPlayers.sort()
+
+console.log(names.join('\r\n'));
 
 
 /* EXPECTED RESULT
