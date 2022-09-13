@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);// There is no colour property for the car. so its undefined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);//there is no firstName property for the user so its undefined
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // in the function , there is no return statment 

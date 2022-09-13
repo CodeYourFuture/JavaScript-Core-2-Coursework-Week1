@@ -20,6 +20,21 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let result = {};
+  result.name = recipe.name;
+  let ingredientsNeededForRecipe = recipe.ingredients;
+  let existedItems = pantry.fridgeContents.concat(pantry.cupboardContents);
+
+  let itemsToBuy = [];
+  for (const item of ingredientsNeededForRecipe) {
+    if( existedItems.find(element=>element===item)){
+        itemsToBuy.push()
+    }else{
+        itemsToBuy.push(item)
+    }
+  }
+  result.items = itemsToBuy;
+  return result;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
