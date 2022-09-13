@@ -23,3 +23,32 @@
 */
 
 // write code here
+
+const logRecipe = (recipe) => {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.servings}`);
+  console.log("Ingredients:");
+  recipe.ingredients.forEach((ingredient) => console.log(ingredient));
+}
+
+let recipe1 = {
+  title: "sandwich",
+  servings: 1,
+  ingredients: ["bread", "ham", "cheese"]
+};
+
+let recipe2 = {
+  title: "hot dog",
+  servings: 1,
+  ingredients: ["baguette", "sausage", "ketchup", "mustard"],
+};
+
+let recipe3 = {
+  title: "salad",
+  servings: 2,
+  ingredients: ["cabbage", "tomato", "cucumber", "mayo"],
+};
+
+logRecipe(recipe1);
+logRecipe(recipe2);
+logRecipe(recipe3);

@@ -19,9 +19,32 @@ const MENU = {
   falafel: 7.25,
 };
 
-let cashRegister = {
-  // write code here
+// let cashRegister = {
+//   orderBurger: function (balance) {
+//     const balanceAfterOrder = balance - MENU.burger;
+//     return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+//   },
+//   orderFalafel: function (balance) {
+//     const balanceAfterOrder = balance - MENU.falafel;
+//     return balanceAfterOrder >= 0 ? balanceAfterOrder : balance;
+//   },
+// };
+
+// or cleaner code:
+
+const checkAndCountBalance = (bal, itemOfMenu) => {
+  const balanceAfterOrder = bal - itemOfMenu;
+  return balanceAfterOrder >= 0 ? balanceAfterOrder : bal;
 }
+
+let cashRegister = {
+  orderBurger: function (balance) {
+    return checkAndCountBalance(balance, MENU.burger);
+  },
+  orderFalafel: function (balance) {
+    return checkAndCountBalance(balance, MENU.falafel);
+  },
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
