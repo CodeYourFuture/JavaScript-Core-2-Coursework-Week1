@@ -37,6 +37,7 @@
 //     for (let j = 0; j < strArr.length; j++) {
 //       if (strArr[i] === strArr[j]) counter++;
 //     }
+//     wordCount[strArr[i]] = counter;
 //   }
 //   return wordCount;
 // }
@@ -55,6 +56,7 @@ function countWords(string) {
     strArr.forEach (word => {
       if (compWord === word) counter++;
     });
+    wordCount[compWord] = counter;
   });
   return wordCount;
 };
