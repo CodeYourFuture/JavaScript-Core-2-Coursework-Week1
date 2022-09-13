@@ -23,3 +23,52 @@
 */
 
 // write code here
+let favoriteRecipe = {
+  title: " Bread",
+  serving: 2,
+  ingredients: ["flour", "water", "sugar"],
+};
+console.log(favoriteRecipe.title)
+console.log(`Serves:${favoriteRecipe.serving}`)
+favoriteRecipe.ingredients.forEach((ingredients) => {
+  console.log(ingredients)
+});
+
+let secondRecipe = {
+  title: "tea",
+  servings: 2,
+  ingredients: ["tea bag", "hot water", "sugar"],
+};
+
+console.log(secondRecipe.title);
+console.log(`Serves: ${secondRecipe.servings}`);
+console.log(`Ingredients:`);
+secondRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+let fourthRecipe = {
+  title: "fried egg",
+  servings: 2,
+  ingredients: ["egg", "oil", "onion", "salt"],
+};
+
+console.log(fourthRecipe.title);
+console.log(`Serves: ${fourthRecipe.servings}`);
+console.log(`Ingredients:`);
+fourthRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
+let fifthRecipe = {
+  title: "chicken meckhni",
+  servings: 1,
+  ingredients: ["chicken", "single cream", "garlic", "garam masala", "ginger", "butter"],
+};
+
+console.log(fifthRecipe.title);
+console.log(`Serves: ${fifthRecipe.servings}`);
+console.log(`Ingredients:`);
+fifthRecipe.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
