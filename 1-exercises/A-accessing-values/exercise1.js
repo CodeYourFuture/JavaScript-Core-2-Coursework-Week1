@@ -19,9 +19,11 @@ let dog = {
 let dogName = {
   name: "Spot"
 }; // complete the code
+
 let dogBreed = {
   breed: "Dalmatian"
 }; // complete the code
+
 
 console.log(`${dogName.name} is a ${dogBreed.breed}`);
 

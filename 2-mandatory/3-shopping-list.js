@@ -20,6 +20,8 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  recipe.name = "";
+  recipe.items = [""];
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
