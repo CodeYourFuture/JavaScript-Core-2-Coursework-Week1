@@ -32,4 +32,4 @@ console.log(recipeCard['title']);
 const key = Object.keys(recipeCard);
 const key2 = Object.values(recipeCard);
 console.log(key[1],key2[1]);
-console.log(key2[0],'\n',key2[1],'\n',key2[2]);
+console.log(`${key2[0]},\n,${key2[1]},\n,${key2[2]}`);

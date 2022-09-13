@@ -24,11 +24,18 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
   // write code here
-
-  return wordCount;
+const wordCount = {};
+let count = 0;
+let words = string.toLowerCase().split(' ');
+for(let wrd of words){
+  if(!wordCount[wrd]){
+    wordCount[wrd] = 1;
+  }else{
+    wordCount[wrd]++;
+  }
+}
+return wordCount;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
