@@ -21,6 +21,18 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  price: 0,
+  orderBurger: function(balance){
+    if(balance > this.price){
+      return balance - this.price;
+    }
+    return balance;
+  },
+  orderFalafel: function(){
+    for(let key in cashRegister){
+      console.log('order ' + cashRegister[key]);
+    }
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

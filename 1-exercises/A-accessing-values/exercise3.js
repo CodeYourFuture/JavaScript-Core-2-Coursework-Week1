@@ -21,6 +21,19 @@ let basketballTeam = {
 */
 
 // write code here
+let basketballPlayers = Object.values(basketballTeam);
+function players(){
+  let player = [];
+  for(key in basketballPlayers){
+    if(basketballPlayers[key] === 'Array'){
+      for(key2 in basketballPlayers[key]){
+        player.push(key2, basketballPlayers[key][key2]);
+      }
+    }
+  }
+  return player;
+}
+console.log(players());
 
 
 /* EXPECTED RESULT

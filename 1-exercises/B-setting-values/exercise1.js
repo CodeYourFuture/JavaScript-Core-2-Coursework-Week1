@@ -10,6 +10,10 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
+    population: 0, 
+  },
+  Peru: {
+    name: '',
   }
 };
 
@@ -23,7 +27,12 @@ let capitalCities = {
 */
 
 // write code here
-
+capitalCities.UnitedKingdom.population = '8980000';
+console.log(capitalCities);
+capitalCities.China.population = '21500000';
+console.log(capitalCities);
+capitalCities.Peru.name = 'Lima';
+capitalCities.Peru.population = '9750000';
 console.log(capitalCities);
 
 /* EXPECTED RESULT
