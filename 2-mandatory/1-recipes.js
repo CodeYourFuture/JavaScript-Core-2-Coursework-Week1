@@ -23,3 +23,10 @@
 */
 
 // write code here
+
+const myRecipe={
+  title: 'Mole',
+  serves: 2,
+  Ingredients:
+  ['cinnamon',   'cumin',   'cocoa']
+}
