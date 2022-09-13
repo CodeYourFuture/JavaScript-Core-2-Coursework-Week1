@@ -23,3 +23,73 @@
 */
 
 // write code here
+let recipe1 = {
+  title: "Pasta",
+  servings: 4,
+  ingredients: ["Flour","Eggs","Salt","Olive Oil","Water","Tomato"],
+  printRecipe: function(){
+    console.log(this.title);
+    console.log(`Serves: ${this.servings}`);
+    console.log("Ingredients")
+    for (const ingredient of this.ingredients) {
+      console.log(ingredient);
+    }
+  }
+};
+let recipe2 = {
+  title: "Bacon",
+  servings: 4,
+  ingredients: ["Bacon", "Eggs", "Salt", "Olive Oil", "Water", "Tomato"],
+  printRecipe: function () {
+    console.log(this.title);
+    console.log(`Serves: ${this.servings}`);
+    console.log("Ingredients");
+    for (const ingredient of this.ingredients) {
+      console.log(ingredient);
+    }
+  },
+};
+let recipe3 = {
+  title: "Pasta",
+  servings: 4,
+  ingredients: ["Flour", "Eggs", "Salt", "Olive Oil", "Water", "Tomato"],
+  printRecipe: function () {
+    console.log(this.title);
+    console.log(`Serves: ${this.servings}`);
+    console.log("Ingredients");
+    for (const ingredient of this.ingredients) {
+      console.log(ingredient);
+    }
+  },
+};
+let recipe4 = {
+  title: "Pasta",
+  servings: 4,
+  ingredients: ["Flour", "Eggs", "Salt", "Olive Oil", "Water", "Tomato"],
+  printRecipe: function () {
+    console.log(this.title);
+    console.log(`Serves: ${this.servings}`);
+    console.log("Ingredients");
+    for (const ingredient of this.ingredients) {
+      console.log(ingredient);
+    }
+  },
+};
+let recipe5 = {
+  title: "Pasta",
+  servings: 4,
+  ingredients: ["Flour", "Eggs", "Salt", "Olive Oil", "Water", "Tomato"],
+  printRecipe: function () {
+    console.log(this.title);
+    console.log(`Serves: ${this.servings}`);
+    console.log("Ingredients");
+    for (const ingredient of this.ingredients) {
+      console.log(ingredient);
+    }
+  },
+};
+recipe1.printRecipe();
+recipe2.printRecipe();
+recipe3.printRecipe();
+recipe4.printRecipe();
+recipe5.printRecipe();
