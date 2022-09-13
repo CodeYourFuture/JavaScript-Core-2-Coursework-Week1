@@ -15,6 +15,8 @@ let car = {
 };
 
 console.log(car["colour"]);
+//Kawa's answer: The "colour" property for the object
+// car has been defined as  a key but the value has not given or defined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -34,5 +36,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+//There is no return in the getName function, that is why return undefined
 console.log(myPet.getName());

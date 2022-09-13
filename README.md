@@ -15,7 +15,7 @@ This is a **private** repository. Please request access from your Teachers, Budd
 ## Testing your work
 
 - Each of the \*.js files in the `1-exercises` folder can be run from the terminal using the `node` command with the path to the file. For example, `node 1-exercises/A-accessing-values/exercise1.js` can be run from the root of the project.
-- To run the tests in the `2-mandatory` folder, run `npm run test` from the root of the project (after having run `npm install` once before).
+- To run the tests in the `2-mandatory` folder, run `cd` from the root of the project (after having run `npm install` once before).
 - To run a single exercise/test (for example `2-mandatory/2-currency-code-lookup.js`), run `npm test -- --testPathPattern 2-mandatory/2-currency-code-lookup.js`.
 - The `2-mandatory/1-recipes.js` exercise does not use jest. To run this file individually, use node directly. `node 2-mandatory/1-recipes.js`.
 - To run the tests in the `3-extra` folder, run `npm run extra-tests` from the root of the project (after having run `npm install` once before).
