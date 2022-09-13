@@ -18,6 +18,24 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
+  let newObject = {};
+  for (let index of countryCurrencyCodes) {
+    newObject[index[0]] = index[1];
+  }
+  return newObject;
+  // return countryCurrencyCodes.slice((0, 2));
+    // function createLookup(countryCurrencyCodes) {
+    //   let  COUNTRY_CURRENCY_CODES = countryCurrencyCodes;
+    //   let result  = [];
+    //   while (countryCurrencyCodes == COUNTRY_CURRENCY_CODES) {
+    //     result = countryCurrencyCodes.index[0, "1"];
+    //     countryCurrencyCodes = Object.getPrototypeOf(countryCurrencyCodes);    
+    // result = countryCurrencyCodes.index[ `${index(0), index("1")}`];
+    // result = countryCurrencyCodes.index[{COUNTRY_CURRENCY_CODES.index(0) : index("1")}];
+    // result = countryCurrencyCodes.index[0, 1, 2 ,3 [1, 0]];
+  // }
+  // return result;
+  // must come back
   // write code here
 }
 

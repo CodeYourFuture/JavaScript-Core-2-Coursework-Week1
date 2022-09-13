@@ -18,9 +18,30 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+// function createShoppingList("name", [ingredients]) {
+//   if (ingredients !== Object.value(pantry.cupboardContents))
+//   return `${"name"} ${Object.}`
+
+
 function createShoppingList(recipe) {
-  // write code here
+  let ingredientsShort = [`${pantry.fridgeContents.join(", ")}, ` + `${pantry.cupboardContents.join(", ")}`];
+  if (ingredientsShort.includes(recipe.ingredients) === false) {
+    
+      return `{items: [${ingredientsShort}], name: ${recipe.name}}`;
+  }
+
+  // function createShoppingList(recipe) {
+  // if (ingredientsShort = recipe.ingredients.filter((fridgeContents, cupboardContents) => {
+  //   recipe.ingredients.includes(fridgeContents && cupboardContents))) {
+  //   return ingredientsShort;
+  // }}
+  // if (ingredientsShort = recipe.ingredients.filter(cupboardContents => recipe.ingredients.includes(cupboardContents))) {
+  //   return ingredientsShort;
+  // }
 }
+
+  // write code here
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
@@ -47,6 +68,7 @@ test("createShoppingList works for margherita pizza recipe", () => {
   };
 
   expect(createShoppingList(recipe2)).toEqual({
+    
     name: "margherita pizza",
     items: ["flour", "yeast", "mozarella"]
   });

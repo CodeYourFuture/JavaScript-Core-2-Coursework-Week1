@@ -8,6 +8,12 @@
 */
 
 let student = {
+  name: "Daniel",
+  getName: function () {
+    getName = student.name;
+    console.log("Student name: " + getName);
+  }
+  // console.console.log(`Student name: ${this.getName}`);
   // write code here
 }
 
