@@ -1,25 +1,22 @@
-let recipe1 = {
-    name: "pancakes",
-    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
-  };
-  
-let pantry = {
-  fridgeContents: ["butter", "milk"],
-  cupboardContents: ["salt", "tinned tomatoes", "oregano"],
+
+const MENU = {
+  burger: 6.5,
+  falafel: 7.25,
 };
 
-function createShoppingList(recipe) {
+let cashRegister = {
   // write code here
-   let myShoppingList={};
-    myShoppingList["name"]=recipe.name;
-    myShoppingList["items"]=[];
-    for (let elem of recipe.ingredients){
-      if (pantry.cupboardContents.includes(elem)===false  &&
-         pantry.fridgeContents.includes(elem)===false ){
-          myShoppingList["items"].push(elem)
-         }
-    }
-  return myShoppingList
+  orderFalafel: function (balance){
+    if (balance >= MENU.falafel) balance-=MENU.falafel
+  return balance
+  },
+
+  orderBurger: function (balance){
+    if (balance >= MENU.burger) balance-=MENU.burger
+  return balance
+  }
 }
 
-console.log(createShoppingList(recipe1))
+
+balance = 8.25;
+console.log(cashRegister.orderFalafel(balance))
