@@ -11,7 +11,8 @@ let basketballTeam = {
     capacity: 21000,
     address: "1901 W Madison St",
   },
-};
+}
+basketballTeam.topPlayers.sort().forEach(playersName => console.log(playersName));
 
 /*
   Write code that
