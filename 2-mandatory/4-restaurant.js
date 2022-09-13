@@ -21,8 +21,8 @@ const MENU = {
 
 let cashRegister = {
   // write code here
-  orderBurger: (balance) => (balance - MENU.burger >= 0) ? balance -= MENU.burger : balance,
-  orderFalafel: (balance) => (balance - MENU.falafel >= 0) ? balance -= MENU.falafel : balance
+  orderBurger: (balance) => (balance >= MENU.burger) ? balance -= MENU.burger : balance,
+  orderFalafel: (balance) => (balance >= MENU.falafel) ? balance -= MENU.falafel : balance
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
