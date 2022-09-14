@@ -21,7 +21,8 @@ let basketballTeam = {
 */
 
 // write code here
-
+newTopPlayer = basketballTeam.topPlayers.sort();
+newTopPlayer.map((arr) => console.log(arr));  
 
 /* EXPECTED RESULT
 

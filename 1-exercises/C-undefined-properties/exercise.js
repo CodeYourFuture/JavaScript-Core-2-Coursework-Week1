@@ -8,7 +8,7 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// ANSWER - 'colour' property isn't set on car object, so it's undefined.
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -16,7 +16,7 @@ let car = {
 
 console.log(car["colour"]);
 
-// Example 2
+// ANSWER - 'sayHelloToUser' function is set to user firstName property which isn't set on user object, so it's undefined.
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +27,7 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// ANSWER - 'getname' function should be an arrow function without curly brackets or it should have a return statement inside curly brackets.
 let myPet = {
   animal: "Cat",
   getName: function() {
