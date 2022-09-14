@@ -10,16 +10,30 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
-
+// Filtering out missing items from recipe
+function getMissingItems(recipe) {
+  return recipe.ingredients.filter(
+    (item) =>
+      !pantry.fridgeContents.includes(item) &&
+      !pantry.cupboardContents.includes(item)
+  );
+}
 function createShoppingList(recipe) {
-  // write code here
+  let shoppingList = {};
+  let missingIngredients = getMissingItems(recipe);
+
+  // Setting shoppingList object
+  shoppingList.name = recipe.name;
+  shoppingList.items = missingIngredients;
+
+  return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -43,11 +57,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
