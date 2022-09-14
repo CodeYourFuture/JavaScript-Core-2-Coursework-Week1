@@ -18,8 +18,11 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
 function createShoppingList(recipe) {
-  // write code here
+let allItems = pantry.fridgeContents.concat(pantry.cupboardContents);
+(ingredients) => combinedPantry.includes(ingredients);
+return allItems;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

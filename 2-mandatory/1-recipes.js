@@ -25,31 +25,31 @@
 let recipe1 = {
 name: "Pepperoni Pizza",
 serves: 3,
-ingredients: "bread", "tomato sauce", "pepperoni", "cheese",     
+ingredients: ["bread", "tomato sauce", "pepperoni", "cheese"],     
 }
 
 let recipe2 = {
 name: "chilli con carne",
 serves: 5,
-ingredients: "beef", "chillies", "tomato sauce", "kidney beans",
+ingredients: ["beef", "chillies", "tomato sauce", "kidney beans"],
 }
 
 let recipe3 = {
 name: "Kung Pao Chicken",
 serves: 2,
-ingredients: "chicken", "peanuts", "soy sauce", "beansprouts",      
+ingredients: ["chicken", "peanuts", "soy sauce", "beansprouts"],      
 }
 
 let recipe4 = {
 name: "Indian Mixed Grill",
 serves: 5,    
-ingredients: "tandori chicken", "pork chops", "bell peppers", "chillies",  
+ingredients: ["tandori chicken", "pork chops", "bell peppers", "chillies"],  
 }
 
 let recipe5 = {
 name: "Full English Breakfast",
 serves: 1,
-ingredients: "bacon", "sausage", "fried egg", "baked beans",    
+ingredients: ["bacon", "sausage", "fried egg", "baked beans"],    
 } 
 
 console.log(recipe1)
