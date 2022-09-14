@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // there is no color property in the car object to resolve this i would assign a color string to the car object 
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,10 +25,10 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // there is no first name property in the user function. the console target the user function causing an undefined to appear
 
 // Example 3
-let myPet = {
+let myPet = { // getName" is not a function, "getName" is a property with a value us a function in myPet Object not a function.
   animal: "Cat",
   getName: function() {
     "My pet's name is Fluffy";
