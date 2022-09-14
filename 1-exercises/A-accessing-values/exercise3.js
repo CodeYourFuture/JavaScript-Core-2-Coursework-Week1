@@ -21,15 +21,15 @@ let basketballTeam = {
 */
 
 // write code here
-let topPlayersNames = basketballTeam.topPlayers.sort() 
-topPlayersNames.forEach((player) => console.log(player))
- 
+let topPlayersNames = basketballTeam.topPlayers
+  .sort()
+  .forEach((player) => console.log(player));
+
 // console.log(topPlayersNames);
- /* EXPECTED RESULT
+/* EXPECTED RESULT
 
   Dennis Rodman
   Michael Jordan
   Scottie Pippen
 
 */
- 

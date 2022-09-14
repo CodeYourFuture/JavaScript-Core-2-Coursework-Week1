@@ -8,7 +8,7 @@ let dog = {
   breed: "Dalmatian", // String
   name: "Spot", // String
   isHungry: true, // Boolean
-  happiness: 6 // Number
+  happiness: 6, // Number
 };
 
 /*

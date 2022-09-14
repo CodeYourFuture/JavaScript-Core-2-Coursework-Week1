@@ -22,17 +22,17 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
-sayHelloToUser(user);// The user object variable contains 'name,' while the function we are logging contains 'firstName.'
+sayHelloToUser(user); // The user object variable contains 'name,' while the function we are logging contains 'firstName.'
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());// The 'return' statement is missing from the function.
+console.log(myPet.getName()); // The 'return' statement is missing from the function.
