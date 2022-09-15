@@ -16,10 +16,15 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
-
 function createLookup(countryCurrencyCodes) {
   // write code here
+  let res = {};
+  for (let i = 0; i < countryCurrencyCodes.length; i++)
+    res[countryCurrencyCodes[i][0]] = countryCurrencyCodes[i][1];
+
+  return res;
 }
+console.log(createLookup(COUNTRY_CURRENCY_CODES));
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
