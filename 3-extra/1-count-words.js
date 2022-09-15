@@ -25,12 +25,12 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
+  if (!string) return wordCount;
+  // split into array // count words, word exists add 1 otherwise it's equal to 1
+  string.split(" ").forEach((e) => (wordCount[e] ? wordCount[e]++ : wordCount[e] = 1));
 
   return wordCount;
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
