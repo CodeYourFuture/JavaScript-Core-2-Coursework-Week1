@@ -27,9 +27,19 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
-  let str = [];
-  str = string.match(/\b(\w+)\b/g);
+  const str = string.split(" ");
   console.log(str);
+  str.forEach((word) => {
+    if (word === "") {
+      return wordCount;
+    } else if (word in wordCount) {
+      wordCount[word]++;
+    } else {
+      wordCount[word] = 1;
+    }
+    console.log(wordCount);
+  });
+  return wordCount;
 }
 console.log(
   countWords(
