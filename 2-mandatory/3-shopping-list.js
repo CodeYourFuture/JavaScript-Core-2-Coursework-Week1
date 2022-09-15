@@ -19,9 +19,20 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let pantryIngredients = pantry.fridgeContents.concat(pantry.cupboardContents);
+  const recipeIngredients = recipe.ingredients;
+  let missing = recipeIngredients.filter(item => !pantryIngredients.includes(item));
+  return {
+    name: recipe.name,
+    items: missing
+  }
 }
 
+let recipe1 = {
+  name: "pancakes",
+  ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"]
+}
+console.log(createShoppingList(recipe1))
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
