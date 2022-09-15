@@ -25,12 +25,19 @@
 
 function countWords(string) {
   const wordCount = {};
-
+  if (string === "") {
+    return wordCount;
+  } else {
   // write code here
-
+  string.split(" ").forEach((word) => {
+    
+    // const numberOfOccurrences = string.match(new RegExp(word, "g")).length
+    if (wordCount[word]) {
+      wordCount[word] = wordCount[word] +1;
+    } else wordCount[word] = 1;
+  })}
   return wordCount;
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`

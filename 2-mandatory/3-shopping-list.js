@@ -18,8 +18,12 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
+
 function createShoppingList(recipe) {
-  // write code here
+  let combinedPantry = pantry.fridgeContents.concat(pantry.cupboardContents) //[...pantry.fridgeContents, ...pantry.cupboardContents]
+  let list = recipe.ingredients.filter(ingredient => !combinedPantry.includes(ingredient))
+  return {name : recipe.name, items: list}
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

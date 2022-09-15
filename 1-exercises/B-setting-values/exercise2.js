@@ -6,8 +6,8 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
-};
+  hasPassed: false,
+  };
 
 /*
   Using bracket notation
@@ -16,6 +16,9 @@ let student = {
 */
 
 // write code here
+student["attendance"] = 90;
+
+
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -26,6 +29,11 @@ let student = {
 */
 
 // write code here
+
+  if (student.examScore > 60 && student.attendance >=90) {
+   student["hasPassed"] = true;
+  };
+
 
 console.log(student);
 

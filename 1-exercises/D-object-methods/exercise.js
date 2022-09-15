@@ -8,11 +8,14 @@
 */
 
 let student = {
-  // write code here
+  getName: function(name) {
+    this.name = name;
+    console.log(`Student name: ${this.name}`);
+  }
 }
 
 student.getName("Daniel");
-
+// console.log(student)
 /* EXPECTED RESULT
 
   Student name: Daniel
