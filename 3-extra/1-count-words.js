@@ -28,14 +28,14 @@ function countWords(string) {
 
   // write code here
   const str = string.split(" ");
-   console.log(str);
-  str.forEach(word => {
-    if (word === ""){
+  console.log(str);
+  str.forEach((word) => {
+    if (word === "") {
       return wordCount;
-    }else if(word in wordCount){
+    } else if (word in wordCount) {
       wordCount[word]++;
-    } else{
-      wordCount[word]=1;
+    } else {
+      wordCount[word] = 1;
     }
     console.log(wordCount);
   });
