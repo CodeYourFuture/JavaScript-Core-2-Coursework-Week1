@@ -15,3 +15,4 @@ let cashRegister = {
 
 //cashRegister
 console.log(cashRegister.orderBurger(7))
+
