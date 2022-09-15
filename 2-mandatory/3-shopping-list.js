@@ -17,9 +17,23 @@ let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
-
+// Filtering out missing items from recipe
+function getMissingItems(recipe) {
+  return recipe.ingredients.filter(
+    (item) =>
+      !pantry.fridgeContents.includes(item) &&
+      !pantry.cupboardContents.includes(item)
+  );
+}
 function createShoppingList(recipe) {
-  // write code here
+  let shoppingList = {};
+  let missingIngredients = getMissingItems(recipe);
+
+  // Setting shoppingList object
+  shoppingList.name = recipe.name;
+  shoppingList.items = missingIngredients;
+
+  return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
