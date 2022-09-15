@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// no property for colour
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,12 +29,24 @@ let user = {
 
 sayHelloToUser(user);
 
+// console log should read   console.log(`Hello ${user.name}`);
+
+
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+/*
+function should look like this ;
+  
+getName: function() {
+    return "My pet's name is Fluffy";
+  },
+
+  */
