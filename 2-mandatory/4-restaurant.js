@@ -21,7 +21,21 @@ const MENU = {
 
 let cashRegister = {
   // write code here
-}
+  orderBurger(balance) {
+    if (balance >= 6.5) {
+      return balance - 6.5;
+    } else {
+      return balance;
+    }
+  },
+  orderFalafel(balance) {
+    if (balance >= 7.25) {
+      return balance - 7.25;
+    } else {
+      return balance;
+    }
+  },
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
