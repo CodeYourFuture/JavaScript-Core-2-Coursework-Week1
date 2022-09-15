@@ -27,14 +27,14 @@ let recipe = {
   title: "Pasta",
   Serves: 4,
   Ingredients:[
-    "pasta sauce",
+    "pasta-sauce",
     "cheese",
     "tomato",
     "pasta flour"
   ]
 }
 console.log(recipe.title);
-console.log(`Serves: ${recipe.serves}`);
+console.log(`Serves: ${recipe.Serves}`);
 console.log(`Ingredients: 
 ${recipe.Ingredients['0']}
 ${recipe.Ingredients['1']}
@@ -57,7 +57,7 @@ let recipe1 = {
   ]
 }
 console.log(recipe1.title);
-console.log(`Serves: ${recipe1.serves}`);
+console.log(`Serves: ${recipe1.Serves}`);
 console.log(`Ingredients: 
 ${recipe1.Ingredients[0]} 
 ${recipe1.Ingredients[1]} 
@@ -91,7 +91,7 @@ let recipe2 = {
 }
 
 console.log(recipe2.title);
-console.log(`Serves: ${recipe2.serves}`);
+console.log(`Serves: ${recipe2.Serves}`);
 console.log(`Ingredients: 
 ${recipe2.Ingredients[0]} 
 ${recipe2.Ingredients[1]} 
@@ -110,7 +110,7 @@ ${recipe2.Ingredients[13]}`);
 
 let recipe3 = {
 title: "Sticky Chicken Wings",
-serves: 2,
+Serves: 2,
 Ingredients: [
 "Roscoe's Sweet and Sour Sauce",
 "12 chicken wings", 
@@ -118,7 +118,7 @@ Ingredients: [
 ]
 }
 console.log(recipe3.title);
-console.log(`Serves: ${recipe3.serves}`);
+console.log(`Serves: ${recipe3.Serves}`);
 console.log(`Ingredients: 
 ${recipe3.Ingredients['0']} 
 ${recipe3.Ingredients['1']} 
@@ -127,7 +127,7 @@ ${recipe3.Ingredients['2']}`);
 
 let recipe4 = {
   title: "Tacos",
-  serves: 8,
+  Serves: 8,
   Ingredients: [
   "1 tbsp.extra - virgin olive oil",
   "1 medium yellow onion, chopped",
@@ -143,7 +143,7 @@ let recipe4 = {
 
 
 console.log(recipe4.title);
-console.log(`Serves: ${recipe4.serves}`);
+console.log(`Serves: ${recipe4.Serves}`);
 console.log(`Ingredients: 
 ${recipe4.Ingredients[0]} 
 ${recipe4.Ingredients[1]} 

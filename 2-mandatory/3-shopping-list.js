@@ -12,16 +12,16 @@
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
-
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+let combinedPantry = pantry.fridgeContents.concat(pantry.cupboardContents)
+let list = recipe.ingredients.filter(ingredient => !combinedPantry.includes(ingredient))
+return {name : recipe.name, items: list}
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
