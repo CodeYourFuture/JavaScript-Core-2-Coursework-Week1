@@ -23,3 +23,12 @@
 */
 
 // write code here
+let recipe = {
+  title: 'Morning Oatmeal',
+  serves: 1,
+  ingredients: ['oats', 'plant milk', 'banana', 'chia seeds', 'pumpkin seeds', 'peanut butter']
+}
+
+for (things in recipe) {
+  console.log(things, recipe[things])
+}
