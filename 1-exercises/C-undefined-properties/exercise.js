@@ -15,6 +15,10 @@ let car = {
 };
 
 console.log(car["colour"]);
+// There is no color properties
+
+
+
 
 // Example 2
 function sayHelloToUser(user) {
@@ -27,12 +31,17 @@ let user = {
 
 sayHelloToUser(user);
 
+
+
+
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
     "My pet's name is Fluffy";
+
   },
 };
 
 console.log(myPet.getName());
+//there is no return function
