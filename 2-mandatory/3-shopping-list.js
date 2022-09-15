@@ -18,24 +18,27 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-
-
 function createShoppingList(recipe) {
   // write code here
-  let shoppingFor={}
-  let shoppingList=[]
+  let shoppingFor = {};
+  let shoppingList = [];
   // shoppingList= pantryItems.filter(item => !recipe["ingredients"].includes(item))
   // let pantryItems=pantry["fridgeContents"].concat(pantry["cupboardContents"])
-   
-  for(let item of recipe.ingredients ){
-    if (!(pantry["fridgeContents"].includes(item) || pantry["cupboardContents"].includes(item))){
-      shoppingList.push(item)
-    }
-   }
 
-   shoppingFor.name =recipe.name
-   shoppingFor.items=shoppingList
-   return shoppingFor
+  for (let item of recipe.ingredients) {
+    if (
+      !(
+        pantry["fridgeContents"].includes(item) ||
+        pantry["cupboardContents"].includes(item)
+      )
+    ) {
+      shoppingList.push(item);
+    }
+  }
+
+  shoppingFor.name = recipe.name;
+  shoppingFor.items = shoppingList;
+  return shoppingFor;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -59,11 +62,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });

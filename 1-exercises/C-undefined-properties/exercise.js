@@ -23,7 +23,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 // user object only has one property which is name, so firstName is undefined.
 sayHelloToUser(user);
@@ -31,8 +31,8 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-   "My pet's name is Fluffy";
+  getName: function () {
+    "My pet's name is Fluffy";
   },
 };
 // there is no return in the function .

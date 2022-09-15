@@ -9,10 +9,10 @@
 
 let student = {
   // write code here
-  getName(name){
-    console.log(`Student name:${name}`)
-  }
-}
+  getName(name) {
+    console.log(`Student name:${name}`);
+  },
+};
 
 student.getName("Daniel");
 
