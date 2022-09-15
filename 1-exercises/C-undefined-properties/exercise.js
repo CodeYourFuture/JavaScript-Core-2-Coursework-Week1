@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);   //car is undefined because there is not "colour" propety asigned yet!
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // firstName is not defined, just (name: "Mira")
 }
 
 let user = {
@@ -30,9 +30,13 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function() {        //there is not data inside function brackets and no return.
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+
+
+  
