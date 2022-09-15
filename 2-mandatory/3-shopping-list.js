@@ -20,13 +20,12 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here`
-  let res = {
+  return {
     name: recipe.name,
     items: recipe.ingredients.filter(
       (x) => !pantry.fridgeContents.concat(pantry.cupboardContents).includes(x)
     ),
   };
-  return res;
 }
 console.log(
   createShoppingList({
