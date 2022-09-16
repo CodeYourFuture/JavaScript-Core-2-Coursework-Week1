@@ -21,6 +21,10 @@ let basketballTeam = {
 */
 
 // write code here
+let sortedPlayers  = basketballTeam.topPlayers.sort()
+console.log(sortedPlayers[0])
+console.log(sortedPlayers[1])
+console.log(sortedPlayers[2])
 
 
 /* EXPECTED RESULT

@@ -17,8 +17,12 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
-  // write code here
+function createLookup(countryCurrencyCodes){
+  let object ={}
+  for(let element of countryCurrencyCodes){
+    object[element[0]] = element[1];
+  }
+  return object
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
