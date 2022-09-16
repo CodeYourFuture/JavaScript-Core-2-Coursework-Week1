@@ -1,13 +1,10 @@
 /*
   You have a pantry object that tells you the contents of your fridge and your cupboards.
-
   Write a function createShoppingList that takes a recipe as a parameter.
   The recipe parameter has two properties:
     - "name", which is a string
     - "ingredients", which is an array of strings
-
   The createShoppingList function should find which ingredients from the recipe are missing from the pantry.
-
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
@@ -20,7 +17,27 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let res = {
+    name: recipe.name,
+    items: recipe.ingredients.filter(
+      (x) => !pantry.fridgeContents.concat(pantry.cupboardContents).includes(x)
+    ),
+  };
+  return res;
 }
+console.log(
+  createShoppingList({
+    name: "margherita pizza",
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
+  })
+);
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

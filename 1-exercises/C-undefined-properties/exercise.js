@@ -18,7 +18,8 @@ console.log(car["colour"]);
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); 
+  // "user" object doesn't have a first Name defined
 }
 
 let user = {
@@ -32,7 +33,7 @@ let myPet = {
   animal: "Cat",
   getName: function() {
     "My pet's name is Fluffy";
-  },
+  }, //a return statement is missing in getName 
 };
 
 console.log(myPet.getName());
