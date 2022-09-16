@@ -19,8 +19,10 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  return Object.fromEntries(countryCurrencyCodes);
 }
 
+console.table(createLookup(COUNTRY_CURRENCY_CODES))
 
 
 
