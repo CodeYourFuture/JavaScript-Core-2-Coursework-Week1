@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user); // first name key does not exist in the user object
+sayHelloToUser(user); // firstName key does not exist in the user object
 
 // Example 3
 let myPet = {
