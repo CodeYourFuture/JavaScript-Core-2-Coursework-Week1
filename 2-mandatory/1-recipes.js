@@ -23,3 +23,65 @@
 */
 
 // write code here
+let recipes = {
+  easyEggFriedRice: {
+    title: `Easy egg-fried rice`,
+    servings: 2,
+    ingerdiants: [
+      "250g long grain rice",
+      "3 tbsp vegetable oil",
+      "1 onion, finely chopped",
+      "4 eggs, beaten",
+      "2 spring onion, sliced, to serve",
+      " olive oil",
+    ],
+  },
+  smokedMackerelRisotto: {
+    title: `Smoked mackerel risotto`,
+    servings: 3,
+    ingerdiants: [
+      "1 tbsp butter",
+      "1 onion, finely chopped",
+      "250 risotte rice",
+      "100ml white wine",
+      "1l begetable stock",
+      "1 x 240 pack smoked mackerel",
+      "2 spring onions, sliced",
+      "100g bag fresh spinach",
+    ],
+  },
+  RoastLamb: {
+    title: `Roast lamb`,
+    servings: 8,
+    ingerdiants: [
+      "carrots",
+      "onion",
+      "small bunch parsley",
+      "thyme leaf",
+      "lemon",
+    ],
+  },
+  Scampi: {
+    title: `Scampi with tartare sauce`,
+    servings: 2,
+    ingerdiants: [
+      "cornflour",
+      "sparkling water",
+      "beer",
+      "Dublin Bay prawn tails",
+      " olive oil",
+    ],
+  },
+};
+function printOut(meals) {
+  console.log(recipes[meals]["title"]);
+  console.log("Serves: " + recipes[meals]["servings"]);
+  console.log(
+    " Ingredients:" + recipes[meals]["ingerdiants"].map((x) => x + " \n ")
+  );
+}
+
+printOut("easyEggFriedRice");
+printOut("smokedMackerelRisotto");
+printOut("RoastLamb");
+printOut("Scampi");
