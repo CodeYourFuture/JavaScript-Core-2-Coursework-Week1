@@ -21,6 +21,15 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  orderBurger: function(balance) {
+    const burgerPrice = MENU.burger
+    return balance = (balance >= burgerPrice)? balance - burgerPrice : balance
+  },
+
+  orderFalafel: function(balance) {
+    const falafelPrice = MENU.falafel
+    return balance = (balance >= falafelPrice)? balance - falafelPrice : balance
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
