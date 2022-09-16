@@ -23,3 +23,10 @@
 */
 
 // write code here
+const myFavoriteRecipe = {
+  title: "mutton sauce",
+  Serves: 3,
+  Ingredients: ["mutton slices", "sesame oil", "bell pepper"],
+}
+
+console.log(myFavoriteRecipe);
