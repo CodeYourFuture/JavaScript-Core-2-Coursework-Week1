@@ -23,3 +23,17 @@
 */
 
 // write code here
+
+
+let recipe = {
+  title: "Salad-Snowflake",
+  servings: 4,
+  ingredients: ["strained yogurt", "pickles", "walnuts", "cloves of garlic", "bunch dill", "Olive oil"],
+};
+console.log(recipe.title);
+console.log(`Serves: ${recipe.servings}`);
+console.log("Ingredients:");
+recipe.ingredients.forEach((ingredient) => console.log(ingredient));
+
+
+
