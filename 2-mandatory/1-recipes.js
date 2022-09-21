@@ -22,4 +22,36 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+  // write code below
+
+  let desert = {
+    title: "Mousse",
+    servings: 6,
+    ingredients: ["cream", "eggs", "sugar", "fruit"],
+  };
+  console.log(desert.title);
+  console.log(`Serves: ${desert.servings}`);
+  console.log("Ingredients:");
+  desert.ingredients.forEach((ingredient) => console.log(ingredient));
+
+
+  let entree= {
+    title: "Coquilles Saint Jacques",
+    servings: 6,
+    ingredients: ["cream", "scallops", "seasoning", "breadcrumbs"],
+  };
+  console.log(entree.title);
+  console.log(`Serves: ${entree.servings}`);
+  console.log("Ingredients:");
+  entree.ingredients.forEach((ingredient) => console.log(ingredient));
+ 
+  
+  let mains= {
+    title: "Low Carb Lasagna",
+    servings: 6,
+    ingredients: ["aubergine", "beef", "mushrooms", "sauce"],
+  };
+  console.log(mains.title);
+  console.log(`Serves: ${mains.servings}`);
+  console.log("Ingredients:");
+  mains.ingredients.forEach((ingredient) => console.log(ingredient));

@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //The colour property hasn't been defined.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // The firstName property hasn't been defined for user
 }
 
 let user = {
@@ -31,8 +31,8 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy";  // The function does not have a return statement.     String.
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); 
