@@ -19,17 +19,16 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  Object.values(pantry).flat();
+  let hello = Object.values(pantry).flat();
   let all = [];
-  for (const key in recipe.ingredients) {
-    if (
-      recipe.ingredients[key].includes(Object.values(pantry).flat()) == false
-    ) {
-      all.push(recipe.ingredients[key]);
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    if (!hello.includes(recipe.ingredients[i])) {
+      all.push(recipe.ingredients[i]);
     }
   }
-  return all;
-  // return `{name: ${recipe.name}}`;
+  let createShopping = { items: all, name: recipe.name };
+
+  return createShopping;
 }
 
 // let all = Object.values(pantry);
