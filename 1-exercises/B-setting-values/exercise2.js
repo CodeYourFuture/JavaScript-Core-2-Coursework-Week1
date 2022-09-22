@@ -6,7 +6,7 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*
@@ -14,6 +14,8 @@ let student = {
     - Add a property to the student object for attendance
     - Set the value of attendance to 90
 */
+
+student.attendance = 90;
 
 // write code here
 
@@ -26,7 +28,12 @@ let student = {
 */
 
 // write code here
-
+function retro(student) {
+  if (student.attendance >= 90 && student.examScore > 60) {
+    return (student.hasPassed = true);
+  }
+}
+retro(student);
 console.log(student);
 
 /* EXPECTED RESULT
