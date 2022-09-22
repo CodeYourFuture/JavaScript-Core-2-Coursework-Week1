@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// there is no value defined for "colour"
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,19 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// It' undefined because there is no property named "firstName"
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// It's undefined because there is no condition or return mentioned
