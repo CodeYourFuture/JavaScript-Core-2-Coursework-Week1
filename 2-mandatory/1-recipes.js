@@ -23,3 +23,47 @@
 */
 
 // write code here
+let vicSponge = {
+  title: 'vicSponge',
+  servings: 5,
+  ingredients: ['sugar', 'eggs', 'flour']
+};
+console.log(vicSponge.title)
+console.log('serves: ' + vicSponge.servings)
+vicSponge.ingredients.forEach(x => console.log(x))
+
+let lemonCake = {
+  title: 'lemonCake',
+  servings: 5,
+  ingredients: ['sugar', 'eggs', 'flour']
+};
+console.log(lemonCake.title)
+console.log('serves: ' + lemonCake.servings)
+lemonCake.ingredients.forEach(x => console.log(x))
+
+let fruitCake = {
+  title: 'fruitCake',
+  servings: 5,
+  ingredients: ['sugar', 'eggs', 'flour']
+};
+console.log(fruitCake.title)
+console.log('serves: ' + fruitCake.servings)
+fruitCake.ingredients.forEach(x => console.log(x))
+
+let carrotCake = {
+  title: 'cake',
+  servings: 5,
+  ingredients: ['sugar', 'eggs', 'flour']
+};
+console.log(carrotCake.title)
+console.log('serves: ' + carrotCake.servings)
+carrotCake.ingredients.forEach(x => console.log(x))
+
+let bananaLoaf = {
+  title: 'bananaLoaf',
+  servings: 5,
+  ingredients: ['sugar', 'eggs', 'flour']
+};
+console.log(bananaLoaf.title)
+console.log('serves: ' + bananaLoaf.servings)
+bananaLoaf.ingredients.forEach(x => console.log(x))

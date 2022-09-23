@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //colour does not exist in the object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,7 +22,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira"  //firstName does not exist in user object
 };
 
 sayHelloToUser(user);
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; //function is not returning any value
   },
 };
 
