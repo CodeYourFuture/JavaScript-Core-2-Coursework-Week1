@@ -21,9 +21,13 @@ let basketballTeam = {
 */
 
 // write code here
-
+let bestPlayers = basketballTeam.topPlayers.sort();
+bestPlayers.forEach((player) => {
+  console.log(bestPlayers);
+});
 
 /* EXPECTED RESULT
+
 
   Dennis Rodman
   Michael Jordan

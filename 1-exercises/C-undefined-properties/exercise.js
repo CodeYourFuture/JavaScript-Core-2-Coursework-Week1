@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // There is no color property!
 
 // Example 2
 function sayHelloToUser(user) {
@@ -23,7 +23,7 @@ function sayHelloToUser(user) {
 
 let user = {
   name: "Mira"
-};
+}; // There is no user firstName property.
 
 sayHelloToUser(user);
 
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+     "My pet's name is Fluffy"; // There is no return function.
   },
 };
 

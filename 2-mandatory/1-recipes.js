@@ -23,3 +23,44 @@
 */
 
 // write code here
+let favRecipe = {
+  Manti: {
+    servis: 4,
+  Ingredients: ["Pasta", "Lamp mince", "Youghort", "Garlic", "Parsey", "Tomato paste"],
+  },
+  
+  Melemen: {
+    servis: 2,
+  Ingredients: ["Tomato", "Green peper", "Eggs", "Cheese", "Parsey", "Salt"]
+  },
+  
+  Soup: {
+  servis: 4,
+  Ingredients: ["Patoteo", "Carrot", "Onion", "Garlic", "Tomoto paste"]
+  },
+   
+  PeppeWithEggs: {
+  servis: 4,
+  Ingredients: ["Pepper", "Eggs", "Butter", "Garlic"]
+},
+
+TavukGogusu: {
+  servis: 4,
+  Ingredients: ["Milk", "Suger", "Flour", "Butter", "Vanilia"]
+}
+
+};
+
+console.log(favRecipe);
+
+
+
+
+
+
+
+
+
+
+
+
