@@ -27,7 +27,7 @@ student["attendance"] = 90;
 
 // write code here
 if (student.attendance >= 90 && student.examScore > 60 ) {
-   student.attendance["hasPassed"];
+   student.attendance["hasPassed"] = true;
 }
 console.log(student);
 

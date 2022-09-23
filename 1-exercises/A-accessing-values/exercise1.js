@@ -16,13 +16,9 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName = {
-  name: "Spot"
-}; // complete the code
+let dogName = dog.name; // complete the code
 
-let dogBreed = {
-  breed: "Dalmatian"
-}; // complete the code
+let dogBreed = dog.breed; // complete the code
 
 
 console.log(`${dogName.name} is a ${dogBreed.breed}`);

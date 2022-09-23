@@ -18,7 +18,7 @@ let capitalCities = {
 */
 
 let myCountry = "UnitedKingdom";
-let myCapitalCity = capitalCities["UnitedKingdom"]; // complete the code
+let myCapitalCity = capitalCities[myCountry]; // complete the code
 
 console.log(myCapitalCity);
 
