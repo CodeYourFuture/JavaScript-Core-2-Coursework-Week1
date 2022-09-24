@@ -8,17 +8,19 @@
     For each example, can you explain why we are seeing undefined?
 */
 
+//Done ✔️
+
 // Example 1
 let car = {
   brand: "Ford",
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // the code is trying to log a value that doesn't exist inside the car object. 
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); // same as the previous example, firstName is not defined inside the user object. 
 }
 
 let user = {
@@ -31,7 +33,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; // this value is not defined inside myPet object. the function should target a value that myPet have. 
   },
 };
 

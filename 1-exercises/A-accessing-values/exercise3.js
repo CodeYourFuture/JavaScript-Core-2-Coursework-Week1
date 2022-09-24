@@ -14,14 +14,15 @@ let basketballTeam = {
 };
 
 /*
-  Write code that
+  Write code that  Done ✔️
     - accesses the basketball team's top players array
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
 
 // write code here
-
+basketballTeam.topPlayers.sort(); 
+console.log(basketballTeam.topPlayers.join("\r\n")); 
 
 /* EXPECTED RESULT
 
