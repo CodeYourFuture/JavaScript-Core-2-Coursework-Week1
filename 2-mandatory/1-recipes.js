@@ -30,19 +30,7 @@ let favoriteRecipes = {
     Ingredients: ["chicken", "rice", "biryani masala"]
   }
 
-  // recipe2: {
-  //   Title: "italian pizza",
-  //   Serves: 3,
-  //   Ingredients: ["flour", "olive oil", "tomatoes"]
-  // },
-
-  // recipe3: {
-  //   Title: "Yorkshire budding",
-  //   Serves: 1,
-  //   Ingredients: ["flour", "eggs", "milk"]
-  // },
-
-  // recipe4: {
+  
   //   Title: "spaghetti bolognese",
   //   Serves: 2,
   //   Ingredients: ["spaghetti", "olive oil", "onions"]

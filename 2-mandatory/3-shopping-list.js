@@ -19,10 +19,10 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  missingItems = recipe.ingredients.filter((items)=> {
-    return(
-      !pantry.fridgeContents.includes(items) && !pantry.cupboardContents.includes(items)
-    )
+  let missingItems = recipe.ingredients.filter((item)=> {
+    
+      return !pantry.fridgeContents.includes(item) && !pantry.cupboardContents.includes(item)
+    
    });
    return {
     name : recipe.name,
