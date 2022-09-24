@@ -13,8 +13,9 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
+// car.colour = "black", we need to define colour here.
 
-console.log(car["colour"]);
+console.log(car["colour"]); //we don't have a property called colour in the object so we get undefined.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,7 +23,8 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira" 
+  //firstName property does not exist
 };
 
 sayHelloToUser(user);
@@ -30,8 +32,9 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function(name) {
+    
+     "My pet's name is Fluffy"; // we need to use the return key word statement
   },
 };
 
