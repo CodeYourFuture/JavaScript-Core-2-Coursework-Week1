@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// there is no property called 'colour' in the car object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,19 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// there is no property called 'firstName' in the user object
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// nothing is being returned in the method definition of the 'getName' method
