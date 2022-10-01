@@ -7,9 +7,14 @@
 let capitalCities = {
   UnitedKingdom: "London",
   China: "Beijing",
-  Peru: "Lima"
+  Peru: "Lima",
 };
-
+function value(params) {
+  for (let key in params) {
+    console.log(`the apital city of ${key} is: ${params[key]}`);
+  }
+}
+value(capitalCities);
 /*
   You have an object, capitalCities, that contains key/value pairs of countries and their capital cities.
   Log the value for the property assigned to the variable myCountry using bracket notation.
@@ -17,7 +22,7 @@ let capitalCities = {
 */
 
 let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+let myCapitalCity = capitalCities[myCountry];
 
 console.log(myCapitalCity);
 
