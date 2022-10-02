@@ -16,23 +16,29 @@ let car = {
 
 console.log(car["colour"]);
 
+// we see undifiend beacuase the car object does not have colour property
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+// we see undifiend beacuase the user object does not have firstName property
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+// we see undifiend beacuase the getName method in myPet object does not return anything
