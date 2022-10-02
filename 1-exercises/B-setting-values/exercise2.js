@@ -16,6 +16,11 @@ let student = {
 */
 
 // write code here
+student["attendence"] = 90;
+
+if (student["attendence"] >= 90 && student["examScore"] > 60) {
+  student["hasPassed"] = true;
+}
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
