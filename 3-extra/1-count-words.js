@@ -25,10 +25,21 @@
 
 function countWords(string) {
   const wordCount = {};
-
+  if (!string || string.trim().length === 0) {
+    return wordCount;
+  }
+  let strArr = string.split(" ");
+  strArr.map((word) => {
+    if (wordCount[word] === undefined) {
+      wordCount[word] = 1;
+    } else {
+      wordCount[word] = wordCount[word] + 1;
+    }
+  });
   // write code here
 
   return wordCount;
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -46,9 +57,13 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Empty string", () => {
@@ -56,7 +71,11 @@ test("Empty string", () => {
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,
