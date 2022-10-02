@@ -12,7 +12,7 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
-  colour: "blue"
+  colour: blue,
 };
 
 console.log(car["colour"]);
@@ -24,7 +24,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
- firstName: "Mira"
+  firstName: "Mira",
 };
 // IT HAS A NAME PROPERTY NOT FIRST NAME
 sayHelloToUser(user);
@@ -32,10 +32,10 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-   return "My pet's name is Fluffy";
+  getName: function () {
+    "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
-// does not return anything 
+// does not return anything
