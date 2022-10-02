@@ -23,3 +23,48 @@
 */
 
 // write code here
+
+let chicken = {
+  title:"chicken",
+  serves:4,
+  ingredients: ["chicken","potatoes"]
+}
+
+let pork = {
+  title:"pork",
+  serves:4,
+  ingredients: ["pork","tomtoes"]
+}
+
+let steak = {
+  title:"steak",
+  serves:2,
+  ingredients: ["beef","pepper"]
+}
+
+let lamb = {
+  title:"lamb",
+  serves:3,
+  ingredients: ["lamb","garlic"]
+}
+
+let fish = {
+  title:"fish",
+  serves:6,
+  ingredients: ["fish","onion"]
+}
+console.log(Object.entries(fish));
+
+function printRecipe(obj) {
+  for ([key, value] of Object.entries(obj)) {
+    console.log(`${key}: ${value}`);
+  }
+}
+
+printRecipe(chicken);
+printRecipe(pork);
+printRecipe(steak);
+printRecipe(lamb);
+printRecipe(fish);
+
+
