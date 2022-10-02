@@ -24,8 +24,8 @@
 */
 
 function countWords(string) {
+  if (!string) return {};
   const wordCount = {};
-  if (!string) return "";
   string.split(" ").forEach((word) => {
     if (word in wordCount) {
       wordCount[word]++;
