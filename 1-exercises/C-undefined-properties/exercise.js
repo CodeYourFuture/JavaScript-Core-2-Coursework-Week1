@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// Because there's no such a property named colour in the object car.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,6 +29,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// Because there's no such a property called firstName in the object user.
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// Because in the object method, it omits the keyword return for the string.
