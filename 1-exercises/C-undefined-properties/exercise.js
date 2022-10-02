@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// Because we did not define the color key.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,18 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
-
+// Because in our object we do not have the firstNAme as an object key.
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// Because we did not define any parameter.
