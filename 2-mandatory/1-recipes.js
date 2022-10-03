@@ -23,3 +23,11 @@
 */
 
 // write code here
+let recipe1 = {
+  title: "Ash",
+  Serves: 4,
+  Ingredients: ["Onions", "Parsely", "Mixed beans", "Mint"],
+};
+console.log(recipe1.title);
+console.log(`Serves: ${recipe1.Serves}`);
+console.log(`Ingredients:\n ${recipe1.Ingredients.join("\r\n")}`);
