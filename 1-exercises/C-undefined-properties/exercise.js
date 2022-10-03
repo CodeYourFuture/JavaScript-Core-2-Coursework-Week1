@@ -14,7 +14,8 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); 
+// Answer = here the property "colour" is not added to the objec car so the value is undefiend 
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,13 +27,15 @@ let user = {
 };
 
 sayHelloToUser(user);
+//  Answer - in object user there is no property "firstname"  so calling the the fucnion is producing undefined value
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//  Answer - in the method GetName the word "return" is ommitted
