@@ -21,7 +21,10 @@ let basketballTeam = {
 */
 
 // write code here
-
+let sortPlayer = basketballTeam.topPlayers.sort()
+for (let player of sortPlayer) {
+  console.log(player);
+};
 
 /* EXPECTED RESULT
 
