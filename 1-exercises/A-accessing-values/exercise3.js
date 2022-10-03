@@ -22,6 +22,10 @@ let basketballTeam = {
 
 // write code here
 
+let  arrayOfNames= basketballTeam["topPlayers"].sort((a,b) => a.localeCompare(b))
+let alphabeticallySortedTeamplayersName = arrayOfNames.join('\r\n')
+
+
 
 /* EXPECTED RESULT
 
@@ -30,3 +34,8 @@ let basketballTeam = {
   Scottie Pippen
 
 */
+console.log(alphabeticallySortedTeamplayersName);
+
+
+// var arr = ["apple", "banana", "mango"];
+// console.log(arr.join("\r\n"));
