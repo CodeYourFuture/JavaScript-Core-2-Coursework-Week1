@@ -14,17 +14,6 @@
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
 
-function gordon(a) {
-  return a
-    .replace(/a/gi, "@")
-    .replace(/e/gi, "3")
-    .replace(/i/gi, "!")
-    .replace(/o/gi, "0")
-    .replace(/u/gi, "|_|");
-}
-
-
-
 const MENU = {
   burger: 6.5,
   falafel: 7.25,
@@ -44,8 +33,8 @@ let cashRegister = {
       return balance - MENU.falafel;
     } else {
       return balance;
-   }
-},
+    }
+  },
 };
 
 console.log(cashRegister.orderBurger(10));

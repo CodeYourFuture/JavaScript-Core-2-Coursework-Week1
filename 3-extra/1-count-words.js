@@ -27,9 +27,31 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
+  if (!string) {
+    return wordCount;
+  } else {
+    const split = string.split(" ");
+
+    for (let word of split) {
+      wordCount[word] = count(word, split);
+    }
+  }
 
   return wordCount;
 }
+
+function count(word, splitString) {
+  let count = 0;
+
+  for (let word2 of splitString) {
+    if (word === word2) count++;
+  }
+
+  return count;
+}
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
