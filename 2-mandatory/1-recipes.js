@@ -23,3 +23,12 @@
 */
 
 // write code here
+function Recipe(title, serves, ingredients) {
+    this.title = title,
+    this.serves = serves,
+    this.ingredients = ingredients
+  }
+// USE CONSTRCUTOR TO BUILD OBJECTS QUICKLY
+let receipeOne = new Recipe("Friedrice", 1, ["vege","oil","chicken","rice"]);
+//let receipeTwo = new Recipe('anna@mariocorp.com', 'anna', 33, "F", "£90" );
+ console.log(receipeOne)
