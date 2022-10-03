@@ -14,18 +14,18 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // colour is not defined in the object car
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
-}
+  console.log(`Hello ${user.firstName}`); 
+} // firstName is not defined in the object user
 
 let user = {
   name: "Mira"
-};
+}; 
 
-sayHelloToUser(user);
+sayHelloToUser(user); // firstName is not defined in the object user
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // getName is not a function
