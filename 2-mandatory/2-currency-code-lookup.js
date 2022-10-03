@@ -19,8 +19,12 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  let object = Object.fromEntries(countryCurrencyCodes);
+
+  return object;
 }
 
+// Note The Object.fromEntries() method transforms a list of key-value pairs into an object.
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
