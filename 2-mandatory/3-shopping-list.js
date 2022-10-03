@@ -20,6 +20,19 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let missingIngredients = [];
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    if (
+      !pantry.fridgeContents.includes(recipe.ingredients[i]) &&
+      !pantry.cupboardContents.includes(recipe.ingredients[i])
+    ) {
+      missingIngredients.push(recipe.ingredients[i]);
+    }
+  }
+  return {
+    name: recipe.name,
+    items: missingIngredients,
+  };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
