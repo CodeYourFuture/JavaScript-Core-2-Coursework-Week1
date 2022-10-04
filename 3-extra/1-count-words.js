@@ -24,10 +24,17 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
-  // write code here
-
+  const wordCount = { };
+  let stringArray = string.split(" ");
+  if (string.length != 0) {
+    for (let word of stringArray) {
+      if (word in wordCount) {
+        wordCount[word] = wordCount[word] + 1;
+      } else {
+        wordCount[word] = 1;
+      }
+    }
+  }
   return wordCount;
 }
 
