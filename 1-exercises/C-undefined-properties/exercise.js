@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);//the colour property is not define in car object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);//user object has name as a property and in sayHello function it just log firstname from user object that is not defined
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName());//the object function doesn't return the value
