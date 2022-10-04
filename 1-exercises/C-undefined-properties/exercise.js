@@ -11,14 +11,14 @@
 // Example 1
 let car = {
   brand: "Ford",
-  yearsOld: 8,
+  yearsOld: 8, 
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // car colour is not defined/assigned.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`);   // firstName is not defined.
 }
 
 let user = {
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; //This function has no return.
   },
 };
 

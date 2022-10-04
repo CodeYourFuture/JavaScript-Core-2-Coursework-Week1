@@ -17,10 +17,22 @@ let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
-
+let missingItem={};
 function createShoppingList(recipe) {
-  // write code here
-}
+  let miss=[];
+ 
+ for (let missingItems of recipe.ingredients ){
+  if((!pantry.fridgeContents.includes(missingItems))&&
+   (!pantry.cupboardContents.includes(missingItems)))
+  {
+    miss.push(missingItems);
+  }
+  missingItem.name=recipe.name;
+  missingItem.items=miss;
+  }
+   return  missingItem;
+ }    // write code here
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
