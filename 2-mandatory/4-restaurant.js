@@ -20,8 +20,27 @@ const MENU = {
 };
 
 let cashRegister = {
+  orderBurger: (balance) => {
+    let yourPacket = 0;
+    if (balance >= MENU.burger) {
+      yourPacket = balance - MENU.burger;
+    } else {
+      yourPacket = balance;
+    }
+    return yourPacket;
+  },
+  orderFalafel: (balance) => {
+    let yourPacket = 0;
+    if (balance >= MENU.falafel) {
+      yourPacket = balance - MENU.falafel;
+    } else {
+      yourPacket = balance;
+    }
+    return yourPacket;
+  },
+
   // write code here
-}
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
