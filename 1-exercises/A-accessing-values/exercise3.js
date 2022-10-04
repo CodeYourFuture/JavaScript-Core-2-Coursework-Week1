@@ -21,7 +21,11 @@ let basketballTeam = {
 */
 
 // write code here
-
+function basketballPlayers(players) {
+  const sortedPlayers = players.sort();
+ sortedPlayers.map(element => console.log(element))
+}
+basketballPlayers(basketballTeam.topPlayers);
 
 /* EXPECTED RESULT
 
