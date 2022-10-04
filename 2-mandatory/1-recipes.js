@@ -23,3 +23,54 @@
 */
 
 // write code here
+let favoriteRecipe1 = {
+  title: "Pasta",
+  servings: 1,
+  ingredients: ["pasta", "butter", "yogurt", "tomato paste"],
+};
+let favoriteRecipe2 = {
+  title: "Pasta",
+  servings: 2,
+  ingredients: ["pasta", "butter", "yogurt", "tomato paste"],
+};
+let favoriteRecipe3 = {
+  title: "Pasta",
+  servings: 3,
+  ingredients: ["pasta", "butter", "yogurt", "tomato paste"],
+};
+let favoriteRecipe4 = {
+  title: "Pasta",
+  servings: 4,
+  ingredients: ["pasta", "butter", "yogurt", "tomato paste"],
+};
+let favoriteRecipe5 = {
+  title: "Pasta",
+  servings: 5,
+  ingredients: ["pasta", "butter", "yogurt", "tomato paste"],
+};
+console.log(
+  `${favoriteRecipe1.title}\nServes: ${
+    favoriteRecipe1.servings
+  }\nIngredients: \n${favoriteRecipe1.ingredients.join("\t\n")}`
+);
+
+console.log(
+  `${favoriteRecipe2.title}\nServes: ${
+    favoriteRecipe2.servings
+  }\nIngredients: \n${favoriteRecipe2.ingredients.join("\t\n")}`
+);
+console.log(
+  `${favoriteRecipe3.title}\nServes: ${
+    favoriteRecipe3.servings
+  }\nIngredients: \n${favoriteRecipe3.ingredients.join("\t\n")}`
+);
+console.log(
+  `${favoriteRecipe4.title}\nServes: ${
+    favoriteRecipe4.servings
+  }\nIngredients: \n${favoriteRecipe4.ingredients.join("\t\n")}`
+);
+console.log(
+  `${favoriteRecipe5.title}\nServes: ${
+    favoriteRecipe5.servings
+  }\nIngredients: \n${favoriteRecipe5.ingredients.join("\t\n")}`
+);
