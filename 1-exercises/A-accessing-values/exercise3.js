@@ -16,11 +16,14 @@ let basketballTeam = {
 /*
   Write code that
     - accesses the basketball team's top players array
+
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
 
-// write code here
+let team = basketballTeam.topPlayers
+team = team.sort()
+console.log(team)// write code here
 
 
 /* EXPECTED RESULT
