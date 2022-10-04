@@ -19,7 +19,12 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let concatPantry = (pantry.fridgeContents).concat(pantry.cupboardContents);
+  let absence =(recipe.ingredients).filter((e)=>!concatPantry.includes(e));
+  return recipe={
+    name:recipe.name,
+    items :absence,
+  };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
