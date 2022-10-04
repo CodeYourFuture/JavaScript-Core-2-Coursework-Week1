@@ -36,6 +36,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
 console.log(myPet.getName());
 // does not return anything

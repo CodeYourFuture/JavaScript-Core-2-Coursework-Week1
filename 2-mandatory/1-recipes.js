@@ -22,7 +22,6 @@
 
   You should write and log at least 5 recipes
 */
-
 // write code here
 let myFavoriteRecipe1 = {
   tittle: "Mirzaghasemi",
