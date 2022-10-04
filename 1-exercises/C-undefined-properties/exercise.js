@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);// No colour property difined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);// firstName is not defined
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName());//inside function should return something
