@@ -18,15 +18,22 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+    let newObj={};
+    
+    for (let country of countryCurrencyCodes) {
+       //console.log(`country code ${country[0]} currency is ${country[1]}`);
+       newObj[country[0]] = country[1]; 
+    } 
+    return newObj;  // write code here
 }
+
+createLookup(COUNTRY_CURRENCY_CODES);
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
-
 test("creates country currency code lookup", () => {
   expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
     GB: "GBP",
