@@ -1,41 +1,40 @@
 /*
-  You can add properties to objects and assign values to them using bracket notation.
-  You can also change the value assigned to a property using bracket notation.
+    You have already seen "undefined", either in an error message or being output from your program.
+
+    As a reminder, in some cases, undefined will be used by a programmer intentionally, and they will write code to handle it.
+    But usually, when you see undefined - it means something has gone wrong!
+
+    Below are some examples of when you would see undefined when using objects.
+    For each example, can you explain why we are seeing undefined?
 */
 
-let student = {
-  name: "Reshma Saujani",
-  examScore: 65,
-  hasPassed: false
+// Example 1
+let car = {
+  brand: "Ford",
+  yearsOld: 8,
+  colour: blue,
 };
 
-/*
-  Using bracket notation
-    - Add a property to the student object for attendance
-    - Set the value of attendance to 90
-*/
+console.log(car["colour"]);
+// WE HAVE NOT COLOUR PROPERTY
 
-// write code here
+// Example 2
+function sayHelloToUser(user) {
+  console.log(`Hello ${user.firstName}`);
+}
 
-/*
-  - Write an "if" statement that changes the value of hasPassed to true
-      if the student has attendance that is equal or greater than 90
-      AND
-      exam score is above 60.
-  - Use bracket notation to change the value of hasPassed
-*/
+let user = {
+  firstName: "Mira",
+};
+// IT HAS A NAME PROPERTY NOT FIRST NAME
+sayHelloToUser(user);
 
-// write code here
-
-console.log(student);
-
-/* EXPECTED RESULT
-
-  {
-    name: "Reshma Saujani",
-    examScore: 65,
-    hasPassed: true,
-    attendance: 90
-  }
-
-*/
+// Example 3
+let myPet = {
+  animal: "Cat",
+  getName: function () {
+    "My pet's name is Fluffy";
+  },
+};
+console.log(myPet.getName());
+// does not return anything

@@ -24,10 +24,20 @@
 */
 
 function countWords(string) {
+  if (string===""){
+    return {};  
+  }
   const wordCount = {};
-
+   string.split(" ").forEach(word=>{
+    if (wordCount[word] === undefined ) {
+      wordCount[word] = 1;
+    } else {
+      wordCount[word]++;
+    }
+   });
+// for (let i = 0; i < split.length; i++) {
+// }
   // write code here
-
   return wordCount;
 }
 
