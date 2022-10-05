@@ -18,6 +18,11 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
+  let lookUp = {};
+  for (let country of countryCurrencyCodes) {
+    lookUp[country[0]] = country[1];
+  }
+  return lookUp;
   // write code here
 }
 
