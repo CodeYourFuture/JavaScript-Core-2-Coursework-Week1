@@ -17,7 +17,9 @@ let capitalCities = {
 */
 
 let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+// let myCapitalCity=capitalCities["UnitedKingdom"]; // complete the code
+//or 
+  let myCapitalCity=capitalCities[myCountry]
 
 console.log(myCapitalCity);
 

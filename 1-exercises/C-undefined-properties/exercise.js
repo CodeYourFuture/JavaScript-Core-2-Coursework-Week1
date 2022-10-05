@@ -12,9 +12,11 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  colour: blue,
 };
 
 console.log(car["colour"]);
+// WE HAVE NOT COLOUR PROPERTY
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +24,17 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  firstName: "Mira",
 };
-
+// IT HAS A NAME PROPERTY NOT FIRST NAME
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
-
 console.log(myPet.getName());
+// does not return anything
