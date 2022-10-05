@@ -42,7 +42,7 @@ let myPet = {
 console.log(myPet.getName());
 // Answer for example 3 
 /*
-The reason for undefined output in example 3 object is the fucntion is not returning any anything
+The reason for undefined output in example 3. The getName method is not returning any anything
 Two possible ways to output the sting is :
 1) to use the return key word.
 2) console log the whole statement.
