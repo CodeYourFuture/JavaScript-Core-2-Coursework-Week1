@@ -6,7 +6,7 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*
@@ -14,7 +14,8 @@ let student = {
     - Add a property to the student object for attendance
     - Set the value of attendance to 90
 */
-
+student["attendence"] = 90;
+console.log(student);
 // write code here
 
 /*
@@ -27,6 +28,9 @@ let student = {
 
 // write code here
 
+student.attendence >= 90 && student.examScore > 60
+  ? (student.hasPassed = true)
+  : null;
 console.log(student);
 
 /* EXPECTED RESULT

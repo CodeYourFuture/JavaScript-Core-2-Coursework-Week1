@@ -20,8 +20,24 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+  orderBurger: function (balance) {
+    let remainingMoney = 0;
+    if (balance >= MENU.burger) {
+      return (remainingMoney = balance - MENU.burger);
+    } else {
+      return balance;
+    }
+  },
+  orderFalafel: function (balance) {
+    let remainingMoneyafterFalafel = 0;
+    if (balance >= MENU.falafel) {
+      return (remainingMoneyafterFalafel = balance - MENU.falafel);
+    } else {
+      return balance;
+    }
+  },
+};
+// write code here
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
