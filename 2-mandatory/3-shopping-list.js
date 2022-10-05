@@ -18,9 +18,19 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+const allOfThem=[]
+  for (let x of pantry.fridgeContents){
+  allOfThem.push(x)
+  }
+  for(let x of pantry.cupboardContents){
+    allOfThem.push(x)
+  }
 function createShoppingList(recipe) {
-  // write code here
-}
+  let newObject={};
+  newObject.name=recipe.name;
+ newObject.items=recipe["ingredients"].filter(e=>!allOfThem.includes(e));
+    return newObject;
+  };
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
