@@ -19,7 +19,15 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  let exist = pantry.
+  let exist = Object.keys(pantry);
+  let existOneArr = [];
+  for(let key of exist){
+    for(let i in key){
+      existOneArr.push(key[i])
+    }
+  }
+  let shoppingList = recipe.filter(val => existOneArr.includes(val)?"":val)
+return shoppingList
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
