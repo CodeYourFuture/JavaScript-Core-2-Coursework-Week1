@@ -10,7 +10,7 @@
   Example
   If the function is given the input:
 
-  "you and me and you";
+  "you and me and you";// 
 
   the object returned would be:
 

@@ -24,6 +24,12 @@ let capitalCities = {
 
 // write code here
 
+capitalCities.China.population = 9750000;
+
+capitalCities.Peru = { name: "Lima", population: 9750000 }
+
+// capitalCities.peru.population = 9750000;
+  
 console.log(capitalCities);
 
 /* EXPECTED RESULT
