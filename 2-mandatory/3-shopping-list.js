@@ -20,6 +20,24 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let ingredientsToCheck = recipe.ingredients;
+  let checkList = pantry.cupboardContents.concat(pantry.fridgeContents);
+  let missing = [];
+  let returnObject = {};
+  // console.log(checkList);
+
+  for (let x in ingredientsToCheck) {
+   
+      if (!checkList.includes(ingredientsToCheck[x])) {
+        missing.push(ingredientsToCheck[x]);
+      
+    }
+
+  } 
+  // console.log(missing);
+  returnObject.items = missing;
+  returnObject.name = recipe.name;
+  return returnObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

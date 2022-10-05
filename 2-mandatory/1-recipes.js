@@ -23,3 +23,14 @@
 */
 
 // write code here
+
+let food = {
+  title: "Pizza",
+  servings: 8,
+  ingredients: ["bread", "cheese", "tomato", "herbs", "pepperoni"],
+
+}
+
+for (let x in food.ingredients) { 
+  console.log(food.ingredients[x]);
+}
