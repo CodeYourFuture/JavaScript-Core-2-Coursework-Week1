@@ -19,7 +19,7 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let exist = pantry.
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
