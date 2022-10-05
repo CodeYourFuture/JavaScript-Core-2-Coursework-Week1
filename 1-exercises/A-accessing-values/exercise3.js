@@ -21,7 +21,11 @@ let basketballTeam = {
 */
 
 // write code here
-
+let i = 0;
+while (i < basketballTeam.topPlayers.length) {
+  console.log(basketballTeam.topPlayers.sort()[i]);
+  i++;
+}
 
 /* EXPECTED RESULT
 

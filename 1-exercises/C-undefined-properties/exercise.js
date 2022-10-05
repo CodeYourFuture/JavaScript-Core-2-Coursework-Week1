@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// this console returns undefined because the car object doesn't have the 'colour' property.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,19 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// this console returns undefined because the user object doesn't have the 'firstName' property.
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// / this console returns undefined because the getName function doesn't have 'return'.
