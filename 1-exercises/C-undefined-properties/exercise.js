@@ -12,8 +12,11 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  colour: "grey",
 };
 
+// CAR COLOUR PROPERTY DOESNT EXIST! 
+// WORKS WHEN INSERTED
 console.log(car["colour"]);
 
 // Example 2
@@ -22,7 +25,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,9 +33,11 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function () {
+    return "My pet's name is Fluffy";
   },
 };
 
+// THERE IS NOT RETURN KEYWORD USED IN THE FUNCTION! 
+// WORKS WHEN INSERTED
 console.log(myPet.getName());
