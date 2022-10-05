@@ -16,13 +16,17 @@ let car = {
 
 console.log(car["colour"]);
 
+//there is no colour key defined for the car object
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
+// there is no key (firstName) assigned for the object user ..
+
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,9 +34,10 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
+// there is no return in the function getName , but if we add return infront of the string , it will works normally
 console.log(myPet.getName());
