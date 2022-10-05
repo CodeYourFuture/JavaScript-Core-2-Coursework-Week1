@@ -34,7 +34,7 @@ function createShoppingList(recipe) {
     }
 
   } 
-  console.log(missing);
+  // console.log(missing);
   returnObject.items = missing;
   returnObject.name = recipe.name;
   return returnObject;
