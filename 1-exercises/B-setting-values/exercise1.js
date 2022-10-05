@@ -1,37 +1,44 @@
 /*
-  You can add properties to objects and assign values to them using dot notation.
-  You can also change the value assigned to a property using dot notation.
+  You can add properties to objects and assign values to them using bracket notation.
+  You can also change the value assigned to a property using bracket notation.
 */
 
-let capitalCities = {
-  UnitedKingdom: {
-    name: "London",
-    population: 20,
-  },
-  China: {
-    name: "Beijing",
-  }
+let student = {
+  name: "Reshma Saujani",
+  examScore: 65,
+  hasPassed: false
 };
 
 /*
-  Using dot notation:
-    - Change the value of UnitedKingdom's capital city population to 8980000.
-    - Add the property for population to China's capital city and set the value to 21500000.
-    - Add the country "Peru" to capitalCities object.
-    - Add a name of "Lima" to Peru's capital city.
-    - Add a population of 9750000 to Peru's capital city.
+  Using bracket notation
+    - Add a property to the student object for attendance
+    - Set the value of attendance to 90
 */
 
 // write code here
+ student["attendance"]=90;
+/*
+  - Write an "if" statement that changes the value of hasPassed to true
+      if the student has attendance that is equal or greater than 90
+      AND
+      exam score is above 60.
+  - Use bracket notation to change the value of hasPassed
+*/
+if(student.attendance>=90 && student.examScore>60){
+  student["hasPassed"] = true;
+}
 
-console.log(capitalCities);
+// write code here
+
+console.log(student);
 
 /* EXPECTED RESULT
 
   {
-    UnitedKingdom: { name: "London", population: 8980000 },
-    China: { name: "Beijing", population: 21500000 },
-    Peru: { name: "Lima", population: 9750000 }
+    name: "Reshma Saujani",
+    examScore: 65,
+    hasPassed: true,
+    attendance: 90
   }
 
 */
