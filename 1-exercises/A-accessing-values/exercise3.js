@@ -21,7 +21,7 @@ let basketballTeam = {
 */
 
 // write code here
-
+let basketballTeam.topPlayers
 
 /* EXPECTED RESULT
 
