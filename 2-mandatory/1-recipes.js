@@ -23,3 +23,35 @@
 */
 
 // write code here
+let  recipes = {
+  picapau:{
+    title : `Picapau`,
+    servings: 2,
+    ingerdiants:["beef" ,"garlic", "  mustard powder" , "onions ", " olive oil"]
+    },
+  cuscuz:{
+    title : `Cuscuz`,
+    servings: 4,
+    ingerdiants:[" self-raising flour", "sugar" ,"water"]
+    },
+  RoastLamb :{
+    title : `Roast lamb`,
+    servings: 3,
+    ingerdiants:["lamb shoulder" ,"onion", "lemon"]
+    },
+    caiperinha :{
+    title : `Brasilian caiperinha`,
+    servings: 10,
+    ingerdiants:["cachaca" ,"lemon", "ice" , "sugar cane"]
+    }
+}
+function printOut(meals) {
+console.log( recipes[meals]["title"]);
+console.log("Serves: " +  recipes[meals]["servings"]);
+console.log(" Ingredients:" + recipes[meals]["ingerdiants"].map(x=> x + " \n "));  
+}
+
+printOut("picapau");
+printOut("cuscuz");
+printOut("RoastLamb");
+printOut("caiperinha");
