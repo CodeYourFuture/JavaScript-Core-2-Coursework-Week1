@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-      "My pet's name is Fluffy"; // getName function which is myPet object method doesn't have return keyword;
+      "My pet's name is Fluffy"; // getName function which is myPet object method doesn't have return keyword.
   },
 };
 

@@ -5,10 +5,10 @@
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian",//string
+  name: "Spot",      //string
+  isHungry: true,    //boolean
+  happiness: 6       //number
 };
 
 /*

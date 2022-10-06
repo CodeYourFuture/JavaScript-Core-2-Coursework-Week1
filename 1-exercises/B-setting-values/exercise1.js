@@ -29,10 +29,7 @@ capitalCities.Peru = {};
 capitalCities.Peru.name = "Lima";
 capitalCities.Peru.population = 9750000;
 
-// const Peru = Object.create(capitalCities);
-// Peru.name = "Lima";
-// const me = Object.create(capitalCities);
-// me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+
 console.log(capitalCities);
 
 /* EXPECTED RESULT

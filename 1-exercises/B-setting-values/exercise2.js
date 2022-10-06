@@ -28,22 +28,11 @@ student["attendance"] = 90;
 
 // write code here
 
-function changedHasPassedToTrue (student){
-  let hasPassed = true;
- if(student["attendance"] >= 90 && student["examScore"] > 60){
-    return student["hasPassed"];
- }
-}
+  if(student["attendance"] >= 90 && student["examScore"] > 60){
+     student["hasPassed"] = true;
+  }
 
 
-//student["hasPassed"] = true;
-// function changedHasPassedToTrue (){
-//   //let students = true;
-//return house1.price < house2.price ? house1.address
-// if(student["attendance"] >= 90 && student["examScore"] > 60){
-//    return student["hasPassed"] = true;
-// }
-// }
 
 console.log(student);
 
