@@ -22,4 +22,24 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+function Recipe(titleRecipe, servesRecipe, ingredientsRecipe) {
+  (this.titleRecipe = titleRecipe),
+    (this.servesRecipe = servesRecipe),
+    (this.ingredientsRecipe = ingredientsRecipe);
+}
+
+const recipeOne = new Recipe("Meat with onion", 4, ["meat", "onion"]);
+const recipeTwo = new Recipe("Chicken with tomato", 2, ["chicken", "tomato"]);
+const recipeThree = new Recipe("Rice with egg", 2, ["rice", "egg"]);
+const recipeFour = new Recipe("Bread with tuna", 2, ["bread", "tuna"]);
+const recipeFive = new Recipe("Salmon with onion", 6, ["salmon", "onion"]);
+
+const recipes = [recipeOne, recipeTwo, recipeThree, recipeFour, recipeFive];
+
+recipes.forEach((element) => {
+  console.log(element.titleRecipe);
+  console.log(`Serves: ${element.servesRecipe}`);
+  console.log(
+    `Ingredients: \n${element.ingredientsRecipe[0]}\n${element.ingredientsRecipe[1]}\n`
+  );
+});
