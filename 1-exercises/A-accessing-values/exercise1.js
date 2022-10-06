@@ -5,10 +5,10 @@
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian", //string
+  name: "Spot", //string
+  isHungry: true, //boolean
+  happiness: 6, //number
 };
 
 /*
@@ -19,7 +19,7 @@ let dog = {
 let dogName; // complete the code
 let dogBreed; // complete the code
 
-console.log(`${dogName} is a ${dogBreed}`);
+console.log(`${dog.name} is a ${dog.breed}`);
 
 /* EXPECTED RESULT
 
