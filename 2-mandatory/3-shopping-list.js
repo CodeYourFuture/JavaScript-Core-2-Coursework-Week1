@@ -19,7 +19,18 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let existOneArr = [];
+  for(let a in pantry){
+    for(let b of pantry[a])
+    existOneArr.push(b)
+  }
+  
+  let shoppingList = recipe.ingredients.filter(val => !existOneArr.includes(val));
+  let output = {
+    items: [...shoppingList],
+    name: `${recipe.name}`
+  }
+return output
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
