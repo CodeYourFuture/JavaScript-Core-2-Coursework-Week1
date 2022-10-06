@@ -13,6 +13,10 @@ let basketballTeam = {
   },
 };
 
+const topPlayersBasketballTeam = basketballTeam.topPlayers.sort();
+
+topPlayersBasketballTeam.forEach((player) => console.log(player));
+
 /*
   Write code that
     - accesses the basketball team's top players array
@@ -21,7 +25,6 @@ let basketballTeam = {
 */
 
 // write code here
-
 
 /* EXPECTED RESULT
 
