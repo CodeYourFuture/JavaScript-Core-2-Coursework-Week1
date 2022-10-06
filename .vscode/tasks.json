@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "extra-tests",
+			"problemMatcher": [],
+			"label": "npm: extra-tests",
+			"detail": "jest --testRegex='extra[/\\\\].*\\.js$'"
+		}
+	]
+}
