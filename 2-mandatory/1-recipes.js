@@ -33,45 +33,45 @@ let myFavoriteRecipe1 = {
 }
 let myFavoriteRecipe2 = {
   title: "Soup",
-  serving: 2, 
+  serving: 6, 
   ingredients: [
     "Chicken", "Water", "Lentil",
   ]
 }
 let myFavoriteRecipe3 = {
   title: "Pizza",
-  serving: 2, 
+  serving: 5, 
   ingredients: [
     "Dough", "Cheese", "Toppings",
   ]
 }
 let myFavoriteRecipe4 = {
   title: "Kebap",
-  serving: 2, 
+  serving: 3, 
   ingredients: [
     "Lamp", "Patatos", "Tomatos",
   ]
 }
 let myFavoriteRecipe5 = {
   title: "Rice",
-  serving: 2, 
+  serving: 4, 
   ingredients: [
     "Rice", "Salt", "Oil",
   ]
 }
 function printRecipe(recipe) {
-console.log(myFavoriteRecipe1.title);
-console.log(`Serving: ${myFavoriteRecipe1.serving}`);
+console.log(recipe.title);
+console.log(`Serving: ${recipe.serving}`);
 console.log("Ingredients:");
-for (let index = 0; index < recipe.length; index++) {
-  const element = recipe[index];
+  for (let index = 0; index < recipe.ingredients.length; index++) {
+  const element = recipe.ingredients[index];
   console.log(element);
 }
 }
 
-printRecipe(myFavoriteRecipe1.ingredients);
-printRecipe(myFavoriteRecipe2.ingredients);
-printRecipe(myFavoriteRecipe3.ingredients);
-printRecipe(myFavoriteRecipe4.ingredients);
-printRecipe(myFavoriteRecipe5.ingredients);
+printRecipe(myFavoriteRecipe1);
+printRecipe(myFavoriteRecipe2);
+printRecipe(myFavoriteRecipe3);
+printRecipe(myFavoriteRecipe4);
+printRecipe(myFavoriteRecipe5);
 
