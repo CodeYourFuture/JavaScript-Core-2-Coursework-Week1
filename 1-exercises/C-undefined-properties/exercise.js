@@ -8,7 +8,7 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// Example 1 : car color property dosent exist 
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -16,7 +16,7 @@ let car = {
 
 console.log(car["colour"]);
 
-// Example 2
+// Example 2   the property firstName is called name in the user object
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +27,7 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// Example 3 :there is no return in the function
 let myPet = {
   animal: "Cat",
   getName: function() {
