@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// Answer of exampl1 - the reason undefined output is beacuse the value assign to the colour property.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -26,6 +28,8 @@ let user = {
 };
 
 sayHelloToUser(user);
+// Answer for example 2 - the function fo sayHelloToUser is accessing wrong property name. fistName is not an existing property in user object.
+
 
 // Example 3
 let myPet = {
@@ -36,3 +40,11 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// Answer for example 3 
+/*
+The reason for undefined output in example 3. The getName method is not returning any anything
+Two possible ways to output the sting is :
+1) to use the return key word.
+2) console log the whole statement.
+
+*/
