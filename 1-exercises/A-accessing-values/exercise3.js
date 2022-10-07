@@ -22,6 +22,11 @@ let basketballTeam = {
 
 // write code here
 
+  basketballTeamTopPlayers = basketballTeam.topPlayers;
+basketballTeamTopPlayersSorted = basketballTeamTopPlayers.sort();
+for (element in basketballTeamTopPlayersSorted){
+  console.log(basketballTeamTopPlayersSorted[element]);
+}
 
 /* EXPECTED RESULT
 

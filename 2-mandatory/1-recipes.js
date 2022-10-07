@@ -23,3 +23,7 @@
 */
 
 // write code here
+const = hamSandwich {
+  servings: 2,
+
+}
