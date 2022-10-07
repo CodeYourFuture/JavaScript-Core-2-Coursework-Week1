@@ -20,6 +20,23 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let recipeName = recipe.name;
+  let recipeIngredients = recipe.ingredients;
+
+  let emptyContainer = [];
+
+  recipeIngredients.forEach((item) => {
+    if (
+      !pantry.fridgeContents.includes(item) &&
+      !pantry.cupboardContents.includes(item)
+    ) {
+      emptyContainer.push(item);
+    }
+  });
+  return {
+    name: recipeName,
+    items: emptyContainer,
+  };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
