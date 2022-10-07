@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);// colour is not on the object
 
 // Example 2
 function sayHelloToUser(user) {

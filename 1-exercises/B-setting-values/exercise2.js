@@ -8,6 +8,7 @@ let student = {
   examScore: 65,
   hasPassed: false
 };
+ 
 
 /*
   Using bracket notation
@@ -16,6 +17,7 @@ let student = {
 */
 
 // write code here
+
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
