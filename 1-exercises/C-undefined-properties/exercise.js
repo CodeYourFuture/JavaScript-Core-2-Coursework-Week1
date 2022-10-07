@@ -15,12 +15,12 @@ let car = {
 };
 
 console.log(car["colour"]);
-
+// becuase the colour propory is not in car object.
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+// becuase the object does not have firstName property.
 let user = {
   name: "Mira"
 };
@@ -31,8 +31,9 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// becuase the fuction method does not have return.
