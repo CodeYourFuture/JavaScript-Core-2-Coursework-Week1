@@ -37,17 +37,20 @@ const COUNTRY_CURRENCY_CODES = [
 //   return obj;
 // }
 //💫💫💫💫💫💫💫💫💫💫💫💫
+// function createLookup(countryCurrencyCodes) {
+//   let obj = {};
+//   for (let i = 0; i < countryCurrencyCodes.length; i++) {
+//     let arr = countryCurrencyCodes[i].values();
+//     // console.log(arr.next().value);
+//     obj[arr.next().value] = arr.next().value;
+//   }
+//   return obj;
+// }
+// console.log(createLookup(COUNTRY_CURRENCY_CODES));
 function createLookup(countryCurrencyCodes) {
-  let obj = {};
-  for (let i = 0; i < countryCurrencyCodes.length; i++) {
-    let arr = countryCurrencyCodes[i].values();
-    // console.log(arr.next().value);
-    obj[arr.next().value] = arr.next().value;
-  }
-  return obj;
+  return Object.fromEntries(countryCurrencyCodes);
 }
-console.log(createLookup(COUNTRY_CURRENCY_CODES));
-// createLookup(COUNTRY_CURRENCY_CODES);
+createLookup(COUNTRY_CURRENCY_CODES);
 //💫💫
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
