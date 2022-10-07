@@ -21,12 +21,12 @@ let basketballTeam = {
 */
 
 // write code here
-basketballTeam.topPlayers = [
-  "Dennis Rodman",
-  "Michael Jordan",
-  "Scottie Pippen",
-];
 
+  basketballTeamTopPlayers = basketballTeam.topPlayers;
+basketballTeamTopPlayersSorted = basketballTeamTopPlayers.sort();
+for (element in basketballTeamTopPlayersSorted){
+  console.log(basketballTeamTopPlayersSorted[element]);
+}
 
 /* EXPECTED RESULT
 

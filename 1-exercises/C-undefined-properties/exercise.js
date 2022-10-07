@@ -17,7 +17,7 @@ let car = {
 console.log(car["colour"]);// colour is not on the object
 
 // Example 2
-function sayHelloToUser(user) {
+function sayHelloToUser(user) { // there is no "firstName" key only name
   console.log(`Hello ${user.firstName}`);
 }
 

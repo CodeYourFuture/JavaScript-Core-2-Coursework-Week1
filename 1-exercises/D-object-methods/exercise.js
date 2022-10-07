@@ -8,8 +8,8 @@
 */
 
 let student = {
-  getName: function () {
-    "Daniel";
+  getName: function(name) {
+    console.log(student.name);
   },
 };  
 
