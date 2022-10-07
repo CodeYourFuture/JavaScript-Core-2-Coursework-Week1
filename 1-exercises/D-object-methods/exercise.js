@@ -9,7 +9,7 @@
 
 let student = {
   getName: function(name) {
-    console.log(student.name);
+    console.log(student name: ${name});
   },
 };  
 

@@ -13,6 +13,7 @@
 
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
+  // write code here
 
 const MENU = {
   burger: 6.5,
@@ -21,8 +22,29 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  orderBurger: function (balance) {
+    if (balance >= MENU.burger) {
+      return balance - MENU.burger;
+    } else return balance;
+  },
+  orderFalafel: function (balance) {
+    if (balance >= MENU.falafel) {
+      return balance - MENU.falafel;
+    } else return balance;
+  },
 }
+ orderFalafel: function (balance) {
+    if (balance >= MENU.falafel) {
+      return balance - MENU.falafel;
+    } else return balance;
+  },
+};
 
+
+console.log(cashRegister.orderBurger(6.5));
+console.log(cashRegister.orderBurger(6.49));
+console.log(cashRegister.orderFalafel(7.25));
+console.log(cashRegister.orderFalafel(7.24));
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

@@ -17,7 +17,7 @@ let car = {
 console.log(car["colour"]);// colour is not on the object
 
 // Example 2
-function sayHelloToUser(user) { // there is no "firstName" key only name
+function sayHelloToUser(user) { // because the car object does not have a property with color
   console.log(`Hello ${user.firstName}`);
 }
 
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);// because the user object does not have any property with first name
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName());// no return
