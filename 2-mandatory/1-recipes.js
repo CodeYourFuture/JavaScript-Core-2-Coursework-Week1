@@ -23,3 +23,10 @@
 */
 
 // write code here
+const Recipe ={
+  title : "fish",
+  serves : 4,
+  ingredients : ["fish","rice"],
+};
+
+  console.log(`${Recipe.title}\n Serves :${Recipe.serves}\n Ingredients:\n${(Recipe.ingredients).join("\t\n")}`);
