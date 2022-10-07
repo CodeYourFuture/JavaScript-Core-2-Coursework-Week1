@@ -17,10 +17,41 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
+// function createLookup(countryCurrencyCodes) {
+//   let obj = {};
+//   for (let i = 0; i < countryCurrencyCodes.length; i++) {
+//     for (let j = 0; j < countryCurrencyCodes[i].length; j++) {
+//       if (countryCurrencyCodes[i].indexOf(countryCurrencyCodes[i][j]) === 0) {
+//         obj[countryCurrencyCodes[i][j]] = countryCurrencyCodes[i][1];
+//       }
+//     }
+//   }
+//   return obj;
+// }
+//💫💫💫💫💫💫💫💫💫💫💫💫
+// function createLookup(countryCurrencyCodes) {
+//   let obj = {};
+//   for (let i = 0; i < countryCurrencyCodes.length; i++) {
+//     obj[countryCurrencyCodes[i][0]] = countryCurrencyCodes[i][1];
+//   }
+//   return obj;
+// }
+//💫💫💫💫💫💫💫💫💫💫💫💫
+// function createLookup(countryCurrencyCodes) {
+//   let obj = {};
+//   for (let i = 0; i < countryCurrencyCodes.length; i++) {
+//     let arr = countryCurrencyCodes[i].values();
+//     // console.log(arr.next().value);
+//     obj[arr.next().value] = arr.next().value;
+//   }
+//   return obj;
+// }
+// console.log(createLookup(COUNTRY_CURRENCY_CODES));
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  return Object.fromEntries(countryCurrencyCodes);
 }
-
+createLookup(COUNTRY_CURRENCY_CODES);
+//💫💫
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

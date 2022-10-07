@@ -12,16 +12,41 @@
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
-
+let recipe1 = {
+  name: "pancakes",
+  ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+};
+let recipe2 = {
+  name: "margherita pizza",
+  ingredients: [
+    "flour",
+    "salt",
+    "yeast",
+    "tinned tomatoes",
+    "oregano",
+    "mozarella",
+  ],
+};
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  const result = {};
+  let pantryCupboardContents = [
+    ...pantry.cupboardContents,
+    ...pantry.fridgeContents,
+  ];
+  let items = [];
+  const findItem = recipe.ingredients.filter((val, index) =>
+    pantryCupboardContents.includes(val) !== true ? items.push(val) : null
+  );
+  result.name = recipe.name;
+  result.items = items;
+  return result;
 }
-
+console.log(createShoppingList(recipe1));
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
@@ -43,11 +68,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });

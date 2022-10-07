@@ -14,15 +14,15 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //💫 because the property of colour it's not exist in the car object
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //💫 because the property of firstName it's not exist in the user object
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,9 +30,9 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); //💫 because the getName function it's not returned any thing we shoud use return in line 34
