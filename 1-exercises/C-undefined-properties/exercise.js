@@ -14,12 +14,12 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // colour has not declear or assing to enything 
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
-}
+  console.log(`Hello ${user.firstName}`); // firstName it's did not exist and did not declear in user object
+} 
 
 let user = {
   name: "Mira"
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy"; //in this function  not exsit return  .
   },
 };
 

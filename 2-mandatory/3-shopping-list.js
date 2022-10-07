@@ -19,7 +19,12 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+let newRecipe = {
+  name: "pancakes",
+  ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+};
+
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
