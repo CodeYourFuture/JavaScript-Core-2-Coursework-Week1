@@ -12,15 +12,21 @@ let basketballTeam = {
     address: "1901 W Madison St",
   },
 };
-
 /*
   Write code that
     - accesses the basketball team's top players array
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
-
 // write code here
+let players = basketballTeam.topPlayers;
+ players.sort();
+ for(let player of players){
+   console.log(player);
+ }
+
+
+
 
 
 /* EXPECTED RESULT
