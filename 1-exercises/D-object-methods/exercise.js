@@ -8,7 +8,13 @@
 */
 
 let student = {
-  // write code here
+  getName: function(name) {
+    if (typeof name === "string") {
+      console.log(`Student name: ${name}`)
+    } else {
+      console.log(`the argument provided must be a string!`);
+    }
+  }
 }
 
 student.getName("Daniel");
