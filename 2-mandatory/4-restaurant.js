@@ -21,10 +21,26 @@ const MENU = {
 
 let cashRegister = {
   // write code here
+  orderBurger: function(balance) {
+    let finalBalance = balance;
+    let isBalanceBigEnough = balance - MENU.burger >= 0;
+    if (isBalanceBigEnough) {
+      finalBalance = balance - MENU.burger;
+    }
+    return finalBalance;
+  },
+  orderFalafel: function(balance) {
+    let finalBalance = balance;
+    let isBalanceBigEnough = balance - MENU.falafel >= 0;
+    if (isBalanceBigEnough) {
+      finalBalance = balance - MENU.falafel;
+    }
+    return finalBalance;
+  },
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
-- To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
+- To run the tests for this exercise, run `cl`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
