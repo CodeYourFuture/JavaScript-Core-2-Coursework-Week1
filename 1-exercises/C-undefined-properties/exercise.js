@@ -16,6 +16,8 @@ let car = {
 
 console.log(car["colour"]);
 
+// colour is not defined as a key.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -27,6 +29,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// firstName is not defined as a key, its classed as name.
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// there is nothing returned in the function

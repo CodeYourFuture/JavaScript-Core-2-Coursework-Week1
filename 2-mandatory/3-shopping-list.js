@@ -20,7 +20,16 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  const shoppingList = {};
+  shoppingList.name = recipe["name"];
+  let pantryArr = pantry.fridgeContents.concat(pantry.cupboardContents);
+  let missingArr = recipe["ingredients"].filter(
+    (food) => pantryArr.indexOf(food) === -1
+  );
+  shoppingList.items = missingArr;
+  return shoppingList;
 }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
