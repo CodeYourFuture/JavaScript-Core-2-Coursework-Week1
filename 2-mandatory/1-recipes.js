@@ -23,3 +23,14 @@
 */
 
 // write code here
+
+let doughnuts = {
+  title: "Cottage Chesse",
+  servings: 7,
+  ingredients: ["egg", "sugar", "vanilla extract", "cottage chesse","baking soda", "flour" ],
+
+};
+console.log(doughnuts.title); 
+console.log(`Serves: ${doughnuts.servings}`);
+console.log("ingredients");
+doughnuts.ingredients.forEach((ingredient) => console.log(ingredient));
