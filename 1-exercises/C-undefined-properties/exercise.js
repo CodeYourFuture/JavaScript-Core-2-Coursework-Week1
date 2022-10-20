@@ -13,7 +13,7 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+//there is no colour property in the object
 console.log(car["colour"]);
 
 // Example 2
@@ -26,7 +26,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+//there is no firstName property in the object; there is name property
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +36,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//function is not called!
