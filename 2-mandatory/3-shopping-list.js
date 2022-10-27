@@ -19,8 +19,20 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
-}
+    const allIngredients = [...pantry.fridgeContents, ...pantry.cupboardContents];
+
+    const missingItems = recipe.ingredients.filter((ingredient) => {
+      if (allIngredients.includes(ingredient)) {
+        return false;
+      }
+      return true;
+    });
+    const objectToReturn = {
+      name: recipe.name,
+      items: missingItems,
+    };
+    return objectToReturn;
+  }
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

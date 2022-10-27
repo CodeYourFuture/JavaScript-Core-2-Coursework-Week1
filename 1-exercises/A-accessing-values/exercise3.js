@@ -21,7 +21,8 @@ let basketballTeam = {
 */
 
 // write code here
-
+let topPlayers = basketballTeam.topPlayers;
+let alphabeticalOrder = basketballTeam.topPlayers.sort();
 
 /* EXPECTED RESULT
 
