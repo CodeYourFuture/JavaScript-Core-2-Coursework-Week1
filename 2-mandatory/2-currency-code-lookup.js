@@ -10,6 +10,8 @@
     Hint: you'll need to use bracket notation to add new key/value pairs to the object
 */
 
+
+
 const COUNTRY_CURRENCY_CODES = [
   ["GB", "GBP"],
   ["DE", "EUR"],
@@ -19,6 +21,15 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  let newObject = {};
+  for (element of countryCurrencyCodes) {
+    let country = element[0];
+    let currency = element[1];
+    newObject[country] = currency;
+    
+  }
+
+   return newObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

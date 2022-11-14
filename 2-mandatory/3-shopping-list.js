@@ -20,6 +20,17 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+   let shoppingList = {};
+   shoppingList.name = recipe.name;
+   shoppingList.items = [];
+   recipe.ingredients.map((item) => {
+     if (
+       !pantry.fridgeContents.includes(item) &&
+       !pantry.cupboardContents.includes(item)
+     )
+       shoppingList.items.push(item);
+   });
+   return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
