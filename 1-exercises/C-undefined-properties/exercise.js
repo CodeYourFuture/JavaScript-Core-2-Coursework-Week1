@@ -16,6 +16,9 @@ let car = {
 
 console.log(car["colour"]);
 
+// there is no property name "colour" in the above object thats why is 
+//shown undefined
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -26,6 +29,8 @@ let user = {
 };
 
 sayHelloToUser(user);
+// there is no object, where we can retrieve the information from
+// there is no firstName property.
 
 // Example 3
 let myPet = {
@@ -35,4 +40,6 @@ let myPet = {
   },
 };
 
+// it shows undefined because getName property is a function, it does not 
+// have a value
 console.log(myPet.getName());
