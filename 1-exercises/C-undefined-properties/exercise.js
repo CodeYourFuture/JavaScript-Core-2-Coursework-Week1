@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//there is no key name of "colour" in the variable name car.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,19 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+///there is no key name of "firstName" in the variable name user.
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//it has to insert "return" on the "My pet's name is Fluffy"

@@ -17,9 +17,18 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
+// Object.fromEntries way:
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  return Object.fromEntries(countryCurrencyCodes);
 }
+
+//---another way if like "reduce" method---:
+// function createLookup(countryCurrencyCodes) {
+//   return countryCurrencyCodes.reduce((acc, cur) => {
+//     acc[cur[0]] = cur[1];
+//     return acc;
+//   }, {});
+// }
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
