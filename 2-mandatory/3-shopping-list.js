@@ -20,8 +20,16 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+   const resultObj = {};
+   resultObj.name = recipe.name;
+   resultObj.items = [];
+    
+   const pantryAllSet = new Set(Object.values(pantry).flat());
+    resultObj.items = [
+      ...new Set(recipe.ingredients.filter((x) => !pantryAllSet.has(x))),
+    ];
+return resultObj;
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

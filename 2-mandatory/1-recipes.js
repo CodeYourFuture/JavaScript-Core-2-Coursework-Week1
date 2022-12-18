@@ -23,3 +23,16 @@
 */
 
 // write code here
+
+let favoriteRecipe = {
+  title: "Ghormehsabzi",
+  serving: 10,
+  ingredients: ["Loobia", "Sabzi", "Berenj"]
+};
+
+console.log(favoriteRecipe.title)
+console.log(`Serves: ${favoriteRecipe.serving}`)
+console.log('Ingredients:')
+console.log(favoriteRecipe.ingredients[0])
+console.log(favoriteRecipe.ingredients[1]);
+console.log(favoriteRecipe.ingredients[2]);
