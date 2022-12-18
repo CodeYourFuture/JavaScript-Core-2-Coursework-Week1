@@ -23,3 +23,16 @@
 */
 
 // write code here
+
+let recipe = {
+
+  title: "cake",
+  servings: 5,
+  ingredients:["milk", "eggs", "butter", "flour", "sugar"]
+  }
+
+const { title, servings, ingredients } = recipe;
+
+console.log(title);
+console.log(servings);
+console.log(ingredients);
