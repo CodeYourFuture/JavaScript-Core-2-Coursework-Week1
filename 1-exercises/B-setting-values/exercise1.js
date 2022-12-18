@@ -10,7 +10,7 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+  },
 };
 
 /*
@@ -23,7 +23,12 @@ let capitalCities = {
 */
 
 // write code here
-
+// Using dot notation:
+//     - Change the value of UnitedKingdom's capital city population to 8980000.
+//     - Add the property for population to China's capital city and set the value to 21500000.
+//     - Add the country "Peru" to capitalCities object.
+//     - Add a name of "Lima" to Peru's capital city.
+//     - Add a population of 9750000 to Peru's capital city.
 console.log(capitalCities);
 
 /* EXPECTED RESULT
