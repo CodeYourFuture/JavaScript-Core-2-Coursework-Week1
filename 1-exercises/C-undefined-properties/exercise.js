@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//there is no key name of "colour" in the variable name car.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,13 +27,36 @@ let user = {
 };
 
 sayHelloToUser(user);
+//there is no key name of "firstName" in the variable name user.
 
 // Example 3
 let myPet = {
   animal: "Cat",
+  petName: "kitty",
   getName: function() {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet['animal']);
+console. log(myPet['petName']);
+
+//it has to insert "return" on the "My pet's name is Fluffy"
+
+
+
+// my practices
+
+const students = [{name: 'Jan', age: 13, grade: '7'},
+{name: 'Jany', age: 11, grade: '7'},
+{name: 'Jammy', age: 12, grade: '7'}]
+console.log(students[2]['name']);
+console.log(students[0]['age']);
+
+//  console.log(Jammy [age));
+
+const usersNames = [ "Tina", "Mina", "Jnay", "John", "Krish"];
+console.log(usersNames[0]);
+usersNames.forEach( name => {
+  console.log(name);
+})
