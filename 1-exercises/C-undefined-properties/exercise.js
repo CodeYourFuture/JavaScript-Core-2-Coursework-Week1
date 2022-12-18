@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// The property color, is not in the the object car.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+// There is no property named firstNme in the object user.
 
 // Example 3
 let myPet = {
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// There is no return statement in the function.

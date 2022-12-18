@@ -4,6 +4,8 @@
   What is the type of each property?
 */
 
+//Type of each property in order: string, string, boolean, number. 
+
 let dog = {
   breed: "Dalmatian",
   name: "Spot",
@@ -16,8 +18,8 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = dog.name; // complete the code
+let dogBreed = dog.breed; // complete the code
 
 console.log(`${dogName} is a ${dogBreed}`);
 
