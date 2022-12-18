@@ -29,6 +29,7 @@ function countWords(string) {
   // write code here
   if (string.length){
   string.split(' ').forEach( x => wordCount.hasOwnProperty(x) ? wordCount[x] += 1 : wordCount[x] = 1)
+                                  // if we have more than same word in our array we will add 1 to our value in our object
   }
   return wordCount;
 }
