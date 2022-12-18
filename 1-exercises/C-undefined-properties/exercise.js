@@ -45,18 +45,3 @@ console. log(myPet['petName']);
 
 
 
-// my practices
-
-const students = [{name: 'Jan', age: 13, grade: '7'},
-{name: 'Jany', age: 11, grade: '7'},
-{name: 'Jammy', age: 12, grade: '7'}]
-console.log(students[2]['name']);
-console.log(students[0]['age']);
-
-//  console.log(Jammy [age));
-
-const usersNames = [ "Tina", "Mina", "Jnay", "John", "Krish"];
-console.log(usersNames[0]);
-usersNames.forEach( name => {
-  console.log(name);
-})
