@@ -23,12 +23,33 @@
     - Setting values on an object
 */
 
-function countWords(string) {
-  const wordCount = {};
-
-  // write code here
-
-  return wordCount;
+function countWords(string){
+ 
+  let test2S = string.split(" ");
+  let test3s = [...test2S];
+    
+    let result1 = test3s.map(el => {
+  
+  let count = 0;
+let str = test2S;
+let query = el;
+for(let i = 0;i < str.length; i++) {
+    if( str[i] === query ) {
+        count++;
+    }
+}
+    
+    return [el, count];
+  })
+  
+    //return result1;
+  const obj = {};
+result1.forEach((elem) => {
+  
+    obj[`${elem[0]}`] = elem[1]
+})
+  
+  return obj;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
