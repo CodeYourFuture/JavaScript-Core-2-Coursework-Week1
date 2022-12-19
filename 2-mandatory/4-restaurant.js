@@ -19,9 +19,28 @@ const MENU = {
   falafel: 7.25,
 };
 
+
 let cashRegister = {
   // write code here
-}
+  orderBurger: function(balance){
+  if(balance >= MENU.burger){
+    let newB = balance - MENU.burger;
+    return Math.round(newB);
+    }
+    return balance;
+  },
+  orderfalafel: function(balance){
+  if(balance >= MENU.falafel){
+    let newB = balance - MENU.falafel;
+    return Math.round(newB);
+    }
+    return balance;
+  }
+  
+  
+};
+
+// note capital letter in test may throw an error(food names are capitalized) 
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

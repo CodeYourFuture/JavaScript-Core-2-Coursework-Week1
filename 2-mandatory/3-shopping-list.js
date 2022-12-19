@@ -18,8 +18,21 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+let pTestArr = pantry.fridgeContents;
+let pTestArr2 = pTestArr.concat(pantry.cupboardContents);
 function createShoppingList(recipe) {
   // write code here
+  //input arg recipe = an object 
+  // join all the items into one array using concat 
+  //filer the items that are not in the pantry
+  let obj = {};
+ let arrTest = recipe.ingredients.filter(el => {
+    return !pTestArr2.includes(el);
+    });
+  
+  obj.name = recipe.name;
+  obj.ingredients = arrTest;
+return obj; 
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

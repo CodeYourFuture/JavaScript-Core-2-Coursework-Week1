@@ -14,7 +14,8 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); 
+// property does not exist
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+// trying to access variable before it is defined
 
 // Example 3
 let myPet = {
@@ -36,3 +38,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// does not automatically return string as it is not on the same line as the function keyword
+//as a result returns undefined as that is the standard return value of a function

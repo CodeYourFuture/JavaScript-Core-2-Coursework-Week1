@@ -21,8 +21,32 @@ let basketballTeam = {
 */
 
 // write code here
+function getAcessAndSort(object, key2sort) {
+  //run a for in loop for array keys
+  //if array key is eqal to basket ball players
+  let keyValue = object[`${key2sort}`];
+  console.log(keyValue);
+  let valueTest = Array.isArray(keyValue);
+  console.log(valueTest);
+  // and the value typeOf is an array
+  //sort array alphabetivaly
+  if (!valueTest) {
+    return `the key ${key2sort} is not an array`;
+    //keyValue.sort()
+  }
+  keyValue.sort();
+  //console.log(KeyValue);
+  // please explain why console.log breaks code.
+  //is for loop each item console logs more efficient than map
+  //as it does not return an array?
 
+  return keyValue.map((el) => {
+    console.log(el);
+    return el;
+  });
+}
 
+console.log(getAcessAndSort(basketballTeam, "topPlayers"));
 /* EXPECTED RESULT
 
   Dennis Rodman
