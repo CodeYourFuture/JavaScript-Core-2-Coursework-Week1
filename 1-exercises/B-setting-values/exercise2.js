@@ -6,7 +6,7 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*
@@ -16,6 +16,8 @@ let student = {
 */
 
 // write code here
+let attendanceKey = "attendance";
+student[attendanceKey] = 90;
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -26,6 +28,12 @@ let student = {
 */
 
 // write code here
+
+// let passing = hasPassed;
+
+// if (student[attendanceKey] >= 90 && student[examScore] > 60) {
+//   return (passing = true);
+// }
 
 console.log(student);
 
