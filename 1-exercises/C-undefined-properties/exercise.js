@@ -14,15 +14,16 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //try to log a key value where doesn't exist in an object
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //try to log a key value where does not exist.
+  // console.log(`Hi ${user.name}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,9 +31,10 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
+    // return "Returning Something;";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // getName has a function as a property but function does not return anything.
