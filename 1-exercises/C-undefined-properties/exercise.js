@@ -12,26 +12,27 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  color:"blue" //I add it because you write color in clg but you did not write color in your object.
 };
 
-console.log(car["colour"]);
+console.log(car["color"]);
 
 // Example 2
-function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
-}
 
+function sayHelloToUser(user) {
+
+  console.log(`Hello ${user.name}`);//we did not have firsName in our Object.
+}
 let user = {
   name: "Mira"
 };
-
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   return "My pet's name is Fluffy";//I add return in this example
   },
 };
 
