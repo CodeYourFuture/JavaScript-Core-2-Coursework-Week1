@@ -85,7 +85,7 @@ const myRecipes = {
 
 function favoriteRecipe(recipeObj) {
   for ([key, value] of Object.entries(recipeObj)) {
-    console.log(`${key}: ${value.join(" ")}`);
+    console.log(`${key}: ${value}`);
   }
 }
 favoriteRecipe(myRecipes.Recipe1);
