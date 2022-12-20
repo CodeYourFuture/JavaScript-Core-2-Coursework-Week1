@@ -23,3 +23,52 @@
 */
 
 // write code here
+  let recipe1 = {
+    title: 'Mole',
+    servings: 2,
+    ingredients:['cinnamon','cumin','cocoa']
+  }
+  console.log(recipe1.title);
+  console.log(recipe1.servings);
+  recipe1.ingredients.forEach(element=>console.log(element));
+
+  let recipe2 = {
+    title: "fish and chip",
+    servings: 1,
+    ingredients: ["fried fish", "fried chips", "tomato sauce"],
+  };
+  console.log(recipe2.title);
+  console.log(recipe2.servings);
+  recipe2.ingredients.forEach((element) => console.log(element));
+
+ let recipe3 = {
+   title: "Ravioli Spinach Soup",
+   servings: 2,
+   ingredients: ["ravioli", "spinach"],
+ };
+ console.log(recipe3.title);
+ console.log(recipe3.servings);
+ recipe3.ingredients.forEach((element) => console.log(element));
+
+ let recipe4 = {
+   title: "Lasagna",
+   servings: 2,
+   ingredients: ["pasta", "cheese", "tomato sauce"],
+ };
+ console.log(recipe4.title);
+ console.log(recipe4.servings);
+ recipe4.ingredients.forEach((element) => console.log(element));
+
+ let recipe5 = {
+   title: "Beef Chili",
+   servings: 3,
+   ingredients: ["Beef mince", "chili", "cheese"],
+ };
+ console.log(recipe5.title);
+ console.log(recipe5.servings);
+ recipe5.ingredients.forEach((element) => console.log(element));
+
+
+
+
+
