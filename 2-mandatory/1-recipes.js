@@ -23,3 +23,11 @@
 */
 
 // write code here
+let favoriteRecipe = {
+      title: "Spageti Bolones",
+      serving:2,
+      ingredients:["salt","beef","sauce"]
+};
+  console.log(`${favoriteRecipe.title}\n`,`Serves: ${favoriteRecipe.serving}` ) ;
+  console.log("Ingredients:");
+favoriteRecipe.ingredients.forEach(Element=>console.log(Element));
