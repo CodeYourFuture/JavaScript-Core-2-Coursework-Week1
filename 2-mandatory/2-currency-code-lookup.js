@@ -37,11 +37,11 @@ console.log(createLookup(COUNTRY_CURRENCY_CODES));
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-// test("creates country currency code lookup", () => {
-//   expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
-//     GB: "GBP",
-//     DE: "EUR",
-//     NG: "NGN",
-//     MX: "MXN",
-//   });
-// });
+test("creates country currency code lookup", () => {
+  expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
+    GB: "GBP",
+    DE: "EUR",
+    NG: "NGN",
+    MX: "MXN",
+  });
+});
