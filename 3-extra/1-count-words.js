@@ -24,11 +24,11 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
+  const counts = {};
   // write code here
-
-  return wordCount;
+  const splittedString = string.split(" ")
+  splittedString.forEach(function (k) { counts[k] = (counts[k] || 0) + 1; })
+  return !string ? {} : counts
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

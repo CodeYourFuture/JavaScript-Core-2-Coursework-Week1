@@ -15,12 +15,13 @@ let car = {
 };
 
 console.log(car["colour"]);
+// undefined because value car["colour"] was not set
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+// undefined because value user.firstName was not set
 let user = {
   name: "Mira"
 };

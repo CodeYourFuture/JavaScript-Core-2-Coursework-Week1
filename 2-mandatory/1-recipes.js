@@ -23,3 +23,33 @@
 */
 
 // write code here
+
+let theRecipeCard  =[ {
+  title : 'Mole1',
+  serves : 1,
+  ingredients : ['cinnamon1', 'cumin1', 'cocoa1']
+},
+{
+  title : 'Mole2',
+  serves : 2,
+  ingredients : ['cinnamon2', 'cumin2', 'cocoa2']
+},
+{
+  title : 'Mole3',
+  serves : 3,
+  ingredients : ['cinnamon3', 'cumin3', 'cocoa3']
+},
+{
+  title : 'Mole4',
+  serves : 4,
+  ingredients : ['cinnamon4', 'cumin4', 'cocoa']
+},
+
+{
+  title : 'Mole',
+  serves : 5,
+  ingredients : ['cinnamon', 'cumin', 'cocoa']
+},
+]
+
+theRecipeCard.forEach(theRecipeCard => console.log(theRecipeCard.title,'\n', theRecipeCard.serves,'\n', theRecipeCard.ingredients))
