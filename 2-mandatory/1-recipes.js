@@ -23,3 +23,22 @@
 */
 
 // write code here
+
+let recipe = {
+  title: "Cheesecake",
+  serves: 12,
+  ingredients: [
+    "biscuits",
+    "cream cheese",
+    "double cream",
+    "sugar",
+    "vanilla essence",
+  ],
+};
+
+console.log(recipe.title);
+console.log("Serves: " + recipe.serves);
+console.log("Ingredients:");
+recipe.ingredients.forEach((value) => {
+  console.log(value);
+});
