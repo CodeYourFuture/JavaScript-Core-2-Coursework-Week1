@@ -24,13 +24,31 @@
 */
 
 function countWords(string) {
+  
+  //Return an empty object if the input string is empty
+  if (string.trim().length === 0) {
+    return {};
+  }
+
   const wordCount = {};
 
   // write code here
 
+  // Split the string into an array of words
+  const words = string.split(" ");
+
+  // Iterate over the array of words
+  for (const word of words) {
+    // If the word is not already a key in the wordCount object,add it with a value of 1
+    if (!wordCount[word]) {
+      wordCount[word] = 1;
+    } else {
+      //If the word is already a key in the wordCount object,increment its value by 1
+      wordCount[word] += 1;
+    }
+  }
   return wordCount;
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
