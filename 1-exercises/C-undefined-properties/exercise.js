@@ -14,6 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
+car.colour = "black";
 console.log(car["colour"]);
 
 // Example 2
@@ -22,7 +23,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  firstName: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,8 +31,8 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function () {
+    return "My pet's name is Fluffy";
   },
 };
 
