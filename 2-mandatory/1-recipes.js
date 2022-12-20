@@ -23,3 +23,23 @@
 */
 
 // write code here
+
+let recipe1 = {
+  title: "Mole",
+  servings: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"]
+}
+
+console.log(recipe1.title);
+console.log(`Serves: ${recipe1.servings}`);
+console.log("Ingredients:");
+for (let ingredient of recipe1.ingredients) {
+  console.log(ingredient);
+}
+
+
+
+
+
+
+

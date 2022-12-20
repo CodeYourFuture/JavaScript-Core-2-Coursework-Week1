@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// there is no value for colour.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+ // firstName isn't defined for the console to log it , if we put name instead of firstName then it will print Mira.
 
 // Example 3
 let myPet = {
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// The function getName: doesn't have a return to return the string
