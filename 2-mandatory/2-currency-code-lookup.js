@@ -18,9 +18,10 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  const obj = Object.fromEntries(COUNTRY_CURRENCY_CODES);
+  return obj;
 }
-
+// console.log(createLookup("gb"));
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
