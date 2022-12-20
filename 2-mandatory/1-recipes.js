@@ -80,9 +80,12 @@ const myRecipes = {
 //   console.log(`${key}: ${value}`);
 // });
 
+// var myRecipesCount = Object.keys(myRecipes).length;
+// console.log(myRecipesCount);
+
 function favoriteRecipe(recipeObj) {
   for ([key, value] of Object.entries(recipeObj)) {
-    console.log(`${key}: ${value}`);
+    console.log(`${key}: ${value.join(" ")}`);
   }
 }
 favoriteRecipe(myRecipes.Recipe1);
