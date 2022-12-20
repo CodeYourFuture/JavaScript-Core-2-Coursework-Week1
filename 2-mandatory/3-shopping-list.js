@@ -20,7 +20,10 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
- 
+   for(let element of recipe){
+    
+   }
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
