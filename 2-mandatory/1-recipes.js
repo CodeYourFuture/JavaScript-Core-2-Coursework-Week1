@@ -23,3 +23,70 @@
 */
 
 // write code here
+const myRecipes = {
+  Recipe1: {
+    Title: "Pho",
+    Serves: 1,
+    Ingredients: ["rice noodles", "broth", "beef", "herbs", "limes", "chilies"],
+  },
+  Recipe2: {
+    Title: "Satay",
+    Serves: 2,
+    Ingredients: [
+      "chicken",
+      "peanut sauce",
+      "chili sauce",
+      "shallots",
+      "sambal",
+      "limes juice",
+      "chiles",
+    ],
+  },
+  Recipe3: {
+    Title: "Bakso",
+    Serves: 2,
+    Ingredients: ["mince beef", "flour", "pepper", "eggs", "baking powder"],
+  },
+  Recipe4: {
+    Title: "Nasi Goreng ",
+    Serves: 1,
+    Ingredients: [
+      "shrimp paste",
+      "chilli",
+      "garlic",
+      "chicken",
+      "kecap manis",
+      "onion",
+      "cooked cold rice",
+    ],
+  },
+  Recipe5: {
+    Title: "Bubur Ayam",
+    Serves: 2,
+    Ingredients: [
+      "rice",
+      "chicken",
+      "fish sauce ",
+      "white pepper",
+      "green onions",
+    ],
+  },
+};
+// console.log(myRecipes);
+
+// Object.values(myRecipes.Recipe1).forEach((recipe) => console.log(recipe));
+
+// Object.entries(myRecipes.Recipe1).forEach(([key, value]) => {
+//   console.log(`${key}: ${value}`);
+// });
+
+function favoriteRecipe(recipeObj) {
+  for ([key, value] of Object.entries(recipeObj)) {
+    console.log(`${key}: ${value}`);
+  }
+}
+favoriteRecipe(myRecipes.Recipe1);
+favoriteRecipe(myRecipes.Recipe2);
+favoriteRecipe(myRecipes.Recipe3);
+favoriteRecipe(myRecipes.Recipe4);
+favoriteRecipe(myRecipes.Recipe5);
