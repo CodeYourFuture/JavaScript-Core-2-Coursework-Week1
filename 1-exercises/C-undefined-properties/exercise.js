@@ -14,18 +14,18 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // the colour as not defind as a property
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); 
 }
 
 let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user);   // we dont have any property  as first name
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // our function does not have any return .
