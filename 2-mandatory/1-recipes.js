@@ -24,21 +24,46 @@
 
 // write code here
 
-let recipe = {
-  title: "Cheesecake",
-  serves: 12,
-  ingredients: [
-    "biscuits",
-    "cream cheese",
-    "double cream",
-    "sugar",
-    "vanilla essence",
-  ],
+let myRecipe = {
+  recipe1: {
+    title: "Cheesecake",
+    serving: 12,
+    ingredients: [
+      "biscuits",
+      "cream cheese",
+      "double cream",
+      "sugar",
+      "vanilla essence",
+    ],
+  },
+
+  recipe2: {
+    title: "Brownies",
+    serving: 10,
+    ingredients: ["cocoa powder", "butter", "eggs", "sugar"],
+  },
+
+  recipe3: {
+    title: "Cupcakes",
+    serving: 10,
+    ingredients: ["sugar", "flour", "butter", "eggs"],
+  },
+
+  recipe4: {
+    title: "Eggnog",
+    serving: 5,
+    ingredients: ["eggs", "milk", "vanilla essence", "sugar"],
+  },
+
+  recipe5: {
+    title: "Cookies",
+    serving: 20,
+    ingredients: ["flour", "eggs", "sugar", "butter"],
+  },
 };
 
-console.log(recipe.title);
-console.log("Serves: " + recipe.serves);
-console.log("Ingredients:");
-recipe.ingredients.forEach((value) => {
-  console.log(value);
-});
+for (const eachRecipe in myRecipe) {
+  for (const [key, value] of Object.entries(myRecipe[eachRecipe])) {
+    console.log(`${key}: ${value}`);
+  }
+}
