@@ -24,13 +24,19 @@
 */
 
 function countWords(string) {
+  if (string ==='') {
+    return{};
+  }
   const wordCount = {};
 
   // write code here
-  if (string.length){
-  string.split(' ').forEach( x => wordCount.hasOwnProperty(x) ? 
-  wordCount[x] += 1 : wordCount[x] = 1)
-  }
+  string.split(' ').forEach((word) => {
+    if(wordCount[word] >= 1) {
+  wordCount[word] ++;
+    }else{
+  wordCount[word] = 1;
+    }
+  });
   return wordCount;
 }
 
