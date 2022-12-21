@@ -19,7 +19,9 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+ const contents =pantry.fridgeContents.concat(pantry.cupboardContents);
+ const missingIngredients = recipe.ingredients.filter(ingredients => contents.indexOf(ingredients) === -1);
+ return {name : recipe.name ,items :missingIngredients}
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
