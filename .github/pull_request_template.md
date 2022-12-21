@@ -16,21 +16,21 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Ebrahim Beiati-Asl
+- Your City:London
+- Your Slack Name: ebrahim beiati-asl
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:Js-core2
+- Week:1
 
 # Notes
 
-- What did you find easy?
+- What did you find easy?objects
 
-- What did you find hard?
+- What did you find hard? currency part
 
-- What do you still not understand?
+- What do you still not understand? I have to try and understand more
 
-- Any other notes?
+- Any other notes? nothing

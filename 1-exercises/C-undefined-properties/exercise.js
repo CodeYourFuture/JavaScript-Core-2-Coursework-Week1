@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// There is no key named "colour" here.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -24,6 +25,7 @@ function sayHelloToUser(user) {
 let user = {
   name: "Mira"
 };
+//the key is name not firstName
 
 sayHelloToUser(user);
 
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// we need to write return something

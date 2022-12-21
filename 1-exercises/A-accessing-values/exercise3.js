@@ -21,6 +21,8 @@ let basketballTeam = {
 */
 
 // write code here
+basketballTeam.topPlayers.sort((player1, player2) =>player1.localeCompare(player2)).forEach((player) => console.log(player));
+  
 
 
 /* EXPECTED RESULT

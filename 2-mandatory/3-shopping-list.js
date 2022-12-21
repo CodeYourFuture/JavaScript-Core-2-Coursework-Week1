@@ -19,6 +19,14 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
+  return {
+    name: recipe.name,
+    items: recipe.ingredients.filter(
+      (item) =>
+        pantry.fridgeContents.indexOf(item) === -1 &&
+        pantry.cupboardContents.indexOf(item) === -1
+    ),
+  };
   // write code here
 }
 
