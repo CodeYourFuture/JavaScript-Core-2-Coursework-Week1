@@ -24,3 +24,67 @@
 
 // write code here
 
+let recipe1 = {
+  title: "Broccoli and bacon salad",
+  serving: 2,
+  ingredients: {
+    bacon: "150g",
+    broccoli: "800g",
+    mayonnaise: "125g (1/2 cup)",
+    "fresh lemon juice": "1 tbsp",
+    mustard: "2 tsp",
+    "red grapes": "200g",
+    "green shallots": 2,
+    "slivered almonds": "2 tbsp",
+  },
+};
+
+let recipe2 = {
+  title: "Prawn cocktail",
+  serving: 4,
+  ingredients: {
+    prawn: "400 g",
+    "Little Gem lettuces": 4,
+    mayonnaise: "5 heaped tbsp",
+    "tomato chutney": "5 tbsp ",
+  },
+};
+let recipe3 = {
+  title: "Pastrami-cured salmon",
+  serving: 6,
+  ingredients: {
+    salmon: "800 g",
+    "sea salt": "250 g",
+    sugar: "100 g",
+    coriander: "2 tbsp",
+  },
+};
+
+let recipe4 = {
+  title: "Roast turkey",
+  serving: 8,
+  ingredients: {
+    turkey: "5-6 kg",
+    butter: "150 g",
+    "garlic cloves": "3",
+    "mixed herbs such as parsley, thyme or bay": "optional",
+    lemons: 2,
+    onion: 1,
+    carrots: 2,
+  },
+};
+
+let recipe5 = {
+  title: "Really simple cranberry sauce",
+  serving: 8,
+  ingredients: {
+    sugar: "100 g",
+    "orange juice": "100 ml",
+    cranberries: "250 g",
+  },
+};
+console.log(recipe1);
+console.log(recipe2);
+console.log(recipe3);
+console.log(recipe4);
+console.log(recipe5);
