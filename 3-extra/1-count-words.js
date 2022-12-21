@@ -27,10 +27,24 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
-  if (string.length){
-  string.split(' ').forEach( x => wordCount.hasOwnProperty(x) ? wordCount[x] += 1 : wordCount[x] = 1)
-                                  // if we have more than same word in our array we will add 1 to our value in our object
+  // if (string.length){
+  // string.split(' ').forEach( x => wordCount.hasOwnProperty(x) ? wordCount[x] += 1 : wordCount[x] = 1)
+  //                                 // if we have more than same word in our array we will add 1 to our value in our object
+  // }
+
+  if (string === ""){
+    return {}
   }
+
+  string.split(" ").forEach(word => {
+    if (wordCount[word] >= 1){
+      wordCount[word]++
+    }
+    else {
+      wordCount[word] = 1
+    }
+  })
+
   return wordCount;
 }
 
