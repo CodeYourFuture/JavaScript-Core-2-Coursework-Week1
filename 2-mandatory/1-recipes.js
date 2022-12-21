@@ -93,14 +93,15 @@ const myRecipes = {
 // favoriteRecipe(myRecipes.Recipe3);
 // favoriteRecipe(myRecipes.Recipe4);
 // favoriteRecipe(myRecipes.Recipe5);
+
 // for (const recipe in myRecipes) {
 //   for (const [key, value] of Object.entries(myRecipes[recipe])) {
 //     console.log(`${key}: ${value}`);
 //   }
 // }
 
-// for (const recipe in myRecipes) {
-//   for (const key in myRecipes[recipe]) {
-//     console.log(key, myRecipes[recipe][key]);
-//   }
-// }
+for (const recipe in myRecipes) {
+  for (const key in myRecipes[recipe]) {
+    console.log(`${key}: ${myRecipes[recipe][key]}`);
+  }
+}
