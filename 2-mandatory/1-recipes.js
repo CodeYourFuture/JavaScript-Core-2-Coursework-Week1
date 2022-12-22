@@ -83,8 +83,11 @@ let recipe5 = {
     cranberries: "250 g",
   },
 };
-console.log(recipe1);
-console.log(recipe2);
-console.log(recipe3);
-console.log(recipe4);
-console.log(recipe5);
+
+myRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5];
+myRecipes.forEach((x) => console.log(x));
+// console.log(recipe1);
+// console.log(recipe2);
+// console.log(recipe3);
+// console.log(recipe4);
+// console.log(recipe5);
