@@ -62,8 +62,30 @@ let myRecipe = {
   },
 };
 
-for (const eachRecipe in myRecipe) {
-  for (const [key, value] of Object.entries(myRecipe[eachRecipe])) {
-    console.log(`${key}: ${value}`);
+// let recipe0 = {
+//   title: "Cheesecake",
+//   serving: 12,
+//   ingredients: [
+//     "biscuits",
+//     "cream cheese",
+//     "double cream",
+//     "sugar",
+//     "vanilla essence",
+//   ],
+// };
+
+// for (const key in myRecipe.recipe1) {
+//   console.log(`${key}: ${myRecipe.recipe1[key]}`);
+// }
+
+function allRecipes(eachRecipe) {
+  for (key in eachRecipe) {
+    console.log(`${key}: ${eachRecipe[key]}`);
   }
 }
+
+allRecipes(myRecipe.recipe1);
+allRecipes(myRecipe.recipe2);
+allRecipes(myRecipe.recipe3);
+allRecipes(myRecipe.recipe4);
+allRecipes(myRecipe.recipe5);
