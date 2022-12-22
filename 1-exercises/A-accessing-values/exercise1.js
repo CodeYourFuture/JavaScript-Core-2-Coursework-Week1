@@ -1,14 +1,14 @@
 /*
   This object has 4 properties
   The properties of the object are all primitive types (string, number or boolean)
-  What is the type of each property?
+  What is the type of each property?  
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian", //string
+  name: "Spot", //string
+  isHungry: true, //boolean
+  happiness: 6, //number
 };
 
 /*
@@ -16,10 +16,10 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = dog.name; // complete the code
+let dogBreed = dog.breed; // complete the code
 
-console.log(`${dogName} is a ${dogBreed}`);
+console.log(`${dogName.name} is a ${dogBreed.breed}`);
 
 /* EXPECTED RESULT
 

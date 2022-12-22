@@ -21,7 +21,16 @@ let basketballTeam = {
 */
 
 // write code here
+function sortedBBallPlayers(players) {
+  const playerNames = players.sort();
+  players.values();
+  for (const name of playerNames) {
+    console.log(name);
+  }
+}
 
+console.log(sortedBBallPlayers(basketballTeam.topPlayers));
+console.log(basketballTeam.topPlayers);
 
 /* EXPECTED RESULT
 
