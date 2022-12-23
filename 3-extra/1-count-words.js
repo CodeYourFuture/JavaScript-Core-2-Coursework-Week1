@@ -27,6 +27,15 @@ function countWords(string) {
   const wordCount = {};
 
   // write code here
+  if (string.trim().length === 0) {
+  return wordCount;
+} 
+string.split(" ").map((word) => {
+    if (wordCount[word] === undefined) {
+        wordCount[word] = 1;
+  } else {
+      wordCount[word]++;
+  }});
 
   return wordCount;
 }
