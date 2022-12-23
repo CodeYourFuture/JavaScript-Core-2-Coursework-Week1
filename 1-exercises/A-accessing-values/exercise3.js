@@ -21,7 +21,9 @@ let basketballTeam = {
 */
 
 // write code here
-
+let NamePlayers = basketballTeam.topPlayers
+  .sort()
+  .forEach((value) => console.log(value));
 
 /* EXPECTED RESULT
 
