@@ -23,3 +23,12 @@
 */
 
 // write code here
+let cake = {
+  title: "carrotCake",
+  serves: 6,
+  Ingredients: ["egg", "milk", "flour", "carrot", "oil"]
+}
+console.log(cake['title']);
+console.log(`serves: ${cake.serves}`);
+console.log("ingredients:");
+(cake.Ingredients).map((item) => console.log(item));

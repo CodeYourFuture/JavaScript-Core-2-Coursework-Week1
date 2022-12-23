@@ -14,7 +14,8 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); 
+//because colour has not defined in this object.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,6 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
+//because firstName has not defined in this object.
 
 // Example 3
 let myPet = {
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// there is no return in the function.
