@@ -23,3 +23,15 @@
 */
 
 // write code here
+let recipe = {
+  title: "Semolina Halva",
+  servings: 4,
+  ingredients: ["semolina", "olive oil", "water", "sugar"]
+
+
+
+}
+
+console.log(recipe.title);
+console.log("Serves: " + recipe.servings);
+console.log("Ingredients: " + "\n" + recipe.ingredients);
