@@ -1,3 +1,4 @@
+
 /*
   An object's properties can have values that are other objects or arrays.
 */
@@ -21,6 +22,9 @@ let basketballTeam = {
 */
 
 // write code here
+ let topPlayersArray = basketballTeam.topPlayers;
+ let sortsTopPlayersArray = topPlayersArray.sort();
+ sortsTopPlayersArray.forEach(player => console.log(player));
 
 
 /* EXPECTED RESULT

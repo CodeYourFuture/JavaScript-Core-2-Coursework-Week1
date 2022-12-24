@@ -10,6 +10,9 @@
     Hint: you'll need to use bracket notation to add new key/value pairs to the object
 */
 
+
+
+
 const COUNTRY_CURRENCY_CODES = [
   ["GB", "GBP"],
   ["DE", "EUR"],
@@ -19,10 +22,22 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
-}
+
+  /* 
+  let currencyCodes = {};
+   for (let [x, y] of countryCurrencyCodes) {
+     currencyCodes[x] = y;
+   }
+   return currencyCodes; 
+
+    -----------OR------------   */
+    return Object.fromEntries(countryCurrencyCodes);
+  }
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
-- To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
+- To run the tests for this exercise, run `npm test -- --..`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
