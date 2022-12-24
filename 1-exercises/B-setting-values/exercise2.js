@@ -16,10 +16,7 @@ let student = {
     - Add a property to the student object for attendance
     - Set the value of attendance to 90
 */
-student['attendance'] = 90;
-student['attendance'] >= 90 && student['examScore'] > 60
-? (student['hasPassed'] = true)
-: (student['hasPassed'] = false);
+
 // write code here
 
 /*
@@ -30,6 +27,11 @@ student['attendance'] >= 90 && student['examScore'] > 60
       exam score is above 60.
   - Use bracket notation to change the value of hasPassed
 */
+student['attendance'] = 90
+student['attendance'] >= 90 && student['examScore'] > 60?
+(student['hasPassed'] = true) :
+(student['hasPassed'] = false);
+
 
 // write code here
 
