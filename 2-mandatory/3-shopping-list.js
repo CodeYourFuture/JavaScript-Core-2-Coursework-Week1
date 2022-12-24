@@ -20,7 +20,14 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let allContent = pantry.fridgeContents.concat(pantry.cupboardContents);
+  let missingIngredients = recipe.ingredients
+  .filter(ingredient => allContent.indexOf(ingredient) === -1);
+  return {name: recipe.name ,
+    items: missingIngredients}
 }
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
