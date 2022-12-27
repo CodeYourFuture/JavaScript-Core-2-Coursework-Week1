@@ -1,6 +1,6 @@
 /*
   You can also access the value of a property using bracket notation.
-  Bracket notation can be used when the property is stored as the value of a variable.
+  Bracket notation can be used when the key of the property is stored as the value of a variable.
   This can be very useful for iterating through an object's properties or when accessing a lookup table.
 */
 

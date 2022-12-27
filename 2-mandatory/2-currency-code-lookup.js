@@ -1,8 +1,8 @@
 /*
-  Objects can be thought of as key/value storage, like a dictionary or a 'lookup'.
+  Objects can be thought of as key/value storage, like a dictionary or a 'lookup table'.
 
-  You have a variable called COUNTRY_CURRENCY_CODES which is an array of arrays.
-  Each inner array contains a country code and its currency code.
+  Below, we have a variable called COUNTRY_CURRENCY_CODES which is an array of arrays.
+  Each inner array contains a country code (such as "GB") and its currency code (such as "GBP").
 
   Write a function called createLookup that
     - takes COUNTRY_CURRENCY_CODES as an argument (remember, it's an array of arrays)

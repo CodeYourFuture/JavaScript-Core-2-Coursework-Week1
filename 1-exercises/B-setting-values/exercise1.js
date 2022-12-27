@@ -1,5 +1,5 @@
 /*
-  You can add properties to objects and assign values to them using dot notation.
+  You can add new properties to objects and assign values to them using dot notation.
   You can also change the value assigned to a property using dot notation.
 */
 
@@ -16,9 +16,9 @@ let capitalCities = {
 /*
   Using dot notation:
     - Change the value of UnitedKingdom's capital city population to 8980000.
-    - Add the property for population to China's capital city and set the value to 21500000.
-    - Add the country "Peru" to capitalCities object.
-    - Add a name of "Lima" to Peru's capital city.
+    - Add the property for population to China's capital city and set its value to 21500000.
+    - Add the country "Peru" to the capitalCities object.
+    - Add the name "Lima" as Peru's capital city.
     - Add a population of 9750000 to Peru's capital city.
 */
 
