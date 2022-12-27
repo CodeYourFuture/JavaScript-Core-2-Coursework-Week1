@@ -23,3 +23,78 @@
 */
 
 // write code here
+
+// Recipe 1:
+
+let cakeRecipe = {
+  Title: "Vanilla Cake",
+  Serves: 6,
+  Ingredients: ["2 Eggs", "Flour", "Vanilla"]
+}
+
+
+console.log(cakeRecipe.Title);
+console.log(`Serves: ${cakeRecipe.Serves}`);
+console.log(`Ingredients:`);
+cakeRecipe.Ingredients 
+      .forEach(value => console.log(value));
+
+// Recipe 2:
+
+let muffinRecipe = {
+  Title: "Muffin",
+  Serves: 4,
+  Ingredients: ["1 Eggs", "Flour", "Raisins"]
+}
+
+
+console.log(muffinRecipe.Title);
+console.log(`Serves: ${muffinRecipe.Serves}`);
+console.log(`Ingredients:`);
+muffinRecipe.Ingredients 
+      .forEach(value => console.log(value));
+
+// Recipe 3:
+
+let noodleRecipe = {
+  Title: "Noodles",
+  Serves: 2,
+  Ingredients: ["Egg Noodles", "Sesame oil", "Stir fry vegetables"]
+}
+
+
+console.log(noodleRecipe.Title);
+console.log(`Serves: ${noodleRecipe.Serves}`);
+console.log(`Ingredients:`);
+noodleRecipe.Ingredients 
+      .forEach(value => console.log(value));
+
+// Recipe 4:
+
+let pickleRecipe = {
+  Title: "Pickles",
+  Serves: 10,
+  Ingredients: ["Gherkins", "Vinegar", "Chili"]
+}
+
+
+console.log(pickleRecipe.Title);
+console.log(`Serves: ${pickleRecipe.Serves}`);
+console.log(`Ingredients:`);
+pickleRecipe.Ingredients 
+      .forEach(value => console.log(value));
+
+// Recipe 5: 
+
+let biryaniRecipe = {
+  Title: "Biryani",
+  Serves: 5,
+  Ingredients: ["White rice", "Oil", "Water"]
+}
+
+
+console.log(biryaniRecipe.Title);
+console.log(`Serves: ${biryaniRecipe.Serves}`);
+console.log(`Ingredients:`);
+biryaniRecipe.Ingredients 
+      .forEach(value => console.log(value));
