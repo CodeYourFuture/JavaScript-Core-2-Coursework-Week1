@@ -1,5 +1,5 @@
 /*
-    You have already seen "undefined", either in an error message or being output from your program.
+    You have already seen "undefined", either in an error message or being logged by your program.
 
     As a reminder, in some cases, undefined will be used by a programmer intentionally, and they will write code to handle it.
     But usually, when you see undefined - it means something has gone wrong!

@@ -15,11 +15,11 @@ Add `-Solution` to the end of a repo url to find the solution.
 
 For this repo:
 
-https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week1-London8
+https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week1
 
 Find the solution here:
 
-https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week1-London8-Solution
+https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week1-Solution
 
 **If you do not have access to these repositories** Contact your City Coordinator to get access to our Github Team.
 
@@ -39,7 +39,7 @@ Look for marking guides in these places:
 
 Please read this guide before you start marking.
 
-https://docs.codeyourfuture.io/teams/education/homework-feedback
+https://docs.codeyourfuture.io/volunteers/teams-1/tech-education/homework-feedback
 
 ### 2.2) Marking Guide
 

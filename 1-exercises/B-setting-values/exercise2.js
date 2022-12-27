@@ -11,7 +11,7 @@ let student = {
 
 /*
   Using bracket notation
-    - Add a property to the student object for attendance
+    - Add an 'attendance' property to the student object
     - Set the value of attendance to 90
 */
 
@@ -21,7 +21,7 @@ let student = {
   - Write an "if" statement that changes the value of hasPassed to true
       if the student has attendance that is equal or greater than 90
       AND
-      exam score is above 60.
+      the exam score is above 60.
   - Use bracket notation to change the value of hasPassed
 */
 

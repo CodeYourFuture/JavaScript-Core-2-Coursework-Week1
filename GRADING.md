@@ -9,7 +9,7 @@ Update Instructions: https://gist.github.com/ChrisOwen101/84d82f03a60ce19f7f154a
 
 All coursework is graded using the Marking Guide found on the Syllabus.
 
-http://syllabus.codeyourfuture.io/guides/marking-guide
+https://syllabus.codeyourfuture.io/guides/marking-guide
 
 If you have any questions on these guidelines - please ask.
 

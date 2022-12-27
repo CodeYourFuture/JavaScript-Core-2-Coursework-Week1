@@ -11,11 +11,11 @@ Use Git & Github to submit your coursework as a pull request.
 
 The Github Desktop cheatsheet will help you.
 
-[Github Desktop Cheatsheet](http://syllabus.codeyourfuture.io/git/cheatsheet)
+[Github Desktop Cheatsheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet)
 
 This lesson will help you submit your coursework.
 
-[Git Lesson](http://syllabus.codeyourfuture.io/git/index)
+[Git Lesson](https://syllabus.codeyourfuture.io/git/desktop/lesson)
 
 ## Questions & Help
 
