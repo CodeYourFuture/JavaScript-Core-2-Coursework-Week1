@@ -9,7 +9,7 @@ let dog = {
   name: "Spot",
   isHungry: true,
   happiness: 6
-}; console.log(dog.typeo)
+}; console.log(dog.breed)
 
 /*
   You can access the values of each property using dot notation.
