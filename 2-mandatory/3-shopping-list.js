@@ -20,13 +20,35 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+
+  const newShoppingList = {};
+  newShoppingList.name = recipe.name;
+  newShoppingList.items = [];
+
+  const pantryList = Object.values(pantry).flat();
+
+  for (eachIngredient of recipe.ingredients) {
+    if (!pantryList.includes(eachIngredient)) {
+      newShoppingList.items.push(eachIngredient);
+    }
+  }
+  return newShoppingList;
+
+  // const pantryList = Object.values(pantry).flat();
+
+  // for (eachIngredient in recipe.ingredients) {
+  //   newShoppingList.items = recipe.ingredients.filter(
+  //     (eachIngredient) => !pantryList.includes(eachIngredient)
+  //   );
+  // }
+  // return newShoppingList;
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
-- To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
-- To run all exercises/tests in the mandatory folder, run `npm test`
-- (Reminder: You must have run `npm install` one time before this will work!)
-*/
+// /* ======= TESTS - DO NOT MODIFY =====
+// - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
+// - To run all exercises/tests in the mandatory folder, run `npm test`
+// - (Reminder: You must have run `npm install` one time before this will work!)
+// */
 
 test("createShoppingList works for pancakes recipe", () => {
   let recipe1 = {
@@ -43,11 +65,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
