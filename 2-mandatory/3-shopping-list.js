@@ -25,14 +25,23 @@ function createShoppingList(recipe) {
   newShoppingList.name = recipe.name;
   newShoppingList.items = [];
 
-  const pantryList = new Set(Object.values(pantry).flat());
+  const pantryList = Object.values(pantry).flat();
 
-  for (eachIngredient in recipe.ingredients) {
-    newShoppingList.items = recipe.ingredients.filter(
-      (eachIngredient) => !pantryList.has(eachIngredient)
-    );
+  for (eachIngredient of recipe.ingredients) {
+    if (!pantryList.includes(eachIngredient)) {
+      newShoppingList.items.push(eachIngredient);
+    }
   }
   return newShoppingList;
+
+  // const pantryList = Object.values(pantry).flat();
+
+  // for (eachIngredient in recipe.ingredients) {
+  //   newShoppingList.items = recipe.ingredients.filter(
+  //     (eachIngredient) => !pantryList.includes(eachIngredient)
+  //   );
+  // }
+  // return newShoppingList;
 }
 
 // /* ======= TESTS - DO NOT MODIFY =====
