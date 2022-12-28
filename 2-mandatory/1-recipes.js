@@ -23,3 +23,39 @@
 */
 
 // write code here
+let coconutRice = {
+  title: "coconut Rice",
+  serves: 4,
+  prepTime: "30 minutes",
+  cookTime: " one hour",
+  ingredients: [
+    "rice x3cups",
+    "coconut Milk",
+    "salt",
+    "veg Stock",
+    "water",
+    "olive Oil",
+  ],
+};
+
+let potatoSalad = {
+  title: "potatoSalad",
+  ingredients: [
+    "6 large boiled potatoes",
+    "cheese",
+    "spring Onions",
+    "boiled Eggs",
+    "rock salt",
+    "organic mayonnaise",
+    'cheeseTypes ["edam", "chedder", "mascarpone", "manchego", "mozzarella", "parmesan"]',
+    "Mint",
+  ],
+  prepTime: "20 minutes",
+  cookTime: "10 minutes",
+  serves: 6,
+  isFattening: false,
+  method:
+    "cut potatoes into cubes, chop up the onions and boiled eggs, grate cheese of choice. Mix all together, add mayonnaise and salt. Tossed together properly. Serve with a sprig of mint. Enjoy.",
+};
+console.log(coconutRice);
+console.log(potatoSalad);
