@@ -27,12 +27,12 @@ let cashRegister = {
     }
     return myBalance;
   },
-  orderFalafel: function (balance2) {
-    let myBalance2 = balance2;
-    if (myBalance2 >= 7.25) {
-      myBalance2 = myBalance2 - 7.25;
+  orderFalafel: function (balanceNumber) {
+    let myBalance = balanceNumber;
+    if (myBalance >= 7.25) {
+      myBalance = myBalance - 7.25;
     }
-    return myBalance2;
+    return myBalance;
   },
 };
 /* ======= TESTS - DO NOT MODIFY =====
