@@ -21,7 +21,7 @@ let pantry = {
 function createShoppingList(recipe) {
   shoppingList = {
     name: recipe.name,
-    items: recipe.ingredients.filter(value => pantry.fridgeContents.includes(value) && pantry.cupboardContents.includes(value));
+    items: recipe.ingredients.filter(value => pantry.fridgeContents.includes(value) && pantry.cupboardContents.includes(value))
   };
   return shoppingList;
 }
