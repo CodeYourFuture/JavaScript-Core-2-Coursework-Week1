@@ -20,10 +20,10 @@ const COUNTRY_CURRENCY_CODES = [
 function createLookup(countryCurrencyCodes) {
   // write code here
   const countryAndCurrencyObject = {};
-  countryAndCurrencyObject["GB"] = "GBP";
-  countryAndCurrencyObject["DE"] = "EUR";
-  countryAndCurrencyObject["NG"] = "NGN";
-  countryAndCurrencyObject["MX"] = "MXN";
+  countryCurrencyCodes.forEach((item) => {
+    countryAndCurrencyObject[item[0]] = item[1];
+  });
+
   console.log(countryAndCurrencyObject);
   return countryAndCurrencyObject;
 }
