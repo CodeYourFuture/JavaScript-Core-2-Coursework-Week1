@@ -23,3 +23,20 @@
 */
 
 // write code here
+let favoriteRecipe = {
+   title: "pizza",
+   serving: 2,
+   ingredients: ["cheese", "pepperoni", "jalapeno", "chicken", "meat"]
+ };
+console.log(favoriteRecipe.title)
+ console.log(`Serves: ${favoriteRecipe.serving}`)
+ console.log('Ingredients:')
+ console.log(favoriteRecipe.ingredients[0])
+ console.log(favoriteRecipe.ingredients[1]);
+ console.log(favoriteRecipe.ingredients[2]);
+ console.log(favoriteRecipe.ingredients[3]);
+ console.log(favoriteRecipe.ingredients[4]);
+ 
+
+
+

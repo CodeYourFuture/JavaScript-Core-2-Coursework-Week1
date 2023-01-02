@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);//there is no color keyword inour object
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,7 +26,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+// there is no key word firstName in our object 
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +36,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// function doesnt have a return 

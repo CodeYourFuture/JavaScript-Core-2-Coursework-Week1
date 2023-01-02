@@ -18,9 +18,14 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
+function createShoppingList(recipeObj) {
   // write code here
-}
+  let result = {name: recipeObj.name ,
+     shoppingList: []} 
+  let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents)
+   recipeObj.ingredients.map(eachIng => {if(!allIHave.includes(eachIng)){ result.shoppingList.push(eachIng) }}) 
+  return result; }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
