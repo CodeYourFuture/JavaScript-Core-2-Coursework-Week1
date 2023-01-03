@@ -30,7 +30,7 @@
   }
   console.log(recipe1.title);
   console.log(recipe1.servings);
-  recipe1.ingredients.forEach(element=>console.log(element));
+  recipe1.ingredients.forEach(ingredient=>console.log(ingredient));
 
   let recipe2 = {
     title: "fish and chip",
@@ -39,7 +39,7 @@
   };
   console.log(recipe2.title);
   console.log(recipe2.servings);
-  recipe2.ingredients.forEach((element) => console.log(element));
+  recipe2.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe3 = {
    title: "Ravioli Spinach Soup",
@@ -48,7 +48,7 @@
  };
  console.log(recipe3.title);
  console.log(recipe3.servings);
- recipe3.ingredients.forEach((element) => console.log(element));
+ recipe3.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe4 = {
    title: "Lasagna",
@@ -57,7 +57,7 @@
  };
  console.log(recipe4.title);
  console.log(recipe4.servings);
- recipe4.ingredients.forEach((element) => console.log(element));
+ recipe4.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe5 = {
    title: "Beef Chili",
@@ -66,7 +66,7 @@
  };
  console.log(recipe5.title);
  console.log(recipe5.servings);
- recipe5.ingredients.forEach((element) => console.log(element));
+ recipe5.ingredients.forEach((ingredient) => console.log(ingredient));
 
 
 
