@@ -23,3 +23,39 @@
 */
 
 // write code here
+const fullOfMyFavouriteRecipe = [
+
+  myFavouriteRecipe = {
+    title: "MoleOne",
+    servings: 1,
+    ingredients: ["cinnamonOne", "cuminOne", "cocoaOne"]
+  },
+
+  myFavouriteRecipe = {
+    title: "MoleTwo",
+    servings: 2,
+    ingredients: ["cinnamonTwo", "cuminTwo", "cocoaTwo"]
+  },
+
+  myFavouriteRecipe = {
+    title: "MoleThree",
+    servings: 3,
+    ingredients: ["cinnamonThree", "cuminThree", "cocoaThree"]
+  },
+
+  myFavouriteRecipe = {
+    title: "MoleFour",
+    servings: 4,
+    ingredients: ["cinnamonFour", "cuminFour", "cocoaFour"]
+  },
+
+  myFavouriteRecipe = {
+    title: "MoleFive",
+    servings: 5,
+    ingredients: ["cinnamonFive", "cuminFive", "cocoaFive"]
+  }];
+
+fullOfMyFavouriteRecipe.forEach(eachRecipe => {
+  console.log(`\n${eachRecipe.title} \nServes: ${eachRecipe.servings} \nIngredients:`);
+  eachRecipe.ingredients.forEach(eachIngredients => console.log(eachIngredients));
+});

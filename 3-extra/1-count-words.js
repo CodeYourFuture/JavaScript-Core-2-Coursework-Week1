@@ -23,13 +23,29 @@
     - Setting values on an object
 */
 
+// function countWords(string) {
+
+//   const wordCount = {};
+//   const arr = string.split(" ");
+//   if (arr.length > 1)
+//     arr.forEach(word =>
+//       wordCount[word] = arr.filter(countWord => countWord === word).length
+//     );
+//   return wordCount;
+// }
+
+
 function countWords(string) {
+
   const wordCount = {};
-
-  // write code here
-
+  const arr = string.split(" ");
+  if (arr.length > 1)
+    arr.forEach(word =>
+      wordCount[word] !== undefined ? wordCount[word]++ : wordCount[word] = 1
+    );
   return wordCount;
 }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
