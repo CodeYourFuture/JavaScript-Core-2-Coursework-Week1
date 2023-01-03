@@ -20,9 +20,9 @@ let pantry = {
 
 function createShoppingList(recipe) {
 
+  const totalContent = pantry.fridgeContents.concat(pantry.cupboardContents);
   const missingArr = recipe.ingredients.filter(eachIngredients =>
-    !pantry.fridgeContents.includes(eachIngredients) && !pantry.cupboardContents.includes(eachIngredients)
-  );
+    !totalContent.includes(eachIngredients));
   return {
     name: recipe.name,
     items: missingArr
