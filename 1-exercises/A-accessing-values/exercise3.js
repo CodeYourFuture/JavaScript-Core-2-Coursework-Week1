@@ -5,7 +5,7 @@
 let basketballTeam = {
   name: "Chicago Bulls",
   numberOfPlayers: 15,
-  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
+  basketballTeam: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
   homeStadium: {
     name: "United Center",
     capacity: 21000,
@@ -21,7 +21,7 @@ let basketballTeam = {
 */
 
 // write code here
-
+console.log(basketballTeam.basketballTeam.sort().join("\n"));
 
 /* EXPECTED RESULT
 
