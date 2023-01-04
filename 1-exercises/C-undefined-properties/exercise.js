@@ -31,7 +31,7 @@ sayHelloToUser(user); //user does not have "firstName" property
 let myPet = {
   animal: "Cat",
   getName: function () {
-    "My pet's name is Fluffy";
+     "My pet's name is Fluffy";
   },
 };
 

@@ -27,9 +27,12 @@ student["attendance"] = 90;
 */
 
 // write code here
-if ((student["attendance"] = 90 && student["examScore"] > 60)) {
-  student["hasPassed"] = true;
-} else student["hasPassed"] = false;
+//if ((student["attendance"] === 90 && student["examScore"] > 60)) {
+//  student["hasPassed"] = true;
+//} else student["hasPassed"] = false;
+
+student["attendance"] === 90 && student["examScore"] > 60 ?   student["hasPassed"] = true :   student["hasPassed"] = false;
+
 
 console.log(student);
 

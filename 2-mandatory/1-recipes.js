@@ -56,7 +56,7 @@ const favoriteRecipe = [
   favoriteRecipe4,
   favoriteRecipe5,
 ];
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < favoriteRecipe.length; i++) {
   console.log(favoriteRecipe[i].title);
   console.log("Serves: " + favoriteRecipe[i].servings);
   console.log("Ingredients:");
