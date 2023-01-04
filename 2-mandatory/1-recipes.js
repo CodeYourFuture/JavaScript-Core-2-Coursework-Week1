@@ -23,3 +23,25 @@
 */
 
 // write code here
+
+let myFirstRecipe={
+  title:"Zereshk Polo",
+  serves: 4,
+  ingredients:["Rice","Zereshk","Chicken","Zafaran"]
+}
+
+console.log(myFirstRecipe.title)
+console.log(`Serves: ${myFirstRecipe.serves}`)
+console.log(`Ingredients: ${myFirstRecipe.ingredients.join("\n")}`)
+
+let mySecondRecipe={
+  title:"Dolmeh",
+  serves: 6,
+  ingredients:["Rice","Lamb","cabbage","Dill"]
+}
+
+console.log(mySecondRecipe.title)
+console.log(`Serves: ${mySecondRecipe.serves}`)
+console.log(`Ingredients: ${mySecondRecipe.ingredients.join("\n")}`)
+
+
