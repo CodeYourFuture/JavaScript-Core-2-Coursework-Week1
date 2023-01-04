@@ -19,6 +19,8 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  return Object.fromEntries(countryCurrencyCodes);
+  // The Object.fromEntries() static method transforms a list of key-value pairs into an object.
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
