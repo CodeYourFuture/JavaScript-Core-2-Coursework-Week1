@@ -13,26 +13,25 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
 console.log(car["colour"]);
+// In object car there is no property - "colour"
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
 let user = {
   name: "Mira"
 };
-
 sayHelloToUser(user);
+// the property of object is only one and called "name", not "firstName"
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+  "My pet's name is Fluffy";
   },
 };
-
 console.log(myPet.getName());
+// the getName is not a function , getName is property of object myPet
