@@ -15,24 +15,25 @@ let car = {
 };
 
 console.log(car["colour"]);
+//we have here undefined, because there is no properties color inside of object car{} yet, we should add it first
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
-
+// the function trying to use not existed key
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//function getName has no statement
