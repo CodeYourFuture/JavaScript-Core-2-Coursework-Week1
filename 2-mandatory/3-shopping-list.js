@@ -18,18 +18,29 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
-   const resultObj = {};
-   resultObj.name = recipe.name;
-   resultObj.items = [];
+// function createShoppingList(recipe) {
+//   // write code here
+//    const resultObj = {};
+//    resultObj.name = recipe.name;
+//    resultObj.items = [];
     
-   const pantryAllSet = new Set(Object.values(pantry).flat());
-    resultObj.items = [
-      ...new Set(recipe.ingredients.filter((x) => !pantryAllSet.has(x))),
-    ];
-return resultObj;
-}
+//    const pantryAllSet = new Set(Object.values(pantry).flat());
+//     resultObj.items = [
+//       ...new Set(recipe.ingredients.filter((x) => !pantryAllSet.has(x))),
+//     ];
+// return resultObj;
+// }
+
+function createShoppingList(recipeObj){ 
+  let result = {name: recipeObj.name , items: []} 
+  let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents) 
+  recipeObj.ingredients.map(eachIng => {
+    if(!allIHave.includes(eachIng))
+    { result.items.push(eachIng) 
+    }
+  }) 
+  return result; }
+  
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
