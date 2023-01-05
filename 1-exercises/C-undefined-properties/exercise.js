@@ -8,7 +8,7 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// Example 1 color is not defined
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -16,7 +16,7 @@ let car = {
 
 console.log(car["colour"]);
 
-// Example 2
+// Example 2 name has been defined and not firstname
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +27,7 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// Example 3 function does not have a callback.
 let myPet = {
   animal: "Cat",
   getName: function() {
