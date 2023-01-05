@@ -20,6 +20,16 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  const newShoppingList = {};
+  newShoppingList.name = recipe.name;
+  newShoppingList.items = [];
+  const pantryList = Object.values(pantry).flat();
+  for(ingredient of recipe.ingredients){
+    if (!pantryList.includes(ingredient)){
+      newShoppingList.items.push(ingredient);
+    }
+  }
+  return newShoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
