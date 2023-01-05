@@ -21,6 +21,12 @@ let basketballTeam = {
 */
 
 // write code here
+let basket = basketballTeam.topPlayers;
+for(let i in basket){
+
+console.log(basket[i]);
+
+}
 
 
 /* EXPECTED RESULT
