@@ -19,7 +19,11 @@ const MENU = {
   falafel: 7.25,
 };
 
-let cashRegister = {
+let cashRegister = {  
+
+
+
+  
   // write code here
 }
 

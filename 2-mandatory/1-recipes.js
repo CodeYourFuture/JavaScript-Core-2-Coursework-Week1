@@ -23,3 +23,11 @@
 */
 
 // write code here
+
+let recipe = {
+  title : "mole" ,
+  serves : 2 ,
+  ingredients : ["cinnamon" , "cumin" , "cocoa"]
+}
+for(let i in recipe)
+ console.log(recipe[i]);
