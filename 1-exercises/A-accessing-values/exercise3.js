@@ -3,14 +3,14 @@
 */
 
 let basketballTeam = {
-  name: "Chicago Bulls",
-  numberOfPlayers: 15,
-  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
-  homeStadium: {
-    name: "United Center",
-    capacity: 21000,
-    address: "1901 W Madison St",
-  },
+    name: "Chicago Bulls",
+    numberOfPlayers: 15,
+    topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
+    homeStadium: {
+        name: "United Center",
+        capacity: 21000,
+        address: "1901 W Madison St",
+    },
 };
 
 /*
@@ -21,7 +21,7 @@ let basketballTeam = {
 */
 
 // write code here
-
+basketballTeam['topPlayers'].sort().map(x => console.log(x))
 
 /* EXPECTED RESULT
 

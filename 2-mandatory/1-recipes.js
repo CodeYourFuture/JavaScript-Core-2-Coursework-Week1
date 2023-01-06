@@ -23,3 +23,22 @@
 */
 
 // write code here
+let favoriteRecipe = [{
+        title: "Ash reshteh",
+        servings: 5,
+        ingredients: [Adas, loobiya, reshteh, sabzi, kashk],
+    },
+    {
+        title: "kotlet",
+        servings: 4,
+        ingredients: [sibzamini, tokhme morgh, zardchoobe, namak],
+    }
+];
+favoriteRecipe.forEach(elements = > {
+    console.log(elements.title);
+    console.log(`serves: ${elements.servings}`);
+    console.log("ingredients:");
+    console.log(elements.ingredients[5]);
+    console.log(elements.ingredients[4]);
+    console.log(`\n`)
+})
