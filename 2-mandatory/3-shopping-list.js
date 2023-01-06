@@ -19,7 +19,13 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+ 
+  const resultObject = {};
+  resultObject.name = recipe.name;
+  resultObject.items = [];
+  const pantryAllSet = new Set(Object.values(pantry).flat())
+  resultObj.items = [...new Set(recipe.ingredients.filter(x => !pantryAllSet.has(x)))]
+ 
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

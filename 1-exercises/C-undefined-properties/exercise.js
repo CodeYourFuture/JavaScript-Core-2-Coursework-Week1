@@ -17,7 +17,7 @@ let car = {
 console.log(car["colour"]);
 
 // Example 2
-function sayHelloToUser(user) {
+sayHelloToUser = (user) => {
   console.log(`Hello ${user.firstName}`);
 }
 
