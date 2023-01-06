@@ -8,30 +8,31 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// Example 1 Undefined happens as the 'colour' property of the car was never declared. It doesn't exists.
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  colour: "blue",
 };
 
 console.log(car["colour"]);
 
-// Example 2
+// Example 2  user object has a property called 'name' even the functions appeals 'firstName' property which doesn't exist
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  firstName: "Mira",
 };
 
 sayHelloToUser(user);
 
-// Example 3
+// Example 3 the function misses a 'return' hence return should be written in front of the string
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function () {
+    return "My pet's name is Fluffy";
   },
 };
 
