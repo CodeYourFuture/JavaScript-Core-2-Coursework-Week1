@@ -19,8 +19,8 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
-  let object =  {}
-  for (i=0; i <= countryCurrencyCodes.length-1; i++) {
+  let object = {}
+  for (let i=0; i <= countryCurrencyCodes.length-1; i++) {
     object[countryCurrencyCodes[i][0]] = countryCurrencyCodes[i][1];
   }
   // object[countryCurrencyCodes[0][0]] = countryCurrencyCodes[0][1];
@@ -31,8 +31,6 @@ function createLookup(countryCurrencyCodes) {
   
 }
 
-let myArray = [[1, 4], [3, 8], [7, 9], [12, 15]]
-console.log(myArray[3][0])
 console.log(createLookup(COUNTRY_CURRENCY_CODES));
 
 

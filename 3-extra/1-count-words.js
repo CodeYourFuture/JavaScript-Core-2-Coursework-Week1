@@ -24,12 +24,32 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
+  let wordCount = {};
+  let myArray = string.split(" ")
+  console.log(myArray)
+  console.log(myArray[0])
+  console.log(myArray.length)
   // write code here
-
+  if (string === "") {
+    return wordCount
+  } // I used this conditional because I understand there is an issue with the split method
+  // ("split returns an array containing one empty string, rather than an empty array.")
+  // [ https://stackoverflow.com/questions/5164883/the-confusion-about-the-split-function-of-javascript-with-an-empty-string ]
+  // and thus I was failing the "empty string" test
+  for (let i=0; i < myArray.length; i++) {
+    if (myArray[i] in wordCount === false) {
+  // The use of in (operator) comes from here:
+  // https://www.freecodecamp.org/news/how-to-check-if-an-object-has-a-key-in-javascript/
+      wordCount[myArray[i]] = 1;
+    } else {
+      wordCount[myArray[i]]++
+    }
+  }
+// console.log(wordCount);
   return wordCount;
 }
+// countWords("")
+// countWords("Love love me do you know I love you")
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
