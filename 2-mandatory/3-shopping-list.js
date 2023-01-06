@@ -20,7 +20,42 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+    let toBuy = {
+      name: recipe.name,
+      items: []
+    };
+
+    let allInventory = pantry.fridgeContents
+    console.log(allInventory);
+    // allInventory.push(pantry.cupboardContents)
+    for (let i=0; i < pantry.cupboardContents.length; i++){
+      allInventory.push(pantry.cupboardContents[i])
+    }
+    console.log(allInventory); // test to check
+    console.log(allInventory.includes("oregano")); // test to check
+
+    for (let ab=0; ab < recipe.ingredients.length; ab++) {
+      console.log(recipe.ingredients[ab]);
+      console.log(allInventory.includes(recipe.ingredients[ab]));
+      if (allInventory.includes(recipe.ingredients[ab]) === false) {
+        toBuy.items.push(recipe.ingredients[ab])
+      } 
+    }
+
+
+    
+
+console.log(toBuy) // Just testing that the name of the recipe gets to the final output
+return(toBuy)
 }
+
+createShoppingList({name: "pancakes",
+    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"]})
+
+// createShoppingList({
+//     name: "pancakes",
+//     ingredients: ["flour", "eggs", "vegetable oil"],
+//   })  // Just for testing
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

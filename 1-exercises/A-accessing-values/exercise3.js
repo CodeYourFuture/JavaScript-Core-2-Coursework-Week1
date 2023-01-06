@@ -22,6 +22,15 @@ let basketballTeam = {
 
 // write code here
 
+let chicagoTopPlayers = basketballTeam.topPlayers
+console.log(chicagoTopPlayers)
+// console.log(basketballTeam.topPlayers); (Alternative solution)
+let chicagoTopPlayersSorted = chicagoTopPlayers.sort();
+for (i=0; i < chicagoTopPlayersSorted.length; i++) {
+  console.log(chicagoTopPlayersSorted[i]);
+}
+
+
 
 /* EXPECTED RESULT
 

@@ -19,7 +19,20 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  let object = {}
+  for (let i=0; i <= countryCurrencyCodes.length-1; i++) {
+    object[countryCurrencyCodes[i][0]] = countryCurrencyCodes[i][1];
+  }
+  // object[countryCurrencyCodes[0][0]] = countryCurrencyCodes[0][1];
+  // object[countryCurrencyCodes[1][0]] = countryCurrencyCodes[1][1];
+  // object[countryCurrencyCodes[2][0]] = countryCurrencyCodes[2][1];
+  // object[countryCurrencyCodes[3][0]] = countryCurrencyCodes[3][1];
+  return object;
+  
 }
+
+console.log(createLookup(COUNTRY_CURRENCY_CODES));
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`

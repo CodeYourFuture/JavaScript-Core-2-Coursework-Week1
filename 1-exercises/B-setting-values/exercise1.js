@@ -23,6 +23,15 @@ let capitalCities = {
 */
 
 // write code here
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000;
+capitalCities.Peru = {};
+capitalCities.Peru.name = "Lima";
+capitalCities.Peru.population = 9750000;
+capitalCities.Mexico; // Does this do anything?
+capitalCities.Mexico = {}; // This is a way to add a (nested) object without any properties.
+// But it's there: an 'empty' object
+
 
 console.log(capitalCities);
 
