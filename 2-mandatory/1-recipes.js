@@ -23,3 +23,46 @@
 */
 
 // write code here
+
+let favoriteRecipeOne = {
+  title: "Banana Bread ",
+  servings: 8,
+  ingredients: [
+    "butter",
+    "caster sugar",
+    "eggs",
+    "flour",
+    "baking powder",
+    "bananas",
+  ],
+};
+console.log(favoriteRecipeOne.title);
+console.log("serves: " + favoriteRecipeOne.servings);
+console.log("Ingredients: ");
+console.log(favoriteRecipeOne.ingredients[0]);
+console.log(favoriteRecipeOne.ingredients[1]);
+console.log(favoriteRecipeOne.ingredients[2]);
+console.log(favoriteRecipeOne.ingredients[3]);
+console.log(favoriteRecipeOne.ingredients[4]);
+console.log(favoriteRecipeOne.ingredients[5]);
+
+let favoriteRecipeTwo = {
+  title: "blueberry muffin",
+  servings: 12,
+  ingredients: [
+    "butter",
+    "golden caster sugar",
+    "eggs",
+    "milk",
+    "flour",
+    "baking powder",
+    "blueberries",
+  ],
+};
+
+console.log(favoriteRecipeTwo.title);
+console.log("serves: " + favoriteRecipeTwo.servings);
+console.log("ingredients: ");
+favoriteRecipeTwo.ingredients.forEach((element) => {
+  console.log(element);
+});

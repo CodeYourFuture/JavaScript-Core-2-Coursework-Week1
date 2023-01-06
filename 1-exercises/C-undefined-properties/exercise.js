@@ -16,23 +16,29 @@ let car = {
 
 console.log(car["colour"]);
 
+// There is no property call Colour.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+// There is no property call firstName.
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+// There is no return so the function does not work.
