@@ -14,15 +14,17 @@ let car = {
   yearsOld: 8,
 };
 
+console.log(car["colour"]); //there is no property in the object car named color.
+car["colour"] = "red";
 console.log(car["colour"]);
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.name}`); //The key in user is named "name" not firstName.
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
@@ -30,8 +32,8 @@ sayHelloToUser(user);
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
+  getName: function () {
+    return "My pet's name is Fluffy"; //There was no return statement within this function.
   },
 };
 

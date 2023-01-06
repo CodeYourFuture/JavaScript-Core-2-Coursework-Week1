@@ -9,7 +9,10 @@
 
 let student = {
   // write code here
-}
+  getName: function getName(str) {
+    console.log(`Student name: ${str}`);
+  },
+};
 
 student.getName("Daniel");
 
