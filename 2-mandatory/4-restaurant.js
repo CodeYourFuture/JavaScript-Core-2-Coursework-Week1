@@ -15,12 +15,18 @@
 */
 
 const MENU = {
-  burger: 6.5,
-  falafel: 7.25,
+    burger: 6.5,
+    falafel: 7.25,
 };
 
 let cashRegister = {
-  // write code here
+    // write code here
+    orderBurger: function(balance) {
+        return balance >= MENU.burger ? balance - MENU.burger : balance;
+    },
+    orderFalafel: function(balance) {
+        return balance >= MENU.falafel ? balance - MENU.falafel : balance;
+    }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -30,21 +36,21 @@ let cashRegister = {
 */
 
 test("orderBurger subtracts 6.5 from balance", () => {
-  let balance = 6.5;
-  expect(cashRegister.orderBurger(balance)).toEqual(0);
+    let balance = 6.5;
+    expect(cashRegister.orderBurger(balance)).toEqual(0);
 });
 
 test("orderFalafel subtracts 7.25 from balance", () => {
-  let balance = 7.25;
-  expect(cashRegister.orderFalafel(balance)).toEqual(0);
+    let balance = 7.25;
+    expect(cashRegister.orderFalafel(balance)).toEqual(0);
 });
 
 test("orderBurger will not subtract from balance if balance is too low", () => {
-  let balance = 6.49;
-  expect(cashRegister.orderBurger(balance)).toEqual(6.49);
+    let balance = 6.49;
+    expect(cashRegister.orderBurger(balance)).toEqual(6.49);
 });
 
 test("orderFalafel will not subtract from balance if balance is too low", () => {
-  let balance = 7.24;
-  expect(cashRegister.orderFalafel(balance)).toEqual(7.24);
+    let balance = 7.24;
+    expect(cashRegister.orderFalafel(balance)).toEqual(7.24);
 });
