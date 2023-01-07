@@ -44,7 +44,7 @@ let balance = 6.5;
 console.log(cashregister.orderBurger(balance))
 
 let falafelBalance = 7.25;
-console.log(cashRegister.orderFalafel(balance))
+console.log(cashRegister.orderFalafel(Falafelbalance))
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
