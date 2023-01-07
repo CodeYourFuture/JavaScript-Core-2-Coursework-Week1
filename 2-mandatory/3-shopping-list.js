@@ -19,8 +19,37 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  shoppingList = {
+    name: recipe.name,
+    items: recipe.ingredients.filter(value => pantry.fridgeContents.includes(value) && pantry.cupboardContents.includes(value))
+  };
+  return shoppingList;
 }
+
+// for loop:
+
+function createShoppingList(recipe) {
+  shoppingList = {
+    name: recipe.name,
+    items: []
+  };
+  for (let ingredient of recipe.ingredients) {
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)) {
+      shoppingList.items.push(ingredient);
+    }
+  } 
+  return shoppingList;
+}
+
+
+// function createShoppingList(recipe) {
+//   shoppingList = {
+//     name: recipe.name,
+//     items:
+//   };
+//   recipe.ingredients.filter(value => pantry.fridgeContents.includes(value) && pantry.cupboardContents.includes(value));
+
+// }
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
