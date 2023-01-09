@@ -29,9 +29,7 @@ function countWords(string) {
   if (string.trim().length === 0) {
     return {};
   }
-
   const wordCount = {};
-
   // write code here
 
   // Split the string into an array of words
