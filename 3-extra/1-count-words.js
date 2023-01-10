@@ -37,7 +37,8 @@ function countWords(string) {
 
   // Iterate over the array of words
   for (const word of words) {
-    // If the word is not already a key in the wordCount object,add it with a value of 1
+    // If the word is not already a key in the wordCount object,add it with a 
+    // value of 1
     if (!wordCount[word]) {
       wordCount[word] = 1;
     } else {
@@ -47,6 +48,30 @@ function countWords(string) {
   }
   return wordCount;
 }
+
+/**solution from coursework review:
+ * function countWords(string) {
+  const wordCount = {};
+
+  let arrayOfWords = string.split(" ");
+
+  arrayOfWords.forEach((word) => {
+    if (word !== "") {
+      if (wordCount.hasOwnProperty(word)) {
+        wordCount[word] += 1;
+      } else {
+        wordCount[word] = 1;
+      }
+    }
+  });
+
+  return wordCount;
+}
+ * 
+ */
+
+
+
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`

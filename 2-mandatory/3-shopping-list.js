@@ -41,6 +41,22 @@ function createShoppingList(recipe) {
   return shoppingList;
 }  
 
+//solution from coursework review on 07 January 2023
+/**
+ * function createShoppingList(recipe) {
+  let missingIngredients = recipe.ingredients.filter(
+    (ingredient) => {
+      return !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)
+    }
+  );
+  return {
+    name: recipe.name,
+    items: missingIngredients,
+  }
+}
+ */
+
+
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

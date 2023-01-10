@@ -29,7 +29,7 @@
     ingredients:['cinnamon','cumin','cocoa']
   }
   console.log(recipe1.title);
-  console.log(recipe1.servings);
+  console.log(`Serves: ${recipe1.servings}`);
   recipe1.ingredients.forEach(ingredient=>console.log(ingredient));
 
   let recipe2 = {
@@ -38,7 +38,7 @@
     ingredients: ["fried fish", "fried chips", "tomato sauce"],
   };
   console.log(recipe2.title);
-  console.log(recipe2.servings);
+  console.log(`Serves : ${recipe2.servings}`);
   recipe2.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe3 = {
@@ -47,7 +47,7 @@
    ingredients: ["ravioli", "spinach"],
  };
  console.log(recipe3.title);
- console.log(recipe3.servings);
+ console.log(`Serves : ${recipe3.servings}`);
  recipe3.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe4 = {
@@ -56,7 +56,7 @@
    ingredients: ["pasta", "cheese", "tomato sauce"],
  };
  console.log(recipe4.title);
- console.log(recipe4.servings);
+ console.log(`Serves : ${recipe4.servings}`);
  recipe4.ingredients.forEach((ingredient) => console.log(ingredient));
 
  let recipe5 = {
@@ -65,7 +65,7 @@
    ingredients: ["Beef mince", "chili", "cheese"],
  };
  console.log(recipe5.title);
- console.log(recipe5.servings);
+ console.log(`Serves : ${recipe5.servings}`);
  recipe5.ingredients.forEach((ingredient) => console.log(ingredient));
 
 
