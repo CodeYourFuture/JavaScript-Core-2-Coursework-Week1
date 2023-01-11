@@ -19,8 +19,17 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  const newObjectSpopList = {};
+  newObjectSpopList.name = recipe.name;
+  newObjectSpopList.items = [];
+  for (item of recipe.ingredients) {
+    if (!pantry.fridgeContents.includes(item) && !pantry.cupboardContents.includes(item)) {
+      newObjectSpopList.items.push(item)
+    }
+  }
+      return newObjectSpopList;
 }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
