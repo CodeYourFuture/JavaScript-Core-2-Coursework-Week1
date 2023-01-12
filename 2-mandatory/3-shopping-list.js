@@ -31,6 +31,13 @@ function createShoppingList(recipe) {
   }
   return newShoppingList;
 }
+/*
+function createShoppingList(recipe) {
+  return {
+    name: recipe.name,
+    items: recipe.ingredients.filter(ingredient => !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient))
+  }
+} */
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
