@@ -29,7 +29,10 @@ let student = {
 // write code here
 if(student.attendence>=90&& student.examScore>60){
  student.hasPassed=true;
+}else {
+  student.hasPassed=false
 }
+
 
 console.log(student);
 
