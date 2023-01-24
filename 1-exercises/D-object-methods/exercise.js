@@ -9,6 +9,11 @@
 
 let student = {
   // write code here
+  name:'Daniel',
+  getName:function(name){
+  return `Student name: ${name} `
+  
+  }
 }
 
 student.getName("Daniel");
