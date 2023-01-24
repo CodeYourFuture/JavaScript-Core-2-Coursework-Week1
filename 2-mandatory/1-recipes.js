@@ -23,9 +23,10 @@
 */
 
 // write code here
+// let myRecipes = {
 
 let dish1 = {
-  what: "cockTail",
+  dishType: "cockTail",
   title: "sunsetBeach",
   serves: 1,
   ingredients: [
@@ -47,7 +48,7 @@ let dish1 = {
 };
 
 let dish2 = {
-  what: "starter",
+  dishType: "starter",
   title: "vegetableSoup",
   prepTime: "10 mins",
   cookingTime: "30 mins",
@@ -76,7 +77,7 @@ let dish2 = {
 };
 
 let dish3 = {
-  what: "Main Dish",
+  dishType: "Main Dish",
   title: "coconut Rice",
   serves: 4,
   prepTime: "30 minutes",
@@ -95,7 +96,7 @@ let dish3 = {
 };
 
 let dish4 = {
-  what: "side dish",
+  dishType: "side dish",
   title: "potatoSalad",
   serves: 4,
   ingredients: [
@@ -131,7 +132,7 @@ let dish4 = {
 };
 
 let dish5 = {
-  what: "Desert",
+  dishType: "Desert",
   title: "cheesy Crumbs",
   serves: 6,
   ingredients: [
@@ -150,6 +151,19 @@ let dish5 = {
   highFat: true,
   tastyRating: 9,
 };
+
+
 myRecipes = [dish1, dish2, dish3, dish4, dish5];
-myRecipes.forEach((itemOfRecipe) => console.log(itemOfRecipe));
-console.log(dish1.method);
+
+console.log(dish1.title);
+console.log(myRecipes[0].method);
+// myRecipes.forEach((itemOfRecipe) => console.log(itemOfRecipe));
+
+
+
+// console.log(moleRecipe.title);
+// console.log(`Serves: ${moleRecipe.servings}`);
+// console.log("Ingredients:");
+// moleRecipe.ingredients.forEach((ingredient) => {
+//   console.log(ingredient);
+// });

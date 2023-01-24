@@ -10,31 +10,38 @@
     Hint: you'll need to use bracket notation to add new key/value pairs to the object
 */
 
-const COUNTRY_CURRENCY_CODES = [
-  ["GB", "GBP"],
-  ["DE", "EUR"],
-  ["NG", "NGN"],
-  ["MX", "MXN"],
-];
+// const COUNTRY_CURRENCY_CODES = [
+//   ["GB", "GBP"],
+//   ["DE", "EUR"],
+//   ["NG", "NGN"],
+//   ["MX", "MXN"],
+// ];
+
+// function createLookup(countryCurrencyCodes) {
+//   // write code here
+//    let currencyCodeLookup = {};
+   
+//    for (let countryCurrencyCodes of countryCurrencyCodes) {
+//      let countryCode = countryCurrencyCodes[0];
+//      let currencyCode = countryCurrencyCodes[1];
+//      currencyCodeLookup[countryCode] = currencyCode;
+//      console.log(currencyCodeLookup);
+//    };
+//    return newObject;  
+// }; 
+
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
-   let newObject = {};
-   for (arr of countryCurrencyCodes) {
-     let keys = arr[0];
-     let values = arr[1];
-     newObject[keys] = values;
-   }
-   return newObject;
-}; console.log('createLookup');
+  let currencyCodeLookup = {};
 
+  for (let countryCurrencyCode of countryCurrencyCodes) {
+    let countryCode = countryCurrencyCode[0];
+    let currencyCode = countryCurrencyCode[1];
+    currencyCodeLookup[countryCode] = currencyCode;
+  };
 
-
-
-
-
-
-
+  return currencyCodeLookup;
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`

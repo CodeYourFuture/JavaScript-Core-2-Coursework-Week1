@@ -17,20 +17,22 @@ let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
+ // write code here
+ function createShoppingList(recipe) {
+  let myShoppingList = {
+  name: recipe.name,
+  items: []
+ };
 
-function createShoppingList(recipe) {
-  let myShoppingList = {};
-  myShoppingList.name = recipe.name;
-  myShoppingList.items =[];
-  recipe.ingredients.map(item => {
-    if (pantry.fridgeContents.includes(item) && pantry.cupboardContents.includes(item))
-    {
-       return myShoppingList;
-    };
-  }); console.log(createShoppingList);
+  for (let ingredients of recipe.ingredients){
+    if (!pantry.fridgeContents.includes(ingredients) && !pantry.cupboardContents.includes(ingredients)){
+    myShoppingList.items.push(ingredients);
+    }
+     return myShoppingList;
+  }
+  }; 
+ 
 
-  // write code here
-}
 
 
 
