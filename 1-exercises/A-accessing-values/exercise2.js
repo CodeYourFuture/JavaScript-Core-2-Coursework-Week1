@@ -16,7 +16,7 @@ let capitalCities = {
   Log the value for the property assigned to the variable myCountry using bracket notation.
   Do not use dot notation for this exercise!
 */
-let myCountry = "Nigeria";
+let myCountry = "UnitedKingdom";
 let myCapitalCity = capitalCities[myCountry];
 
 console.log(`the capital is: ${myCapitalCity}`);

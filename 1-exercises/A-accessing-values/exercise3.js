@@ -31,10 +31,6 @@ for (names = orderNames; names.length > 0; names++){
   console.log(`${names.sort().join('\r\n')}`);
   // names.sort().join('\r\n');
   // console.log(names);
-
-  // console.log(names)
-
-
 }
 
 
