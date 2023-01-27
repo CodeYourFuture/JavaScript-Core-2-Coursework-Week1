@@ -8,7 +8,7 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// Example 1 // colour is not a key that's in this object.
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -16,7 +16,7 @@ let car = {
 
 console.log(car["colour"]);
 
-// Example 2
+// Example 2 // firstName is not defined in the object user. "name", should be replaced by "firstName" in the object.
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +27,7 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// Example 3 // the function is missing a return
 let myPet = {
   animal: "Cat",
   getName: function() {
