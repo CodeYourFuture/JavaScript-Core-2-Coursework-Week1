@@ -19,18 +19,26 @@ const MENU = {
   falafel: 7.25,
 };
 
+
 let cashRegister = {
   // write code here
-  orderBurger: function(balance){
-    if(balance >= MENU.burger){
-      return balance - MENU.burger 
+  orderBurger: function (balance) {
+    let finalBalance = balance;
+    let enoughBalance = balance - MENU.burger >= 0;
+    if (enoughBalance) {
+      finalBalance = balance - MENU.burger;
     }
-    else if (balance >= MENU.falafel) {
-      return balance - MENU.falafel;
+    return finalBalance;
+  },
+  orderFalafel: function (balance) {
+    let finalBalance = balance;
+    let enoughBalance = balance - MENU.falafel >= 0;
+    if (enoughBalance) {
+      finalBalance = balance - MENU.falafel;
     }
-  }
-}
-
+    return finalBalance;
+  },
+};
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
