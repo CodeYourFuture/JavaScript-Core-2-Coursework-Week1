@@ -9,8 +9,11 @@
 
 let student = {
   // write code here
-}
-
+  getName: function (name) {
+    return `Student name: ${name}`;
+  },
+};
+console.log(student.getName("Daniel"));
 student.getName("Daniel");
 
 /* EXPECTED RESULT
