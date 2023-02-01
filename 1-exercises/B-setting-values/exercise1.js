@@ -1,6 +1,8 @@
 /*
-  You can add properties to objects and assign values to them using dot notation.
-  You can also change the value assigned to a property using dot notation.
+  You can add properties to objects and assign values to
+   them using dot notation.
+  You can also change the value assigned to a property using 
+  dot notation.
 */
 
 let capitalCities = {
@@ -23,7 +25,13 @@ let capitalCities = {
 */
 
 // write code here
-
+capitalCities.UnitedKingdom.population = 8980000,
+  capitalCities.China.population = 21500000;
+  
+capitalCities.Peru = {
+  name: "Lima",
+  population: 9750000,
+}
 console.log(capitalCities);
 
 /* EXPECTED RESULT

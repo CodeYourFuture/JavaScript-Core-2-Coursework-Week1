@@ -1,5 +1,6 @@
 /*
-  An object's properties can have values that are other objects or arrays.
+  An object's properties can have values that are other objects or
+   arrays.
 */
 
 let basketballTeam = {
@@ -21,7 +22,7 @@ let basketballTeam = {
 */
 
 // write code here
-
+basketballTeam.topPlayers.sort().forEach((players) => console.log(players))
 
 /* EXPECTED RESULT
 

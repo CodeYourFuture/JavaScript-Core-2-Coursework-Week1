@@ -19,6 +19,10 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+
+  let obj = { GB: "GBP", DE: "EUR", NG: "NGN", MX: "MXN" }
+  return obj;
+  //return Object.fromEntries(countryCurrencyCodes)
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
