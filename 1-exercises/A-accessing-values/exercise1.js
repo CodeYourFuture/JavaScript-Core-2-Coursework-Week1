@@ -16,8 +16,8 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = "Spot"; // complete the code
+let dogBreed = "Dalmatian"; // complete the code
 
 console.log(`${dogName} is a ${dogBreed}`);
 
@@ -27,4 +27,3 @@ console.log(`${dogName} is a ${dogBreed}`);
 
 */
 
-console.log("HEY HEY HEY HEY HEY HEY")
