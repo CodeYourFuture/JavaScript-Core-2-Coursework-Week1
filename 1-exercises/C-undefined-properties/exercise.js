@@ -15,10 +15,11 @@ let car = {
 };
 
 console.log(car["colour"]);
+// answwer - there is no value for the car OBJECT
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.name}`);
 }
 
 let user = {
@@ -26,6 +27,9 @@ let user = {
 };
 
 sayHelloToUser(user);
+
+// answer - we are caling FIRSTNAME when this key does not exist, instead FIRSTNAME we can call the key
+// with the value of "MIRA"
 
 // Example 3
 let myPet = {
@@ -36,3 +40,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// answer - there is not return function.
