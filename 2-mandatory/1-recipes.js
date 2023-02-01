@@ -21,5 +21,14 @@
 
   You should write and log at least 5 recipes
 */
+let Mole = {
+  name: "Asda",
+  Serves: 2,
+  Ingredients:["cinnamon", "cumin", "cocoa"]
 
+  
+}
+console.log(Mole.name)
+console.log(Mole.Serves)
+console.log(Mole.Ingredients)
 // write code here
