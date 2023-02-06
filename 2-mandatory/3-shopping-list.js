@@ -20,7 +20,23 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
-}
+  let shoppingList = {};
+  shoppingList.name = recipe.name;
+
+
+
+  let itemsToBuy = [];{
+  for (const ingredients of recipe.ingredients) {
+    if (pantry.fridgeContents.includes(ingredients))  false
+    pantry.cupboardContents.includes(ingredients) === false; {
+      itemsToBuy.push(ingredients);
+    
+    }
+   }
+  shoppingList.items = itemsToBuy;
+  return shoppingList
+ }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
