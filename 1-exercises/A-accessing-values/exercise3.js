@@ -13,6 +13,8 @@ let basketballTeam = {
   },
 };
 
+
+
 /*
   Write code that
     - accesses the basketball team's top players array
@@ -21,6 +23,9 @@ let basketballTeam = {
 */
 
 // write code here
+
+basketballTeam["topPlayers"].sort().forEach((x) => console.log(x));
+
 
 
 /* EXPECTED RESULT

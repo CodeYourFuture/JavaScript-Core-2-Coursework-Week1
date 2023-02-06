@@ -16,6 +16,7 @@ let student = {
 */
 
 // write code here
+    student["Attendance"] = 90
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -26,6 +27,10 @@ let student = {
 */
 
 // write code here
+
+if (student["Attendance"] >=90 && student["examScore"] > 60) {
+  student["hasPassed"] = true;
+}
 
 console.log(student);
 

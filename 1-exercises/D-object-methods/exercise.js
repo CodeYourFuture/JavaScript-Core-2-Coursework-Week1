@@ -8,6 +8,9 @@
 */
 
 let student = {
+  getName: function(name){
+    console.log(`student name: ${name}`)
+  }
   // write code here
 }
 
