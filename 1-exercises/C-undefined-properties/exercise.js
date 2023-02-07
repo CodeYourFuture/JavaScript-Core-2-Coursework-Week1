@@ -10,29 +10,30 @@
 
 // Example 1
 let car = {
-  brand: "Ford",
-  yearsOld: 8,
+    brand: "Ford",
+    yearsOld: 8,
 };
 
 console.log(car["colour"]);
-
+// there is no color key word in our object
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+    console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+    name: "Mira"
 };
 
 sayHelloToUser(user);
 
+// there is no key word firstName in our object
 // Example 3
 let myPet = {
-  animal: "Cat",
-  getName: function() {
-    "My pet's name is Fluffy";
-  },
+    animal: "Cat",
+    getName: function() {
+        "My pet's name is Fluffy";
+    },
 };
-
+// function doesn't have return
 console.log(myPet.getName());
