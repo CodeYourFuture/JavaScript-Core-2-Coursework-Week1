@@ -23,3 +23,55 @@
 */
 
 // write code here
+
+let myFavoriteRecipe1 = {
+  title: "Felafel",
+  serving: 2, 
+  ingredients: [
+    "Chicken", "Salad", "Patatos",
+  ]
+}
+let myFavoriteRecipe2 = {
+  title: "Soup",
+  serving: 6, 
+  ingredients: [
+    "Chicken", "Water", "Lentil",
+  ]
+}
+let myFavoriteRecipe3 = {
+  title: "Pizza",
+  serving: 5, 
+  ingredients: [
+    "Dough", "Cheese", "Toppings",
+  ]
+}
+let myFavoriteRecipe4 = {
+  title: "Kebap",
+  serving: 3, 
+  ingredients: [
+    "Lamp", "Patatos", "Tomatos",
+  ]
+}
+let myFavoriteRecipe5 = {
+  title: "Rice",
+  serving: 4, 
+  ingredients: [
+    "Rice", "Salt", "Oil",
+  ]
+}
+function printRecipe(recipe) {
+console.log(recipe.title);
+console.log(`Serving: ${recipe.serving}`);
+console.log("Ingredients:");
+  for (let index = 0; index < recipe.ingredients.length; index++) {
+  const element = recipe.ingredients[index];
+  console.log(element);
+}
+}
+
+printRecipe(myFavoriteRecipe1);
+printRecipe(myFavoriteRecipe2);
+printRecipe(myFavoriteRecipe3);
+printRecipe(myFavoriteRecipe4);
+printRecipe(myFavoriteRecipe5);
+

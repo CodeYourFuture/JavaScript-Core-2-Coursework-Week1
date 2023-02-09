@@ -19,8 +19,25 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let missingIngredients = [];
+  for (let index = 0; index < recipe.ingredients.length; index++) {
+    const ingredient = recipe.ingredients[index];
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)) {
+      missingIngredients.push(ingredient);
+    }
+  }
+  let shoppingList = {
+    name: recipe.name,
+    items: [],
+  }
+  shoppingList.items = missingIngredients;
+  return shoppingList;
 }
+
+// find ingredients which exist in the recipe but, not included in the pantry object
+// create an object with two properties in the function
+// return  1. "name" of the recipe (string), 2."items" missing ingredient 
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
