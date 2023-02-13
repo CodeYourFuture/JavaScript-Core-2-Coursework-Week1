@@ -23,13 +23,13 @@
 */
 
 // write code here
-const myRecipes = {
-  Recipe1: {
+const myRecipes = [
+  {
     Title: "Pho",
     Serves: 1,
     Ingredients: ["rice noodles", "broth", "beef", "herbs", "limes", "chilies"],
   },
-  Recipe2: {
+  {
     Title: "Satay",
     Serves: 2,
     Ingredients: [
@@ -42,13 +42,13 @@ const myRecipes = {
       "chiles",
     ],
   },
-  Recipe3: {
+  {
     Title: "Bakso",
     Serves: 2,
     Ingredients: ["mince beef", "flour", "pepper", "eggs", "baking powder"],
   },
-  Recipe4: {
-    Title: "Nasi Goreng ",
+  {
+    Title: "Nasi Goreng",
     Serves: 1,
     Ingredients: [
       "shrimp paste",
@@ -60,48 +60,35 @@ const myRecipes = {
       "cooked cold rice",
     ],
   },
-  Recipe5: {
+  {
     Title: "Bubur Ayam",
     Serves: 2,
     Ingredients: [
       "rice",
       "chicken",
-      "fish sauce ",
+      "fish sauce",
       "white pepper",
       "green onions",
     ],
   },
-};
-// console.log(myRecipes);
+];
+myRecipes.forEach((recipe) => {
+  console.log(`Recipe: ${recipe.Title}`);
+  console.log(`Serves: ${recipe.Serves}`);
+  console.log("Ingredients:");
+  recipe.Ingredients.forEach((ingredient) => {
+    console.log(`- ${ingredient}`);
+  });
+  console.log("\n");
+});
 
-// Object.values(myRecipes.Recipe1).forEach((recipe) => console.log(recipe));
-
-// Object.entries(myRecipes.Recipe1).forEach(([key, value]) => {
-//   console.log(`${key}: ${value}`);
+// myRecipes.forEach((recipe) => {
+//   const key = Object.keys(recipe)[0];
+//   console.log(`${key}:`);
+//   console.log(`Title: ${recipe[key].Title}`);
+//   console.log(`Serves: ${recipe[key].Serves}`);
+//   console.log("Ingredients:");
+//   recipe[key].Ingredients.forEach((ingredient) => {
+//     console.log(`- ${ingredient}`);
+//   });
 // });
-
-// var myRecipesCount = Object.keys(myRecipes).length;
-// console.log(myRecipesCount);
-
-// function favoriteRecipe(recipeObj) {
-//   for ([key, value] of Object.entries(recipeObj)) {
-//     console.log(`${key}: ${value}`);
-//   }
-// }
-// favoriteRecipe(myRecipes.Recipe1);
-// favoriteRecipe(myRecipes.Recipe2);
-// favoriteRecipe(myRecipes.Recipe3);
-// favoriteRecipe(myRecipes.Recipe4);
-// favoriteRecipe(myRecipes.Recipe5);
-
-// for (const recipe in myRecipes) {
-//   for (const [key, value] of Object.entries(myRecipes[recipe])) {
-//     console.log(`${key}: ${value}`);
-//   }
-// }
-
-for (const recipe in myRecipes) {
-  for (const key in myRecipes[recipe]) {
-    console.log(`${key}: ${myRecipes[recipe][key]}`);
-  }
-}
