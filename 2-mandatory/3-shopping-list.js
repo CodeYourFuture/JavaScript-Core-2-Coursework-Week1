@@ -19,11 +19,14 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  let combinedPantry = pantry.fridgeContents.concat(pantry.cupboardContents);
-  let list = recipe.ingredients.filter(
-    (ingredient) => !combinedPantry.includes(ingredient)
-  );
-  return { name: recipe.name, items: list };
+  return {
+    name: recipe.name,
+    items: recipe.ingredients.filter(
+      (ingredient) =>
+        !pantry.fridgeContents.includes(ingredient) &&
+        !pantry.cupboardContents.includes(ingredient)
+    ),
+  };
 }
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
