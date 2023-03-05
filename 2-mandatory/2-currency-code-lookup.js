@@ -27,6 +27,15 @@ function createLookup(countryCurrencyCodes) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
+test("creates country code lookup for a single set of codes", () => {
+  expect(createLookup([["GB", "GBP"]])).toEqual({
+    GB: "GBP",
+  });
+  expect(createLookup([["DE", "EUR"]])).toEqual({
+    DE: "EUR",
+  });
+});
+
 test("creates country currency code lookup", () => {
   expect(createLookup(COUNTRY_CURRENCY_CODES)).toEqual({
     GB: "GBP",
