@@ -37,6 +37,10 @@ function countWords(string) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
+test("given an empty string returns an empty object", () => {
+  expect(countWords("")).toEqual({});
+});
+
 test("Code works for a small string", () => {
   expect(countWords("I love CodeYourFuture")).toEqual({
     I: 1,
@@ -46,17 +50,21 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
-});
-
-test("Empty string", () => {
-  expect(countWords("")).toEqual({});
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,
