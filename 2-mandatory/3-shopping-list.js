@@ -29,25 +29,32 @@ function createShoppingList(recipe) {
 */
 
 test("createShoppingList works for pancakes recipe", () => {
-  let recipe1 = {
+  let recipe = {
     name: "pancakes",
     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
   };
 
-  expect(createShoppingList(recipe1)).toEqual({
+  expect(createShoppingList(recipe)).toEqual({
     name: "pancakes",
     items: ["flour", "eggs", "vegetable oil"],
   });
 });
 
 test("createShoppingList works for margherita pizza recipe", () => {
-  let recipe2 = {
+  let recipe = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
-  expect(createShoppingList(recipe2)).toEqual({
+  expect(createShoppingList(recipe)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
