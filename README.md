@@ -12,13 +12,19 @@ https://github.com/CodeYourFuture/JavaScript-Core-2-Coursework-Week1-London8-Sol
 
 This is a **private** repository. Please request access from your Teachers, Buddy or City Coordinator after the start of your next lesson.
 
-## Testing your work
+## Running the code/tests
 
-- Each of the \*.js files in the `1-exercises` folder can be run from the terminal using the `node` command with the path to the file. For example, `node 1-exercises/A-accessing-values/exercise1.js` can be run from the root of the project.
-- To run the tests in the `2-mandatory` folder, run `npm run test` from the root of the project (after having run `npm install` once before).
-- To run a single exercise/test (for example `2-mandatory/2-currency-code-lookup.js`), run `npm test -- --testPathPattern 2-mandatory/2-currency-code-lookup.js`.
-- The `2-mandatory/1-recipes.js` exercise does not use jest. To run this file individually, use node directly. `node 2-mandatory/1-recipes.js`.
-- To run the tests in the `3-extra` folder, run `npm run extra-tests` from the root of the project (after having run `npm install` once before).
+The files for the mandatory/extra exercises are intended to be run as jest tests.
+
+- Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
+- To run the tests for all mandatory/extra exercises, run `npm test`
+- To run only the tests for the mandatory exercises, run `npm test -- --selectProjects mandatory`
+- To run only the tests for the extra exercises, run `npm test -- --selectProjects extra`
+- To run a single exercise/test (for example `mandatory/1-writer.js`), run `npm test -- --testPathPattern mandatory/1-writer.js` (Remember, you can use tab-completion to get files relative to the current directory, so m`Tab ↹`/1-`Tab ↹` will autocomplete get you the test file starting with 1-)
+
+For more information about tests, look here:
+
+https://syllabus.codeyourfuture.io/guides/intro-to-tests
 
 ## Instructions for submission
 
