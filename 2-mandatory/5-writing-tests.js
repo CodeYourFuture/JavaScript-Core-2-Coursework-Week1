@@ -43,10 +43,9 @@ test("a score of 83 is grade A", () => {
   write a matching test
 */
 
-/*
-  Write a test that checks a score of 71 is grade B
-*/
-
+test.skip("a score of 71 is grade B", () => {
+  /* Remove the .skip above, then write the test body. */
+});
 /*
   Write a test that checks a score of 68 is grade C
 */
