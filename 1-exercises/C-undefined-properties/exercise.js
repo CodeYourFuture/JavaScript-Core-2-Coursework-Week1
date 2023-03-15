@@ -15,7 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
-
+//color key in not defined 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
@@ -26,7 +26,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+//first name attrebute  is not exist in the user object 
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -34,5 +34,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+//no return or console log in example 3
 console.log(myPet.getName());
