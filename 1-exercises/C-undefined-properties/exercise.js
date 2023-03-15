@@ -15,12 +15,13 @@ let car = {
 };
 
 console.log(car["colour"]);
+// In this example we get undefined because car doesn't have property "colour" 
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+// Here a problem, because property name is 'name', not "FirstName"
 let user = {
   name: "Mira"
 };
@@ -34,5 +35,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+// Here the problem in function, it doesn't work because it doesn't return anything
 console.log(myPet.getName());
