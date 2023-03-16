@@ -22,7 +22,7 @@ let basketballTeam = {
 
 // write code here
 
-console.log(basketballTeam.topPlayers.sort().join('\r\n'))
+console.log(basketballTeam.topPlayers.sort().join('\r\n')) //.split(',').join("\r\n") to add ',' to end of each line
 
 /* EXPECTED RESULT
 
