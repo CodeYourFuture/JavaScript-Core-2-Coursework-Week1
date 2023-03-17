@@ -17,8 +17,9 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
+//this method is going inside and making the array in objets.
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  return Object.fromEntries(countryCurrencyCodes)
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

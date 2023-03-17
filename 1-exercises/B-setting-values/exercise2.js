@@ -7,7 +7,7 @@ let student = {
   name: "Reshma Saujani",
   examScore: 65,
   hasPassed: false
-};
+}
 
 /*
   Using bracket notation
@@ -17,6 +17,7 @@ let student = {
 
 // write code here
 
+student["attendance"] = 90;
 /*
   - Write an "if" statement that changes the value of hasPassed to true
       if the student has attendance that is equal or greater than 90
@@ -25,9 +26,15 @@ let student = {
   - Use bracket notation to change the value of hasPassed
 */
 
-// write code here
+if(student["examScore"] > 60 && student["attendance"] >= 90){
+  //change hasPassed = true
+ student["hasPassed"] = true;
+}
 
 console.log(student);
+
+
+// question why is not working with return
 
 /* EXPECTED RESULT
 

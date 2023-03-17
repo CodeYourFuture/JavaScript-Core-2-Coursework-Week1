@@ -21,6 +21,17 @@ let basketballTeam = {
 */
 
 // write code here
+let orderNames = basketballTeam.topPlayers;
+
+// for (names of orderNames){
+//   console.log(orderNames.sort())
+// }
+let names = [];
+for (names = orderNames; names.length > 0; names++){
+  console.log(`${names.sort().join('\r\n')}`);
+  // names.sort().join('\r\n');
+  // console.log(names);
+}
 
 
 /* EXPECTED RESULT

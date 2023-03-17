@@ -7,7 +7,8 @@
 let capitalCities = {
   UnitedKingdom: "London",
   China: "Beijing",
-  Peru: "Lima"
+  Peru: "Lima",
+  Nigeria: "Abuja"
 };
 
 /*
@@ -15,11 +16,11 @@ let capitalCities = {
   Log the value for the property assigned to the variable myCountry using bracket notation.
   Do not use dot notation for this exercise!
 */
-
 let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
+let myCapitalCity = capitalCities[myCountry];
 
-console.log(myCapitalCity);
+console.log(`the capital is: ${myCapitalCity}`);
+// console.log(capitalCities["UnitedKingdom"]);
 
 /* EXPECTED RESULT
 

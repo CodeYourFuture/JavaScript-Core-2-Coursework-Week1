@@ -8,7 +8,7 @@
     For each example, can you explain why we are seeing undefined?
 */
 
-// Example 1
+// Example 1 it's was indefine because is not declared in the objet car.
 let car = {
   brand: "Ford",
   yearsOld: 8,
@@ -16,7 +16,9 @@ let car = {
 
 console.log(car["colour"]);
 
-// Example 2
+
+
+// Example 2  is indefine because firstName is not declared in the objet user
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -27,7 +29,7 @@ let user = {
 
 sayHelloToUser(user);
 
-// Example 3
+// Example 3 it will be undefine because it missing the return inside of the fuction.
 let myPet = {
   animal: "Cat",
   getName: function() {
