@@ -20,7 +20,42 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+
+  //First initializes an empty shopping list object with the recipe name.
+  let shoppingList = {
+    name: recipe.name,
+    items: [],
+  };
+  // Then iterates over the ingredients in the recipe, and checks if each
+  //   ingredient is in the fridge or cupboard contents.
+  //   If it is not, it is added to the shopping list.
+  for (let ingredient of recipe.ingredients) {
+    if (
+      !pantry.fridgeContents.includes(ingredient) &&
+      !pantry.cupboardContents.includes(ingredient)
+    ) {
+      shoppingList.items.push(ingredient);
+    }
+  }
+  //Finally, the shopping list is returned.
+  return shoppingList;
+}  
+
+//solution from coursework review on 07 January 2023
+/**
+ * function createShoppingList(recipe) {
+  let missingIngredients = recipe.ingredients.filter(
+    (ingredient) => {
+      return !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)
+    }
+  );
+  return {
+    name: recipe.name,
+    items: missingIngredients,
+  }
 }
+ */
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

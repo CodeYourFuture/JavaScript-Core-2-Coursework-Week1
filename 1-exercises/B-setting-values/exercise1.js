@@ -23,6 +23,22 @@ let capitalCities = {
 */
 
 // write code here
+  //Change the value of UnitedKingdom's capital city population to 8980000.
+    capitalCities.UnitedKingdom.population = 8980000;
+
+  //Add the property for population to China's capital city and set the value to 21500000.
+   capitalCities.China.population = 21500000;
+
+  //Add the country "Peru" to capitalCities object.
+   capitalCities.Peru = {};
+
+  //Add a name of "Lima" to Peru's capital city.
+  capitalCities.Peru.name = "Lima";
+
+  //Add a population of 9750000 to Peru's capital city.
+  capitalCities.Peru.population = 9750000;
+
+
 
 console.log(capitalCities);
 
