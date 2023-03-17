@@ -101,7 +101,7 @@ test("Trainee's score", () => {
   };
 
   expect(formatCourseworkResult(trainee1)).toEqual(
-    "Xin's coursework was marked as grade E."
+    "Ali's coursework was marked as grade E."
   );
 }); 
 
