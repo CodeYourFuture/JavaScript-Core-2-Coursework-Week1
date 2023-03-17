@@ -12,6 +12,7 @@
     - the method should return the new balance
 
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
+
 */
 
 const MENU = {
@@ -20,8 +21,16 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+
+  orderBurger: function (balance) {
+    if (balance >= MENU.burger) balance = balance-MENU.burger;
+    return balance;
+  },
+  orderFalafel: function(balance){
+    if (balance >= MENU.falafel) balance = balance-MENU.falafel;
+    return balance;
+  }
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

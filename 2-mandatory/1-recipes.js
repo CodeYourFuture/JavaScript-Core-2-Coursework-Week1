@@ -20,6 +20,55 @@
   cocoa
 
   You should write and log at least 5 recipes
+   
+
 */
 
-// write code here
+let recipe = {
+  title :"Mole",
+  servings : 2 ,
+  ingredients : [
+    "cinnamon" , "cumin" , "cocoa"
+  ],
+  displayRecipe : function (){
+    console.log(this.title);
+    console.log("Serves : "+ this.servings);
+    console.log("Ingredients:");
+    for (item of this.ingredients){
+      console.log(item);
+    }
+  }
+}
+let recipe1 = {
+  title :"Biryani",
+  servings : 2 ,
+  ingredients : [
+    "rice" , "spices" , "meat"
+  ],
+  displayRecipe : function (){
+    console.log(this.title);
+    console.log("Serves : "+ this.servings);
+    console.log("Ingredients:");
+    for (item of this.ingredients){
+      console.log(item);
+    }
+  }
+}
+let recipe2 = {
+  title :"Anda Paratha",
+  servings : 2 ,
+  ingredients : [
+    "eggs" , "spices" , "atta" , "oil"
+  ],
+  displayRecipe : function (){
+    console.log(this.title);
+    console.log("Serves : "+ this.servings);
+    console.log("Ingredients:");
+    for (item of this.ingredients){
+      console.log(item);
+    }
+  }
+}
+recipe.displayRecipe();
+recipe1.displayRecipe();
+recipe2.displayRecipe();

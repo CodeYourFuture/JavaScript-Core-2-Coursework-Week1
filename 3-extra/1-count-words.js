@@ -21,6 +21,16 @@
     - Loops or forEach
     - Comparison inside if statements
     - Setting values on an object
+    if (string === "") {
+      return wordCount;
+    }
+    string.split(" ").forEach((word) => {
+      if (wordCount[word] >= 1) {
+        wordCount[word]++;
+      } else {
+        wordCount[word] = 1;
+      }
+    });
 */
 
 function countWords(string) {
