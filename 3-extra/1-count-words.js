@@ -23,14 +23,25 @@
     - Setting values on an object
 */
 
-function countWords(string) {
-  const wordCount = {};
+
 
   // write code here
+  function countWords(string) {
+    const wordCount = {};
+    if (string === "") {
+      return wordCount;
+    }
+    string.split(" ").forEach((word) => {
+      if (wordCount[word] >= 1) {
+        wordCount[word]++;
+      } else {
+        wordCount[word] = 1;
+      }
+    });
+    return wordCount;
+  }
 
-  return wordCount;
-}
-
+ 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
