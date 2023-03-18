@@ -17,10 +17,30 @@
 const MENU = {
   burger: 6.5,
   falafel: 7.25,
-};
+
+  }
+;
 
 let cashRegister = {
   // write code here
+    orderBurger: function(balance){
+    if(balance<6.5){
+      return "You do not have enough money"
+    }
+   else if (balance >= 6.5) {
+   let newBalance = balance - 6.5
+   return newBalance
+  }
+},
+
+  orderFalafel: function(balance){
+    if(balance<7.25){
+      return "You do not have enough money"
+    }
+   else if (balance >= 7.25) {
+   let newBalance = balance - 7.25
+   return newBalance
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
