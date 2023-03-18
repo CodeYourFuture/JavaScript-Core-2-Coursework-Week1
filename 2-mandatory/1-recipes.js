@@ -31,4 +31,4 @@ const favoriteRecipe = {
 
 console.log(favoriteRecipe.title)
 console.log(`Seves: ${favoriteRecipe.servings}`);
-console.log(favoriteRecipe.ingredients.join("\r\n"));
+console.log(favoriteRecipe.ingredients.join("\n"));
