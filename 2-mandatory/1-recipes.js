@@ -23,3 +23,12 @@
 */
 
 // write code here
+const favoriteRecipe = {
+  title: "Sushi",
+  servings: 3,
+  ingredients: ["Sushi Nori", "Sushi Rice", "Soy Sauce"],
+};
+
+console.log(favoriteRecipe.title)
+console.log(`Seves: ${favoriteRecipe.servings}`);
+console.log(favoriteRecipe.ingredients.join("\n"));
