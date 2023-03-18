@@ -25,7 +25,7 @@ let user = {
   name: "Mira",
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // user have property of name not first name.
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // this function is not returning anything.
