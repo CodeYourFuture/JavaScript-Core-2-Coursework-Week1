@@ -18,9 +18,16 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
-}
+function createShoppingList(recipe) 
+  //declere shoppoingList object 
+  let shoppoingList = {
+    name: recipe.name, 
+    items: [],
+  }
+  // go throth all elements in the recepi.ingrediants array
+  RTCSessionDescription.ingredients.forEach(function(ingrediant) {
+    
+  })
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
