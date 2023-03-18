@@ -13,6 +13,7 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
+// the is no object for colour 
 
 console.log(car["colour"]);
 
@@ -20,6 +21,7 @@ console.log(car["colour"]);
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+// the object name not related to firstName to console user name and function working.
 
 let user = {
   name: "Mira"
@@ -34,5 +36,7 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
+
+// uncompleted function no return or doing any thing 
 
 console.log(myPet.getName());
