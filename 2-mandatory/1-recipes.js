@@ -40,3 +40,4 @@ function ingredientPrinting(favRecipe1) {
 console.log(favRecipe1.name);
 console.log(favRecipe1.servings);
 ingredientPrinting(favRecipe1);
+console.log("2")
