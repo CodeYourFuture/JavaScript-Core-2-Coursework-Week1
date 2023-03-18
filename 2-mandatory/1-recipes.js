@@ -23,3 +23,20 @@
 */
 
 // write code here
+
+let favRecipe1 = {
+  name: "salads",
+  servings: "services: " + 2,
+  ingredients: ["tomato", "cucamber", "lemon", "avocado", "sweetcorn", "eggs"]
+}
+function ingredientPrinting(favRecipe1) {
+  console.log("ingredients: ")
+  for ( let i = 0; i < favRecipe1.ingredients.length; i++) {
+    console.log(favRecipe1.ingredients[i]);
+  }
+}
+
+
+console.log(favRecipe1.name);
+console.log(favRecipe1.servings);
+ingredientPrinting(favRecipe1);
