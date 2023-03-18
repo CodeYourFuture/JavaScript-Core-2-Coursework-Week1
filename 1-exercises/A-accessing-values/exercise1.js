@@ -5,10 +5,10 @@
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian", //string
+  name: "Spot",  //string
+  isHungry: true, //boolean
+  happiness: 6  // integer
 };
 
 /*
@@ -16,10 +16,11 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
-
-console.log(`${dogName} is a ${dogBreed}`);
+var Dog = {
+  Name : "Spot", // complete the code
+  Breed : "Dalmatian", // complete the code
+};
+console.log(Dog.Name , `is a` , Dog.Breed);
 
 /* EXPECTED RESULT
 

@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // The key "colour" hasn't been defined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,13 +25,13 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // The key "firstName" hasn't been defined
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    "My pet's name is Fluffy";  // No action is defined for the function
   },
 };
 
