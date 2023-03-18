@@ -23,3 +23,35 @@
 */
 
 // write code here
+let recipeCard = [		
+		{
+		title: "Abocado Smoothie",
+		servings: 1,
+		ingredients: ["abocado", "oat milk", "peanut butter", "honey"],
+		},
+    {
+    title: “Oat Smoothie”,
+    servings: 1,
+    ingredients: ["oats", "milk", "greek yogurt", "honey"],
+   },
+   {
+   title: “pancakes”,
+   servings: 1,
+   ingredients: ["egg", "butter", “oat flour", “oat milk", ”banana”],
+   },
+   {
+   title: “carrot soup",
+   servings: 1,
+   ingredients: ["chicken soup", "carrot", "onion", "olive oil"],
+   },
+   { 
+   title: “Bravas potatoes",
+   servings: 1,
+   ingredients: ["potatoes", "paprika", "garlic", "parsley"],
+   },
+   ];
+
+   recipeCard.forEach((recipe) => {
+   console.log(recipe.title);
+
+
