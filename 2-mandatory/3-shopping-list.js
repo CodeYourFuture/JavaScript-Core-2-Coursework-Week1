@@ -19,7 +19,16 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+ const needToBuy = {};
+ needToBuy.name = recipe.name;
+ needToBuy.items = [];
+//  function ifNot(ingredient) {
+//     if(!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient))
+//   return true;
+//  }
+ needToBuy.items = recipe.ingredients.filter(ingredient => !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient));
+ return needToBuy;
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

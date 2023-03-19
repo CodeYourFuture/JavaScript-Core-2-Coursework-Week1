@@ -23,3 +23,43 @@
 */
 
 // write code here
+const recipe1 = {
+    name: "Coffee",
+    serves: 2,
+    Ingredients: ["coffee", "water", "sugar"]
+  };
+
+const recipe2 = {
+    name: "Kompot",
+    serves: 8,
+    Ingredients: ["dry fruits", "water", "sugar"]
+  };
+
+const recipe3 = {
+    name: "Buckwheat",
+    serves: 4,
+    Ingredients: ["buckwheat", "water", "salt", "butter"]
+  };
+
+const recipe4 = {
+    name: "Rice",
+    serves: 4,
+    Ingredients: ["Rice", "water", "salt", "butter"]
+  };
+
+const recipe5 = {
+    name: "Smashed potato",
+    serves: 4,
+    Ingredients: ["potato", "water", "salt", "butter"]
+  };
+
+  function printRecipe(recipe){
+    console.log(recipe.name);
+    console.log(`Serves: ${recipe.serves}`);
+    console.log(`Ingredients: `);
+    recipe.Ingredients.forEach(element => {console.log(element);
+    });
+    
+  }
+
+  printRecipe(recipe1);
