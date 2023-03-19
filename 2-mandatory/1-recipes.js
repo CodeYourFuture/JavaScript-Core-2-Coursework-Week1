@@ -23,3 +23,48 @@
 */
 
 // write code here
+
+let favoriteRecipe = [
+  {
+    tittle: "Pancakes",
+    serves: 2,
+    ingredients: [
+      "milk",
+      "butter",
+      "egg",
+      "sugar",
+      "flour",
+      "baking powder",
+      "salt",
+    ],
+  },
+  {
+    tittle: "Pizza",
+    serves: 4,
+    ingredients: ["flour", "yeast", "mozarella", "totmato pure", "oil"],
+  },
+  {
+    title: "Mole",
+    serves: 4,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+  {
+    title: "Pretizel",
+    serves: 4,
+    ingredients: ["yeast", "sugar", "salt", "water", "butter"],
+  },
+  {
+    title: "Ice-cream",
+    serves: 2,
+    ingredients: [
+      "milk",
+      "cream",
+      "melted chocolate",
+      "sugar",
+      "cocoa powder",
+      "additional mix-ins",
+    ],
+  },
+];
+
+console.log(favoriteRecipe);
