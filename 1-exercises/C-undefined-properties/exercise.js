@@ -13,10 +13,10 @@ let car = {
   brand: "Ford",
   yearsOld: 8,
 };
-
+// no colour property defined 
 console.log(car["colour"]);
 
-// Example 2
+// Example 2 the property firstName is not defined 
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
@@ -34,5 +34,5 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
-
+//we should log myPet.getName only () not required
 console.log(myPet.getName());

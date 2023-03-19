@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -55,6 +55,17 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+test("The output of formatCourseWorkResult", () => {
+  let trainee = {
+    name: "Xin",
+    score: 63
+  }
+
+  expect(formatCourseworkResult(trainee)).toEqual("Xin's coursework was marked as grade C.");
+
+
+});
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -63,6 +74,17 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
+test("The output of formatCourseWorkResult", () => {
+  let trainee = {
+    name: "Mona",
+    score: 78
+  }
+
+  expect(formatCourseworkResult(trainee)).toEqual("Mona's coursework was marked as grade B.");
+
+
+});
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -73,6 +95,19 @@ function formatCourseworkResult(trainee) {
     subjects: ["JavaScript", "React", "CSS"]
   }
 */
+test("The output of formatCourseWorkResult", () => {
+  let trainee = {
+    name: "Ali",
+    score: 49,
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"]
+  }
+
+  expect(formatCourseworkResult(trainee)).toEqual("Ali's coursework was marked as grade E.");
+
+
+});
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -81,6 +116,17 @@ function formatCourseworkResult(trainee) {
     age: 29
   }
 */
+test("The output of formatCourseWorkResult", () => {
+  let trainee = {
+    score: 90,
+    age: 29
+  }
+
+
+  expect(formatCourseworkResult(trainee)).toEqual("Error: No trainee name!");
+
+
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -89,3 +135,16 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("The output of formatCourseWorkResult", () => {
+  let trainee = {
+    name: "Aman",
+    subjects: ["HTML", "CSS", "Databases"]
+  }
+
+
+  expect(formatCourseworkResult(trainee)).toEqual("Error: Coursework percent is not a number!");
+
+
+});
+
+
