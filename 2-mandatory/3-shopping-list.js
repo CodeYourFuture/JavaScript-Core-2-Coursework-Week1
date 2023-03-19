@@ -20,6 +20,24 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  
+  const createShoppingListMissing = new Object();
+  const ingredientsMssing = [];
+  const pantryContents = pantry.fridgeContents.concat(pantry.cupboardContents);
+  for (let ingredient of recipe.ingredients){
+    if(pantryContents.includes(ingredient)===false){
+         ingredientsMssing.push(ingredient);
+    }
+  }
+   createShoppingListMissing.name = recipe.name;
+   createShoppingListMissing.items = ingredientsMssing;
+   return createShoppingListMissing;
+  
+
+
+  
+
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

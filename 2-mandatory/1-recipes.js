@@ -21,5 +21,31 @@
 
   You should write and log at least 5 recipes
 */
+let favouriteRecipe = {
+ ScrambleEgg: { title: 'Sclamble Egg',
+  servings: 2,
+  Ingredients: ['Egg', 'Oil', 'Salt']
+},Smoothies :{
+  title:'Smoothie',
+  servings: 4,
+  Ingredients: ['Milk','strawberry','banana'],
 
+
+},CottagePie:{
+  title: 'CottagePie',
+  servings: 10,
+  Ingredients: ['Tender meat', 'CreamyMashedPotatoes', 'Milk']
+},Roastedchicken:{
+  title: 'Roastedchicken',
+  servings: 7,
+  Ingredients: ['Chicken', 'Oil', 'Salt']
+},MacaronniCheese:{
+  title: 'MacarronniCheese',
+  servings: 5,
+  Ingredients: ['Macharpnni', 'Cheese', 'Salt']
+}}
+for (item of favouriteRecipe){
+  console.log(item.)
+
+}
 // write code here
