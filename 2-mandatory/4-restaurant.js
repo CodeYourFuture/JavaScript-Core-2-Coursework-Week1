@@ -20,9 +20,21 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
-
+  orderBurger: function (balanceNumber) {
+    let myBalance = balanceNumber;
+    if (myBalance >= 6.5) {
+      myBalance = myBalance - 6.5;
+    }
+    return myBalance;
+  },
+  orderFalafel: function (balanceNumber) {
+    let myBalance = balanceNumber;
+    if (myBalance >= 7.25) {
+      myBalance = myBalance - 7.25;
+    }
+    return myBalance;
+  },
+};
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`

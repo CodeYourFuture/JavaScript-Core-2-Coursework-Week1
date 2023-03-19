@@ -19,7 +19,7 @@ let dog = {
 let dogName; // complete the code
 let dogBreed; // complete the code
 
-console.log(`${dogName} is a ${dogBreed}`);
+console.log(`${dog.name} is a ${dog.breed}`);
 
 /* EXPECTED RESULT
 
