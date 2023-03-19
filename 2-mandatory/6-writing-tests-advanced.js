@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -55,6 +55,17 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+
+test("Xin score of 63 is grade C", () => {
+  let trainee = {
+    name: "Xin",
+    score: 63,
+  };
+
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Xin's coursework was marked as grade C."
+  );
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
