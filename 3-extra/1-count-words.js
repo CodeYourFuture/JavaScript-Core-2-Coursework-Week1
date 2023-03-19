@@ -24,12 +24,24 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
-  // write code here
-
-  return wordCount;
+  let arrayOfWords = string.split(" ");
+  let wordCount = {};
+  for (i=0; i<arrayOfWords.length; i++){
+    
+    let word = arrayOfWords[i];
+    if (word in wordCount){
+      wordCount[word] ++;
+    }else if(word == ""){
+      wordCount = {};
+    }
+     else {
+      wordCount[word] = 1
+    }
+  }
+ return wordCount;
 }
+
+countWords("you're braver than you believe, stronger than you seem, and smarter than you think")
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
