@@ -22,4 +22,46 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+ const recipe1 = {
+  title : "Bread1",
+  serves : 2,
+  ingredients : ["Water", "Salt", "Flour"]
+ };
+  
+ const recipe2 = {
+   title: "Bread2",
+   serves: 2,
+   ingredients: ["Water", "Salt", "Flour","Oil"],
+ };
+   
+ const recipe3 = {
+   title: "Bread3",
+   serves: 2,
+   ingredients: ["Water", "Salt", "Gluten-free-flour"],
+ };
+   
+ const recipe4 = {
+   title: "Bread4",
+   serves: 2,
+   ingredients: ["Water", "Salt", "Flour", "Sesame"],
+ };
+   
+ const recipe5 = {
+   title: "Bread5",
+   serves: 2,
+   ingredients: ["Water", "Salt", "Flour", "Olive"],
+ };
+
+ const allRecipes = [recipe1, recipe2, recipe3, recipe4, recipe5];
+
+ allRecipes.forEach((recipe) =>{
+  console.log(`Recipe: ${recipe.title}`);
+  console.log(`Serves: ${recipe.serves}`);
+  console.log("Ingredients:");
+  recipe.ingredients.forEach((ingredient) =>
+    console.log(ingredient));
+    console.log("-------------");
+ });
+ 
+
+
