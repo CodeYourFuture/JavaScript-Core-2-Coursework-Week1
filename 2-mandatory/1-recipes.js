@@ -25,13 +25,21 @@
 let favouriteRecipes = [
   { name: "Mole", serves: 2, ingredients: ["cinnamon", "cumin", "cocoa"] },
   { name: "Cake", serves: 5, ingredients: ["flour", "eggs", "sugar"] },
-  { name: "French Toast", serves: 5, ingredients: ["bread", "eggs", "milk"] },
-  { name: "Pakora", serves: 5, ingredients: ["flour", "ginger", "potato"] },
+  { name: "French Toast", serves: 1, ingredients: ["bread", "eggs", "milk"] },
+  { name: "Pakora", serves: 3, ingredients: ["flour", "ginger", "potato"] },
   {
     name: "Baked Potato",
-    serves: 5,
+    serves: 2,
     ingredients: ["tuna", "cheese", "potato"],
   },
 ];
 
 console.log(favouriteRecipes);
+favouriteRecipes.forEach((element) => {
+  console.log(element.name);
+  console.log(`Serves: ${element.serves}`);
+  console.log("Ingredients:");
+  element.ingredients.forEach((ingredient) => {
+    console.log(ingredient);
+  });
+});
