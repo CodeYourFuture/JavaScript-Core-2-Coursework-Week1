@@ -25,7 +25,23 @@
 
 function countWords(string) {
   const wordCount = {};
-
+  if(string === ""){return wordCount;}
+  let stringToArray = string.split(" ");
+  
+  let shorterArray = [];
+  for (let word of stringToArray){
+    if(!shorterArray.includes(word)){
+      shorterArray.push(word);
+    }
+  }
+  shorterArray.forEach(word => wordCount[word] = 0);
+  stringToArray.forEach(word => {
+    for (let i = 0; i<stringToArray.length; i++) {
+    if (word == shorterArray[i]){
+      wordCount[word] = wordCount[word] +1;
+    }
+  }
+  })
   // write code here
 
   return wordCount;

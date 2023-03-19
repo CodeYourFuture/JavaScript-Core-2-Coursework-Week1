@@ -14,7 +14,7 @@ let student = {
     - Add a property to the student object for attendance
     - Set the value of attendance to 90
 */
-
+student["attendance"] = 90;
 // write code here
 
 /*
@@ -26,6 +26,13 @@ let student = {
 */
 
 // write code here
+function ifPass(student) {
+  if(student["attendance"] >= 90 && student["examScore"] > 60);
+  return true;
+}
+
+student["hasPassed"] = ifPass(student);
+
 
 console.log(student);
 
