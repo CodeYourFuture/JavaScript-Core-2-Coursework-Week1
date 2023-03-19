@@ -13,14 +13,27 @@
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
 */
 
+
+
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let shoppingList = {
+    items: [],
+  }
+  recipe.ingredients.forEach((ingredient) => {
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)){
+      shoppingList.items.push(ingredient)
+    }
+  });
+  shoppingList.name = recipe.name
+  return shoppingList
 }
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
