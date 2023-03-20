@@ -24,16 +24,36 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
+  let wordCount = {};
   let words = string.split(" ");
   for(let word of words ){
+    if(word.length !== 0){
+      wordCount[word] = (wordCount[word]|| 0) +1;
+    }
 
   }
+  return wordCount;
 
   // write code here
 
   return wordCount;
 }
+/*function countWords(string) {
+  let wordCount = {};
+  let words = [];
+  if (!(string === "")) {
+    words = string.split(" ");
+    words.forEach((word) => {
+      if (word in wordCount) {
+        wordCount[word]++;
+      } else {
+        wordCount[word] = 1;
+      }
+    });
+  }
+  return wordCount;
+}
+*/
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
