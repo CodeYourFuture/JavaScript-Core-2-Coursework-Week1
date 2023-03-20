@@ -24,47 +24,53 @@
 
 // write code here
 
-let favoriteRecipe = [
-  {
-    tittle: "Pancakes",
-    serves: 2,
-    ingredients: [
-      "milk",
-      "butter",
-      "egg",
-      "sugar",
-      "flour",
-      "baking powder",
-      "salt",
-    ],
-  },
-  {
-    tittle: "Pizza",
-    serves: 4,
-    ingredients: ["flour", "yeast", "mozarella", "totmato pure", "oil"],
-  },
-  {
-    title: "Mole",
-    serves: 4,
-    ingredients: ["cinnamon", "cumin", "cocoa"],
-  },
-  {
-    title: "Pretizel",
-    serves: 4,
-    ingredients: ["yeast", "sugar", "salt", "water", "butter"],
-  },
-  {
-    title: "Ice-cream",
-    serves: 2,
-    ingredients: [
-      "milk",
-      "cream",
-      "melted chocolate",
-      "sugar",
-      "cocoa powder",
-      "additional mix-ins",
-    ],
-  },
-];
+let recipe1 = {
+  tittle: "Pancakes",
+  serves: 2,
+  ingredients: [
+    "milk",
+    "butter",
+    "egg",
+    "sugar",
+    "flour",
+    "baking powder",
+    "salt",
+  ],
+};
 
-console.log(favoriteRecipe);
+let recipe2 = {
+  tittle: "Pizza",
+  serves: 4,
+  ingredients: ["flour", "yeast", "mozarella", "totmato pure", "oil"],
+};
+
+let recipe3 = {
+  title: "Mole",
+  serves: 4,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+
+let recipe4 = {
+  title: "Pretizel",
+  serves: 4,
+  ingredients: ["yeast", "sugar", "salt", "water", "butter"],
+};
+
+let recipe5 = {
+  title: "Ice-cream",
+  serves: 2,
+  ingredients: [
+    "milk",
+    "cream",
+    "melted chocolate",
+    "sugar",
+    "cocoa powder",
+    "additional mix-ins",
+  ],
+};
+
+console.log(favoriteRecipe1);
+console.log(favoriteRecipe2);
+console.log(favoriteRecipe3);
+console.log(favoriteRecipe4);
+console.log(favoriteRecipe5);
