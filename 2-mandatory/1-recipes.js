@@ -21,5 +21,68 @@
 
   You should write and log at least 5 recipes
 */
+//    Recipe Card  One
 
-// write code here
+console.log("\n\n");
+//
+let recipeCardMole = {
+  title: "Mole",
+  Serves: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+console.log(recipeCardMole.title);
+console.log(`Serves: ${recipeCardMole["Serves"]}`);
+console.log("ingredients:");
+recipeCardMole.ingredients.forEach((values) => console.log(values));
+
+//    Recipe Card  Two
+console.log("\n\n");
+//
+let recipeCardCake = {
+  title: "Cake",
+  Serves: 5,
+  ingredients: ["chocolate", "suger", "cream", "Milk", "flour"],
+};
+console.log(recipeCardCake.title);
+console.log(`Serves: ${recipeCardCake["Serves"]}`);
+console.log("ingredients:");
+recipeCardCake.ingredients.forEach((values) => console.log(values));
+
+//    Recipe Card  Three
+console.log("\n\n");
+//
+let recipeCardDal = {
+  title: "Dal",
+  Serves: 8,
+  ingredients: ["lentil", "cumin", "onion", ""],
+};
+console.log(recipeCardDal.title);
+console.log(`Serves: ${recipeCardDal["Serves"]}`);
+console.log("ingredients:");
+recipeCardDal.ingredients.forEach((values) => console.log(values));
+
+//    Recipe Card  Four
+console.log("\n\n");
+//
+let recipeCardPizza = {
+  title: "Mole",
+  Serves: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+console.log(recipeCardPizza.title);
+console.log(`Serves: ${recipeCardPizza["Serves"]}`);
+console.log("ingredients:");
+recipeCardPizza.ingredients.forEach((values) => console.log(values));
+
+//    Recipe Card  Five
+console.log("\n\n");
+//
+let recipeCardSandwich = {
+  title: "Mole",
+  Serves: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+console.log(recipeCardSandwich.title);
+console.log(`Serves: ${recipeCardSandwich["Serves"]}`);
+console.log("ingredients:");
+recipeCardSandwich.ingredients.forEach((values) => console.log(values));

@@ -13,15 +13,35 @@
 
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
-
+// Example 3
+let myPet = {
+  animal: "Cat",
+  getName: function () {
+    "My pet's name is Fluffy";
+  },
+};
+//
 const MENU = {
   burger: 6.5,
   falafel: 7.25,
 };
 
 let cashRegister = {
-  // write code here
-}
+  orderBurger: function (price) {
+    if (price === MENU.burger) {
+      return 0;
+    } else {
+      return price;
+    }
+  },
+  orderFalafel: function (price) {
+    if (price === MENU.falafel) {
+      return 0;
+    } else {
+      return price;
+    }
+  },
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
