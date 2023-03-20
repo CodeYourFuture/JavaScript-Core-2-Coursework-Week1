@@ -50,37 +50,56 @@ function formatCourseworkResult(trainee) {
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
+  
+
+*/  test("trainee Xin's coursework was marked as grade C.", () => {
+const trainee ={
     name: "Xin",
-    score: 63
-  }
-*/
+    score: 63,
+  };
+  expect(formatCourseworkResult(trainee)).toBe(
+`${trainee.name}'s coursework was marked as grade C.`
+);
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    name: "Mona",
-    score: 78
-  }
-*/
+  
+*/test("trainee Mona's coursework was marked as grade B.", () => {
+const trainee = {
+name: "Mona",
+score: 78,
+};
+expect(formatCourseworkResult(trainee)).toBe(
+`${trainee.name}'s coursework was marked as grade B.`
+);
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    name: "Ali",
-    score: 49,
-    age: 33,
-    subjects: ["JavaScript", "React", "CSS"]
-  }
-*/
+
+*/test("Error: Coursework percent is not a number!", () => {
+const trainee = {
+name: "Ali",
+score: 49,
+age: 33,
+subjects: ["JavaScript", "React", "CSS"],
+};
+expect(formatCourseworkResult(trainee)).toBe(
+"Error: Coursework percent is not a number!"
+);
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    score: 90,
-    age: 29
-  }
-*/
+  
+*/test("Error: No trainee name!", () => {
+const trainee = {
+score: 90,
+age: 29,
+};
+expect(formatCourseworkResult(trainee)).toBe("Error: No trainee name!");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -88,4 +107,12 @@ function formatCourseworkResult(trainee) {
     name: "Aman",
     subjects: ["HTML", "CSS", "Databases"]
   }
-*/
+*/test("trainee Aman's coursework was marked as grade E.", () => {
+const trainee = {
+name: "Aman",
+subjects: ["HTML", "CSS", "Databases"],
+};
+expect(formatCourseworkResult(trainee)).toBe(
+`${trainee.name}'s coursework was marked as grade E.`
+);
+});
