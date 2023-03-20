@@ -120,7 +120,7 @@ test("Trainee name undefined , score A", () => {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
-test("Trainee name Aman, () => {
+test("Trainee name Aman", () => {
   let trainee1 = {
     name: `Aman`,
     subjects: ["HTML", "CSS", "Databases"],
