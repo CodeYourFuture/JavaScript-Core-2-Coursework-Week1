@@ -25,6 +25,10 @@
 
 function countWords(string) {
   const wordCount = {};
+  let words = string.split(" ");
+  for(let word of words ){
+
+  }
 
   // write code here
 

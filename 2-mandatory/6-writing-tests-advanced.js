@@ -48,22 +48,29 @@ function formatCourseworkResult(trainee) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-/*
-  Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    name: "Xin",
-    score: 63
-  }
-*/
 
-/*
-  Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
+ // Write a test that checks the output of formatCourseworkResult when passed the following trainee:
+  test("trainee name Xin, score C", () => {
+  let trainee = {
+    name: `Xin`,
+    score: 63,
+  };
+  expect(formatCourseworkResult(trainee)).toEqual("C")
+    `Xin's coursework was marked as grade C.`
+  
+});
+
+
+
+  //Write a test that checks the output of formatCourseworkResult when passed the following trainee:
+  test(trainee name Mona,score)
+  let trainee={
     name: "Mona",
     score: 78
-  }
-*/
-
+  };
+  expect(formatCourseworkResult(trainee)).toEqual("B")
+   `Mona's coursework was marked as grade B`
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
