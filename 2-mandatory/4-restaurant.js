@@ -27,7 +27,20 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+  orderBurger: function (price) {
+    if (price === MENU.burger) {
+      return 0;
+    } else {
+      return price;
+    }
+  },
+  orderFalafel: function (price) {
+    if (price === MENU.falafel) {
+      return 0;
+    } else {
+      return price;
+    }
+  },
 };
 
 /* ======= TESTS - DO NOT MODIFY =====

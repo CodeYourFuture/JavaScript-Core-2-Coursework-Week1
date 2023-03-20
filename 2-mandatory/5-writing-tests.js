@@ -23,6 +23,7 @@ function convertScoreToGrade(score) {
 
   return grade;
 }
+console.log(convertScoreToGrade(83));
 
 /* ======= TESTS - FOR THIS EXERCISE YOU SHOULD MODIFY THEM! =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 5-writing-tests.js`
@@ -33,43 +34,59 @@ function convertScoreToGrade(score) {
 /*
   The first test has been written for you. You need to fix the test so that it
   passes.
-*/
+// */
+
 test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
+  expect(convertScoreToGrade(83)).toBe("A");
 });
 
-/*
-  The rest of the tests have comments describing what to test and you need to
-  write a matching test
-*/
+// /*
+//   The rest of the tests have comments describing what to test and you need to
+//   write a matching test
+// */
 
-test.skip("a score of 71 is grade B", () => {
-  /* Remove the .skip above, then write the test body. */
+test("a score of 71 is grade B", () => {
+  expect(convertScoreToGrade(71)).toBe("B");
 });
-/*
-  Write a test that checks a score of 68 is grade C
-*/
-
-/*
-  Write a test that checks a score of 55 is grade D
-*/
-
-/*
-  Write a test that checks a score of 68 is grade C
-*/
-
-/*
-  Write a test that checks a score of 55 is grade D
-*/
-
-/*
-  Write a test that checks a score of 49 is grade E
-*/
-
-/*
-  Write a test that checks a score of 30 is grade E
-*/
-
-/*
-  Write a test that checks a score of 70 is grade B
-*/
+// /*
+//   Write a test that checks a score of 68 is grade C
+// */
+test("a score of 68 is grade C", () => {
+  expect(convertScoreToGrade(68)).toBe("C");
+});
+// /*
+//   Write a test that checks a score of 55 is grade D
+// */
+test("a score of 55 is grade D", () => {
+  expect(convertScoreToGrade(55)).toBe("D");
+});
+// /*
+//   Write a test that checks a score of 68 is grade C
+// */
+test("a score of 68 is grade C", () => {
+  expect(convertScoreToGrade(68)).toBe("C");
+});
+// /*
+//   Write a test that checks a score of 55 is grade D
+// */
+test("a score of 55 is grade D", () => {
+  expect(convertScoreToGrade(55)).toBe("D");
+});
+// /*
+//   Write a test that checks a score of 49 is grade E
+// */
+test("a score of 49 is grade E", () => {
+  expect(convertScoreToGrade(49)).toBe("E");
+});
+// /*
+//   Write a test that checks a score of 30 is grade E
+// */
+test("a score of 30 is grade E", () => {
+  expect(convertScoreToGrade(30)).toBe("E");
+});
+// /*
+//   Write a test that checks a score of 70 is grade B
+// */
+test("a score of 70 is grade B", () => {
+  expect(convertScoreToGrade(70)).toBe("B");
+});
