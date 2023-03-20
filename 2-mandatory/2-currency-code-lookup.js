@@ -19,6 +19,17 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  // This is the easy way, using The Object.fromEntries()  method
+  // return Object.fromEntries(countryCurrencyCodes);
+
+  const COUNTRY_CURRENCY_CODES_OBJECT = {};
+  for (let i = 0; i < countryCurrencyCodes.length; i++) {
+    const [countryCode, currencyCode] = countryCurrencyCodes[i];
+    COUNTRY_CURRENCY_CODES_OBJECT[countryCode] = currencyCode;
+
+    // I learned this: so we can pass the array's items into the bracket notation, and not always a string. as well as setting key/value pairs - (values) - again using a variable name.
+  }
+  return COUNTRY_CURRENCY_CODES_OBJECT;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
