@@ -69,8 +69,8 @@ let recipe5 = {
   ],
 };
 
-console.log(favoriteRecipe1);
-console.log(favoriteRecipe2);
-console.log(favoriteRecipe3);
-console.log(favoriteRecipe4);
-console.log(favoriteRecipe5);
+console.log(recipe1);
+console.log(recipe2);
+console.log(recipe3);
+console.log(recipe4);
+console.log(recipe5);
