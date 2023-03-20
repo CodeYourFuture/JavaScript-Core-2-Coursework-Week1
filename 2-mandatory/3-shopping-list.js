@@ -24,8 +24,8 @@ function createShoppingList(recipe) {
       !pantry.fridgeContents.includes(ingredient) &&
       !pantry.cupboardContents.includes(ingredient)
   );
-  delete recipe.ingredients;
-  return recipe;
+  // delete recipe.ingredients;
+  return {name: recipe.name , items: recipe.items};
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
