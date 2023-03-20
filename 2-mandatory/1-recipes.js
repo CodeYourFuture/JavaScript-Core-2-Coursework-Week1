@@ -5,7 +5,7 @@
   Create an object to hold information on your favorite recipe.
 
   It should have properties for
-
+ 
   - title (a string),
   - servings (a number), and
   - ingredients (an array of strings)
@@ -23,3 +23,44 @@
 */
 
 // write code here
+let recipes = [
+  {
+    title: "Mole",
+    serves: 2,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+  {
+    title: "Spaghetti Bolognese",
+    serves: 3,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+  {
+    title: "Pierogi",
+    serves: 4,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+  {
+    title: "Apple Pie",
+    serves: 10,
+    ingredients: ["flour", "egg", "sugar", "apple", "butter"],
+  },
+  {
+    title: "Spinach Pasta",
+    serves: 2,
+    ingredients: ["pasta", "cream", "spinach", "garlic"],
+  },
+];
+
+function getRecipe(recipe) {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.serves}`);
+  console.log("Ingredients");
+  for (const item of recipe.ingredients) {
+    console.log(item);
+  }
+}
+
+for (const element of recipes) {
+  getRecipe(element);
+  console.log();
+}

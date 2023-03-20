@@ -16,9 +16,15 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
+//1. loop through each element of the array ccc,
+//create new object key = element[0] ; value = element[1]
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let codes = {};
+  for (const element of countryCurrencyCodes) {
+    codes[element[0]] = element[1];
+  }
+  return codes;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
