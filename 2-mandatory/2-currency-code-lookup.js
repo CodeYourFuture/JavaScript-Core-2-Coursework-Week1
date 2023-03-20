@@ -28,7 +28,7 @@ function createLookup(COUNTRY_CURRENCY_CODES) {
     lookup[country] = currency;
   }
 
-  console.log(lookup);
+  return lookup;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
