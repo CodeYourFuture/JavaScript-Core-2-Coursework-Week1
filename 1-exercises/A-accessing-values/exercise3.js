@@ -19,10 +19,10 @@ let basketballTeam = {
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
-
-// write code here
-
-
+let result = basketballTeam.topPlayers.sort();
+for (const element of result) {
+  console.log(element);
+}
 /* EXPECTED RESULT
 
   Dennis Rodman
