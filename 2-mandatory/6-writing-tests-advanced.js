@@ -53,12 +53,12 @@ function formatCourseworkResult(trainee) {
   
 
 */ test("trainee Xin's coursework was marked as grade C.", () => {
-  const trainee1 = {
+  let trainee1 = {
   name: "Xin",
   score: 63
 };
 
-const result1 = formatCourseworkResult(trainee1);
+let result1 = formatCourseworkResult(trainee1);
 console.assert(result1 === "Xin's coursework was marked as grade C.", {result1});
 
 });
@@ -67,12 +67,12 @@ console.assert(result1 === "Xin's coursework was marked as grade C.", {result1})
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 */test("trainee Mona's coursework was marked as grade B.", () => {
-const trainee2 = {
+let trainee2 = {
   name: "Mona",
   score: 78
 };
 
-const result2 = formatCourseworkResult(trainee2);
+let result2 = formatCourseworkResult(trainee2);
 console.assert(result2 === "Mona's coursework was marked as grade B.", {result2});
 
 });
@@ -81,14 +81,14 @@ console.assert(result2 === "Mona's coursework was marked as grade B.", {result2}
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
 
 */test("returns an error message for trainee with failing grade", () => {
- const trainee3 = {
+ let trainee3 = {
   name: "Ali",
   score: 49,
   age: 33,
   subjects: ["JavaScript", "React", "CSS"]
 };
 
-const result3 = formatCourseworkResult(trainee3);
+let result3 = formatCourseworkResult(trainee3);
 console.assert(result3 === "Ali's coursework was marked as grade E.", {result3});
 
 });
@@ -98,12 +98,12 @@ console.assert(result3 === "Ali's coursework was marked as grade E.", {result3})
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 */test("Error: No trainee name!", () => {
- const trainee4 = {
+ let trainee4 = {
   score: 90,
   age: 29
 };
 
-const result4 = formatCourseworkResult(trainee4);
+let result4 = formatCourseworkResult(trainee4);
 console.assert(result4 === "Error: No trainee name!", {result4});
 });
 
@@ -112,12 +112,12 @@ console.assert(result4 === "Error: No trainee name!", {result4});
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
  
 */test("Error: Coursework percent is not a number!", () => {
- const trainee5 = {
+ let trainee5 = {
   name: "Aman",
   subjects: ["HTML", "CSS", "Databases"]
 };
 
-const result5 = formatCourseworkResult(trainee5);
+let result5 = formatCourseworkResult(trainee5);
 console.assert(result5 === "Error: Coursework percent is not a number!", {result5});
 
 });
