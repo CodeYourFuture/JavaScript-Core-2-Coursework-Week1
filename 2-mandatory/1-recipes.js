@@ -23,3 +23,37 @@
 */
 
 // write code here
+let receipe1= {
+  title: "Momo",
+  serving: 2,
+  ingredients: ["wheat", "kima", "wrapper"],
+};
+  console.log(receipe1)
+
+let receipe2 = {
+  title: "waiwai",
+  serving: 1,
+  ingredients: ["waiwai", "water", "masala"],
+};
+  console.log(receipe2);
+
+let receipe3 = {
+  title: "Omelette",
+  serving: 2,
+  ingredients: ["onion", "corrinder", "salt"],
+};
+  console.log(receipe3);
+
+let receipe4 = {
+  title: "chickencurry",
+  serving: 4,
+  ingredients: ["oil","onion","garlic", "ginger", "cumin", "corrinder", "tumeric"]
+}
+  console.log(receipe4);
+
+let receipe5 = {
+  title: "pilourice",
+  serving: 5,
+  ingredients: ["rice", "cinamom", "cumin", "onion","cloves", "bayleaves", "water"],
+};
+  console.log(receipe5);
