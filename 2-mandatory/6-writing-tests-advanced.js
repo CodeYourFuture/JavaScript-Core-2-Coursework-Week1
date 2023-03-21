@@ -52,15 +52,16 @@ function formatCourseworkResult(trainee) {
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 
-*/  test("trainee Xin's coursework was marked as grade C.", () => {
-const trainee ={
+*/ test("trainee Xin's coursework was marked as grade C.", () => {
+  const trainee = {
     name: "Xin",
     score: 63,
   };
   expect(formatCourseworkResult(trainee)).toBe(
-`${trainee.name}'s coursework was marked as grade C.`
-);
+    `${trainee.name}'s coursework was marked as grade C.`
+  );
 });
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -78,41 +79,43 @@ expect(formatCourseworkResult(trainee)).toBe(
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
 
-*/test("Error: Coursework percent is not a number!", () => {
-const trainee = {
-name: "Ali",
-score: 49,
-age: 33,
-subjects: ["JavaScript", "React", "CSS"],
-};
-expect(formatCourseworkResult(trainee)).toBe(
-"Error: Coursework percent is not a number!"
-);
+*/test("returns an error message for trainee with failing grade", () => {
+  const trainee = {
+    name: "Ali",
+    score: 45,
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"],
+  };
+  expect(formatCourseworkResult(trainee)).toBe(
+    "Error: Trainee Ali's coursework percent is below the minimum passing grade."
+  );
 });
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 */test("Error: No trainee name!", () => {
-const trainee = {
-score: 90,
-age: 29,
-};
-expect(formatCourseworkResult(trainee)).toBe("Error: No trainee name!");
+  const trainee = {
+    score: 90,
+    age: 29,
+  };
+  expect(formatCourseworkResult(trainee)).toBe("Error: No trainee name!");
 });
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    name: "Aman",
-    subjects: ["HTML", "CSS", "Databases"]
-  }
-*/test("trainee Aman's coursework was marked as grade E.", () => {
-const trainee = {
-name: "Aman",
-subjects: ["HTML", "CSS", "Databases"],
-};
-expect(formatCourseworkResult(trainee)).toBe(
-`${trainee.name}'s coursework was marked as grade E.`
-);
+ 
+*/test("Error: Coursework percent is not a number!", () => {
+  const trainee = {
+    name: "Ali",
+    score: "seventy",
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"],
+  };
+  expect(formatCourseworkResult(trainee)).toBe(
+    "Error: Coursework percent is not a number!"
+  );
 });
+
