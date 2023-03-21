@@ -20,8 +20,38 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+    balance: 0,
+  
+    orderBurger: function(balance) {
+      const burgerPrice = MENU.burger;
+      if (balance >= burgerPrice) {
+        this.balance = balance - burgerPrice;
+        return this.balance;
+      } else {
+        return balance;
+      }
+    },
+    orderFalafel: function(balance) {
+      const falafelPrice = MENU.falafel;
+      if (balance >= falafelPrice) {
+        this.balance = balance - falafelPrice;
+        return this.balance;
+      } else {
+        return balance;
+      }
+    },
+  };
+    
+  //   currentBalance: 0,
+  //   orderBurger: function(burgerPrice) {
+  //     if (this.currentBalance - burgerPrice >= 0) {
+  //       this.currentBalance -= burgerPrice;
+  //       return this.currentBalance;
+  //     } else {
+  //       return "You don't have enough money in your card. Sorry mate.";
+  //     }
+  //   }
+  // }; this code didn't work completely but was interesting.
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
