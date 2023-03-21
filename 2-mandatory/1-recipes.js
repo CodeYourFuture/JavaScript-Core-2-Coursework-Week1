@@ -23,3 +23,13 @@
 */
 
 // write code here
+const dalRecipe = {
+  title: "Tadka Dal",
+  Serves: 2,
+  ingredients: ["veg-oil", "cumin", "cinnamon", "salt"],
+
+
+}
+
+console.log(dalRecipe);
+console.log(dalRecipe.ingredients);

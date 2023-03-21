@@ -17,11 +17,20 @@ let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
-
 function createShoppingList(recipe) {
-  // write code here
-}
+  const missingIngredients = [];
 
+  recipe.ingredients.forEach(ingredient => {
+    if (!pantry.fridge.includes(ingredient) && !pantry.cupboards.includes(ingredient)) {
+      missingIngredients.push(ingredient);
+    }
+  });
+
+  return {
+    name: recipe.name,
+    items: missingIngredients
+  };
+}
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
