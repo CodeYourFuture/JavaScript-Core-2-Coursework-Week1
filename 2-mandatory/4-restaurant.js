@@ -52,16 +52,6 @@ let cashRegister = {
   //     }
   //   }
   // };
-  
-//   let currentBalance = balance;
-//   function orderBurger(balance) {
-//     if (balance - burger => 0) {
-//       return balance - burger;
-//     } else {
-//       return balance;
-//     }
-//   }
-// }
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
