@@ -22,4 +22,23 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+const recipe = {
+  title: 'pasta dough',
+  servings: 2,
+  ingredients: ['2 cups flour', '3 large eggs, at room temperature', '2 tablespoons olive oil', '1 teaspoon salt', '2 tablespoons water, or as needed']
+};
+
+console.log(recipe.title);
+console.log(`Serves: ${recipe.servings}`);
+console.log('Ingredients:');
+recipe.ingredients.forEach(ingredient => console.log(ingredient));
+
+
+// Pasta dough
+// Serves: 2
+// Ingredients:
+// 2 cups flour
+// 3 large eggs, at room temperature 
+// 2 tablespoons olive oil
+// 1 teaspoon salt
+// 2 tablespoons water, or as needed
