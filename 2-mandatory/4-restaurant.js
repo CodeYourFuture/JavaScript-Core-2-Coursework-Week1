@@ -20,7 +20,22 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+  orderBurger: function(balance){
+    let newBalance = balance - MENU.burger;
+    if(newBalance >= 0){
+      return newBalance;
+    } else {
+      return balance;
+    }
+  },
+  orderFalafel: function(balance){
+    let newBalance = balance - MENU.falafel;
+    if(newBalance >= 0){
+      return newBalance;
+    } else {
+      return balance;
+    }
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
