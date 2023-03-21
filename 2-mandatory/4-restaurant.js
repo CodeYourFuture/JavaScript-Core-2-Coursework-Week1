@@ -51,7 +51,7 @@ let cashRegister = {
   //       return "You don't have enough money in your card. Sorry mate.";
   //     }
   //   }
-  // };
+  // }; this code didn't work completely but was interesting.
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
