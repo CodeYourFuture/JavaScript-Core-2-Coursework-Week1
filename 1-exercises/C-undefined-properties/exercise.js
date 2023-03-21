@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//Answer : We are trying to access the value of property called Colour in the car but colour is not defined in car object.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -27,6 +28,8 @@ let user = {
 
 sayHelloToUser(user);
 
+//Answer : we are passing an object called user as an argument to the sayHelloToUser function. The function tries to access the firstName property of the user object, but this property does not exist. Therefore, when we try to log the string "Hello undefined" to the console, we see undefined instead of the expected value.
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +39,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+//Answer: This does not return any value,the getname method in the mypet object returns a string that describes the pet's name,while the method does not use the return keyword. 
