@@ -18,7 +18,7 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+//////////
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
