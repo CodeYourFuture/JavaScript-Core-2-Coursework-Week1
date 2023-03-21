@@ -22,4 +22,39 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+const recipes = [
+  {
+    title: "Lasagna",
+    serves: 6,
+    ingredients: ["dough", "cheese", "pepperoni"],
+  },
+  {
+    title: "Soup",
+    serves: 4,
+    ingredients: ["leeks", "broccoli", "blue cheese"],
+  },
+  {
+    title: "Tuna Pasta",
+    serves: 2,
+    ingredients: ["penne", "tuna", "onions", "olives"],
+  },
+  {
+    title: "Risotto",
+    serves: 4,
+    ingredients: ["rice", "parmesan", "sundried tomatoes"],
+  },
+  {
+    title: "Mole",
+    serves: 2,
+    ingredients: ["cinnamon", "cumin", "cocoa"],
+  },
+];
+
+recipes.forEach((recipe) => {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.serves}`);
+  console.log("Ingredients:");
+  recipe.ingredients.forEach((ingredient) => {
+    console.log(ingredient);
+  });
+});

@@ -5,7 +5,7 @@
   You have an object cashRegister which handles charging for ordered items but it is missing some methods to do this.
 
   Add a method to the cashRegister object
-    - the method name should be orderBurger
+    - the method name should be orderBurger //function orderBurger (balance)
     - the method should take one argument called balance, which is a number
     - the method should check if there is enough money in the balance to order a burger (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
     - if there is enough money in the balance to order the burger, then the price of the burger should be subtracted from the balance
@@ -20,8 +20,23 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+  orderBurger(balance) {
+    if (MENU.burger <= balance) {
+      let newBalance = balance - MENU.burger;
+      return newBalance;
+    } else {
+      return balance;
+    }
+  },
+  orderFalafel(balance) {
+    if (MENU.falafel <= balance) {
+      let newBalance = balance - MENU.falafel;
+      return newBalance;
+    } else {
+      return balance;
+    }
+  },
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

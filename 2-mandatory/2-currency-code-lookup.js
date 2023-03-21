@@ -1,3 +1,5 @@
+/////// OPTIONAL - DO LAST! ////////
+
 /*
   Objects can be thought of as key/value storage, like a dictionary or a 'lookup'.
 
