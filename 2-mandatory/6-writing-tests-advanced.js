@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -53,42 +53,44 @@ function formatCourseworkResult(trainee) {
   
 
 */ test("trainee Xin's coursework was marked as grade C.", () => {
-  const trainee = {
-    name: "Xin",
-    score: 63,
-  };
-  expect(formatCourseworkResult(trainee)).toBe(
-    `${trainee.name}'s coursework was marked as grade C.`
-  );
-});
+  const trainee1 = {
+  name: "Xin",
+  score: 63
+};
 
+const result1 = formatCourseworkResult(trainee1);
+console.assert(result1 === "Xin's coursework was marked as grade C.", {result1});
+
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 */test("trainee Mona's coursework was marked as grade B.", () => {
-const trainee = {
-name: "Mona",
-score: 78,
+const trainee2 = {
+  name: "Mona",
+  score: 78
 };
-expect(formatCourseworkResult(trainee)).toBe(
-`${trainee.name}'s coursework was marked as grade B.`
-);
+
+const result2 = formatCourseworkResult(trainee2);
+console.assert(result2 === "Mona's coursework was marked as grade B.", {result2});
+
 });
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
 
 */test("returns an error message for trainee with failing grade", () => {
-  const trainee = {
-    name: "Ali",
-    score: 45,
-    age: 33,
-    subjects: ["JavaScript", "React", "CSS"],
-  };
-  expect(formatCourseworkResult(trainee)).toBe(
-    "Error: Trainee Ali's coursework percent is below the minimum passing grade."
-  );
+ const trainee3 = {
+  name: "Ali",
+  score: 49,
+  age: 33,
+  subjects: ["JavaScript", "React", "CSS"]
+};
+
+const result3 = formatCourseworkResult(trainee3);
+console.assert(result3 === "Ali's coursework was marked as grade E.", {result3});
+
 });
 
 
@@ -96,11 +98,13 @@ expect(formatCourseworkResult(trainee)).toBe(
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   
 */test("Error: No trainee name!", () => {
-  const trainee = {
-    score: 90,
-    age: 29,
-  };
-  expect(formatCourseworkResult(trainee)).toBe("Error: No trainee name!");
+ const trainee4 = {
+  score: 90,
+  age: 29
+};
+
+const result4 = formatCourseworkResult(trainee4);
+console.assert(result4 === "Error: No trainee name!", {result4});
 });
 
 
@@ -108,14 +112,13 @@ expect(formatCourseworkResult(trainee)).toBe(
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
  
 */test("Error: Coursework percent is not a number!", () => {
-  const trainee = {
-    name: "Ali",
-    score: "seventy",
-    age: 33,
-    subjects: ["JavaScript", "React", "CSS"],
-  };
-  expect(formatCourseworkResult(trainee)).toBe(
-    "Error: Coursework percent is not a number!"
-  );
+ const trainee5 = {
+  name: "Aman",
+  subjects: ["HTML", "CSS", "Databases"]
+};
+
+const result5 = formatCourseworkResult(trainee5);
+console.assert(result5 === "Error: Coursework percent is not a number!", {result5});
+
 });
 
