@@ -89,6 +89,6 @@ test("a score of 30 is grade E", () => {
 /*
   Write a test that checks a score of 70 is grade B
 */
-test("a score of 55 is grade D", () => {
+test("a score of 70 is grade B", () => {
   expect(convertScoreToGrade(70), "D");
 });

@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//car does not have an attribute of colour - I would spell it color to match the other American spellings used
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +23,20 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
+
+//No attribute of firstName
 
 sayHelloToUser(user);
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+//The return key word has not been added to the method getName
