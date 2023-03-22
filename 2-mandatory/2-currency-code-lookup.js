@@ -17,9 +17,18 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
-function createLookup(countryCurrencyCodes) {
+function createLookup(COUNTRY_CURRENCY_CODES) {
   // write code here
+  const countyObj = COUNTRY_CURRENCY_CODES.reduce((obj,[coutry,currency])=>{
+    obj[coutry]=currency
+    return obj
+  },{})
+
+return countyObj
 }
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`

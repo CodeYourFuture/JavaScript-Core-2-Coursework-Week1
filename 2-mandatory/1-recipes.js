@@ -23,3 +23,30 @@
 */
 
 // write code here
+
+let recipe = {
+  title : "Omlette",
+  servings:4,
+  Ingredients:["eggs","butter","salt"]
+
+}
+
+let recipeTwo ={
+  title: "Pasta",
+  Serving:2,
+  Ingredients:["pasta", "meat mince", "oil","water"]
+}
+console.log(recipe);
+console.log(recipe["title"])
+console.log(`Serving: ${recipe.servings}`)
+console.log("Ingredients:")
+recipe.Ingredients.forEach(Ingredient => console.log(Ingredient))
+
+// if we want to do it with one function//
+
+function recipeDetails(recipe){
+  console.log(`${recipe.title}\nServices: ${recipe.servings}\nIngredients:\n${recipe.Ingredients.join('\n')}`);
+}
+
+recipeDetails(recipe)
+recipeDetails(recipeTwo)

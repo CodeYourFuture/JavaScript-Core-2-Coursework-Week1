@@ -21,8 +21,9 @@ let basketballTeam = {
 */
 
 // write code here
-
-
+let topPlayerArray=basketballTeam.topPlayers
+let sortPlayers= topPlayerArray.sort()
+sortPlayers.forEach((_) => console.log(_));
 /* EXPECTED RESULT
 
   Dennis Rodman
