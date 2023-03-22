@@ -17,10 +17,24 @@
 const MENU = {
   burger: 6.5,
   falafel: 7.25,
-};
+}
 
 let cashRegister = {
   // write code here
+  orderBurger(balance) {
+    if (balance >= MENU.burger) {
+      return balance - MENU.burger
+    } else {
+      return balance
+    }
+  },
+  orderFalafel(balance) {
+    if (balance >= MENU.falafel) {
+      return balance - MENU.falafel
+    } else {
+      return balance
+    }
+  },
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -29,22 +43,22 @@ let cashRegister = {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-test("orderBurger subtracts 6.5 from balance", () => {
-  let balance = 6.5;
-  expect(cashRegister.orderBurger(balance)).toEqual(0);
-});
+test('orderBurger subtracts 6.5 from balance', () => {
+  let balance = 6.5
+  expect(cashRegister.orderBurger(balance)).toEqual(0)
+})
 
-test("orderFalafel subtracts 7.25 from balance", () => {
-  let balance = 7.25;
-  expect(cashRegister.orderFalafel(balance)).toEqual(0);
-});
+test('orderFalafel subtracts 7.25 from balance', () => {
+  let balance = 7.25
+  expect(cashRegister.orderFalafel(balance)).toEqual(0)
+})
 
-test("orderBurger will not subtract from balance if balance is too low", () => {
-  let balance = 6.49;
-  expect(cashRegister.orderBurger(balance)).toEqual(6.49);
-});
+test('orderBurger will not subtract from balance if balance is too low', () => {
+  let balance = 6.49
+  expect(cashRegister.orderBurger(balance)).toEqual(6.49)
+})
 
-test("orderFalafel will not subtract from balance if balance is too low", () => {
-  let balance = 7.24;
-  expect(cashRegister.orderFalafel(balance)).toEqual(7.24);
-});
+test('orderFalafel will not subtract from balance if balance is too low', () => {
+  let balance = 7.24
+  expect(cashRegister.orderFalafel(balance)).toEqual(7.24)
+})

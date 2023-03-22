@@ -24,48 +24,61 @@
 */
 
 function countWords(string) {
-  const wordCount = {};
-
+  const wordCount = {}
   // write code here
-
-  return wordCount;
+  const words = string.split(' ')
+  words.forEach((word) => {
+    if (wordCount[word]) {
+      wordCount[word]++
+    } else {
+      wordCount[word] = 1
+    }
+  })
+  return wordCount
 }
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
 - To run all exercises/tests in the mandatory folder, run `npm test`
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-test("Code works for a small string", () => {
-  expect(countWords("I love CodeYourFuture")).toEqual({
+test('Code works for a small string', () => {
+  expect(countWords('I love CodeYourFuture')).toEqual({
     I: 1,
     love: 1,
     CodeYourFuture: 1,
-  });
-});
+  })
+})
 
-test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
-});
+test('A string with, some punctuation', () => {
+  expect(countWords('A string with, some punctuation')).toEqual({
+    A: 1,
+    string: 1,
+    'with,': 1,
+    some: 1,
+    punctuation: 1,
+  })
+})
 
-test("Empty string", () => {
-  expect(countWords("")).toEqual({});
-});
+test('Empty string', () => {
+  expect(countWords('')).toEqual({})
+})
 
-test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+test('Example task string', () => {
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
-    "believe,": 1,
+    'believe,': 1,
     braver: 1,
-    "seem,": 1,
+    'seem,': 1,
     smarter: 1,
     stronger: 1,
     than: 3,
     think: 1,
     you: 3,
-  });
-});
+  })
+})
