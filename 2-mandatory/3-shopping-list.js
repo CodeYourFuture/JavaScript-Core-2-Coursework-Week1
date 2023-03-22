@@ -21,7 +21,7 @@ let pantry = {
 function createShoppingList(recipe) {
   // write code here
   const newRecipe = {
-    name: "pancakes",
+    name: recipe.name,
     items: [],
   };
 
@@ -32,23 +32,9 @@ function createShoppingList(recipe) {
     )
       newRecipe.items.push(item);
   }
+  // return { name: recipe.name, items: newRecipe.items };
+  console.log(newRecipe);
   return newRecipe;
-}
-
-function createShoppingList2(recipe) {
-  const newRecipe2 = {
-    name: "margherita pizza",
-    items: [],
-  };
-
-  for (const item of recipe.ingredients) {
-    if (
-      !pantry.fridgeContents.includes(item) &&
-      !pantry.cupboardContents.includes(item)
-    )
-      newRecipe2.items.push(item);
-  }
-  return newRecipe2;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
