@@ -23,3 +23,10 @@
 */
 
 // write code here
+let recipes = {
+  title: "Zambian Delicious Dish",
+  servings: 3,
+  ingredients: ["Chibwabwa", "Impwa", "Imbalala"],
+};
+
+console.log(recipes.title);
