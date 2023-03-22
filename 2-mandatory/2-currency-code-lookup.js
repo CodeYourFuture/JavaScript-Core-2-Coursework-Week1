@@ -18,8 +18,19 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  const object = {};
+  
+  for(let item = 0; item < countryCurrencyCodes.length; item++){
+    const[country, currency] = countryCurrencyCodes[item]; //destructuring the array
+    object[country] = currency;
+  }
+
+
+  return object;
 }
+
+// let obj['country'] = currency;
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
