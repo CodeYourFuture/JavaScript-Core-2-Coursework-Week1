@@ -23,3 +23,44 @@
 */
 
 // write code here
+let ZamManches = {
+  title: "Chikanda",
+  servings: 5,
+  ingredients: ["Groundnuts", "tubers", "Kotapela"],
+};
+console.log(ZamManches);
+
+let ZamChews = {
+  title: "Chibwabwa",
+  servings: 7,
+  ingredients: ["Imbalala", "Green Leaf", "Cream"],
+};
+console.log(ZamChews);
+
+let ZamSheto = {
+  title: "Chimpapila",
+  servings: 2,
+  ingredients: ["Amataba", "Tomato", "Inswa"],
+};
+console.log(ZamSheto);
+
+let ZamSwalo = {
+  title: "Tunweko",
+  servings: 6,
+  ingredients: ["Amenshi", "Umusalu", "Finkubala"],
+};
+console.log(ZamSwalo);
+
+let ZamShare = {
+  title: "Kampompo",
+  servings: 8,
+  ingredients: ["Ifisali", "Ifipushi", "Umungu"],
+};
+console.log(ZamShare);
+let recipes = {
+  title: "Zambian Delicious Dish",
+  servings: 3,
+  ingredients: ["Chibwabwa", "Impwa", "Imbalala"],
+};
+
+console.log(recipes.title);
