@@ -35,7 +35,8 @@ function convertScoreToGrade(score) {
   passes.
 */
 test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
+  const score = 83;
+  expect(convertScoreToGrade(score)).toEqual("A");
 });
 
 /*
@@ -43,33 +44,43 @@ test("a score of 83 is grade A", () => {
   write a matching test
 */
 
-test.skip("a score of 71 is grade B", () => {
-  /* Remove the .skip above, then write the test body. */
-});
-/*
-  Write a test that checks a score of 68 is grade C
+test("a score of 71 is grade B", () => {
+  const score = 71;
+  expect(convertScoreToGrade(score)).toEqual("B") 
+});/* Remove the .skip above, then write the test body. */
+
+
+test("a score of 68 is grade C", () => {
+  const score = 68;
+  expect(convertScoreToGrade(score)).toEqual("C") 
+});/*Write a test that checks a score of 68 is grade C
 */
 
-/*
-  Write a test that checks a score of 55 is grade D
+
+ test("a score of 55 is grade C", () => {
+  const score = 55;
+  expect(convertScoreToGrade(score)).toEqual("D") 
+}); /*Write a test that checks a score of 55 is grade D
 */
 
-/*
-  Write a test that checks a score of 68 is grade C
+
+ test("a score of 49 is grade E", () => {
+  const score = 49;
+  expect(convertScoreToGrade(score)).toEqual("E") 
+}); 
+ /* Write a test that checks a score of 49 is grade E
 */
 
-/*
-  Write a test that checks a score of 55 is grade D
+
+test("a score of 55 is grade E", () => {
+  const score = 30;
+  expect(convertScoreToGrade(score)).toEqual("E") 
+}); /*Write a test that checks a score of 30 is grade E
 */
 
-/*
-  Write a test that checks a score of 49 is grade E
-*/
-
-/*
-  Write a test that checks a score of 30 is grade E
-*/
-
-/*
-  Write a test that checks a score of 70 is grade B
+test("a score of 70 is grade B", () => {
+  const score = 70;
+  expect(convertScoreToGrade(score)).toEqual("B") 
+}); 
+  /*Write a test that checks a score of 70 is grade B
 */
