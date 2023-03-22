@@ -19,7 +19,7 @@ let capitalCities = {
 let myCountry = "UnitedKingdom";
 let myCapitalCity; // complete the code
 
-console.log(myCapitalCity);
+console.log(capitalCities[myCountry]);
 
 /* EXPECTED RESULT
 

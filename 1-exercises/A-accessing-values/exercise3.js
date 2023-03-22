@@ -22,6 +22,15 @@ let basketballTeam = {
 
 // write code here
 
+function sortAlphabetically(basketballTeam) {
+  let newArray = [];
+  for (let alphabetical of basketballTeam.topPlayers ) {
+    newArray = basketballTeam.topPlayers.sort();
+  }
+  console.log(newArray.join('\r\n'));
+
+}
+
 
 /* EXPECTED RESULT
 
