@@ -23,3 +23,14 @@
 */
 
 // write code here
+let recipe = {
+  title : "kotlet",
+  serving : 2,
+  ingredients : ["onion", "potato", "meet", "spices"]
+
+};
+console.log(recipe.title);
+console.log(recipe.serving);
+for(const item of recipe.ingredients){
+console.log(item);
+}

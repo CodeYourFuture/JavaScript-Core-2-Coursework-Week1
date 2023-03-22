@@ -16,9 +16,14 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
-
+let newObject = {};
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  for (let item of COUNTRY_CURRENCY_CODES) {
+    let countryCode = item[0];
+    newObject[countryCode] = item[1];
+  }
+
+  return newObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
