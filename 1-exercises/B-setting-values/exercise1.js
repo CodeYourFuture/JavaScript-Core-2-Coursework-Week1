@@ -24,29 +24,7 @@ let capitalCities = {
 
 // write code here
 
-const { UnitedKingdom, China, ...moreCoutrys} = capitalCities;
-
-const Peru = {
-  name: "Lima",
-  population: 9750000,
-}
-
-const updatedCountries = {
-  ...moreCoutrys,
-  Peru: Peru,
-}
-
-const updatedChina = Object.assign({}, China, {population: 21500000 })
-const UpdatedUnitedKingdom = {...UnitedKingdom, population:8980000  }
-
-const UpdatedCapitalCities = {
-  ...updatedCountries,
-  china: updatedChina,
-  UnitedKingdom: UpdatedUnitedKingdom,
-}
-
-
-console.log(UpdatedCapitalCities);
+console.log(capitalCities);
 
 /* EXPECTED RESULT
 

@@ -14,18 +14,16 @@ let car = {
   yearsOld: 8,
 };
 
-car["colour"] = "blue"
+console.log(car["colour"]);
 
-console.log(car["colour"]); //the color property isnt added to the car object you can do this 
+// Example 2
+function sayHelloToUser(user) {
+  console.log(`Hello ${user.firstName}`);
+}
 
 let user = {
   name: "Mira"
 };
-
-// Example 2
-function sayHelloToUser(user) {
-  console.log(`Hello ${user.name}`);  // you need to change firstName to name and it has to be above the function like this 
-}
 
 sayHelloToUser(user);
 
@@ -33,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-   return "My pet's name is Fluffy"; // nothing was being return here 
+    "My pet's name is Fluffy";
   },
 };
 

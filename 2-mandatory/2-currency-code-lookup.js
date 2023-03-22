@@ -18,11 +18,7 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  const loopUp = {};
-  COUNTRY_CURRENCY_CODES.forEach((country, currency) => {
-    loopUp[country] = currency
-    return loopUp;
-  })
+  // write code here
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
