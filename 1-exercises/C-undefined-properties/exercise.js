@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // the key value colour is undefined because 
 
 // Example 2
 function sayHelloToUser(user) {

@@ -7,15 +7,14 @@ let student = {
   name: "Reshma Saujani",
   examScore: 65,
   hasPassed: false
-};
-
+}
 /*
   Using bracket notation
     - Add a property to the student object for attendance
     - Set the value of attendance to 90
 */
 
-// write code here
+student["attendance"] = 90;
 
 /*
   - Write an "if" statement that changes the value of hasPassed to true
@@ -24,10 +23,14 @@ let student = {
       exam score is above 60.
   - Use bracket notation to change the value of hasPassed
 */
-
-// write code here
-
-console.log(student);
+function passed(student){
+  
+  if (student["attendance"] >= 90 && student["examScore"] > 60){
+  student["hasPassed"]= true
+  }
+  return student ;
+}
+console.log(passed(student));
 
 /* EXPECTED RESULT
 
