@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //the key colour hasn't been defined
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // the key that holds the user's name has a different name than the one passed in the function
 
 // Example 3
 let myPet = {
@@ -36,3 +36,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// here we get undefined since we are not returning or printing out anything on the function.
