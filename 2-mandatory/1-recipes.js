@@ -23,3 +23,22 @@
 */
 
 // write code here
+let myFavRecipes=[
+  {title:"Mole", serves:2, ingredients:["cinnamon", "cumin","cocoa"]},
+  {title:"Rice", serves:1, ingredients:["rice", "water"]},
+  {title:"Chicken", serves:3, ingredients:["chicken", "onion", "oil"]},
+  {title:"Boiled Egg", serves:2, ingredients:["egg", "water"]},
+  {title:"Cake", serves:1, ingredients:["flour", "egg", "sugar"]}
+  
+]
+console.log("MY FAVORITE RECIPES")
+myFavRecipes.forEach(recipe=>{
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.serves}`);
+  console.log(`Ingredients :`)
+  recipe.ingredients.forEach(item =>{
+    console.log(item)
+  })
+  console.log("-------")
+
+})
