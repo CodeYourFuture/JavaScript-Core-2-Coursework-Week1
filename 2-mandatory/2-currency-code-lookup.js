@@ -17,8 +17,17 @@ const COUNTRY_CURRENCY_CODES = [
   ["MX", "MXN"],
 ];
 
+//initiate empty object
+let countryCurrencyCodesObj = {};
+
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  //as input data type is an array, use .map() method to process each item inside array
+  countryCurrencyCodes.map(
+    (countryCurrencyCode) =>
+      //Use index values of 0 and 1 to access the country and currency codes and use square bracket notation to add the keys and values to countryCurrencyCodesObj object
+      (countryCurrencyCodesObj[countryCurrencyCode[0]] = countryCurrencyCode[1])
+  );
+  return countryCurrencyCodesObj;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
