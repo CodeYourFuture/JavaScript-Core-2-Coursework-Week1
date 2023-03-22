@@ -12,6 +12,12 @@ let capitalCities = {
     name: "Beijing",
   }
 };
+capitalCities.UnitedKingdom.population = 8980000;
+capitalCities.China.population = 21500000; 
+capitalCitie.peru = {
+  name: "Lima",
+  population: 9750000
+};
 
 /*
   Using dot notation:
@@ -22,7 +28,6 @@ let capitalCities = {
     - Add a population of 9750000 to Peru's capital city.
 */
 
-// write code here
 
 console.log(capitalCities);
 
