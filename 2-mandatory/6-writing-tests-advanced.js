@@ -110,7 +110,7 @@ test("returns correct coursework result string for trainee", () => {
     age: 29
   }
 */
-test("returns correct coursework result string for trainee", () => {
+test("returns an error string for trainee", () => {
   const trainee = {
     score: 90,
     age: 29,
