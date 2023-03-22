@@ -16,23 +16,27 @@ let car = {
 
 console.log(car["colour"]);
 
+// colour property doesn't exists for car object
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
+// 'firstName' property doesn't exists for 'user' object
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+// in 'myPet' object function has been assigned to 'getName' property, but 'getName' method, which was is called in console.log is not defined

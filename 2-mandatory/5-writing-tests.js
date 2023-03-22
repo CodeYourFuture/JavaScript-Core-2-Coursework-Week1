@@ -7,21 +7,21 @@
 */
 
 function convertScoreToGrade(score) {
-  let grade = null;
+  let grade = null
 
   if (score >= 80) {
-    grade = "A";
+    grade = 'A'
   } else if (score >= 70) {
-    grade = "B";
+    grade = 'B'
   } else if (score >= 60) {
-    grade = "C";
+    grade = 'C'
   } else if (score >= 50) {
-    grade = "D";
+    grade = 'D'
   } else {
-    grade = "E";
+    grade = 'E'
   }
 
-  return grade;
+  return grade
 }
 
 /* ======= TESTS - FOR THIS EXERCISE YOU SHOULD MODIFY THEM! =====
@@ -34,42 +34,60 @@ function convertScoreToGrade(score) {
   The first test has been written for you. You need to fix the test so that it
   passes.
 */
-test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
-});
+test('a score of 83 is grade A', () => {
+  expect(convertScoreToGrade(83)).toEqual('A')
+})
 
 /*
   The rest of the tests have comments describing what to test and you need to
   write a matching test
 */
 
-test.skip("a score of 71 is grade B", () => {
+test('a score of 71 is grade B', () => {
   /* Remove the .skip above, then write the test body. */
-});
+  expect(convertScoreToGrade(71)).toEqual('B')
+})
 /*
   Write a test that checks a score of 68 is grade C
 */
 
+test('a score of 68 is grade C', () => {
+  expect(convertScoreToGrade(68)).toEqual('C')
+})
 /*
   Write a test that checks a score of 55 is grade D
 */
-
+test('a score of 55 is grade D', () => {
+  expect(convertScoreToGrade(55)).toEqual('D')
+})
 /*
   Write a test that checks a score of 68 is grade C
 */
+test('a score of 68 is grade C', () => {
+  expect(convertScoreToGrade(68)).toEqual('C')
+})
 
 /*
   Write a test that checks a score of 55 is grade D
 */
-
+test('a score of 55 is grade D', () => {
+  expect(convertScoreToGrade(55)).toEqual('D')
+})
 /*
   Write a test that checks a score of 49 is grade E
 */
-
+test('a score of 49 is grade E', () => {
+  expect(convertScoreToGrade(49)).toEqual('E')
+})
 /*
   Write a test that checks a score of 30 is grade E
 */
-
+test('a score of 30 is grade E', () => {
+  expect(convertScoreToGrade(30)).toEqual('E')
+})
 /*
   Write a test that checks a score of 70 is grade B
 */
+test('a score of 70 is grade B', () => {
+  expect(convertScoreToGrade(70)).toEqual('B')
+})
