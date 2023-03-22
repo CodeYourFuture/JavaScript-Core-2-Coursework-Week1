@@ -22,4 +22,36 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipes ={
+  Flan : {
+    Serves: 6,
+    Ingredients: ["condensed milk", "eggs", "sugar", "milk", "vanilla extract"]
+
+  },
+  Paella: {
+    Serves: 8,
+    Ingredients:["rice", "chorizo", "pork", "chicken", "vegetable stock", "saffron", "turmeric", "onion", "garlic"]
+  },
+  Salad: {
+    Serves: 4,
+    Ingredients: ["tomatoes", "lettuce", "pears", "spinach", "rocket", "blue cheese", "feta cheese", "croutons", "dressing"]
+  },
+  Milkshake: {
+    Serves: 4,
+    Ingredients: ["mango", "strawberries", "vanilla ice cream", "milk"]
+  },
+  Brownies: {
+    Serves: 6,
+    Ingredients: ["cocoa powder", "butter", "dark chocolate", "sugar", "eggs"]
+  }
+
+};
+
+Object.entries(recipes).forEach(([name, recipe]) => {
+  console.log(name);
+  console.log(`Serves: ${recipe.Serves}`);
+  console.log(`Ingredients:`);
+  for(let ingredient of recipe.Ingredients){
+    console.log(ingredient);
+  }
+})
