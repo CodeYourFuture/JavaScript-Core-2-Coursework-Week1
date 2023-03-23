@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);  /// The car object does not have color property
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,7 +22,7 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira" ////.  The object has only name property it does not have firstname property 
 };
 
 sayHelloToUser(user);
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+   return "My pet's name is Fluffy";   //. It should have return
   },
 };
 
