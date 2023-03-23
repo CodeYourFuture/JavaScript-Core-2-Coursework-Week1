@@ -25,11 +25,27 @@
 
 function countWords(string) {
   const wordCount = {};
+  // - Strings and string manipulation 
 
-  // write code here
-
-  return wordCount;
-}
+  // Split the input string into an array of words
+    const words = string.split(" ");
+  
+    // Loop through the array of words
+    words.forEach((word) => {
+     
+      if(string == ""){
+        return wordCount
+      }
+      else if(wordCount[word]) {
+        wordCount[word]++;
+      }
+      else {
+        wordCount[word] = 1;
+      } 
+    });
+    return wordCount;
+  }
+  
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`

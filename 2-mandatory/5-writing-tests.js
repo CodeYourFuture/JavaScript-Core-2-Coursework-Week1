@@ -8,7 +8,7 @@
 
 function convertScoreToGrade(score) {
   let grade = null;
-
+  
   if (score >= 80) {
     grade = "A";
   } else if (score >= 70) {
@@ -35,7 +35,7 @@ function convertScoreToGrade(score) {
   passes.
 */
 test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
+  expect(convertScoreToGrade(83)).toBe("A");
 });
 
 /*
@@ -43,33 +43,53 @@ test("a score of 83 is grade A", () => {
   write a matching test
 */
 
-test.skip("a score of 71 is grade B", () => {
-  /* Remove the .skip above, then write the test body. */
+test("b score of 71 is grade B", () => {
+  expect(convertScoreToGrade(71)).toBe("B")
 });
 /*
-  Write a test that checks a score of 68 is grade C
+  Write a test that checks a score of 68 is grade C  
 */
+test("c score of 68 is grade C", () => {
+  expect(convertScoreToGrade(68)).toBe("C")
+})
 
 /*
   Write a test that checks a score of 55 is grade D
 */
+test("d score of 55 is grade D", () => {
+  expect(convertScoreToGrade(55)).toBe("D")
+});
 
 /*
   Write a test that checks a score of 68 is grade C
 */
+test("c score of 68 is grade C", () =>{
+  expect(convertScoreToGrade(68)).toBe("C")
+});
 
 /*
   Write a test that checks a score of 55 is grade D
 */
-
+test("d of score 55 is grade D", () =>{
+  expect(convertScoreToGrade(55)).toBe("D")
+});
 /*
   Write a test that checks a score of 49 is grade E
 */
+test("e of score 49 is grade E", ()=>{
+  expect(convertScoreToGrade(49)).toBe("E");
+});
 
 /*
   Write a test that checks a score of 30 is grade E
 */
+test("e score of 30 is grade E", ()=>{
+  expect(convertScoreToGrade(30)).toBe("E");
+});
 
 /*
   Write a test that checks a score of 70 is grade B
 */
+test("b score of 70 is grade B", ()=>{
+  expect(convertScoreToGrade(70)).toBe("B"); 
+})
