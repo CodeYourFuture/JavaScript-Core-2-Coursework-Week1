@@ -15,11 +15,14 @@ let car = {
 };
 
 console.log(car["colour"]);
+//the output undefine because the property'colour' that doesn't exist in the object
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+//the output undefine because the property'firstName' that doesn't exist in the object
+
 
 let user = {
   name: "Mira"
@@ -36,3 +39,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//doesn't return anything. It has a string inside it, but it doesn't return that string.
