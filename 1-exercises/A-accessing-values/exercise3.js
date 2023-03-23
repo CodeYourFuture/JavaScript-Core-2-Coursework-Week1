@@ -13,6 +13,12 @@ let basketballTeam = {
   },
 };
 
+// console.log(basketballTeam.topPlayers.sort());
+
+// for (let player of basketballTeam.topPlayers) {
+//   console.log(player);
+// }
+
 /*
   Write code that
     - accesses the basketball team's top players array
@@ -20,7 +26,18 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
+function displayPlayerNamesAlphabetically() {
+  let topPlayersArray = basketballTeam.topPlayers;
+  topPlayersArray.sort();
+  for (let playerName of topPlayersArray) {
+    console.log(playerName);
+  }
+}
+
+displayPlayerNamesAlphabetically();
+
 // write code here
+
 
 
 /* EXPECTED RESULT

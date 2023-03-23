@@ -55,6 +55,12 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+test("the output of formatCourseworkResult is a trainee name", () => {
+  let trainee = {
+    name: "Xin",
+    score: 63
+  };
+  expect(formatCourseworkResult).toEqual()});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
