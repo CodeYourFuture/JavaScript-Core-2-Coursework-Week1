@@ -28,12 +28,12 @@ function countWords(string) {
   if (string === "") {
     return wordCount;
   } else {
-    const myArray = string.split(" ");
-    for (let i = 0; i < myArray.length; i++) {
-      if (wordCount[myArray[i]] === undefined) {
-        wordCount[myArray[i]] = 1;
+    const separateWords = string.split(" ");
+    for (let i = 0; i < separateWords.length; i++) {
+      if (wordCount[separateWords[i]] === undefined) {
+        wordCount[separateWords[i]] = 1;
       } else {
-        wordCount[myArray[i]]++;
+        wordCount[separateWords[i]]++;
       }
     }
     return wordCount;
