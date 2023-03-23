@@ -7,7 +7,7 @@
     - "ingredients", which is an array of strings
 
   The createShoppingList function should find which ingredients from the recipe are missing from the pantry.
-
+npm test -- --testPathPattern 2-mandatory/3-shopping-list.js
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
     - "items", which is an arry of the missing ingredients that need to be on the shopping list
@@ -19,7 +19,19 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let newShoppingList = [];
+  recipe.ingredients.forEach((element) => {
+    if (
+      !pantry.fridgeContents.includes(element) &&
+      !pantry.cupboardContents.includes(element)
+    ) {
+      newShoppingList.push(element);
+    }
+  });
+  return {
+    name: recipe.name,
+    items: newShoppingList,
+  };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -43,11 +55,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
