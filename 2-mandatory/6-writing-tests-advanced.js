@@ -10,12 +10,10 @@
   trainee has completed.
 */
 
-const { expect } = require("chai");
-const { test } = require("mocha");
 
-function convertScoreToGrade() {
+
+function convertScoreToGrade(score) {
   let grade = null;
-
   if (score >= 80) {
     grade = "A";
   } else if (score >= 70) {
@@ -30,6 +28,7 @@ function convertScoreToGrade() {
 
   return grade;
 }
+
 
 function formatCourseworkResult(trainee) {
   if (!trainee.name) {
@@ -58,7 +57,7 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
-test(" return Xin score of 63 is grade C", () => {
+test("return Xin score of 63 is grade C",() => {
   let trainee = {
     name: "Xin",
     score: 63,
@@ -74,13 +73,13 @@ test(" return Xin score of 63 is grade C", () => {
     score: 78
   }
 */
-test(' return Xin score of 78 is grade B',()=>{
+test('return Mona score of 78 is grade B',()=>{
   let trainee ={
     name:'Mona',
     score :78,
   };
   expect(formatCourseworkResult(trainee)).toEqual(
-    "Mona's coursework was marked as grade B"
+    "Mona's coursework was marked as grade B."
   );
 });
 /*
@@ -92,7 +91,7 @@ test(' return Xin score of 78 is grade B',()=>{
     subjects: ["JavaScript", "React", "CSS"]
   }
 */
-test(' return Xin score of 49 is grade E',()=>{
+test('return Ali score of 49 is grade E',()=>{
   let trainee ={
     name: "Ali",
     score: 49,
@@ -100,7 +99,7 @@ test(' return Xin score of 49 is grade E',()=>{
     subjects: ["JavaScript", "React", "CSS"]
   };
   expect(formatCourseworkResult(trainee)).toEqual(
-    "Ali's coursework was marked as grade E"
+    "Ali's coursework was marked as grade E."
   );
 });
 
@@ -111,7 +110,7 @@ test(' return Xin score of 49 is grade E',()=>{
     age: 29
   }
 */
-test(' returns an error message when no trainee name',()=>{
+test('returns an error message when no trainee name',()=>{
   let trainee ={
     score: 90,
     age: 29
@@ -128,7 +127,7 @@ test(' returns an error message when no trainee name',()=>{
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
-test(' return Xin score of 49 is grade E',()=>{
+test('returns an error message Coursework percent is not a number',()=>{
   let trainee ={
     name: "Aman",
     subjects: ["HTML", "CSS", "Databases"]
