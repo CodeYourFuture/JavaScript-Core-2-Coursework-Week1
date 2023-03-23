@@ -23,3 +23,54 @@
 */
 
 // write code here
+
+let recipe1 = {
+  tittle: "Pancakes",
+  serves: 2,
+  ingredients: [
+    "milk",
+    "butter",
+    "egg",
+    "sugar",
+    "flour",
+    "baking powder",
+    "salt",
+  ],
+};
+
+let recipe2 = {
+  tittle: "Pizza",
+  serves: 4,
+  ingredients: ["flour", "yeast", "mozarella", "totmato pure", "oil"],
+};
+
+let recipe3 = {
+  title: "Mole",
+  serves: 4,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+
+let recipe4 = {
+  title: "Pretizel",
+  serves: 4,
+  ingredients: ["yeast", "sugar", "salt", "water", "butter"],
+};
+
+let recipe5 = {
+  title: "Ice-cream",
+  serves: 2,
+  ingredients: [
+    "milk",
+    "cream",
+    "melted chocolate",
+    "sugar",
+    "cocoa powder",
+    "additional mix-ins",
+  ],
+};
+
+console.log(recipe1);
+console.log(recipe2);
+console.log(recipe3);
+console.log(recipe4);
+console.log(recipe5);

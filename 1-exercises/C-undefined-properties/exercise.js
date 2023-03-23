@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // beacuse colour is not defined in car properry.
 
 // Example 2
 function sayHelloToUser(user) {
@@ -22,17 +22,17 @@ function sayHelloToUser(user) {
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // user have property of name not first name.
 
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // this function is not returning anything.

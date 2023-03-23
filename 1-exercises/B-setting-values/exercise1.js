@@ -10,13 +10,20 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+    population: 21500000,
+  },
+  Peru: {
+    name: "Lima",
+    population: 9750000,
+  },
 };
+
+capitalCities.UnitedKingdom.population = 8980000;
 
 /*
   Using dot notation:
-    - Change the value of UnitedKingdom's capital city population to 8980000.
-    - Add the property for population to China's capital city and set the value to 21500000.
+    - Change the value of UnitedKingdom's capital city population to 8980000. ------ done 
+    - Add the property for population to China's capital city and set the value to 21500000. ------done 
     - Add the country "Peru" to capitalCities object.
     - Add a name of "Lima" to Peru's capital city.
     - Add a population of 9750000 to Peru's capital city.
