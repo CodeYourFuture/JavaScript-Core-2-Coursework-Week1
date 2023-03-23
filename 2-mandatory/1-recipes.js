@@ -23,3 +23,43 @@
 */
 
 // write code here
+
+let myFavouriteRecipes = [
+  {
+    Title: "Mushroom Omelette",
+    Serves: 2,
+    Ingredients: ["eggs", "butter", "mushrooms"],
+  },
+  {
+    Title: "Butter Bean Stew",
+    Serves: 4,
+    Ingredients: ["butter beans", "cherry tomatoes", "chicken stock"],
+  },
+  {
+    Title: "Cold Soba Noodles",
+    Serves: 2,
+    Ingredients: ["Soba Noodles", "Mirin", "Dashi", "Soya Sauce"],
+  },
+  {
+    Title: "Death By Decaf",
+    Serves: 2,
+    Ingredients: ["Panther M*lk", "Tia Maria", "Oat Milk", "Cold Brew"],
+  },
+  {
+    Title: "Steamed Hams",
+    Serves: 2,
+    Ingredients: ["Krusty Burger", "Aurora Borealis"],
+  },
+];
+
+// forEach will execute this function for each array element
+// note: I could also use Object.fromEntries()
+function printRecipes(recipe) {
+  console.log(recipe.Title);
+  console.log(`Serves: ${recipe.Serves}`);
+  console.log(`Ingredients:`);
+  recipe["Ingredients"].forEach((ingredient) => console.log(ingredient));
+  console.log(`***`);
+}
+
+myFavouriteRecipes.forEach(printRecipes);

@@ -18,8 +18,30 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+// helper function compares pantry with recipe ingredients
+function findMissingItems(item) {
+  // glued the two object arrays together
+  let combinedPantry = pantry["fridgeContents"].concat(
+    pantry["cupboardContents"]
+  );
+  // returning items on the recipe ingredients array not found in pantry array
+  if (!combinedPantry.includes(item)) {
+    return item;
+  }
+}
+
+// Main function
 function createShoppingList(recipe) {
-  // write code here
+  let shoppingList = {};
+
+  // creating a new array with only the missing items
+  let missingItems = recipe["ingredients"].filter(findMissingItems);
+
+  // adding properties and values to shoppingList object
+  shoppingList["name"] = recipe["name"];
+  shoppingList["items"] = missingItems;
+
+  return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
