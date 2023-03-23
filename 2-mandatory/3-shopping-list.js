@@ -18,8 +18,26 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+//function to check if item is included in cupboardContents array from the pantry object. return boolean value of true if item is not found in array
+function notInCupboard(ingredient) {
+  return pantry.cupboardContents.includes(ingredient) === false;
+}
+
+//function to check if item is included in fridgeContents array from the pantry object. return boolean value of true if item is not found in array
+function notInFridge(ingredient) {
+  return pantry.fridgeContents.includes(ingredient) === false;
+}
+
 function createShoppingList(recipe) {
-  // write code here
+  //create a new array with name itemsNeeded. Use filter() method to include only items not in the fridgeContents or cupboardContents arrays
+  let itemsNeeded = recipe.ingredients
+    .filter(notInCupboard)
+    .filter(notInFridge);
+  //return name of recipe using dot notation and return array itemsNeeded array
+  return {
+    name: recipe.name,
+    items: itemsNeeded,
+  };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -43,11 +61,18 @@ test("createShoppingList works for pancakes recipe", () => {
 test("createShoppingList works for margherita pizza recipe", () => {
   let recipe2 = {
     name: "margherita pizza",
-    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+    ingredients: [
+      "flour",
+      "salt",
+      "yeast",
+      "tinned tomatoes",
+      "oregano",
+      "mozarella",
+    ],
   };
 
   expect(createShoppingList(recipe2)).toEqual({
     name: "margherita pizza",
-    items: ["flour", "yeast", "mozarella"]
+    items: ["flour", "yeast", "mozarella"],
   });
 });
