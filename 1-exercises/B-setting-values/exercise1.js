@@ -6,11 +6,15 @@
 let capitalCities = {
   UnitedKingdom: {
     name: "London",
-    population: 20,
+    population: 8980000,
   },
   China: {
     name: "Beijing",
-  }
+    population: 21500000,
+  },
+  Peru: {
+     name: "Lima",
+     population: 9750000 }
 };
 
 /*
