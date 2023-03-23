@@ -53,6 +53,7 @@ let myFavouriteRecipes = [
 ];
 
 // forEach will execute this function for each array element
+// note: I could also use Object.fromEntries()
 function printRecipes(recipe) {
   console.log(recipe.Title);
   console.log(`Serves: ${recipe.Serves}`);
