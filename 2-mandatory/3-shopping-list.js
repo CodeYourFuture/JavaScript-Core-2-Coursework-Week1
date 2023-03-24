@@ -31,19 +31,6 @@ function createShoppingList(recipe) {
   };
 }
 
-
-
-
-  //let result = {name: recipeObj.name , items: []} 
-  //let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents) 
-  //recipeObj.ingredients.map(eachIng => {
-    //if(!allIHave.includes(eachIng))
-    //{ result.items.push(eachIng) 
-   // }
- // }) 
-  //return result;
-//}
-
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
