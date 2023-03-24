@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -19,16 +19,30 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
-  let result = {name: recipeObj.name , items: []} 
-  let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents) 
-  recipeObj.ingredients.map(eachIng => {
-    if(!allIHave.includes(eachIng))
-    { result.items.push(eachIng) 
+  let missingIngredients = [];
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    if (!pantry.fridgeContents.includes(recipe.ingredients[i]) && !pantry.cupboardContents.includes(recipe.ingredients[i])) {
+      missingIngredients.push(recipe.ingredients[i]);
     }
-  }) 
-  return result;
+  }
+  return {
+    name: recipe.name,
+    items: missingIngredients
+  };
 }
+
+
+
+
+  //let result = {name: recipeObj.name , items: []} 
+  //let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents) 
+  //recipeObj.ingredients.map(eachIng => {
+    //if(!allIHave.includes(eachIng))
+    //{ result.items.push(eachIng) 
+   // }
+ // }) 
+  //return result;
+//}
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
