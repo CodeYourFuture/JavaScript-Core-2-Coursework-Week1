@@ -31,25 +31,25 @@ let recipeCard = [
 		ingredients: ['avocado', 'oat milk', 'peanut butter', 'honey'],
 		},
     {
-    title: “Oat Smoothie”,
+    title: "Oat Smoothie",
     servings: 1,
     ingredients: ['oats', 'milk', 'greek yogurt', 'honey'],
     },
 
    {
-   title: “pancakes”,
+   title: "pancakes",
    servings: 1,
    ingredients: ['egg', 'butter', 'oat flour', 'oat milk', 'banana'] ,
    },
 
    {
-   title: “carrot soup" ,
+   title: "carrot soup" ,
    servings: 1,
    ingredients: ['chicken soup', 'carrot', 'onion', 'olive oil'],
    },
 
    { 
-   title: “Bravas potatoes",
+   title: "Bravas potatoes",
    servings: 1,
    ingredients: ['potatoes', 'paprika', 'garlic', 'parsley'],
    },
@@ -58,11 +58,17 @@ let recipeCard = [
 
    recipeCard.forEach((recipe) => {
    console.log(recipe.title);
-   console.log(recipe.servings);
    console.log(`Serves: ${recipe.servings}`);
+   console.log("Ingredients:")
    recipe.ingredients.forEach((ingredient) => console.log(ingredient));
    console.log("\n")
 });
 
 
 
+
+
+
+
+
+//let arr = ["a", "b", "c"] // array of strings
