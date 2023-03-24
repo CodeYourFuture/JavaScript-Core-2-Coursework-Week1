@@ -14,13 +14,13 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // There is no property called "colour" in car object.
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
-
+// The right property is "name", not "firstName".
 let user = {
   name: "Mira"
 };
@@ -36,3 +36,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//getName method doesn't return or print anything.

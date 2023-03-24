@@ -18,7 +18,11 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let countryCurrencyCodesObject = {};
+  countryCurrencyCodes.forEach(([countryCode, currencyCode]) => {
+    countryCurrencyCodesObject[countryCode] = currencyCode;
+  });
+  return countryCurrencyCodesObject;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

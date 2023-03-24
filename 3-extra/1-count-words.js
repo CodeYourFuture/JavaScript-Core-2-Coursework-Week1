@@ -25,10 +25,21 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
-
-  return wordCount;
+  if(string == ""){
+    return wordCount;
+  } else {
+    const arr= string.split(' ')
+    for(let word of arr){
+      if(wordCount[word]){
+        wordCount[word]++;
+      }
+      else{
+        wordCount[word]=1
+      }
+    }
+    return wordCount;
+  }
+ 
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
