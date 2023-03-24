@@ -48,13 +48,14 @@ function formatCourseworkResult(trainee) {
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-/*
-  Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
+
+//  Write a test that checks the output of formatCourseworkResult when passed the following trainee:
+test("trainee has a score of 63", () => {})  
+  const trainee = {
     name: "Xin",
     score: 63
-  }
-*/
+  };
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
