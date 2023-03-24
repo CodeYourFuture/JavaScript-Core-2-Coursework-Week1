@@ -5,7 +5,7 @@
 let basketballTeam = {
   name: "Chicago Bulls",
   numberOfPlayers: 15,
-  basketballTeam: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
+  topPlayers: ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"],
   homeStadium: {
     name: "United Center",
     capacity: 21000,
@@ -19,9 +19,14 @@ let basketballTeam = {
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
+function sortedPopPlayers (basketballTeam) {
+  const sortedPlayers = basketballTeam.topPlayers.sort()
+  return sortedPlayers.forEach(element => {
+    console.log(element)
+  });
+}
 
-// write code here
-console.log(basketballTeam.basketballTeam.sort().join("\n"));
+sortedPopPlayers(basketballTeam)
 
 /* EXPECTED RESULT
 

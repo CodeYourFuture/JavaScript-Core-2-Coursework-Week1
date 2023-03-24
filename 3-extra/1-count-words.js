@@ -25,11 +25,26 @@
 
 function countWords(string) {
   const wordCount = {};
+  const words = string.split(" ")
 
-  // write code here
+if(string === ""){
+  return wordCount
+  }else 
+  for (let i = 0; i < words.length; i++) {
+    if (wordCount[words[i]] === undefined) {
+      wordCount[words[i]] = 1;
+    } else {
+      wordCount[words[i]]++;
+    }
+  }
+
+  // words.forEach(element => {
+  //   wordCount.element = 
+  // });
 
   return wordCount;
 }
+// console.log("I love CodeYourFuture")
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
