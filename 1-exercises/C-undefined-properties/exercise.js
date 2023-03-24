@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+// property "colur" doesn't exist
 
 // Example 2
 function sayHelloToUser(user) {
@@ -26,7 +27,7 @@ let user = {
 };
 
 sayHelloToUser(user);
-
+//the function sayHelloToUser trying eccess to non-existent property in an object "user"
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +37,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//the function getName does'n access to any prorerty inside of an object
