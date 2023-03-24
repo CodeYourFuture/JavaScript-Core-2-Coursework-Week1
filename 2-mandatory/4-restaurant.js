@@ -20,8 +20,32 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+  orderBurger: function (balance) {
+    if (balance - MENU.burger >= 0) {
+      balance -= MENU.burger; 
+    }
+    return balance;
+  },
+  orderFalafel: function (balance) {
+    if (balance - MENU.falafel >= 0) {
+      balance -= MENU.falafel;
+    }
+    return balance;
+  },
 }
+
+// let balance = 6.5;
+// console.log(cashRegister.orderBurger(balance));
+// 0
+// balance = 7.25;
+// console.log(cashRegister.orderFalafel(balance));
+// 0
+// balance = 6.49;
+// console.log(cashRegister.orderBurger(balance));
+// 6.49
+// balance = 7.24;
+// console.log(cashRegister.orderFalafel(balance));
+// 7.24
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

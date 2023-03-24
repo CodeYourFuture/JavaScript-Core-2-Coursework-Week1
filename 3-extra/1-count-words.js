@@ -25,11 +25,43 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
-
+  if (string.length) {
+    string.split(" ").forEach(element => wordCount.hasOwnProperty(element) ? wordCount[element] += 1 : wordCount[element] = 1);
+  }
   return wordCount;
 }
+
+// console.log(countWords("I love CodeYourFuture"));
+// {
+//   I: 1,
+//   love: 1,
+//   CodeYourFuture: 1,
+// }
+
+// console.log(countWords("A string with, some punctuation"));
+// { 
+//   A: 1, 
+//   string: 1, 
+//   "with,": 1, 
+//   some: 1, 
+//   punctuation: 1 
+// }
+// console.log(countWords(""));
+// {}
+// console.log(countWords("you're braver than you believe, stronger than you seem, and smarter than you think"));
+// {
+//   "you're": 1,
+//   and: 1,
+//   "believe,": 1,
+//   braver: 1,
+//   "seem,": 1,
+//   smarter: 1,
+//   stronger: 1,
+//   than: 3,
+//   think: 1,
+//   you: 3,
+// }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`

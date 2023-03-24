@@ -18,8 +18,25 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  
+  // return countryCurrencyCodes.reduce((acc, cv) => (acc[cv[0]] = cv[1], acc), {});
+  
+  // With each loop of the reduce the current value is inserted into the accumulator acc[cv[0]] = cv[1]
+  // , acc is returning the accumulator once the loop ends
+  // { } initialises the accumulator as an empty object
+  // ^ o_O complicated
+
+  return Object.fromEntries(countryCurrencyCodes);
 }
+
+// console.log(createLookup(COUNTRY_CURRENCY_CODES))
+// {
+//   GB: "GBP",
+//   DE: "EUR",
+//   NG: "NGN",
+//   MX: "MXN",
+// }
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
