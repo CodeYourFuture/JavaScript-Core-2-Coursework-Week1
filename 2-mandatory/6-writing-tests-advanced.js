@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -55,12 +55,13 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
-test("the output of formatCourseworkResult is a trainee name", () => {
+test("the output has a trainee name, Xin", () => {
   let trainee = {
     name: "Xin",
     score: 63
   };
-  expect(formatCourseworkResult).toEqual()});
+  expect(formatCourseworkResult).toEqual("Xin");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -69,6 +70,14 @@ test("the output of formatCourseworkResult is a trainee name", () => {
     score: 78
   }
 */
+
+test("the output has trainee name, Mona", () => {
+  let trainee = {
+    name: "Mona",
+    score: 78
+  };
+  expect(formatCourseworkResult).toEqual("Mona");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -80,6 +89,16 @@ test("the output of formatCourseworkResult is a trainee name", () => {
   }
 */
 
+test("the output has trainee name, Ali", () => {
+  let trainee = {
+    name: "Ali",
+    score: 49,
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"]
+  };
+  expect(formatCourseworkResult).toEqual("Ali");
+});
+
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -88,6 +107,14 @@ test("the output of formatCourseworkResult is a trainee name", () => {
   }
 */
 
+test("the output has trainee score", () => {
+  let trainee = {
+    score: 90,
+    age: 29
+  };
+  expect(formatCourseworkResult).toEqual(90);
+});
+
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -95,3 +122,12 @@ test("the output of formatCourseworkResult is a trainee name", () => {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("the output has trainee name, Aman", () => {
+  let trainee = {
+    name: "Aman",
+    subjects: ["HTML", "CSS", "Databases"]
+  };
+  expect(formatCourseworkResult).toEqual("Aman");
+});
+
+
