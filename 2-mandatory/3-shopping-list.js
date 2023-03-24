@@ -20,6 +20,14 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  let result = {name: recipeObj.name , items: []} 
+  let allIHave = pantry.fridgeContents.concat(pantry.cupboardContents) 
+  recipeObj.ingredients.map(eachIng => {
+    if(!allIHave.includes(eachIng))
+    { result.items.push(eachIng) 
+    }
+  }) 
+  return result;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

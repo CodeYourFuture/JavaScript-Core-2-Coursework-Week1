@@ -19,9 +19,10 @@ let dog = {
 
  // complete the code
 
-let dogName= "Spot"; 
-let dogBreed= "Dalmatian";
-console.log(`${dogName} is a ${dogBreed}`);
+/* let dogName= "Spot"; 
+let dogBreed= "Dalmatian"; */
+
+console.log(`${dog.name} is a ${dog.breed}`);
 
 
 /* EXPECTED RESULT
@@ -29,3 +30,18 @@ console.log(`${dogName} is a ${dogBreed}`);
   Spot is a Dalmatian
 
 */
+
+
+/* const house = {
+  livingRoom: true,
+  kitchen: ["fork", "spoon"],
+  swimmingPool: {
+    water: true,
+    degree: 30 
+  },
+  myHouse: function(){
+    console.log(`${this.swimmingPool.degree}`)
+  }
+}
+
+house.myHouse() */
