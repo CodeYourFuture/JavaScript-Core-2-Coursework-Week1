@@ -23,3 +23,17 @@
 */
 
 // write code here
+
+let honeyCake =
+{
+  tittle: "Honey cake",
+  servings: 8,
+  ingredients:["honey", "sugar", "eggs", "flour", "sour cream"]
+}
+console.log(honeyCake.tittle);
+console.log(`Serves: ${honeyCake.servings}`);
+console.log(`Ingredients:`);
+
+for (let i = 0; i<honeyCake.ingredients; i++){
+  console.log(honeyCake.ingredients[i])
+}
