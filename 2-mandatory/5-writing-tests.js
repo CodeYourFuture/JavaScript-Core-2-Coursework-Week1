@@ -17,12 +17,13 @@ function convertScoreToGrade(score) {
     grade = "C";
   } else if (score >= 50) {
     grade = "D";
-  } else {
+  } else { 
     grade = "E";
   }
 
   return grade;
 }
+
 
 /* ======= TESTS - FOR THIS EXERCISE YOU SHOULD MODIFY THEM! =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 5-writing-tests.js`
@@ -35,7 +36,16 @@ function convertScoreToGrade(score) {
   passes.
 */
 test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
+  expect(convertScoreToGrade(83)).toEqual("A");
+});
+test("a score of 83 is grade B", () => {
+  expect(convertScoreToGrade(71)).toEqual("B");
+});
+test("a score of 83 is grade C", () => {
+  expect(convertScoreToGrade(68)).toEqual("C");
+});
+test("a score of 83 is grade D", () => {
+  expect(convertScoreToGrade(55)).toEqual("D");
 });
 
 /*
@@ -44,7 +54,7 @@ test("a score of 83 is grade A", () => {
 */
 
 test.skip("a score of 71 is grade B", () => {
-  /* Remove the .skip above, then write the test body. */
+   expect(convertScoreToGrade(71)).toEqual("B");
 });
 /*
   Write a test that checks a score of 68 is grade C
