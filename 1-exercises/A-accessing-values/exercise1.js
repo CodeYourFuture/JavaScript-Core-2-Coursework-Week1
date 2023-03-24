@@ -5,10 +5,10 @@
 */
 
 let dog = {
-  breed: "Dalmatian",
-  name: "Spot",
-  isHungry: true,
-  happiness: 6
+  breed: "Dalmatian",//string
+  name: "Spot",//string
+  isHungry: true,//boolean
+  happiness: 6//number
 };
 
 /*
@@ -16,13 +16,32 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
 
-console.log(`${dogName} is a ${dogBreed}`);
+ // complete the code
+
+/* let dogName= "Spot"; 
+let dogBreed= "Dalmatian"; */
+
+console.log(`${dog.name} is a ${dog.breed}`);
+
 
 /* EXPECTED RESULT
 
   Spot is a Dalmatian
 
 */
+
+
+/* const house = {
+  livingRoom: true,
+  kitchen: ["fork", "spoon"],
+  swimmingPool: {
+    water: true,
+    degree: 30 
+  },
+  myHouse: function(){
+    console.log(`${this.swimmingPool.degree}`)
+  }
+}
+
+house.myHouse() */

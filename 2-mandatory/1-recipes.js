@@ -22,4 +22,37 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipeCard = [		
+  {
+  title: "Avocado Smoothie",
+  servings: 1,
+  ingredients: ['avocado', 'oat milk', 'peanut butter', 'honey'],
+  },
+  {
+  title: "Oat Smoothie",
+  servings: 1,
+  ingredients: ['oats', 'milk', 'greek yogurt', 'honey'],
+  },
+  {
+  title: "pancakes",
+  servings: 1,
+  ingredients: ['egg', 'butter', 'oat flour', 'oat milk', 'banana'] ,
+  },
+  {
+  title: "carrot soup" ,
+  servings: 1,
+  ingredients: ['chicken soup', 'carrot', 'onion', 'olive oil'],
+  },
+  { 
+    title: "Bravas potatoes",
+    servings: 1,
+    ingredients: ['potatoes', 'paprika', 'garlic', 'parsley'],
+  }];
+
+  recipeCard.forEach((recipe) => {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.servings}`);
+  console.log("Ingredients:")
+  recipe.ingredients.forEach((ingredient) => console.log(ingredient));
+  console.log("\n");
+});
