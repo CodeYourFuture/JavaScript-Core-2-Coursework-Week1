@@ -28,6 +28,7 @@ let cashRegister = {
   orderFalafel: function (balance) {
      return balance >= MENU.falafel ? balance - MENU.falafel : balance;
   }
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
