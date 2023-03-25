@@ -23,3 +23,29 @@
 */
 
 // write code here
+let mole = {
+  serves: "2",
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+
+}
+console.log(mole.ingredients);
+
+let pannaCota = {
+  serves: "4",
+  cookingTime: " 5 min",
+  ingredients: ["milk", "gelatine", "strawberry", "lemon", "sugar", "double cream", "vanilla"],
+}
+console.log(pannaCota.cookingTime);
+
+let byrek={
+  serves:"4",
+  prepTime="30min",
+  cookingTime:"30 min",
+  doughIngredients={
+    ["water", "flour","salt"],
+  },
+  filling=["spinach" ,"spring onions" ,"feta", "salt", "olive oil"],
+
+}
+
+console.log(byrek.filling);
