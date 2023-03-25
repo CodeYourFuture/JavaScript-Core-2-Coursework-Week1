@@ -28,14 +28,14 @@ let mole = {
   ingredients: ["cinnamon", "cumin", "cocoa"],
 
 }
-console.log(mole.ingredients);
+console.log(mole);
 
 let pannaCota = {
   serves: "4",
   cookingTime: " 5 min",
   ingredients: ["milk", "gelatine", "strawberry", "lemon", "sugar", "double cream", "vanilla"],
 }
-console.log(pannaCota.cookingTime);
+console.log(pannaCota);
 
 let byrek={
   serves:"4",
@@ -48,4 +48,4 @@ let byrek={
 
 }
 
-console.log(byrek.filling);
+console.log(byrek);
