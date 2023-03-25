@@ -21,11 +21,7 @@ let pantry = {
 function createShoppingList(recipe) {
   // write code here
   shoppingObj = {};
-  missingItems = recipe.ingredients.filter(
-    (e) =>
-      !pantry.fridgeContents.find((a) => e == a) &&
-      !pantry.cupboardContents.find((a) => e == a)
-  );
+  missingItems = recipe.ingredients.filter((e) => !pantry.fridgeContents.find((a) => e == a) && !pantry.cupboardContents.find((a) => e == a));
   shoppingObj.name = recipe.name;
   shoppingObj.items = missingItems;
   console.log('obj =>',shoppingObj);
