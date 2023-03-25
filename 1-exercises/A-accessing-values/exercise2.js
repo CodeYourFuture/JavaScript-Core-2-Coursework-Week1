@@ -9,7 +9,7 @@ let capitalCities = {
   China: "Beijing",
   Peru: "Lima"
 };
-
+hjhfjfjfgcfgj
 /*
   You have an object, capitalCities, that contains key/value pairs of countries and their capital cities.
   Log the value for the property assigned to the variable myCountry using bracket notation.
