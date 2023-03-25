@@ -20,7 +20,29 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+  shoppingObj = {};
+  missingItems = recipe.ingredients.filter(
+    (e) =>
+      !pantry.fridgeContents.find((a) => e == a) &&
+      !pantry.cupboardContents.find((a) => e == a)
+  );
+  shoppingObj.name = recipe.name;
+  shoppingObj.items = missingItems;
+  console.log('obj =>',shoppingObj);
+
+  return shoppingObj;
 }
+
+// let recipe1 = {
+//   name: "pancakes",
+//   ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+// };
+//   let recipe2 = {
+//     name: "margherita pizza",
+//     ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+//   };
+// createShoppingList(recipe2);
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
