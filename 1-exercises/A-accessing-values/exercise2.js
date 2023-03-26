@@ -7,7 +7,7 @@
 let capitalCities = {
   UnitedKingdom: "London",
   China: "Beijing",
-  Peru: "Lima"
+  Peru: "Lima",
 };
 
 /*

@@ -22,7 +22,6 @@ let basketballTeam = {
 
 // write code here
 
-
 /* EXPECTED RESULT
 
   Dennis Rodman

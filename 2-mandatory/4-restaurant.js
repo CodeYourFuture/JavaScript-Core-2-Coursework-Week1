@@ -21,7 +21,7 @@ const MENU = {
 
 let cashRegister = {
   // write code here
-}
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

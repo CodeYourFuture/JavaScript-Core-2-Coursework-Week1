@@ -9,7 +9,7 @@
 
 let student = {
   // write code here
-}
+};
 
 student.getName("Daniel");
 
