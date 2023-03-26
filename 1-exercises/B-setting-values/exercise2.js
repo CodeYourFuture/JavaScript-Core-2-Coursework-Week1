@@ -6,7 +6,7 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
 };
 
 /*

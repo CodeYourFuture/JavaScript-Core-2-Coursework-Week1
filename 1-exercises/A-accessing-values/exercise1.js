@@ -8,7 +8,7 @@ let dog = {
   breed: "Dalmatian",
   name: "Spot",
   isHungry: true,
-  happiness: 6
+  happiness: 6,
 };
 
 /*
