@@ -21,7 +21,9 @@ let basketballTeam = {
 */
 
 // write code here
-
+let topPlayers = ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"];
+topPlayers.sort();
+console.log(topPlayers);
 
 /* EXPECTED RESULT
 
