@@ -23,3 +23,14 @@
 */
 
 // write code here
+let recipe = {
+  title: "tadkaDal",
+  serves: 2,
+  Ingredients: ['chana dal', 'cinnamon', 'cumin seeds', '1 spoon salt'],
+}
+console.log(recipe.title);
+console.log(recipe.serves);
+console.log(recipe.Ingredients[0]);
+console.log(recipe.Ingredients[1])
+console.log(recipe.Ingredients[2])
+console.log(recipe.Ingredients[3])

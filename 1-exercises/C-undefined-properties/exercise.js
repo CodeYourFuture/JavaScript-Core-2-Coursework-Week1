@@ -16,10 +16,12 @@ let car = {
 
 console.log(car["colour"]);
 
+//it shows undefined because colour (key-value) is not included inside the object.
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+//it will shows undefined because object property firstName is not assign on first place.
 
 let user = {
   name: "Mira"
@@ -36,3 +38,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+//function in the myPet object, the function is not actually returning any value, but only defining a string value without actually returning it. Therefore, when you try to log the result of myPet.getName() to the console, it will return undefined.
