@@ -13,13 +13,27 @@
     - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
+// 2 variables - 1 string for name and 1 array for ingredients
+// compare array of ingredients to arrays in pantry object to find which are missing
+// .push the missing items into new array
+// return name of recipe and array of missing ingredients for the shopping list
+
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 // new array with missing items (missingItems)
-function createShoppingList(recipe) {}
+function createShoppingList(recipe) {
+  let recipeName;
+  let recipeIngredients;
+  let missingItems = [];
+  let recipeObject = recipeName + missingItems;
+
+  //.filter?? to compare ingredients to pantry
+
+  return recipeObject;
+}
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
