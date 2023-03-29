@@ -12,14 +12,17 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  // We do not have a property called colour to the car object ex..   colour:"red"
 };
 
 console.log(car["colour"]);
 
 // Example 2
+
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); 
 }
+//  We do not have a property called firstName to the user object we can chang it to   console.log(`Hello ${user.name}`); 
 
 let user = {
   name: "Mira"
@@ -31,7 +34,8 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    return "My pet's name is Fluffy";
+    // we do noy have return here. the answer should be  return("My pet's name is Fluffy");
   },
 };
 
