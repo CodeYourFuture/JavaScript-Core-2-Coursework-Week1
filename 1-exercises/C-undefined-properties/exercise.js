@@ -15,6 +15,7 @@ let car = {
 };
 
 console.log(car["colour"]);
+//as we did not diclre color for the car//
 
 // Example 2
 function sayHelloToUser(user) {
@@ -27,6 +28,8 @@ let user = {
 
 sayHelloToUser(user);
 
+// as we have 'name' in our object and gave that value but we called 'firstName' in line 22 and they are not match
+
 // Example 3
 let myPet = {
   animal: "Cat",
@@ -36,3 +39,4 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+// there is not return statement in our function//

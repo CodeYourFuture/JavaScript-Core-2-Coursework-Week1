@@ -21,5 +21,17 @@
 
   You should write and log at least 5 recipes
 */
+let favoriteRecipe ={
+  title : 'Mole',
+  servings : 2 ,
+  ingredients :['cinnamon' , 'cumin' , 'cocoa' ]
+};
+
+console.log(favoriteRecipe.title);
+console.log(`Serves: ${favoriteRecipe.servings}`);
+console.log('Ingredients:')
+favoriteRecipe.ingredients.forEach((item) => {
+  console.log(item);
+});
 
 // write code here
