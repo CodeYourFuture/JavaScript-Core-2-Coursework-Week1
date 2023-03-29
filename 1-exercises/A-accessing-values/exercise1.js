@@ -11,8 +11,6 @@ let dog = {
   happiness: 6, // number
 };
 
-
-
 /*
   You can access the values of each property using dot notation.
   Log the name and breed of this dog using dot notation.
@@ -28,4 +26,3 @@ console.log(`${dog.name} is a ${dog.breed}`);
   Spot is a Dalmatian
 
 */
-
