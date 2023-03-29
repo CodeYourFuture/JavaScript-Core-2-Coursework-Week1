@@ -27,22 +27,26 @@ let pantry = {
 
 // new array with missing items (missingItems)
 function createShoppingList(recipe) {
-  let recipeName = recipe.name;
-  let recipeIngredients;
+  let name = recipe.name;
+  let recipeIngredients = recipe.ingredients;
   let missingItems = [];
-  let recipeObject = recipeName + missingItems;
 
   // do I join fridgeContents & cupboardContents and then search that single array?
+  // can I filter through 2 arrays within an object?
+  // let missing = pantry.fridgeContents.filter((ingredient) => {
+  //   return ingredient.pantry === ingredient;
+  // });
 
-  //.filter?? to compare ingredients to pantry
+  for (let item of recipeIngredients) {
+    let isNotInFridge = !pantry.fridgeContents.includes(item);
+    let isNotInCupboard = !pantry.cupboardContents.includes(item);
 
-  let missing = pantry.filter((ingredient) => {
-    return ingredient.pantry === ingredient;
-  });
+    if (isNotInCupboard && isNotInFridge) {
+      missingItems.push(item);
+    }
+  }
 
-  missingItems.push(missing);
-
-  return recipeObject;
+  return { items: missingItems, name };
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
