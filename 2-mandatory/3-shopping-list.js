@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -19,9 +19,18 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
-}
+  let shoppingList = recipe.ingredients.filter(
+    (ingredient) => {
+      return !pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)
 
+    }
+  );
+  return {
+    name : recipe.name,
+    items : shoppingList,
+  }
+
+}
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
