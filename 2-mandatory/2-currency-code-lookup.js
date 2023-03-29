@@ -16,9 +16,12 @@ const COUNTRY_CURRENCY_CODES = [
   ["NG", "NGN"],
   ["MX", "MXN"],
 ];
-
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  const lookup = {};
+  for (const [countryCode, currencyCode] of countryCurrencyCodes) {
+    lookup[countryCode] = currencyCode;
+  }
+  return lookup;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -35,3 +38,7 @@ test("creates country currency code lookup", () => {
     MX: "MXN",
   });
 });
+
+function speak(line) {
+  console.log(`The ${this.type} rabbit says '${line}'`);
+}

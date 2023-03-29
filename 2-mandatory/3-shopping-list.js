@@ -10,18 +10,26 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
-
 let pantry = {
   fridgeContents: ["butter", "milk"],
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  const missingIngredients = recipe.ingredients.filter(
+    (ingredient) =>
+      !pantry.fridgeContents.includes(ingredient) &&
+      !pantry.cupboardContents.includes(ingredient)
+  );
+  return { name: recipe.name, items: missingIngredients };
 }
+// Output: { name: 'Spaghetti Carbonara', items: [ 'bacon' ] }
 
+// Output: { name: "Chocolate Cake", items: ["cocoa powder", "baking powder"] }
+
+ 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
@@ -50,4 +58,5 @@ test("createShoppingList works for margherita pizza recipe", () => {
     name: "margherita pizza",
     items: ["flour", "yeast", "mozarella"]
   });
+
 });
