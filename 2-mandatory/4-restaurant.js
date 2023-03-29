@@ -20,8 +20,23 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
-}
+  orderBurger: function(balance){
+    if (balance >= MENU.burger) {
+      balance = balance - MENU.burger;
+    } else {
+      balance = balance;
+    }
+    return (balance);
+  },
+  orderFalafel: function(balance){
+    if(balance >= MENU.falafel) {
+      balance = balance - MENU.falafel;
+    } else {
+      balance = balance;
+    }
+    return (balance);
+  }
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
@@ -48,3 +63,4 @@ test("orderFalafel will not subtract from balance if balance is too low", () => 
   let balance = 7.24;
   expect(cashRegister.orderFalafel(balance)).toEqual(7.24);
 });
+
