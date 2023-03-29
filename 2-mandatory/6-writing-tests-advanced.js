@@ -60,7 +60,9 @@ test("the output has a trainee name, Xin", () => {
     name: "Xin",
     score: 63
   };
-  expect(formatCourseworkResult).toEqual("Xin");
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Xin's coursework was marked as grade C."
+  );
 });
 
 /*
@@ -76,7 +78,9 @@ test("the output has trainee name, Mona", () => {
     name: "Mona",
     score: 78
   };
-  expect(formatCourseworkResult).toEqual("Mona");
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Mona's coursework was marked as grade B."
+  );
 });
 
 /*
@@ -96,7 +100,9 @@ test("the output has trainee name, Ali", () => {
     age: 33,
     subjects: ["JavaScript", "React", "CSS"]
   };
-  expect(formatCourseworkResult).toEqual("Ali");
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Ali's coursework was marked as grade E."
+  );
 });
 
 /*
@@ -112,7 +118,7 @@ test("the output has trainee score", () => {
     score: 90,
     age: 29
   };
-  expect(formatCourseworkResult).toEqual(90);
+  expect(formatCourseworkResult(trainee)).toEqual("Error: No trainee name!");
 });
 
 /*
@@ -127,7 +133,9 @@ test("the output has trainee name, Aman", () => {
     name: "Aman",
     subjects: ["HTML", "CSS", "Databases"]
   };
-  expect(formatCourseworkResult).toEqual("Aman");
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Error: Coursework percent is not a number!"
+  );
 });
 
 
