@@ -31,5 +31,11 @@ const dalRecipe = {
 
 }
 
-console.log(dalRecipe);
-console.log(dalRecipe.ingredients);
+
+console.log(dalRecipe.title);
+console.log("Serves" + dalRecipe.Serves);  
+console.log("ingredients");
+for(let i = 0; i < dalRecipe.ingredients.length; i++) {
+  console.log(dalRecipe.ingredients[i]); 
+}
+

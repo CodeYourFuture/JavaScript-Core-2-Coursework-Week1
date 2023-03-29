@@ -38,3 +38,7 @@ test("creates country currency code lookup", () => {
     MX: "MXN",
   });
 });
+
+function speak(line) {
+  console.log(`The ${this.type} rabbit says '${line}'`);
+}

@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -28,20 +28,30 @@ function convertScoreToGrade() {
   return grade;
 }
 
+// function formatCourseworkResult(trainee) {
+//   if (!trainee.name) {
+//     return "Error: No trainee name!";
+//   }
+//   let traineeName = trainee.name;
+
+//   if (typeof trainee.score != "number") {
+//     return "Error: Coursework percent is not a number!";
+//   }
+//   let traineeGrade = convertScoreToGrade(trainee.score);
+
+//   return `${traineeName}'s coursework was marked as grade ${traineeGrade}.`;
+// }
+
 function formatCourseworkResult(trainee) {
   if (!trainee.name) {
     return "Error: No trainee name!";
   }
-  let traineeName = trainee.name;
-
-  if (typeof trainee.score != "number") {
+  if (typeof trainee.score !== "number") {
     return "Error: Coursework percent is not a number!";
   }
   let traineeGrade = convertScoreToGrade(trainee.score);
-
-  return `${traineeName}'s coursework was marked as grade ${traineeGrade}.`;
+  return traineeGrade;
 }
-
 /* ======= TESTS - FOR THIS EXERCISE YOU SHOULD MODIFY THEM! =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 6-writing-tests-advanced.js`
 - To run all exercises/tests in the mandatory folder, run `npm test`
@@ -55,6 +65,11 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+test("score more than 60 and less than 70 is C", function() {
+  expect(formatCourseworkResult({name: "Xin", score: 63})).toBe("C");
+});
+
+
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -63,7 +78,9 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
-
+test("score more than 70 and less than 80 is B", function() {
+  expect(formatCourseworkResult({name: "Mona", score: 78})).toBe("B");
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -73,6 +90,9 @@ function formatCourseworkResult(trainee) {
     subjects: ["JavaScript", "React", "CSS"]
   }
 */
+test("trainee with coursework percent less than 50 returns grade E", function() {
+expect(formatCourseworkResult({name: "Ali", score: 49, age: 33, subjects: ["JavaScript", "React", "CSS"]})).toBe("E")
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -81,7 +101,9 @@ function formatCourseworkResult(trainee) {
     age: 29
   }
 */
-
+test("trainee more than 80 and age 29 is grade A", function() {
+  expect(formatCourseworkResult({score: 90, age: 29})).toBe("Error: No trainee name!")
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -89,3 +111,11 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("trainee with missing name returns error message", function() {
+expect(formatCourseworkResult({name: "Aman", subjects: ["HTML", "CSS", "Databases"]})).toBe("Error: Coursework percent is not a number!")
+});
+
+
+
+
+
