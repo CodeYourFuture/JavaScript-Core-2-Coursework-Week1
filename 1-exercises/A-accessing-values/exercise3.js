@@ -20,8 +20,9 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
-
+console.log(basketballTeam.topPlayers[2]);
+console.log(basketballTeam.topPlayers[0]);
+console.log(basketballTeam.topPlayers[1]);
 
 /* EXPECTED RESULT
 
