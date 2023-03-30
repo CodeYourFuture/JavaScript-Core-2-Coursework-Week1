@@ -20,22 +20,24 @@ let pantry = {
 
 function createShoppingList(recipe) {
   let shoppingList = {};
-  shoppingListItems = shoppingList["items"]
   shoppingList.name = recipe.name;
+  shoppingList.items = [];
   for (let element of recipe.ingredients) {
-    if (!pantry.fridgeContents.includes(element)) {
-      shoppingListItems = element
-    } else if (!pantry.cupboardContents.includes(element)) {
-      shoppingListItems = element
+    if (pantry.fridgeContents.includes(element)) {
+      shoppingList.items = shoppingList.items
+    } else if (pantry.cupboardContents.includes(element)) {
+      shoppingList.items = shoppingList.items
+    } else {
+      shoppingList.items.push(element)
     }
   }
   return shoppingList   
   }
-let recipe1 = {
-    name: "pancakes",
-    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
-  };
-console.log(createShoppingList(recipe1));
+// let recipe1 = {
+//     name: "pancakes",
+//     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+//   };
+// console.log(createShoppingList(recipe1));
 
 
 
@@ -46,27 +48,27 @@ console.log(createShoppingList(recipe1));
 - (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-// test("createShoppingList works for pancakes recipe", () => {
-//   let recipe1 = {
-//     name: "pancakes",
-//     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
-//   };
+test("createShoppingList works for pancakes recipe", () => {
+  let recipe1 = {
+    name: "pancakes",
+    ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+  };
 
 
-//   expect(createShoppingList(recipe1)).toEqual({
-//     name: "pancakes",
-//     items: ["flour", "eggs", "vegetable oil"],
-//   });
-// });
+  expect(createShoppingList(recipe1)).toEqual({
+    name: "pancakes",
+    items: ["flour", "eggs", "vegetable oil"],
+  });
+});
 
-// test("createShoppingList works for margherita pizza recipe", () => {
-//   let recipe2 = {
-//     name: "margherita pizza",
-//     ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
-//   };
+test("createShoppingList works for margherita pizza recipe", () => {
+  let recipe2 = {
+    name: "margherita pizza",
+    ingredients: ["flour", "salt", "yeast", "tinned tomatoes", "oregano", "mozarella"],
+  };
 
-//   expect(createShoppingList(recipe2)).toEqual({
-//     name: "margherita pizza",
-//     items: ["flour", "yeast", "mozarella"]
-//   });
-// });
+  expect(createShoppingList(recipe2)).toEqual({
+    name: "margherita pizza",
+    items: ["flour", "yeast", "mozarella"]
+  });
+});
