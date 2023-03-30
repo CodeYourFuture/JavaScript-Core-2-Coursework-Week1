@@ -20,7 +20,15 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
+function bestPlayers() {
+  let topPlayersNames = basketballTeam.topPlayers
+  topPlayersNames =  topPlayersNames.sort()
+  console.log(topPlayersNames)
+
+}
+
+bestPlayers();
+
 
 
 /* EXPECTED RESULT

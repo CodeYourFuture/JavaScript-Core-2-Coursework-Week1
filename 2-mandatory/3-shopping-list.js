@@ -19,8 +19,28 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
-}
+  let shoppingList = {};
+  shoppingList.name = recipe.name;
+  shoppingList.items = [];
+  for (let element of recipe.ingredients) {
+    if (pantry.fridgeContents.includes(element)) {
+      shoppingList.items = shoppingList.items
+    } else if (pantry.cupboardContents.includes(element)) {
+      shoppingList.items = shoppingList.items
+    } else {
+      shoppingList.items.push(element)
+    }
+  }
+  return shoppingList   
+  }
+// let recipe1 = {
+//     name: "pancakes",
+//     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
+//   };
+// console.log(createShoppingList(recipe1));
+
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
@@ -33,6 +53,7 @@ test("createShoppingList works for pancakes recipe", () => {
     name: "pancakes",
     ingredients: ["flour", "salt", "milk", "eggs", "vegetable oil"],
   };
+
 
   expect(createShoppingList(recipe1)).toEqual({
     name: "pancakes",

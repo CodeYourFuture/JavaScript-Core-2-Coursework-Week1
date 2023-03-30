@@ -25,8 +25,8 @@
 
 function countWords(string) {
   const wordCount = {};
-
-  // write code here
+  
+  
 
   return wordCount;
 }

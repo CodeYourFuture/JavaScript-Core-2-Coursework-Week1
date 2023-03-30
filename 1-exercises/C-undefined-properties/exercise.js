@@ -14,25 +14,25 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // the property colour is not defined in the object car
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); 
 }
 
 let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // in this example the object user has the property name and not firstName as used in the function sayHelloToUser
 
 // Example 3
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+    return("My pet's name is Fluffy");
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // the function in the property getName should has a return statement

@@ -18,8 +18,18 @@ const COUNTRY_CURRENCY_CODES = [
 ];
 
 function createLookup(countryCurrencyCodes) {
-  // write code here
+  let key;
+  let value;
+  let countryCurrencyObject = {};
+  for (let i = 0; i < countryCurrencyCodes.length; i++) {
+   key = countryCurrencyCodes[i][0];
+   value = countryCurrencyCodes[i][1];
+  countryCurrencyObject[key] = value;
 }
+return countryCurrencyObject
+}
+
+console.log(createLookup(COUNTRY_CURRENCY_CODES))
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 2-currency-code-lookup.js`
@@ -35,3 +45,4 @@ test("creates country currency code lookup", () => {
     MX: "MXN",
   });
 });
+
