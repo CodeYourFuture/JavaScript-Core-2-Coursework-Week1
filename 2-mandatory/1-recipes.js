@@ -23,3 +23,17 @@
 */
 
 // write code here
+
+const Recipe = {
+  title: "Mole",
+  servings: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"],
+};
+
+console.log(Recipe.title);
+
+console.log(`Serves: ${Recipe.servings}`);
+console.log("Ingredients:");
+console.log(Recipe.ingredients[0]);
+console.log(Recipe.ingredients[1]);
+console.log(Recipe.ingredients[2]);
