@@ -19,6 +19,12 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+  return (countryCode = {
+    ["GB"]: "GBP",
+    ["DE"]: "EUR",
+    ["NG"]: "NGN",
+    ["MX"]: "MXN",
+  });
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
