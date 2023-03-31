@@ -18,16 +18,18 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
+
 function createShoppingList(recipe) {
   let shoppingList = {};
   shoppingList.items =[];
   shoppingList.name = recipe.name
-  // check ungredients
+  // check ingredients
   for (let ingredient of recipe.ingredients)
   {
     
-    if (pantry.fridgeContents.includes(ingredient)=== false 
-    && pantry.cupboardContents.includes(ingredient)=== false) {
+    if ( !pantry.fridgeContents.includes(ingredient) 
+    && !pantry.cupboardContents.includes(ingredient)) {
     
       shoppingList.items.push(ingredient);
       
