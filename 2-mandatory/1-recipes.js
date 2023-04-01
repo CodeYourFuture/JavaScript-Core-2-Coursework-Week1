@@ -22,4 +22,40 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let coffee = {
+  title: "cup of coffee",
+  serving: 1,
+  ingredients: ["coffee", "sugar", "hot water", "milk"],
+};
+
+let tea = {
+  title: "cup of tea",
+  serving: 1,
+  ingredients: ["tea bag", "hot water", "honey"],
+};
+
+let glassOfWater = {
+  title: "water",
+  serving: 1,
+  ingredients: ["water", "cup"],
+};
+
+let boiledEgg = {
+  title: "egg",
+  serving: 1,
+  ingredients: ["egg", "boiling water"],
+};
+
+let bread = {
+  title: "bread",
+  serving: 1,
+  ingredients: ["flour", "water"],
+};
+
+
+
+console.log([coffee])
+console.log([tea])
+console.log([glassOfWater])
+console.log([boiledEgg])
+console.log([bread])
