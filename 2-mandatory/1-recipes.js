@@ -24,28 +24,47 @@
 
 // write code here
 let mole = {
+  title: "Mole",
   serves: "2",
   ingredients: ["cinnamon", "cumin", "cocoa"],
 
 }
-console.log(mole);
+console.log(mole.title);
+console.log(`Serves: ${mole.serves}`);
+console.log("Ingredients:")
+mole.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
+
 
 let pannaCota = {
+  title: "Panna Cotta",
   serves: "4",
   cookingTime: " 5 min",
   ingredients: ["milk", "gelatine", "strawberry", "lemon", "sugar", "double cream", "vanilla"],
 }
-console.log(pannaCota);
+console.log(pannaCotta.title);
+console.log(`Serves: ${pannaCotta.serves}`);
+console.log("Ingredients:")
+pannaCotta.ingredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
 
-let byrek={
-  serves:"4",
+let byrek = {
+  title: "Byrek",
+  serves: "4",
   prepTime="30min",
-  cookingTime:"30 min",
+  cookingTime: "30 min",
   doughIngredients={
-    ["water", "flour","salt"],
+    ["water", "flour", "salt"],
   },
-  filling=["spinach" ,"spring onions" ,"feta", "salt", "olive oil"],
+  filling=["spinach", "spring onions", "feta", "salt", "olive oil"],
 
 }
 
-console.log(byrek);
+console.log(byrek.title);
+console.log(`Serves: ${byrek.serves}`);
+console.log("Ingredients:")
+byrek.doughIngredients.forEach((ingredient) => {
+  console.log(ingredient);
+});
