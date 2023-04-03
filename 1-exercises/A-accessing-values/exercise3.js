@@ -21,6 +21,14 @@ let basketballTeam = {
 */
 
 // write code here
+basketballTeam = basketballTeam["topPlayers"]; // using bracket notation => objectName["propertyName"]
+console.log(basketballTeam);
+
+basketballTeam.sort();
+console.log(basketballTeam); 
+
+let sortedbasketballTeam= [...basketballTeam].sort();
+console.log(sortedbasketballTeam); 
 
 
 /* EXPECTED RESULT

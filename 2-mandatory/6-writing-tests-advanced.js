@@ -50,11 +50,13 @@ function formatCourseworkResult(trainee) {
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
-  {
-    name: "Xin",
-    score: 63
-  }
-*/
+  */
+    test("formatCourseworkResult returns correct output for trainee with score 63", () => {
+const trainee = {
+  name: "Xin",
+  score: 63,
+};
+    });
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -63,7 +65,12 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
-
+test("formatCourseworkResult returns correct output for trainee with score 63", () => {
+  const trainee = {
+    name: "Mona",
+    score: 78,
+  };
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {

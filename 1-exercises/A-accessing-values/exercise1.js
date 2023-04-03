@@ -16,8 +16,8 @@ let dog = {
   Log the name and breed of this dog using dot notation.
 */
 
-let dogName; // complete the code
-let dogBreed; // complete the code
+let dogName = dog.name; //dot notation using objectName.propertyName
+let dogBreed = dog.breed; //dot notation using objectName.propertyName
 
 console.log(`${dogName} is a ${dogBreed}`);
 

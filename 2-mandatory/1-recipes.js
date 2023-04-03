@@ -21,5 +21,22 @@
 
   You should write and log at least 5 recipes
 */
-
-// write code here
+const recipes = [
+  {
+    title: "Mole",
+    servings: 2,
+    ingredients: ["cinnamon", "cumin", "cocoa"]
+  },
+  {
+     title: "Pancakes",
+    servings: 4,
+    ingredients: ["flour", "sugar", "baking powder", "salt", "milk", "eggs", "butter"]
+  }];
+  recipes.forEach(recipe => {
+  console.log(recipe.title);
+  console.log(`Serves: ${recipe.servings}`);
+  console.log("Ingredients:");
+  recipe.ingredients.forEach(ingredient => {
+    console.log(ingredient);
+  });
+  });
