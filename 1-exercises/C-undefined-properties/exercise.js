@@ -14,7 +14,7 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); // The colour property doesn't exist in car object literal
 
 // Example 2
 function sayHelloToUser(user) {
@@ -25,7 +25,7 @@ let user = {
   name: "Mira"
 };
 
-sayHelloToUser(user);
+sayHelloToUser(user); // firstName doesn't exist in the passed argument user object and the function is not have return keyword
 
 // Example 3
 let myPet = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); // Function getName() doest return anything, hence we get undefined
