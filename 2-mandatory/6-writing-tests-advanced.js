@@ -55,6 +55,12 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+test("Xin's grade is C ", () => {
+  let trainee = {
+    name: "Xin",
+    score: 63,
+  };
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -63,6 +69,13 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
+
+test("Mona's grade is B ", () => {
+  let trainee = {
+    name: "Mona",
+    score: 78,
+  };
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -74,6 +87,15 @@ function formatCourseworkResult(trainee) {
   }
 */
 
+test("Ali's grade is E", () => {
+  let trainee = {
+    name: "Ali",
+    score: 49,
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"],
+  };
+});
+
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -82,6 +104,13 @@ function formatCourseworkResult(trainee) {
   }
 */
 
+test("There is no trainee name , the grade is A", () => {
+  let trainee = {
+    score: 90,
+    age: 29,
+  };
+});
+
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -89,3 +118,9 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("Aman ,there is no trainee score", () => {
+  let trainee = {
+    name: "Aman",
+    subjects: ["HTML", "CSS", "Databases"],
+  };
+});

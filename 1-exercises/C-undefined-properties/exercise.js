@@ -16,23 +16,29 @@ let car = {
 
 console.log(car["colour"]);
 
+//There is no (car : color) as an object properties.
+
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
 
 let user = {
-  name: "Mira"
+  name: "Mira",
 };
 
 sayHelloToUser(user);
 
+//The object properties is name not firstName.
+
 // Example 3
 let myPet = {
   animal: "Cat",
-  getName: function() {
+  getName: function () {
     "My pet's name is Fluffy";
   },
 };
 
 console.log(myPet.getName());
+
+// the getName function does not have return.
