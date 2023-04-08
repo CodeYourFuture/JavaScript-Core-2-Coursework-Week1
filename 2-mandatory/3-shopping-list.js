@@ -19,8 +19,27 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let missingIngredients = [];
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    let ingredient = recipe.ingredients[i];
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)) {
+      missingIngredients.push(ingredient); 
+    }
+  }
+  let shoppingList = {
+    name: recipe.name,
+    items: missingIngredients
+  };
+  return shoppingList;
 }
+let recipe = {
+  name: "Spaghetti Bolognese",
+  ingredients: ["spaghetti", "minced beef", "onion", "garlic", "tomato sauce", "herbs", "cheese"]
+};
+
+let shoppingList = createShoppingList(recipe);
+console.log(shoppingList);
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

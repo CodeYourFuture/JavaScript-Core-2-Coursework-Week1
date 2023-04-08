@@ -23,13 +23,41 @@
     - Setting values on an object
 */
 
+// function countWords(string) {
+//   const wordCount = {};
+//   const words = string.toLowerCase().split(" ");
+//   words.forEach(word => {
+//     if (!wordCount.hasOwnProperty(word)) {
+//       wordCount[word] = 1;
+//     } else {
+//       wordCount[word] ++;
+//     }
+//   });
+
+//   return wordCount;
+// }
+
+// below is the solution : 
+
 function countWords(string) {
   const wordCount = {};
 
-  // write code here
+  let arrayOfWords = string.split(" ");
+
+  arrayOfWords.forEach((word) => {
+    if (word !== "") {
+      if (wordCount.hasOwnProperty(word)) {
+        wordCount[word] += 1;
+      } else {
+        wordCount[word] = 1;
+      }
+    }
+  });
 
   return wordCount;
 }
+ 
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`

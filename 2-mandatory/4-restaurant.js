@@ -13,15 +13,30 @@
 
   Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
 */
-
 const MENU = {
   burger: 6.5,
   falafel: 7.25,
 };
 
 let cashRegister = {
-  // write code here
-}
+  // method to order a burger
+  orderBurger: function(balance) {
+    if (balance >= MENU.burger) {
+      balance -= MENU.burger;
+    }
+    return balance;
+  },
+
+  // method to order a falafel
+  orderFalafel: function(balance) {
+    if (balance >= MENU.falafel) {
+      balance -= MENU.falafel;
+    }
+    return balance;
+  }
+};
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`
