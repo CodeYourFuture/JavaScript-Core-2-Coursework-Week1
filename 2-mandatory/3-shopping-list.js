@@ -21,12 +21,16 @@ let pantry = {
 function createShoppingList(recipe) {
   const missingFromThePantry = {};
   missingFromThePantry.name = recipe.name;
-  missingFromThePantry.ingredients = [];
-    missingFromThePantry.ingredients = recipe.ingredients.filter ((Ingredient) => {
+  missingFromThePantry.items = [];
+    missingFromThePantry.items = recipe.ingredients.filter ((Ingredient) => {
     if (!pantry.fridgeContents.includes(Ingredient) && !pantry.cupboardContents.includes(Ingredient)){
-      return missingFromThePantry;
+      return true;
+    }
+    else {
+      return false
     }
   })
+  return missingFromThePantry
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
