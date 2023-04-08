@@ -22,6 +22,18 @@ let basketballTeam = {
 
 // write code here
 
+// Access the top players array
+let topPlayers = basketballTeam.topPlayers;
+
+// Sort the top players in alphabetical order
+topPlayers.sort();
+
+// Log the name of each player on a new line
+console.log("Top Players:");
+topPlayers.forEach(player => {
+  console.log(player);
+});
+
 
 /* EXPECTED RESULT
 
