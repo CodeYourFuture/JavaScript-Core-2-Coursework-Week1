@@ -39,7 +39,7 @@
 
 // below is the solution : 
 
- function countWords(string) {
+function countWords(string) {
   const wordCount = {};
 
   let arrayOfWords = string.split(" ");
