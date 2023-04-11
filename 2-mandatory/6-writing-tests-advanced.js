@@ -55,6 +55,14 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
+test("Xin's score returns the correct sentence", () => {
+  expect(
+    formatCourseworkResult({
+      name: "Xin",
+      score: 63,
+    })
+  ).toEqual("Xin's coursework was marked as grade C.");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -63,7 +71,14 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
-
+test("Mona's score returns the correct sentence", () => {
+  expect(
+    formatCourseworkResult({
+      name: "Mona",
+      score: 78,
+    })
+  ).toEqual("Mona's coursework was marked as grade B.");
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -73,6 +88,16 @@ function formatCourseworkResult(trainee) {
     subjects: ["JavaScript", "React", "CSS"]
   }
 */
+test("Ali's score returns the correct sentence", () => {
+  expect(
+    formatCourseworkResult({
+    name: "Ali",
+    score: 49,
+    age: 33,
+    subjects: ["JavaScript", "React", "CSS"]
+    })
+  ).toEqual("Ali's coursework was marked as grade D.");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -81,6 +106,14 @@ function formatCourseworkResult(trainee) {
     age: 29
   }
 */
+test("test object with no name", () => {
+  let trainee = {
+    score: 90,
+    age: 29,
+  };
+
+  expect(formatCourseworkResult(trainee)).toEqual("Error: No trainee name!");
+});
 
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
@@ -89,3 +122,11 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("test object with no score", () => {
+  let trainee = {
+    name: "Aman",
+    subjects: ["HTML", "CSS", "Databases"]
+  };
+
+  expect(formatCourseworkResult(trainee)).toEqual("Error: No trainee score!");
+});
