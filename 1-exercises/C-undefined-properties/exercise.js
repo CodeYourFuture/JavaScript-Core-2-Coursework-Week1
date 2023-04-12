@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);//there is not colour property in the car object
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`);//there is name not firstName
 }
 
 let user = {
@@ -32,7 +32,10 @@ let myPet = {
   animal: "Cat",
   getName: function() {
     "My pet's name is Fluffy";
+   // return myPet
   },
+
 };
 
 console.log(myPet.getName());
+//the function does not have return
