@@ -23,3 +23,35 @@
 */
 
 // write code here
+const favoriteRecipes = {
+  recipeFirst : {
+    title : "Cake",
+    servings : 4,
+    ingredients : ['coca','suger','egg','vanilia', 'flour']
+  },
+  recipeSecond :{
+    title : "Ash",
+    servings : 6,
+    ingredients : ['nodel','salt','bean','vegtable','water']
+  },
+  recipeThird :{
+    title : "Nimroo",
+    servings : 2,
+    ingredients : ['egg' ,'salt','oil']
+  },
+  recipeForth :{
+    title : "Ghorme Sabzi",
+    servings : 6,
+    ingredients : ['vegtable','salt','onion','bean','meat']
+  },
+  recipeFifth :{
+    title : "Salad",
+    servings : 5,
+    ingredients : ['tomato','maionez','cocamber','onion','lemon jouice']
+  }
+}
+console.log(favoriteRecipes.recipeFirst);
+console.log(favoriteRecipes.recipeSecond);
+console.log(favoriteRecipes.recipeThird);
+console.log(favoriteRecipes.recipeForth);
+console.log(favoriteRecipes.recipeFifth);

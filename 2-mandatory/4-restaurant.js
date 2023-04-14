@@ -19,8 +19,19 @@ const MENU = {
   falafel: 7.25,
 };
 
-let cashRegister = {
-  // write code here
+const cashRegister = {
+  orderBurger : function(balance){
+    if(balance >= MENU.burger){
+      balance = balance - MENU.burger
+    }
+    return balance;
+  },
+  orderFalafel : function(balance){
+    if(balance >= MENU.falafel){
+      balance = balance - MENU.falafel
+    }
+    return balance;
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
