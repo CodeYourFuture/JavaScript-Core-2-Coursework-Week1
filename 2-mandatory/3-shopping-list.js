@@ -19,7 +19,14 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+  let shoppingList = {};
+  shoppingList.name = recipe.name;
+  shoppingList.items = [];
+  for (let element of recipe.ingredients){
+    if(!(pantry.fridgeContents.includes(element) || pantry.cupboardContents.includes(element)))
+    {shoppingList.items.push(element)}
+  };
+  return shoppingList;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
