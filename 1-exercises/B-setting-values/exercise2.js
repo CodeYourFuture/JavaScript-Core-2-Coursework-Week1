@@ -26,6 +26,8 @@ let student = {
 */
 
 // write code here
+student['attendance'] = 90;
+if (student['attendance'] >= 90 && student['examScore']) student['hasPassed'] = true;
 
 console.log(student);
 
