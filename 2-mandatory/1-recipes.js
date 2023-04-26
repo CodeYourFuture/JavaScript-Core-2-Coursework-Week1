@@ -37,6 +37,11 @@ let banoffee = {
 console.log(banoffee.title);
 console.log("Serves: " + banoffee.servings);
 console.log("Ingredients:");
-for (let i = 0; i < banoffee.ingredients.length; i++) {
-  console.log(banoffee.ingredients[i]);
-}
+// for (let i = 0; i < banoffee.ingredients.length; i++) {
+//   console.log(banoffee.ingredients[i]);
+// }
+// review solution 
+
+banoffee.ingredients.forEach((el) => {
+  console.log(el);
+});
