@@ -18,9 +18,26 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
+
+
 function createShoppingList(recipe) {
-  // write code here
-}
+  let shoppingList = {};
+  shoppingList.items =[];
+  shoppingList.name = recipe.name
+  // check ingredients
+  for (let ingredient of recipe.ingredients)
+  {
+    
+    if ( !pantry.fridgeContents.includes(ingredient) 
+    && !pantry.cupboardContents.includes(ingredient)) {
+    
+      shoppingList.items.push(ingredient);
+      
+    }
+  }
+  return shoppingList;
+};
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
