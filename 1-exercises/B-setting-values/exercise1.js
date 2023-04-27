@@ -23,7 +23,7 @@ let capitalCities = {
 */
 
 // write code here
-
+capitalCities.UnitedKingdom.population = 8980000,
 console.log(capitalCities);
 
 /* EXPECTED RESULT
