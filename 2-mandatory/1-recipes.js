@@ -21,5 +21,18 @@
 
   You should write and log at least 5 recipes
 */
+let TheRecipeCard = {}
+TheRecipeCard.title = "Items mix :D"
+TheRecipeCard.Serves = 2;
 
-// write code here
+
+TheRecipeCard.Ingredients = []
+
+let ingr = ["item1","item2","item3","item4"]
+
+ingr.forEach(element => {
+  TheRecipeCard.Ingredients.push(element)
+})
+console.log(TheRecipeCard.title)
+console.log(`Serves: ${TheRecipeCard.Serves}`)
+TheRecipeCard.Ingredients.map(property => {console.log(property)})
