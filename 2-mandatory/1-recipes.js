@@ -21,7 +21,7 @@
 
   You should write and log at least 5 recipes
 */
-let TheRecipeCard = new Object;
+let TheRecipeCard = {}
 TheRecipeCard.title = "Items mix :D"
 TheRecipeCard.Serves = 2;
 
@@ -30,10 +30,9 @@ TheRecipeCard.Ingredients = []
 
 let ingr = ["item1","item2","item3","item4"]
 
-ingr.forEach(elment => {
-  TheRecipeCard.Ingredients.push(elment)
+ingr.forEach(element => {
+  TheRecipeCard.Ingredients.push(element)
 })
 console.log(TheRecipeCard.title)
 console.log(`Serves: ${TheRecipeCard.Serves}`)
-console.log(TheRecipeCard.Ingredients.forEach(property => {console.log(property)}))
-//why do I have underfind for 5th element wich doesn't exist ? :<
+TheRecipeCard.Ingredients.map(property => {console.log(property)})

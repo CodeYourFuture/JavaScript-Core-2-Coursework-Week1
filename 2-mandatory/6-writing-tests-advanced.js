@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -34,7 +34,7 @@ function formatCourseworkResult(trainee) {
   }
   let traineeName = trainee.name;
 
-  if (typeof trainee.score != "number") {
+  if (typeof trainee.score !== "number") {
     return "Error: Coursework percent is not a number!";
   }
   let traineeGrade = convertScoreToGrade(trainee.score);

@@ -27,6 +27,8 @@ capitalCities.China.population = 21500000;
 capitalCities.Peru ={};
 capitalCities.Peru.name = "Lima";
 capitalCities.Peru.population = 9750000;
+
+// capitalCities.peru = { name: "lima", population: 9750000}
 console.log(capitalCities);
 
 /* EXPECTED RESULT
