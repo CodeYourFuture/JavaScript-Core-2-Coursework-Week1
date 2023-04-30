@@ -24,10 +24,19 @@
 */
 
 function countWords(string) {
+  if (string ==='') {
+    return{};
+  }
   const wordCount = {};
 
   // write code here
-
+  string.split(' ').forEach((word) => {
+    if(wordCount[word] >= 1) {
+  wordCount[word] ++;
+    }else{
+  wordCount[word] = 1;
+    }
+  });
   return wordCount;
 }
 
