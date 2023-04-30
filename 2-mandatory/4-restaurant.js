@@ -25,12 +25,13 @@ let cashRegister = {
       balance -= MENU.burger;
     }
     return balance;
-  }
+  },
 
   orderFalafel(balance) {
-    if (balance >=MENU.falafel) {
-      balance -=MENU.falafel;
+    if (balance >= MENU.falafel) {
+      balance -= MENU.falafel;
     }
+    return balance;
   }
 }
 

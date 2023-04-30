@@ -19,7 +19,7 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
 const lookup ={}
-countryCurrencyCodes.forEch(([country, currency]) => { 
+countryCurrencyCodes.forEach(([country, currency]) => { 
   lookup[country] = currency;
   });
   return lookup;
