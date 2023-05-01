@@ -7,11 +7,14 @@
   Add a method to the cashRegister object
     - the method name should be orderBurger
     - the method should take one argument called balance, which is a number
-    - the method should check if there is enough money in the balance to order a burger (i.e. will the balance be greater than or equal to 0 if the burger is ordered)
-    - if there is enough money in the balance to order the burger, then the price of the burger should be subtracted from the balance
+    - the method should check if there is enough money in the balance to order a burger (i.e. will the balance be greater 
+      than or equal to 0 if the burger is ordered)
+    - if there is enough money in the balance to order the burger, then the price of the burger should be subtracted from 
+    the balance
     - the method should return the new balance
 
-  Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way as ordering a burger.
+  Add another method to the cashRegister object which is called orderFalafel and handles ordering a falafel, in the same way 
+  as ordering a burger.
 */
 
 const MENU = {
@@ -20,8 +23,21 @@ const MENU = {
 };
 
 let cashRegister = {
+  orderBurger: (balance) => {
+    if (balance >= MENU.burger) {
+      return balance - MENU.burger;
+    } else return balance;
+  },
+
+  orderFalafel: (balance) => {
+    if (balance >= MENU.falafel) {
+      return balance - MENU.falafel;
+    } else if (balance < MENU.falafel) {
+      return balance;
+    }
+  },
   // write code here
-}
+};
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 4-restaurant.js`

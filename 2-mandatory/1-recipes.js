@@ -37,6 +37,6 @@ let recipeSmoothie ={
   serves: 2,
   ingredients: ["banana","Strawberry","oat milk","ice"],
 }
-console.log(recipeSmoothie)
+
 
 // write code here
