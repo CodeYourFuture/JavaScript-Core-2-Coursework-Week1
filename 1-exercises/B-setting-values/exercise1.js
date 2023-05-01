@@ -10,7 +10,9 @@ let capitalCities = {
   },
   China: {
     name: "Beijing",
-  }
+    population: 21500000,
+  },
+  Peru: { name: "Lima", population: 9750000 },
 };
 
 /*
@@ -23,8 +25,7 @@ let capitalCities = {
 */
 
 // write code here
-
-console.log(capitalCities);
+(capitalCities.UnitedKingdom.population = 8980000), console.log(capitalCities);
 
 /* EXPECTED RESULT
 

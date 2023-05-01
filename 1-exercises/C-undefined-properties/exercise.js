@@ -15,10 +15,12 @@ let car = {
 };
 
 console.log(car["colour"]);
+//we don't have any colour key.
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
+  //we don't have the firstName key - that's why it is undefined.
 }
 
 let user = {
@@ -34,5 +36,6 @@ let myPet = {
     "My pet's name is Fluffy";
   },
 };
+//It is undefined because the method hasn't taken any argument
 
 console.log(myPet.getName());

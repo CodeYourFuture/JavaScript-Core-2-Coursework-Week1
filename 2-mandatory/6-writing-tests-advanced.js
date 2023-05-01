@@ -10,7 +10,7 @@
   trainee has completed.
 */
 
-function convertScoreToGrade() {
+function convertScoreToGrade(score) {
   let grade = null;
 
   if (score >= 80) {
@@ -39,7 +39,7 @@ function formatCourseworkResult(trainee) {
   }
   let traineeGrade = convertScoreToGrade(trainee.score);
 
-  return `${traineeName}'s coursework was marked as grade ${traineeGrade}.`;
+  return `${traineeName}'s coursework was marked as grade ${traineeGrade}`;
 }
 
 /* ======= TESTS - FOR THIS EXERCISE YOU SHOULD MODIFY THEM! =====
@@ -55,7 +55,15 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
-
+test("Xin with score 63", () => {
+  let trainee = {
+    name: "Xin",
+    score: 63,
+  };
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Xin's coursework was marked as grade C"
+  );
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -63,7 +71,15 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
-
+test("Mona with score 78", () => {
+let trainee = {
+  name: "Mona",
+  score: 78,
+};
+expect(formatCourseworkResult(trainee)).toEqual(
+  "Mona's coursework was marked as grade B"
+);
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -73,7 +89,17 @@ function formatCourseworkResult(trainee) {
     subjects: ["JavaScript", "React", "CSS"]
   }
 */
-
+test("Ali with score 49 age 33 and Javascript, React and CSS", () => {
+  let trainee = {
+    name: "Ali",
+    score: 49,
+    age: 33,
+    subjects: ["Javascript", "React", "CSS"],
+  };
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Ali's coursework was marked as grade E"
+  );
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -81,7 +107,15 @@ function formatCourseworkResult(trainee) {
     age: 29
   }
 */
-
+test("With score of 90 and age of 20", () => {
+ let trainee = {
+  score: 90,
+  age: 20,
+};
+expect(formatCourseworkResult(trainee)).toEqual(
+  "Error: No trainee name!"
+);
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -89,3 +123,12 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+test("Aman with subjects of HTML, CSS and Databases", () =>{
+  let trainee = {
+    name: "Aman",
+    subjects: ["HTML", "CSS", "Databases",]
+  };
+  expect(formatCourseworkResult(trainee)).toEqual(
+    "Aman with HTML, CSS and Databases"
+  );
+});
