@@ -15,11 +15,14 @@ let car = {
 };
 
 console.log(car["colour"]);
+// we have console logged colour which is not a property in the object.
+
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+// we did not have a property called firstName
 
 let user = {
   name: "Mira"

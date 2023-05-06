@@ -19,6 +19,14 @@ const COUNTRY_CURRENCY_CODES = [
 
 function createLookup(countryCurrencyCodes) {
   // write code here
+let aCountryCurrencyCode = {}
+
+for (const countryCurrencyCode of countryCurrencyCodes) {
+  let countryCode = countryCurrencyCodes[0];
+  let currencyCode = countryCurrencyCodes[1];
+    aCountryCurrencyCode[countryCode] = currencyCode;
+}
+return aCountryCurrencyCode;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
