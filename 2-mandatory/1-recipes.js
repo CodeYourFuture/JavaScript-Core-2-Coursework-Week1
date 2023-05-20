@@ -23,3 +23,19 @@
 */
 
 // write code here
+let banoffee = {
+  title:"Banoffee",
+  servings: 7 ,
+  ingredients: ["bananas","biscuits","butter","condensed milk","sugar","cream"]
+  
+
+}
+
+console.log(banoffee.title)
+console.log("Serves: " + banoffee.servings)
+console.log("Ingredients:")
+
+for (let i = 0; i<banoffee.ingredients.length;i++){
+  console.log(banoffee.ingredients[i])
+}
+

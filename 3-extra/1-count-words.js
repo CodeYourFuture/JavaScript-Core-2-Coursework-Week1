@@ -23,6 +23,7 @@
     - Setting values on an object
 */
 
+<<<<<<< HEAD
 function countWords(str) {
   let array = str.split(" ");
   const counts = {};
@@ -35,6 +36,30 @@ function countWords(str) {
     }
   }
   return counts;
+=======
+function countWords(string) {
+  // write code here
+
+  let strLower = string.toLowerCase();
+  const wordCount = {};
+
+  // split the string into an array of words
+  const words = strLower.split(" ");
+
+  // loop through each word
+  words.forEach((word) => {
+    // check if the word already exists in the object
+    if (wordCount[word]) {
+      // if it does, increment the value of that key
+      wordCount[word]++;
+    } else {
+      // if it doesn't, add it to the object with a value of 1
+      wordCount[word] = 1;
+    }
+  });
+
+  return wordCount;
+>>>>>>> 26cab01f55b1033f71c12f38340eba5bac196f45
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
