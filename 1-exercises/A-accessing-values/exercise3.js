@@ -19,9 +19,11 @@ let basketballTeam = {
     - sorts the top players in alphabetical order
     - console.logs the name of each player on a new line
 */
-
+topGuyList = basketballTeam.topPlayers.sort();
+for (let i = 0; i < topGuyList.length; i++) {
+  console.log(topGuyList[i]);
+}
 // write code here
-
 
 /* EXPECTED RESULT
 
