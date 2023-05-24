@@ -23,3 +23,13 @@
 */
 
 // write code here
+let recipe={
+  title: "adana kebab",
+
+  Serves: 2,
+  Ingredients:["cinnamon", "cumin" ,"cocoa"]
+
+}
+console.log(recipe.title);
+console.log(`Serves: ${recipe.Serves}`);
+console.log(recipe.Ingredients.join("/n"));

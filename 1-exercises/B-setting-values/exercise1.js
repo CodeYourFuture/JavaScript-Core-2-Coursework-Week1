@@ -13,6 +13,10 @@ let capitalCities = {
   }
 };
 
+
+capitalCities.UnitedKingdom.population=898000;
+capitalCities.China.population=21500000;
+capitalCities.Peru = { name: "Lima", population: 9750000 };
 /*
   Using dot notation:
     - Change the value of UnitedKingdom's capital city population to 8980000.

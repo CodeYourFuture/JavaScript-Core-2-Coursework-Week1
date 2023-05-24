@@ -25,11 +25,40 @@
 
 function countWords(string) {
   const wordCount = {};
-
   // write code here
+  if (string == "") { // got error: ✕ Empty string, expect(countWords("")).toEqual({});
+    //return wordCount;
+    //wordCount;
+  } else {
+    const strArr = string.split(" ");
+    const strArrLen = [];
 
+    for (let i = 0; i < strArr.length; i++) {
+      strArrLen[i] = 1;
+      for (let j = 0; j < strArr.length; j++) {
+        if (i !== j && strArr[i] == strArr[j]) {
+          strArrLen[i] += 1;
+        }
+      }
+    }
+    for (let i = 0; i < strArr.length; i++) {
+      wordCount[strArr[i]] = strArrLen[i];
+    }
+  }
   return wordCount;
 }
+
+/*     if (!wordCount.hasOwnProperty(wordCount[strArr[i]])) {
+      wordCount[strArr[i]] = 1;
+    } else {
+      wordCount[strArr[i]] = wordCount[strArr[i]] + 1;
+    } */
+
+// what i learnt from this
+// objects dont dublicate key values that have same name
+
+//on every single steps of loop declare 1 the current property,
+//then in a if statemant use hasownproperty and ++ to make it +1 if there is one more
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm run extra-tests`
@@ -46,9 +75,13 @@ test("Code works for a small string", () => {
 });
 
 test("A string with, some punctuation", () => {
-  expect(countWords("A string with, some punctuation")).toEqual(
-    { A: 1, string: 1, "with,": 1, some: 1, punctuation: 1 }
-  );
+  expect(countWords("A string with, some punctuation")).toEqual({
+    A: 1,
+    string: 1,
+    "with,": 1,
+    some: 1,
+    punctuation: 1,
+  });
 });
 
 test("Empty string", () => {
@@ -56,7 +89,11 @@ test("Empty string", () => {
 });
 
 test("Example task string", () => {
-  expect(countWords("you're braver than you believe, stronger than you seem, and smarter than you think")).toEqual({
+  expect(
+    countWords(
+      "you're braver than you believe, stronger than you seem, and smarter than you think"
+    )
+  ).toEqual({
     "you're": 1,
     and: 1,
     "believe,": 1,
