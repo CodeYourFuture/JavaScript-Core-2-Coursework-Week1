@@ -10,7 +10,7 @@
 
   The createShoppingList function should return an object with two properties:
     - "name" of the recipe, which is a string,
-    - "items", which is an arry of the missing ingredients that need to be on the shopping list
+    - "items", which is an array of the missing ingredients that need to be on the shopping list
 */
 
 let pantry = {
@@ -20,6 +20,21 @@ let pantry = {
 
 function createShoppingList(recipe) {
   // write code here
+let missingIngredients = {};
+for (let i = 0; i < recipe.ingredients.length; i++) {
+  let ingredient = recipe.ingredients[i];
+
+  if (
+    pantry.fridgeContents.indexOf(ingredient) === -1 &&
+    pantry.cupboardContents.indexOf(ingredient) === -1
+  ) {
+    missingIngredients.push(ingredient);
+  }
+} return {
+  name: recipe.name,
+  items: missingIngredients,
+};
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
