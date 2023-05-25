@@ -55,7 +55,12 @@ function formatCourseworkResult(trainee) {
     score: 63
   }
 */
-
+it("returns the expected string for a trainee with a score of 63", () => {
+  const trainee = { name: "Xin", score: 63 };
+  const expected = "Xin's coursework was marked as grade C.";
+  const result = formatCourseworkResult(trainee);
+  expect(result).toEqual(expected);
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -63,7 +68,12 @@ function formatCourseworkResult(trainee) {
     score: 78
   }
 */
-
+it("returns the expected string for a trainee with a score of 78", () => {
+  const trainee = { name: "Mona", score: 78 };
+  const expected = "Mona's coursework was marked as grade B.";
+  const result = formatCourseworkResult(trainee);
+  expect(result).toEqual(expected);
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -74,6 +84,13 @@ function formatCourseworkResult(trainee) {
   }
 */
 
+it("returns an error message if the trainee's score is not a number", () => {
+  const trainee = { name: "Ali", score: "49%", age: 33, subjects: ["JavaScript", "React", "CSS"] };
+  const expected = "Error: Coursework percent is not a number!";
+  const result = formatCourseworkResult(trainee);
+  expect(result).toEqual(expected);
+});
+
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -81,7 +98,12 @@ function formatCourseworkResult(trainee) {
     age: 29
   }
 */
-
+it("returns an error message if the trainee's name is missing", () => {
+  const trainee = { score: 90, age: 29 };
+  const expected = "Error: No trainee name!";
+  const result = formatCourseworkResult(trainee);
+  expect(result).toEqual(expected);
+});
 /*
   Write a test that checks the output of formatCourseworkResult when passed the following trainee:
   {
@@ -89,3 +111,9 @@ function formatCourseworkResult(trainee) {
     subjects: ["HTML", "CSS", "Databases"]
   }
 */
+it("returns an error message if the trainee's score is missing", () => {
+  const trainee = { name: "Aman", subjects: ["HTML", "CSS", "Databases"] };
+  const expected = "Error: Coursework percent is not a number!";
+  const result = formatCourseworkResult(trainee);
+  expect(result).toEqual(expected);
+});

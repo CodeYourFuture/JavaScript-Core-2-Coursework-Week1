@@ -19,8 +19,28 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+
+  const missingIngredients = [];
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    const ingredient = recipe.ingredients[i];
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)) {
+      missingIngredients.push(ingredient);
+    }
+  }
+  return {
+    name: recipe.name,
+    items: missingIngredients
+  };
 }
+
+const recipe = {
+  name: "Carrot Cake",
+  ingredients: ["all-purpose flour", "baking powder", "baking soda", "ground cinnamon", "brown sugar", "vegetable oil", "eggs", "vanilla extract", "grated carrots", "chopped walnuts", "cream cheese", "unsalted butter"]
+};
+
+const shoppingList = createShoppingList(recipe);
+console.log(shoppingList);
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
