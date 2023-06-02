@@ -19,8 +19,23 @@ let pantry = {
 };
 
 function createShoppingList(recipe) {
-  // write code here
+
+  //declere shoppoingList object 
+  let shoppoingList = {
+    name: recipe.name, 
+    items: [],
+  }
+  recipe.ingredients.forEach((ingredient) => {
+    if (!pantry.fridgeContents.includes(ingredient) && !pantry.cupboardContents.includes(ingredient)){
+    shoppoingList.items.push(ingredient)}
+  } );
+  shoppoingList.name = recipe.name 
+  return shoppoingList
 }
+  // go throth all elements in the recepi.ingrediants array
+  // RTCSessionDescription.ingredients.forEach(function(ingrediant) {
+
+  // })
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`
