@@ -21,7 +21,11 @@ let basketballTeam = {
 */
 
 // write code here
-
+let newArray = basketballTeam.topPlayers.sort()
+console.log(newArray);
+for (num of newArray ) {
+  console.log(num)
+}
 
 /* EXPECTED RESULT
 
