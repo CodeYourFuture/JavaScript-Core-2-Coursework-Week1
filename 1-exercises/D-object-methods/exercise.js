@@ -9,6 +9,7 @@
 
 let student = {
   // write code here
+  getName:(name)=>console.log (`student name: ${name}`),
 }
 
 student.getName("Daniel");
