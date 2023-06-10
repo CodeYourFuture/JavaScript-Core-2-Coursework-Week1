@@ -22,4 +22,38 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipe1 = {
+name: "Pepperoni Pizza",
+serves: 3,
+ingredients: ["bread", "tomato sauce", "pepperoni", "cheese"],     
+}
+
+let recipe2 = {
+name: "chilli con carne",
+serves: 5,
+ingredients: ["beef", "chillies", "tomato sauce", "kidney beans"],
+}
+
+let recipe3 = {
+name: "Kung Pao Chicken",
+serves: 2,
+ingredients: ["chicken", "peanuts", "soy sauce", "beansprouts"],      
+}
+
+let recipe4 = {
+name: "Indian Mixed Grill",
+serves: 5,    
+ingredients: ["tandori chicken", "pork chops", "bell peppers", "chillies"],  
+}
+
+let recipe5 = {
+name: "Full English Breakfast",
+serves: 1,
+ingredients: ["bacon", "sausage", "fried egg", "baked beans"],    
+} 
+
+console.log(recipe1)
+console.log(recipe2)
+console.log(recipe3)
+console.log(recipe4)
+console.log(recipe5)

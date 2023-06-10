@@ -20,8 +20,10 @@ let basketballTeam = {
     - console.logs the name of each player on a new line
 */
 
-// write code here
 
+let topPlayers = ["Michael Jordan", "Scottie Pippen", "Dennis Rodman"];
+topPlayers.sort();
+console.log(topPlayers);
 
 /* EXPECTED RESULT
 

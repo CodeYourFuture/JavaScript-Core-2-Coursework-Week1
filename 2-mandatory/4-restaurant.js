@@ -20,7 +20,10 @@ const MENU = {
 };
 
 let cashRegister = {
-  // write code here
+orderBurger: function (balance){
+(balance >= MENU.burger) 
+return (balance = balance - MENU.burger);
+}
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

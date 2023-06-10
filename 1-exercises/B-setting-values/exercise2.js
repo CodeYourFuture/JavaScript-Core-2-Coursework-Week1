@@ -3,11 +3,7 @@
   You can also change the value assigned to a property using bracket notation.
 */
 
-let student = {
-  name: "Reshma Saujani",
-  examScore: 65,
-  hasPassed: false
-};
+
 
 /*
   Using bracket notation
@@ -26,6 +22,13 @@ let student = {
 */
 
 // write code here
+
+let student = {
+name: "Reshma Saujani",
+examScore: 65,
+hasPassed: true,
+attendance: 90,
+};
 
 console.log(student);
 

@@ -3,15 +3,23 @@
   You can also change the value assigned to a property using dot notation.
 */
 
-let capitalCities = {
-  UnitedKingdom: {
-    name: "London",
-    population: 20,
-  },
-  China: {
-    name: "Beijing",
-  }
-};
+// let capitalCities = {
+//   UnitedKingdom: {
+//     name: "London",
+//     population: 20,
+//   },
+//   China: {
+//     name: "Beijing",
+//     population: 21500000,
+//   }
+// Peru: {
+//  name: "Lima"
+//  population: 9750000,   
+// }
+// };
+
+
+
 
 /*
   Using dot notation:
@@ -24,7 +32,23 @@ let capitalCities = {
 
 // write code here
 
+let capitalCities = {
+  UnitedKingdom: {
+    name: "London",
+    population: 20,
+  },
+  China: {
+    name: "Beijing",
+    population: 21500000,
+  },
+Peru: {
+ name: "Lima",
+ population: 9750000,   
+}
+};
+capitalCities.UnitedKingdom = 8980000;
 console.log(capitalCities);
+
 
 /* EXPECTED RESULT
 
