@@ -7,9 +7,24 @@
     - console.logs a message that says: "Student name: " followed by the name given as an argument
 */
 
+// let student = {
+//   // name: "Daniel",
+//   getName: function (name){
+//     console.log(`Student name: ${name}`);
+//   }
+//   // write code here
+// }
+
+
 let student = {
+  name: "Daniel",
+  getName: function () {
+    console.log(`Student name: ${student.name}`);
+  },
   // write code here
-}
+};
+
+
 
 student.getName("Daniel");
 

@@ -14,11 +14,11 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]); //there is not a key called colour.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //there is not a key called firstName.
 }
 
 let user = {
@@ -35,4 +35,4 @@ let myPet = {
   },
 };
 
-console.log(myPet.getName());
+console.log(myPet.getName()); //  we are not returning anything inside the function.
