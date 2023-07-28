@@ -27,7 +27,7 @@ function Recipe(title, serves, ingredients) {
     this.title = title,
     this.serves = serves,
     this.ingredients = ingredients
-  }
+}
 // USE CONSTRCUTOR TO BUILD OBJECTS QUICKLY
 let receipeOne = new Recipe("Stir Friedrice", 1, ["vege","oyster sauce","chicken","rice"]);
 let receipeTwo = new Recipe("Stir Friednoodle", 2, ["vege","sweetchilli sauce","chicken","noodle"]);
@@ -37,8 +37,8 @@ let receipeFive = new Recipe("Chicken Salad", 5, ["lettuce","ceasar dressing","c
 
 const recipes = [receipeOne, receipeTwo, receipeThree, receipeFour, receipeFive]
 
- recipes.forEach (recipe => {
-   console.log(recipe.title);
+ recipes.forEach((recipe) => {
+  console.log(recipe.title);
   console.log(`Serve: ${recipe.serves}`);
   console.log(`Ingredients: \n ${recipe.ingredients}`);
 });
