@@ -16,10 +16,10 @@ let capitalCities = {
   Do not use dot notation for this exercise!
 */
 
-let myCountry = "UnitedKingdom";
-let myCapitalCity; // complete the code
-
-console.log(myCapitalCity);
+// let myCountry = "UnitedKingdom";
+// let myCapitalCity = capitalCities["UnitedKingdom"]; // complete the code
+const myCountry = capitalCities["UnitedKingdom"]
+console.log(myCountry);
 
 /* EXPECTED RESULT
 

@@ -14,16 +14,16 @@ let car = {
   yearsOld: 8,
 };
 
-console.log(car["colour"]);
+console.log(car["colour"]);// colour property or key hasn't defined any value.
 
 // Example 2
 function sayHelloToUser(user) {
-  console.log(`Hello ${user.firstName}`);
+  console.log(`Hello ${user.firstName}`); //user.firstName property doesn't exit.
 }
 
-let user = {
-  name: "Mira"
-};
+ let user = {
+   name: "Mira"
+ };
 
 sayHelloToUser(user);
 
@@ -31,7 +31,7 @@ sayHelloToUser(user);
 let myPet = {
   animal: "Cat",
   getName: function() {
-    "My pet's name is Fluffy";
+      "My pet's name is Fluffy"; // getName function which is myPet object method doesn't have return keyword.
   },
 };
 
