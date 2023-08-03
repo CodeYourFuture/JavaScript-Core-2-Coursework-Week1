@@ -35,7 +35,7 @@ function convertScoreToGrade(score) {
   passes.
 */
 test("a score of 83 is grade A", () => {
-  expect(convertScoreToGrade(83), "Z");
+  expect(convertScoreToGrade(83)).toEqual("A");
 });
 
 /*
